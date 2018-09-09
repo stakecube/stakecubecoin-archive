@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your LightPayCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your LightPayCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>LightPayCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
+        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The LightPayCoin address to sign the message with</source>
+        <source>The Stakecube² address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
+        <source>Sign the message to prove you own this Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The LightPayCoin address the message was signed with</source>
+        <source>The Stakecube² address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -771,12 +771,12 @@
     <message>
         <location line="-396"/>
         <location line="+831"/>
-        <source>LightPayCoin Core</source>
+        <source>Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-652"/>
-        <source>Send coins to a LightPayCoin address</source>
+        <source>Send coins to a Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -796,27 +796,27 @@
     </message>
     <message>
         <location line="+29"/>
-        <source>&amp;About LightPayCoin Core</source>
+        <source>&amp;About Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about LightPayCoin Core</source>
+        <source>Show information about Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for LightPayCoin</source>
+        <source>Modify configuration options for Stakecube²</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your LightPayCoin addresses to prove you own them</source>
+        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified LightPayCoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a LightPayCoin: URI or payment request</source>
+        <source>Open a Stakecube²: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,17 +871,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the LightPayCoin Core help message to get a list with possible LightPayCoin command-line options</source>
+        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+201"/>
-        <source>LightPayCoin Core client</source>
+        <source>Stakecube² Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+190"/>
-        <source>%n active connection(s) to LightPayCoin network</source>
+        <source>%n active connection(s) to Stakecube² network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1456,7 +1456,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid LightPayCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Stakecube² address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1512,7 +1512,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>LightPayCoin Core</source>
+        <source>Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About LightPayCoin Core</source>
+        <source>About Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1581,17 +1581,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to LightPayCoin Core.</source>
+        <source>Welcome to Stakecube² Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where LightPayCoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Stakecube² Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>LightPayCoin Core will download and store a copy of the LightPayCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Stakecube² Core will download and store a copy of the Stakecube² block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>LightPayCoin Core</source>
+        <source>Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1782,8 +1782,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other LightPayCoin addresses after it matures.
-To Add: enter percentage to give and LightPayCoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Stakecube² addresses after it matures.
+To Add: enter percentage to give and Stakecube² address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1990,17 +1990,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening LightPayCoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Stakecube²&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening LightPayCoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Stakecube²&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening LightPayCoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Stakecube²&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2076,7 +2076,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the LightPayCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Stakecube² client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2101,12 +2101,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start LightPayCoin after logging in to the system.</source>
+        <source>Automatically start Stakecube² after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start LightPayCoin on system login</source>
+        <source>&amp;Start Stakecube² on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2126,7 +2126,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of LightPayCoin to keep anonymized</source>
+        <source>Amount of Stakecube² to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2161,7 +2161,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LightPayCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube².</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2177,7 +2177,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the LightPayCoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Stakecube² network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2374,7 +2374,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LightPayCoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube² network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2666,7 +2666,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid LightPayCoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Stakecube² address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a LightPayCoin address (e.g. %1)</source>
+        <source>Enter a Stakecube² address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2969,7 +2969,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the LightPayCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Stakecube² debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3181,7 +3181,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the LightPayCoin RPC console.</source>
+        <source>Welcome to the Stakecube² RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3272,12 +3272,12 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the LightPayCoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube² network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the LightPayCoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube² network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3641,7 +3641,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LightPayCoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube² transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3774,7 +3774,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+632"/>
-        <source>Warning: Invalid LightPayCoin address</source>
+        <source>Warning: Invalid Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3918,7 +3918,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+18"/>
-        <source>The LightPayCoin address to send the payment to</source>
+        <source>The Stakecube² address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the LightPayCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the LightPayCoin network.</source>
+        <source>A message that was attached to the Stakecube²: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube² network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4007,7 +4007,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>LightPayCoin Core is shutting down...</source>
+        <source>Stakecube² Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4035,7 +4035,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+18"/>
-        <source>The LightPayCoin address to sign the message with</source>
+        <source>The Stakecube² address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4077,17 +4077,17 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
+        <source>Sign the message to prove you own this Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The LightPayCoin address the message was signed with</source>
+        <source>The Stakecube² address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4202,7 +4202,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>LightPayCoin Core</source>
+        <source>Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4222,7 +4222,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+1"/>
-        <source>The LightPayCoin Core developers</source>
+        <source>The Stakecube² Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5021,7 +5021,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. LightPayCoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Stakecube² Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5046,7 @@ https://www.transifex.com/lightpaycoin-project/lightpaycoin-project-translations
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all LightPayCoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Stakecube² specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5245,13 +5245,13 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Stakecube² Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. LightPayCoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Stakecube² Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5286,7 +5286,7 @@ for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong LightPayCoin Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stakecube² Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5471,7 +5471,7 @@ for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The LightPayCoin Core Developers</source>
+        <source>Copyright (C) 2015-%i The Stakecube² Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5561,7 +5561,7 @@ for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of LightPayCoin Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube² Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5701,7 +5701,7 @@ for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. LightPayCoin Core is shutting down.</source>
+        <source>Initialization sanity check failed. Stakecube² Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6476,7 +6476,7 @@ for example: alertnotify=echo %%s | mail -s &quot;LightPayCoin Alert&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart LightPayCoin Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Stakecube² Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

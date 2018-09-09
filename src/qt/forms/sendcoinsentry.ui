@@ -51,7 +51,7 @@
       <item>
        <widget class="QValidatedLineEdit" name="payTo">
         <property name="toolTip">
-         <string>The LightPayCoin address to send the payment to</string>
+         <string>The Stakecube² address to send the payment to</string>
         </property>
        </widget>
       </item>
@@ -154,7 +154,7 @@
     <item row="3" column="1">
      <widget class="QLabel" name="messageTextLabel">
       <property name="toolTip">
-       <string>A message that was attached to the LightPayCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the LightPayCoin network.</string>
+       <string>A message that was attached to the Stakecube²: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube² network.</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>

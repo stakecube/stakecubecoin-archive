@@ -152,8 +152,8 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>LightPayCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
-        <translation>LightPayCoin va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos LPCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube² va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos LPCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -219,8 +219,8 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The LightPayCoin address to sign the message with</source>
-        <translation>L'adresse LightPayCoin avec laquelle signer le message</translation>
+        <source>The Stakecube² address to sign the message with</source>
+        <translation>L'adresse Stakecube² avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse LightPayCoin</translation>
+        <source>Sign the message to prove you own this Stakecube² address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Stakecube²</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The LightPayCoin address the message was signed with</source>
-        <translation>L'adresse LightPayCoin avec laquelle le message a été signé</translation>
+        <source>The Stakecube² address the message was signed with</source>
+        <translation>L'adresse Stakecube² avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse LightPayCoin renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Stakecube² renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a LightPayCoin address</source>
-        <translation>Envoyer des pièces à une adresse LightPayCoin</translation>
+        <source>Send coins to a Stakecube² address</source>
+        <translation>Envoyer des pièces à une adresse Stakecube²</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for LightPayCoin</source>
-        <translation>Modifier les options de configuration pour LightPayCoin</translation>
+        <source>Modify configuration options for Stakecube²</source>
+        <translation>Modifier les options de configuration pour Stakecube²</translation>
     </message>
     <message>
-        <source>Sign messages with your LightPayCoin addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse LightPayCoin pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse Stakecube² pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LightPayCoin addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse LightPayCoin spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Stakecube² spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid LightPayCoin address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse LightPayCoin valide</translation>
+        <source>The entered address "%1" is not a valid Stakecube² address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Stakecube² valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1461,8 +1461,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The LightPayCoin address to send the payment to</source>
-        <translation>L'adresse LightPayCoin à laquelle envoyer le paiement</translation>
+        <source>The Stakecube² address to send the payment to</source>
+        <translation>L'adresse Stakecube² à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1507,8 +1507,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The LightPayCoin address to sign the message with</source>
-        <translation>L'adresse LightPayCoin avec laquelle signer le message</translation>
+        <source>The Stakecube² address to sign the message with</source>
+        <translation>L'adresse Stakecube² avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1535,16 +1535,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse LightPayCoin</translation>
+        <source>Sign the message to prove you own this Stakecube² address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Stakecube²</translation>
     </message>
     <message>
-        <source>The LightPayCoin address the message was signed with</source>
-        <translation>L'adresse LightPayCoin avec laquelle le message a été signé</translation>
+        <source>The Stakecube² address the message was signed with</source>
+        <translation>L'adresse Stakecube² avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse LightPayCoin renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Stakecube² renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

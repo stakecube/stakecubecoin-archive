@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * LightPayCoin RPC command dispatcher.
+ * Stakecube² RPC command dispatcher.
  */
 class CRPCTable
 {

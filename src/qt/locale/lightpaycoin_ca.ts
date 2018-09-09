@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     <message>
-        <source>&amp;About LightPayCoin Core</source>
-        <translation>&amp;Sobre LightPayCoin Core</translation>
+        <source>&amp;About Stakecube² Core</source>
+        <translation>&amp;Sobre Stakecube² Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     <message>
-        <source>About LightPayCoin Core</source>
-        <translation>Sobre LightPayCoin Core</translation>
+        <source>About Stakecube² Core</source>
+        <translation>Sobre Stakecube² Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to LightPayCoin Core.</source>
-        <translation>Benvingut a LightPayCoin Core.</translation>
+        <source>Welcome to Stakecube² Core.</source>
+        <translation>Benvingut a Stakecube² Core.</translation>
     </message>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1132,8 +1132,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     <message>
         <source>Version %1</source>

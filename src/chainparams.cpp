@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The LightPayCoin developers
+// Copyright (c) 2018 stakecube² developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -91,85 +91,86 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x6e;
-        pchMessageStart[1] = 0x72;
-        pchMessageStart[2] = 0x4f;
-        pchMessageStart[3] = 0x5a;
-        vAlertPubKey = ParseHex("040d75796902e3eda97815d744328237872309a95b42a74b22d7580e56b086fbc19ae1d6ef30c9e27d060c9c48692a663b9a321161e19f853ca6a6499cba7d17f6");
-        nDefaultPort = 39797;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // LightPayCoin starting difficulty is 1 / 2^12
+        pchMessageStart[0] = 0x05;
+        pchMessageStart[1] = 0x74;
+        pchMessageStart[2] = 0x43;
+        pchMessageStart[3] = 0x50;
+        vAlertPubKey = ParseHex("");
+        nDefaultPort = 40000;
+        bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // LightPayCoin: 1 day
-        nTargetSpacing = 1 * 60;  // LightPayCoin: 1 minute
-        nLastPOWBlock = 90;
-        nMaturity = 50;
+        nTargetTimespan = 1 * 60;
+        nTargetSpacing = 1 * 60;
+        nLastPOWBlock = 250;
+        nMaturity = 25;
         nMasternodeCountDrift = 20;
         nMasternodeCollateralLimit = 1000;
-        nModifierUpdateBlock = 615800;
-        nMaxMoneyOut = 21000000 * COIN;
+        nModifierUpdateBlock = 500;
+        nMaxMoneyOut = 10000000 * COIN;
 
-        /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
-         *   vMerkleTree: e0028e
-         */
-        const char* pszTimestamp = "If you read this line in our code, then you are a genius, but why do you need it?!";
+	//CBlock(hash=000004f35fc1fd529ce4f8da685dc65bcd43686e2ca734ee4e1289de8ea43033, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=04794158543d9f9c1dc4104a5005cbf832003d76dda9376f46afc0281ccea336, nTime=1536495000, nBits=1e0ffff0, nNonce=109393, vtx=1)
+	//  CTransaction(hash=0479415854, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+	//    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104197374616b656375626573717561726564203039303932303138)
+	//    CTxOut(nValue=0.00000000, scriptPubKey=0457c56ed69a1f42398804504fcab8)
+
+        const char* pszTimestamp = "stakecubesquared 09092018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
+        txNew.vout[0].nValue = 0 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("0457c56ed69a1f42398804504fcab82f430cc864c8fc8cd25b76e141d12c13012ee9d500e11f84d5f75f5c669e88ca196142ddb7406d3635d840fa5e9d2a6bb100") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1524873600;
+        genesis.nTime = 1536495000;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2394236;
+        genesis.nNonce = 109393;
+
+        if (genesis.nNonce == 0) {
+	   while (genesis.GetHash() > bnProofOfWorkLimit) {
+		if (genesis.nNonce % 1024 == 0) printf("%08x\n", genesis.nNonce);
+		genesis.nNonce++;
+	   }
+        }
+        printf("%s\n", genesis.ToString().c_str());
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000dfdec6a9190b26520e93ef5eba15a82646a47ddf8fb5be4477a836467ee"));
-        assert(genesis.hashMerkleRoot == uint256("98a0c0dc8214278a8a27ce9d7ca4107dd7cd6787ea6001d3d6c1a7b764098570"));
+        assert(hashGenesisBlock == uint256("000004f35fc1fd529ce4f8da685dc65bcd43686e2ca734ee4e1289de8ea43033"));
+        assert(genesis.hashMerkleRoot == uint256("04794158543d9f9c1dc4104a5005cbf832003d76dda9376f46afc0281ccea336"));
 
-        vSeeds.push_back(CDNSSeedData("80.211.202.181", "80.211.202.181"));         // Single node address
-        vSeeds.push_back(CDNSSeedData("94.177.187.54", "94.177.187.54"));           // Single node address
+        // vSeeds.push_back(CDNSSeedData("", ""));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 49);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 179);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 253);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
-        // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
-        fMiningRequiresPeers = false;		// default true
+        fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = true;		// default false
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04b8a44c0467e07b59aacede1352cff10d7f194b1a09bd1bc62847b3e29f9f0a340ddc8f9c29423f27e0ec3b29e6b1f9127db303b0cad8f3b83ab8b1b52f61bac4";
+        strSporkKey = "0440bae57b0608578f03d81194f28b3798a7e07811d8c88e35dc30d5990593d8e6f8bda89fedc5c39cf4223e47f3716eb2c10eb355f1c2c59c65b06f0643d950b3";
         strObfuscationPoolDummyAddress = "Lo3fnibtjwvqYE1T7Lce5uYbdt3pf6PKUu";
 		
-        nStartMasternodePayments = 1524873600; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = genesis.nTime + 5400;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -199,8 +200,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // LightPayCoin: 1 day
-        nTargetSpacing = 1 * 60;  // LightPayCoin: 1 minute
+        nTargetTimespan = 1 * 60; // Stakecube²: 1 day
+        nTargetSpacing = 1 * 60;  // Stakecube²: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -213,7 +214,7 @@ public:
         genesis.nNonce = 2394236;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000dfdec6a9190b26520e93ef5eba15a82646a47ddf8fb5be4477a836467ee"));
+        //assert(hashGenesisBlock == uint256("00000dfdec6a9190b26520e93ef5eba15a82646a47ddf8fb5be4477a836467ee"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -274,8 +275,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // LightPayCoin: 1 day
-        nTargetSpacing = 1 * 60;        // LightPayCoin: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Stakecube²: 1 day
+        nTargetSpacing = 1 * 60;        // Stakecube²: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1524873600;
         genesis.nBits = 0x207fffff;
@@ -283,7 +284,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 39793;
-        assert(hashGenesisBlock == uint256("00000d885e2813770fd59e71010b6b62a9b0609655109bf4e1b24c3bd524ae0c"));
+        //assert(hashGenesisBlock == uint256("00000d885e2813770fd59e71010b6b62a9b0609655109bf4e1b24c3bd524ae0c"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

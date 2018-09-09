@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出LightPayCoin幣的位址</translation>
+        <translation>選擇要匯出Stakecube²幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收LightPayCoin幣的位址</translation>
+        <translation>選擇要接收Stakecube²幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your LightPayCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 LightPayCoin 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 Stakecube² 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your LightPayCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 LightPayCoin 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 Stakecube² 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,8 +164,8 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>LightPayCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
-        <translation>LightPayCoin 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 LPC 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LPCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube² 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 LPC 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,8 +235,8 @@
         <translation>位址:</translation>
     </message>
     <message>
-        <source>The LightPayCoin address to sign the message with</source>
-        <translation>對訊息簽名的 LightPayCoin 位址</translation>
+        <source>The Stakecube² address to sign the message with</source>
+        <translation>對訊息簽名的 Stakecube² 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,8 +267,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
-        <translation>使用簽章來證明你是該  LightPayCoin 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this Stakecube² address</source>
+        <translation>使用簽章來證明你是該  Stakecube² 位址的擁有者,</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -287,12 +287,12 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The LightPayCoin address the message was signed with</source>
-        <translation>此訊息之 LightPayCoin 位址已簽章於</translation>
+        <source>The Stakecube² address the message was signed with</source>
+        <translation>此訊息之 Stakecube² 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
-        <translation>驗證訊息以確保該  LightPayCoin 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
+        <translation>驗證訊息以確保該  Stakecube² 位址已被簽章</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -582,12 +582,12 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     <message>
-        <source>Send coins to a LightPayCoin address</source>
-        <translation>送出錢幣到 LightPayCoin 地址</translation>
+        <source>Send coins to a Stakecube² address</source>
+        <translation>送出錢幣到 Stakecube² 地址</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and lightpaycoin: URIs)</source>
@@ -602,24 +602,24 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About LightPayCoin Core</source>
-        <translation>&amp;關於 LightPayCoin Core</translation>
+        <source>&amp;About Stakecube² Core</source>
+        <translation>&amp;關於 Stakecube² Core</translation>
     </message>
     <message>
-        <source>Show information about LightPayCoin Core</source>
-        <translation>顯示 LightPayCoin Core 相關資訊</translation>
+        <source>Show information about Stakecube² Core</source>
+        <translation>顯示 Stakecube² Core 相關資訊</translation>
     </message>
     <message>
-        <source>Modify configuration options for LightPayCoin</source>
-        <translation>修改 LightPayCoin 設定</translation>
+        <source>Modify configuration options for Stakecube²</source>
+        <translation>修改 Stakecube² 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your LightPayCoin addresses to prove you own them</source>
-        <translation>使用你的 LightPayCoin 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
+        <translation>使用你的 Stakecube² 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified LightPayCoin addresses</source>
-        <translation>驗證訊息簽章與 LightPayCoin 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
+        <translation>驗證訊息簽章與 Stakecube² 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -650,8 +650,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a LightPayCoin: URI or payment request</source>
-        <translation>打開LightPayCoin: 位址或付款請求 </translation>
+        <source>Open a Stakecube²: URI or payment request</source>
+        <translation>打開Stakecube²: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +662,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the LightPayCoin Core help message to get a list with possible LightPayCoin command-line options</source>
-        <translation>顯示 LightPayCoin Core 幫助訊息以取得 LightPayCoin 命令列表選項</translation>
+        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
+        <translation>顯示 Stakecube² Core 幫助訊息以取得 Stakecube² 命令列表選項</translation>
     </message>
     <message>
-        <source>LightPayCoin Core client</source>
-        <translation>LightPayCoin Core 客戶端</translation>
+        <source>Stakecube² Core client</source>
+        <translation>Stakecube² Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -696,15 +696,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     </context>
 <context>
@@ -817,8 +817,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The LightPayCoin address to sign the message with</source>
-        <translation>對訊息簽名的 LightPayCoin 位址</translation>
+        <source>The Stakecube² address to sign the message with</source>
+        <translation>對訊息簽名的 Stakecube² 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -841,16 +841,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this LightPayCoin address</source>
-        <translation>使用簽章來證明你是該  LightPayCoin 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this Stakecube² address</source>
+        <translation>使用簽章來證明你是該  Stakecube² 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The LightPayCoin address the message was signed with</source>
-        <translation>此訊息之 LightPayCoin 位址已簽章於</translation>
+        <source>The Stakecube² address the message was signed with</source>
+        <translation>此訊息之 Stakecube² 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified LightPayCoin address</source>
-        <translation>驗證訊息以確保該  LightPayCoin 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
+        <translation>驗證訊息以確保該  Stakecube² 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -888,8 +888,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>LightPayCoin Core</source>
-        <translation>LightPayCoin Core</translation>
+        <source>Stakecube² Core</source>
+        <translation>Stakecube² Core</translation>
     </message>
     </context>
 <context>
