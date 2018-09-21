@@ -37,7 +37,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse Lightpaycoin address
+    // Parse Stakecube address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -57,8 +57,8 @@ Value obfuscation(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "obfuscation <lightpaycoinaddress> <amount>\n"
-            "lightpaycoinaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <stakecubeaddress> <amount>\n"
+            "stakecubeaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -79,14 +79,14 @@ Value obfuscation(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "obfuscation <lightpaycoinaddress> <amount>\n"
-            "lightpaycoinaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <stakecubeaddress> <amount>\n"
+            "stakecubeaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
     CBitcoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Lightpaycoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Stakecube address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -154,7 +154,7 @@ Value masternode(const Array& params, bool fHelp)
             "  debug        - Print masternode status\n"
             "  genkey       - Generate new masternodeprivkey\n"
             "  outputs      - Print masternode compatible outputs\n"
-            "  start        - Start masternode configured in lightpaycoin.conf\n"
+            "  start        - Start masternode configured in stakecube.conf\n"
             "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
             "  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')\n"
             "  status       - Print masternode status information\n"

@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The Lightpaycoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The Stakecube Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>LightPayCoin-Qt</string>
+  <string>Stakecube-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.lightpaycoin.Lightpaycoin-Qt</string>
+  <string>io.stakecube.Stakecube-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.lightpaycoin.LightpaycoinPayment</string>
+      <string>io.stakecube.StakecubePayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>lightpaycoin</string>
+        <string>stakecube</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.lightpaycoin.paymentrequest</string>
+      <string>io.stakecube.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Lightpaycoin payment request</string>
+      <string>Stakecube payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-lightpaycoin-payment-request</string>
+        <string>application/x-stakecube-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>lightpaycoinpaymentrequest</string>
+          <string>stakecubepaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.lightpaycoin.paymentrequest</string>
+        <string>io.stakecube.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../lightpaycoin.qrc"/>
+  <include location="../stakecube.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -7,7 +7,7 @@
 # Written by Gordon Matzigkeit <gord@gnu.ai.mit.edu>, 1996
 
 # Copyright (C) 1996-2015 Free Software Foundation, Inc.
-# Copyright (C) 2018 The LightPayCoin developers
+# Copyright (C) 2018 The Stakecube developers
 # This is free software; see the source for copying conditions.  There is NO
 # warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 

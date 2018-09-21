@@ -1,12 +1,12 @@
-LightPayCoin (fork of PIVX) integration/staging repository
+Stakecube (fork of PIVX) integration/staging repository
 ======================================
 
 
-It is recommended [use the shell script](https://github.com/lpcproject/lpcinstall) to install a LightPayCoin Masternode on a Linux server running Ubuntu 14.04 or 16.04
+It is recommended [use the shell script](https://github.com/lpcproject/lpcinstall) to install a Stakecube Masternode on a Linux server running Ubuntu 14.04 or 16.04
 
 ***
 
-Quick installation of the LightPayCoin daemon under linux. See detailed instructions there [build-unix.md](build-unix.md)
+Quick installation of the Stakecube daemon under linux. See detailed instructions there [build-unix.md](build-unix.md)
 
 Installation of libraries (using root user):
 
@@ -19,33 +19,33 @@ Installation of libraries (using root user):
 Cloning the repository and compiling (use any user with the sudo group):
 
     cd
-    git clone https://github.com/lpcproject/LightPayCoin.git
-    cd LightPayCoin
+    git clone https://github.com/lpcproject/Stakecube.git
+    cd Stakecube
     ./autogen.sh
     ./configure
     sudo make install
     cd src
-    sudo strip lightpaycoind
-    sudo strip lightpaycoin-cli
-    sudo strip lightpaycoin-tx
+    sudo strip stakecubed
+    sudo strip stakecube-cli
+    sudo strip stakecube-tx
     cd ..
 
 Running the daemon:
 
-    lightpaycoind 
+    stakecubed 
 
 Stopping the daemon:
 
-    lightpaycoin-cli stop
+    stakecube-cli stop
 
 Demon status:
 
-    lightpaycoin-cli getinfo
-    lightpaycoin-cli mnsync status
+    stakecube-cli getinfo
+    stakecube-cli mnsync status
 
 All binaries for different operating systems, you can download in the releases repository:
 
-https://github.com/lpcproject/LightPayCoin/releases
+https://github.com/lpcproject/Stakecube/releases
 
 P2P port: 39797, RPC port: 39798
 -

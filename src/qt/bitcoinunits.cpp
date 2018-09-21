@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(LPC);
-    unitlist.append(mLPC);
-    unitlist.append(uLPC);
+    unitlist.append(SCC);
+    unitlist.append(mSCC);
+    unitlist.append(uSCC);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case LPC:
-    case mLPC:
-    case uLPC:
+    case SCC:
+    case mSCC:
+    case uSCC:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case LPC:
-        return QString("lightpaycoin");
-    case mLPC:
-        return QString("mlightpaycoin");
-    case uLPC:
-        return QString::fromUtf8("ulightpaycoin");
+    case SCC:
+        return QString("stakecube");
+    case mSCC:
+        return QString("mstakecube");
+    case uSCC:
+        return QString::fromUtf8("ustakecube");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case LPC:
-            return QString("LPC");
-        case mLPC:
-            return QString("mLPC");
-        case uLPC:
-            return QString::fromUtf8("μLPC");
+        case SCC:
+            return QString("SCC");
+        case mSCC:
+            return QString("mSCC");
+        case uSCC:
+            return QString::fromUtf8("μSCC");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case LPC:
-            return QString("tLPC");
-        case mLPC:
-            return QString("mtLPC");
-        case uLPC:
-            return QString::fromUtf8("μtLPC");
+        case SCC:
+            return QString("tSCC");
+        case mSCC:
+            return QString("mtSCC");
+        case uSCC:
+            return QString::fromUtf8("μtSCC");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case LPC:
-            return QString("LPC");
-        case mLPC:
-            return QString("Milli-LPC (1 / 1" THIN_SP_UTF8 "000)");
-        case uLPC:
-            return QString("Micro-LPC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case SCC:
+            return QString("SCC");
+        case mSCC:
+            return QString("Milli-SCC (1 / 1" THIN_SP_UTF8 "000)");
+        case uSCC:
+            return QString("Micro-SCC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case LPC:
-            return QString("TestLPCs");
-        case mLPC:
-            return QString("Milli-TestLPC (1 / 1" THIN_SP_UTF8 "000)");
-        case uLPC:
-            return QString("Micro-TestLPC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case SCC:
+            return QString("TestSCCs");
+        case mSCC:
+            return QString("Milli-TestSCC (1 / 1" THIN_SP_UTF8 "000)");
+        case uSCC:
+            return QString("Micro-TestSCC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case LPC:
+    case SCC:
         return 100000000;
-    case mLPC:
+    case mSCC:
         return 100000;
-    case uLPC:
+    case uSCC:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case LPC:
+    case SCC:
         return 8;
-    case mLPC:
+    case mSCC:
         return 5;
-    case uLPC:
+    case uSCC:
         return 2;
     default:
         return 0;

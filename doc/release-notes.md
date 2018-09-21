@@ -1,18 +1,18 @@
-LightPayCoin Core version 2.3.1 is now available from:
+Stakecube version 2.3.1 is now available from:
 
-  <https://github.com/lightpaycoin-project/lightpaycoin/releases>
+  <https://github.com/stakecube-project/stakecube/releases>
 
 This is a new minor version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/lightpaycoin-project/lightpaycoin/issues>
+  <https://github.com/stakecube-project/stakecube/issues>
 
 Compatibility
 ==============
 
-LightPayCoin Core is extensively tested on multiple operating systems using
+Stakecube is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -20,7 +20,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-LightPayCoin Core should also work on most other Unix-like systems but is not
+Stakecube should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable Changes
@@ -93,7 +93,7 @@ Result: (for other sets):
 }
 
 Examples:
-> lightpaycoin-cli masternodestart "alias" "my_mn"
+> stakecube-cli masternodestart "alias" "my_mn"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "masternodestart", "params": ["alias" "my_mn"] }' -H 'content-type: text/plain;' http://127.0.0.1:39798/
 ```
 
@@ -128,7 +128,7 @@ Result:
 }
 
 Examples:
-> lightpaycoin-cli mnvote "local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"
+> stakecube-cli mnvote "local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "mnvote", "params": ["local" "ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041" "yes"] }' -H 'content-type: text/plain;' http://127.0.0.1:39798/
 ```
 
@@ -154,7 +154,7 @@ Result:
     "BlockEnd": n,                (numeric) Proposal ending block
     "TotalPaymentCount": n,       (numeric) Number of payments
     "RemainingPaymentCount": n,   (numeric) Number of remaining payments
-    "PaymentAddress": "xxxx",     (string) LightPayCoin address of payment
+    "PaymentAddress": "xxxx",     (string) Stakecube address of payment
     "Ratio": x.xxx,               (numeric) Ratio of yeas vs nays
     "Yeas": n,                    (numeric) Number of yea votes
     "Nays": n,                    (numeric) Number of nay votes
@@ -170,7 +170,7 @@ Result:
 ]
 
 Examples:
-> lightpaycoin-cli getbudgetprojection
+> stakecube-cli getbudgetprojection
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbudgetprojection", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:39798/
 ```
 
@@ -205,4 +205,4 @@ Thanks to everyone who directly contributed to this release:
 - Mrs-X
 - amirabrams
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/lightpaycoin-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/stakecube-project-translations/).

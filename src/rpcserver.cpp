@@ -300,36 +300,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Lightpaycoin features */
-        {"lightpaycoin", "masternode", &masternode, true, true, false},
-        {"lightpaycoin", "listmasternodes", &listmasternodes, true, true, false},
-        {"lightpaycoin", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"lightpaycoin", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"lightpaycoin", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"lightpaycoin", "masternodedebug", &masternodedebug, true, true, false},
-        {"lightpaycoin", "startmasternode", &startmasternode, true, true, false},
-        {"lightpaycoin", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"lightpaycoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"lightpaycoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"lightpaycoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"lightpaycoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"lightpaycoin", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"lightpaycoin", "mnbudget", &mnbudget, true, true, false},
-        {"lightpaycoin", "preparebudget", &preparebudget, true, true, false},
-        {"lightpaycoin", "submitbudget", &submitbudget, true, true, false},
-        {"lightpaycoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"lightpaycoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"lightpaycoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"lightpaycoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"lightpaycoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"lightpaycoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"lightpaycoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"lightpaycoin", "checkbudgets", &checkbudgets, true, true, false},
-        {"lightpaycoin", "mnsync", &mnsync, true, true, false},
-        {"lightpaycoin", "spork", &spork, true, true, false},
-        {"lightpaycoin", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Stakecube features */
+        {"stakecube", "masternode", &masternode, true, true, false},
+        {"stakecube", "listmasternodes", &listmasternodes, true, true, false},
+        {"stakecube", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"stakecube", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"stakecube", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"stakecube", "masternodedebug", &masternodedebug, true, true, false},
+        {"stakecube", "startmasternode", &startmasternode, true, true, false},
+        {"stakecube", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"stakecube", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"stakecube", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"stakecube", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"stakecube", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"stakecube", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"stakecube", "mnbudget", &mnbudget, true, true, false},
+        {"stakecube", "preparebudget", &preparebudget, true, true, false},
+        {"stakecube", "submitbudget", &submitbudget, true, true, false},
+        {"stakecube", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"stakecube", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"stakecube", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"stakecube", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"stakecube", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"stakecube", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"stakecube", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"stakecube", "checkbudgets", &checkbudgets, true, true, false},
+        {"stakecube", "mnsync", &mnsync, true, true, false},
+        {"stakecube", "spork", &spork, true, true, false},
+        {"stakecube", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"lightpaycoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"stakecube", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -594,10 +594,10 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use lightpaycoind, or the -server option to lightpaycoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use stakecubed, or the -server option to stakecube-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=lightpaycoinrpc\n"
+                                               "rpcuser=stakecuberpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
@@ -1054,7 +1054,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> lightpaycoin-cli " + methodname + " " + args + "\n";
+    return "> stakecube-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -448,7 +448,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
     LogPrintf("Stakecube²Miner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("lightpaycoin-miner");
+    RenameThread("stakecube-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

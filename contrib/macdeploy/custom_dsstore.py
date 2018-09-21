@@ -57,7 +57,7 @@ ds['.']['icvp'] = icvp
 ds['.']['vSrn'] = ('long', 1)
 
 ds['Applications']['Iloc'] = (370, 156)
-ds['LightPayCoin-Qt.app']['Iloc'] = (128, 156)
+ds['Stakecube-Qt.app']['Iloc'] = (128, 156)
 
 ds.flush()
 ds.close()

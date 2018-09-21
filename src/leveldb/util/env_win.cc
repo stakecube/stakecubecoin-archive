@@ -95,7 +95,7 @@ public:
     virtual Status Read(uint64_t offset, size_t n, Slice* result,char* scratch) const;
     BOOL isEnable();
 private:
-    BOOL _Init(LPCWSTR path);
+    BOOL _Init(SCCWSTR path);
     void _CleanUp();
     Win32RandomAccessFile(const std::string& fname);
     HANDLE _hFile;
@@ -135,7 +135,7 @@ private:
     bool _UnmapCurrentRegion();
     bool _MapNewRegion();
     DISALLOW_COPY_AND_ASSIGN(Win32MapFile);
-    BOOL _Init(LPCWSTR Path);
+    BOOL _Init(SCCWSTR Path);
 };
 
 class Win32FileLock : public FileLock
@@ -145,7 +145,7 @@ public:
     virtual ~Win32FileLock();
     BOOL isEnable();
 private:
-    BOOL _Init(LPCWSTR path);
+    BOOL _Init(SCCWSTR path);
     void _CleanUp();
     Win32FileLock(const std::string& fname);
     HANDLE _hFile;
@@ -296,7 +296,7 @@ std::wstring GetLastErrSzW()
         0,
         NULL 
         );
-    std::wstring Err = (LPCWSTR)lpMsgBuf;
+    std::wstring Err = (SCCWSTR)lpMsgBuf;
     LocalFree(lpMsgBuf);
     return Err;
 }
@@ -416,7 +416,7 @@ Status Win32RandomAccessFile::Read(uint64_t offset,size_t n,Slice* result,char* 
     return sRet;
 }
 
-BOOL Win32RandomAccessFile::_Init( LPCWSTR path )
+BOOL Win32RandomAccessFile::_Init( SCCWSTR path )
 {
     BOOL bRet = FALSE;
     if(!_hFile)
@@ -619,7 +619,7 @@ Win32MapFile::~Win32MapFile()
     }
 }
 
-BOOL Win32MapFile::_Init( LPCWSTR Path )
+BOOL Win32MapFile::_Init( SCCWSTR Path )
 {
     DWORD Flag = PathFileExistsW(Path) ? OPEN_EXISTING : CREATE_ALWAYS;
     _hFile = CreateFileW(Path,
@@ -653,7 +653,7 @@ Win32FileLock::~Win32FileLock()
     _CleanUp();
 }
 
-BOOL Win32FileLock::_Init( LPCWSTR path )
+BOOL Win32FileLock::_Init( SCCWSTR path )
 {
     BOOL bRet = FALSE;
     if(!_hFile)

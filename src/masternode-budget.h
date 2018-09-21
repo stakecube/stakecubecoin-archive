@@ -363,7 +363,7 @@ public:
 
     //check to see if we should vote on this
     void AutoCheck();
-    //total lightpaycoin paid out by this budget
+    //total stakecube paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();

@@ -10,7 +10,7 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both lightpaycoind and lightpaycoin-qt, to make it harder for attackers to
+ * for both stakecubed and stakecube-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
 const std::string CLIENT_NAME("Stakecube² Core");

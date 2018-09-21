@@ -33,7 +33,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::LPC)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SCC)
     {
     }
 
@@ -271,7 +271,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("LPC")
+    // update the display unit, to not use the default ("SCC")
     updateDisplayUnit();
 }
 
@@ -310,15 +310,15 @@ void OverviewPage::updateObfuscationProgress()
     if (!pwalletMain) return;
 
     QString strAmountAndRounds;
-    QString strAnonymizeLightpaycoinAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeLightpaycoinAmount * COIN, false, BitcoinUnits::separatorAlways);
+    QString strAnonymizeStakecubeAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeStakecubeAmount * COIN, false, BitcoinUnits::separatorAlways);
 
     if (currentBalance == 0) {
         ui->obfuscationProgress->setValue(0);
         ui->obfuscationProgress->setToolTip(tr("No inputs detected"));
 
         // when balance is zero just show info from settings
-        strAnonymizeLightpaycoinAmount = strAnonymizeLightpaycoinAmount.remove(strAnonymizeLightpaycoinAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeLightpaycoinAmount + " / " + tr("%n Rounds", "", nObfuscationRounds);
+        strAnonymizeStakecubeAmount = strAnonymizeStakecubeAmount.remove(strAnonymizeStakecubeAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeStakecubeAmount + " / " + tr("%n Rounds", "", nObfuscationRounds);
 
         ui->labelAmountRounds->setToolTip(tr("No inputs detected"));
         ui->labelAmountRounds->setText(strAmountAndRounds);
@@ -345,20 +345,20 @@ void OverviewPage::updateObfuscationProgress()
     CAmount nMaxToAnonymize = nAnonymizableBalance + currentAnonymizedBalance + nDenominatedUnconfirmedBalance;
 
     // If it's more than the anon threshold, limit to that.
-    if (nMaxToAnonymize > nAnonymizeLightpaycoinAmount * COIN) nMaxToAnonymize = nAnonymizeLightpaycoinAmount * COIN;
+    if (nMaxToAnonymize > nAnonymizeStakecubeAmount * COIN) nMaxToAnonymize = nAnonymizeStakecubeAmount * COIN;
 
     if (nMaxToAnonymize == 0) return;
 
-    if (nMaxToAnonymize >= nAnonymizeLightpaycoinAmount * COIN) {
+    if (nMaxToAnonymize >= nAnonymizeStakecubeAmount * COIN) {
         ui->labelAmountRounds->setToolTip(tr("Found enough compatible inputs to anonymize %1")
-                                              .arg(strAnonymizeLightpaycoinAmount));
-        strAnonymizeLightpaycoinAmount = strAnonymizeLightpaycoinAmount.remove(strAnonymizeLightpaycoinAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeLightpaycoinAmount + " / " + tr("%n Rounds", "", nObfuscationRounds);
+                                              .arg(strAnonymizeStakecubeAmount));
+        strAnonymizeStakecubeAmount = strAnonymizeStakecubeAmount.remove(strAnonymizeStakecubeAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeStakecubeAmount + " / " + tr("%n Rounds", "", nObfuscationRounds);
     } else {
         QString strMaxToAnonymize = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nMaxToAnonymize, false, BitcoinUnits::separatorAlways);
         ui->labelAmountRounds->setToolTip(tr("Not enough compatible inputs to anonymize <span style='color:red;'>%1</span>,<br>"
                                              "will anonymize <span style='color:red;'>%2</span> instead")
-                                              .arg(strAnonymizeLightpaycoinAmount)
+                                              .arg(strAnonymizeStakecubeAmount)
                                               .arg(strMaxToAnonymize));
         strMaxToAnonymize = strMaxToAnonymize.remove(strMaxToAnonymize.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
         strAmountAndRounds = "<span style='color:red;'>" +
@@ -529,7 +529,7 @@ void OverviewPage::toggleObfuscation()
 
         /* show obfuscation configuration if client has defaults set */
 
-        if (nAnonymizeLightpaycoinAmount == 0) {
+        if (nAnonymizeStakecubeAmount == 0) {
             ObfuscationConfig dlg(this);
             dlg.setModel(walletModel);
             dlg.exec();

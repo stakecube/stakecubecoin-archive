@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/lightpaycoin-config.h"
+#include "config/stakecube-config.h"
 #endif
 
 #ifdef WIN32

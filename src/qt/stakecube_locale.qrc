@@ -1,0 +1,28 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/stakecube_bg.qm</file>
+        <file alias="ca">locale/stakecube_ca.qm</file>
+        <file alias="cs">locale/stakecube_cs.qm</file>
+        <file alias="da">locale/stakecube_da.qm</file>
+        <file alias="de">locale/stakecube_de.qm</file>
+        <file alias="en">locale/stakecube_en.qm</file>
+        <file alias="en_US">locale/stakecube_en_US.qm</file>
+        <file alias="es">locale/stakecube_es.qm</file>
+        <file alias="fi">locale/stakecube_fi.qm</file>
+        <file alias="fr_FR">locale/stakecube_fr_FR.qm</file>
+        <file alias="it">locale/stakecube_it.qm</file>
+        <file alias="ja">locale/stakecube_ja.qm</file>
+        <file alias="ko_KR">locale/stakecube_ko_KR.qm</file>
+        <file alias="nl">locale/stakecube_nl.qm</file>
+        <file alias="pl">locale/stakecube_pl.qm</file>
+        <file alias="pt">locale/stakecube_pt.qm</file>
+        <file alias="pt_BR">locale/stakecube_pt_BR.qm</file>
+        <file alias="ro_RO">locale/stakecube_ro_RO.qm</file>
+        <file alias="ru">locale/stakecube_ru.qm</file>
+        <file alias="sk">locale/stakecube_sk.qm</file>
+        <file alias="sv">locale/stakecube_sv.qm</file>
+        <file alias="uk">locale/stakecube_uk.qm</file>
+        <file alias="zh_CN">locale/stakecube_zh_CN.qm</file>
+        <file alias="zh_TW">locale/stakecube_zh_TW.qm</file>
+    </qresource>
+</RCC>

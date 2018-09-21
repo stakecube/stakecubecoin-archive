@@ -58,9 +58,9 @@ public:
       @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
      */
     enum Unit {
-        LPC,
-        mLPC,
-        uLPC
+        SCC,
+        mSCC,
+        uSCC
     };
 
     enum SeparatorStyle {

@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the lightpaycoind tests manually, launch src/test/test_lightpaycoin .
+To run the stakecubed tests manually, launch src/test/test_stakecube .
 
-To add more lightpaycoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more stakecubed tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the lightpaycoin-qt tests manually, launch src/qt/test/lightpaycoin-qt_test
+To run the stakecube-qt tests manually, launch src/qt/test/stakecube-qt_test
 
-To add more lightpaycoin-qt tests, add them to the `src/qt/test/` directory and
+To add more stakecube-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

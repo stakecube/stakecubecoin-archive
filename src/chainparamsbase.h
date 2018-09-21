@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between lightpaycoin-cli and lightpaycoind)
- * of a given instance of the Lightpaycoin system.
+ * CBaseChainParams defines the base parameters (shared between stakecube-cli and stakecubed)
+ * of a given instance of the Stakecube system.
  */
 class CBaseChainParams
 {

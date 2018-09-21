@@ -184,8 +184,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the lightpaycoin.conf file in the default data directory
-     * (to be consistent with lightpaycoind behavior)
+     * override -datadir in the stakecube.conf file in the default data directory
+     * (to be consistent with stakecubed behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/lightpaycoin-config.h"
+#include "config/stakecube-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -62,7 +62,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::LPC);
+        settings.setValue("nDisplayUnit", BitcoinUnits::SCC);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -76,11 +76,11 @@ void OptionsModel::Init()
     if (!settings.contains("nObfuscationRounds"))
         settings.setValue("nObfuscationRounds", 2);
 
-    if (!settings.contains("nAnonymizeLightpaycoinAmount"))
-        settings.setValue("nAnonymizeLightpaycoinAmount", 1000);
+    if (!settings.contains("nAnonymizeStakecubeAmount"))
+        settings.setValue("nAnonymizeStakecubeAmount", 1000);
 
     nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
-    nAnonymizeLightpaycoinAmount = settings.value("nAnonymizeLightpaycoinAmount").toLongLong();
+    nAnonymizeStakecubeAmount = settings.value("nAnonymizeStakecubeAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +147,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nObfuscationRounds"))
         SoftSetArg("-obfuscationrounds", settings.value("nObfuscationRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeLightpaycoinAmount"))
-        SoftSetArg("-anonymizelightpaycoinamount", settings.value("nAnonymizeLightpaycoinAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeStakecubeAmount"))
+        SoftSetArg("-anonymizestakecubeamount", settings.value("nAnonymizeStakecubeAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -159,7 +159,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in lightpaycoin.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in stakecube.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -228,8 +228,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case ObfuscationRounds:
             return QVariant(nObfuscationRounds);
-        case AnonymizeLightpaycoinAmount:
-            return QVariant(nAnonymizeLightpaycoinAmount);
+        case AnonymizeStakecubeAmount:
+            return QVariant(nAnonymizeStakecubeAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +338,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nObfuscationRounds", nObfuscationRounds);
             emit obfuscationRoundsChanged(nObfuscationRounds);
             break;
-        case AnonymizeLightpaycoinAmount:
-            nAnonymizeLightpaycoinAmount = value.toInt();
-            settings.setValue("nAnonymizeLightpaycoinAmount", nAnonymizeLightpaycoinAmount);
-            emit anonymizeLightpaycoinAmountChanged(nAnonymizeLightpaycoinAmount);
+        case AnonymizeStakecubeAmount:
+            nAnonymizeStakecubeAmount = value.toInt();
+            settings.setValue("nAnonymizeStakecubeAmount", nAnonymizeStakecubeAmount);
+            emit anonymizeStakecubeAmountChanged(nAnonymizeStakecubeAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

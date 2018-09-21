@@ -2051,7 +2051,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("lightpaycoin-scriptch");
+    RenameThread("stakecube-scriptch");
     scriptcheckqueue.Thread();
 }
 

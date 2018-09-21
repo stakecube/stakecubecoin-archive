@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.lightpaycoin.Lightpaycoin-Qt";
+        return @"io.stakecube.Stakecube-Qt";
     } else {
         return [self __bundleIdentifier];
     }
