@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>&amp;Sobre Stakecube² Core</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>&amp;Sobre StakeCubeCore</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>Sobre Stakecube² Core</translation>
+        <source>About StakeCubeCore</source>
+        <translation>Sobre StakeCubeCore</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Benvingut a Stakecube² Core.</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Benvingut a StakeCubeCore.</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1132,8 +1132,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Version %1</source>

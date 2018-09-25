@@ -471,7 +471,7 @@ void BlockExplorer::showEvent(QShowEvent*)
 
         if (!GetBoolArg("-txindex", false)) {
             QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (stakecube.conf).");
-            QMessageBox::warning(this, "Stakecube² Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QMessageBox::warning(this, "StakeCubeCore Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

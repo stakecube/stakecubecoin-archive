@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Stakecube² überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie StakeCubeCore überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Stakecube² empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie StakeCubeCore empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Stakecube²-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Stakecube² überweisen.</translation>
+        <source>These are your StakeCubeCore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre StakeCubeCore-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie StakeCubeCore überweisen.</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Stakecube²-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your StakeCubeCore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre StakeCubeCore-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer SCCs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine Stakecube² Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <translation>Gib eine StakeCubeCore Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Stakecube² Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>StakeCubeCore Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Stakecube² Adresse besitzt</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese StakeCubeCore Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Die Stakecube² Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Die StakeCubeCore Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Stakecube²-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen StakeCubeCore-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,12 +602,12 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>An eine Stakecube²-Adresse überweisen</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>An eine StakeCubeCore-Adresse überweisen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
@@ -622,24 +622,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>Über.Stakecube² Core</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>Über.StakeCubeCore</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
-        <translation>Zeigt Informationen über Stakecube² Core</translation>
+        <source>Show information about StakeCubeCore</source>
+        <translation>Zeigt Informationen über StakeCubeCore</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Konfiguration von Stakecube² verändern</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Konfiguration von StakeCubeCore verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer Stakecube²-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer StakeCubeCore-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Stakecube²-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten StakeCubeCore-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Öffne eine Stakecube²: URI or Zahlungsanfrage</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Öffne eine StakeCubeCore: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
-        <translation>Zeige die Stakecube²-Core Hilfe, um mögliche Stakecube² Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
+        <translation>Zeige die StakeCubeCore-Core Hilfe, um mögliche StakeCubeCore Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Stakecube² Core Client</translation>
+        <source>StakeCubeCore client</source>
+        <translation>StakeCubeCore Client</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1113,8 +1113,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Stakecube²-Adresse.</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige StakeCubeCore-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1159,16 +1159,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>Über Stakecube² Core</translation>
+        <source>About StakeCubeCore</source>
+        <translation>Über StakeCubeCore</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1214,16 +1214,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Willkommen zu Stakecube² Core.</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Willkommen zu StakeCubeCore.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Stakecube² Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Stakecube² Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where StakeCubeCore will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie StakeCubeCore starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Stakecube² Core will download and store a copy of the Stakecube² block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube² Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>StakeCubeCore will download and store a copy of the StakeCubeCore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>StakeCubeCore wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1234,8 +1234,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1372,12 +1372,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Stakecube² addresses after it matures.
-To Add: enter percentage to give and Stakecube² address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other StakeCubeCore addresses after it matures.
+To Add: enter percentage to give and StakeCubeCore address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Stakecube²-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die Stakecube²-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen StakeCubeCore-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die StakeCubeCore-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1705,8 +1705,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Stakecube² address (e.g. %1)</source>
-        <translation>Stakecube²-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a StakeCubeCore address (e.g. %1)</source>
+        <translation>StakeCubeCore-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2106,8 +2106,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Stakecube² address to send the payment to</source>
-        <translation>Stakecube²-Adresse, an die überwiesen werden soll</translation>
+        <source>The StakeCubeCore address to send the payment to</source>
+        <translation>StakeCubeCore-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2146,8 +2146,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Stakecube²: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube² network.</source>
-        <translation>Eine an die Stakecube²-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Stakecube²-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the StakeCubeCore: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the StakeCubeCore network.</source>
+        <translation>Eine an die StakeCubeCore-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das StakeCubeCore-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2173,8 +2173,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Stakecube² Core is shutting down...</source>
-        <translation>Stakecube² Core wird beendet...</translation>
+        <source>StakeCubeCore is shutting down...</source>
+        <translation>StakeCubeCore wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2188,8 +2188,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Stakecube² Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>StakeCubeCore Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2216,16 +2216,16 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Stakecube² Adresse besitzt</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese StakeCubeCore Adresse besitzt</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Die Stakecube² Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Die StakeCubeCore Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Stakecube²-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen StakeCubeCore-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2263,8 +2263,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2279,8 +2279,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Stakecube² Core developers</source>
-        <translation>Die Stakecube² Core Entwickler</translation>
+        <source>The StakeCubeCore developers</source>
+        <translation>Die StakeCubeCore Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2997,8 +2997,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Stakecube² Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Stakecube² Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart StakeCubeCore to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte StakeCubeCore neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

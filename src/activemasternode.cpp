@@ -8,7 +8,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 1000 Stakecube² input and register on the network
+// Bootup the Masternode, look for a 1000 StakeCubeCore input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

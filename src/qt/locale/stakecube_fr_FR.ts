@@ -152,8 +152,8 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
-        <translation>Stakecube² va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos SCCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>StakeCubeCore va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos SCCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -219,8 +219,8 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>L'adresse Stakecube² avec laquelle signer le message</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>L'adresse StakeCubeCore avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Stakecube²</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse StakeCubeCore</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>L'adresse Stakecube² avec laquelle le message a été signé</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>L'adresse StakeCubeCore avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Stakecube² renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse StakeCubeCore renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Envoyer des pièces à une adresse Stakecube²</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Envoyer des pièces à une adresse StakeCubeCore</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Modifier les options de configuration pour Stakecube²</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Modifier les options de configuration pour StakeCubeCore</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse Stakecube² pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse StakeCubeCore pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Stakecube² spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse StakeCubeCore spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Stakecube² valide</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse StakeCubeCore valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1461,8 +1461,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The Stakecube² address to send the payment to</source>
-        <translation>L'adresse Stakecube² à laquelle envoyer le paiement</translation>
+        <source>The StakeCubeCore address to send the payment to</source>
+        <translation>L'adresse StakeCubeCore à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1507,8 +1507,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>L'adresse Stakecube² avec laquelle signer le message</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>L'adresse StakeCubeCore avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1535,16 +1535,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Stakecube²</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse StakeCubeCore</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>L'adresse Stakecube² avec laquelle le message a été signé</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>L'adresse StakeCubeCore avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Stakecube² renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse StakeCubeCore renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

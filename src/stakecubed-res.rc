@@ -16,7 +16,7 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Stakecube²"
+            VALUE "CompanyName",        "StakeCubeCore"
             VALUE "FileDescription",    "stakecubed (OSS daemon/client for Stakecube)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "stakecubed"

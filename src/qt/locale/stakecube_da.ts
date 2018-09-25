@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your StakeCubeCore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your StakeCubeCore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -176,8 +176,8 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
-        <translation>Stakecube² vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>StakeCubeCore vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast den Stakecube² adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
+        <translation>Indtast den StakeCubeCore adresse De ønsker at kryptografere ved hjælp af BIP 38. Indtast et kodeord i den midterste boks. Klik på krypter for at generere den kryptograferede private nøgle.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Den Stakecube² adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Den StakeCubeCore adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Stakecube² adresse.</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne StakeCubeCore adresse.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Indtast den krypterede BIP 38 nøgle. Indtast kodeordet i den midterste boks. Klik på dekryptér for at generere den private nøgle. Når nøglen er dekrypteret vil klip på "importér adresse" overføre den private nøgle til tegnebogen.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Stakecube² adresse</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne StakeCubeCore adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Stakecube² adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige StakeCubeCore adresse.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² kerne</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore kerne</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Send mønter til en Stakecube² adresse</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Send mønter til en StakeCubeCore adresse</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
-        <translation>Anmod om betaling (genrerer QR kode og Stakecube² URL)</translation>
+        <translation>Anmod om betaling (genrerer QR kode og StakeCubeCore URL)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>&amp;Om Stakecube² kerne</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>&amp;Om StakeCubeCore kerne</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
-        <translation>Vis information om Stakecube² kerne</translation>
+        <source>Show information about StakeCubeCore</source>
+        <translation>Vis information om StakeCubeCore kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Ret konfigurationsindstillinger for Stakecube²</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Ret konfigurationsindstillinger for StakeCubeCore</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Underskriv beskeder med Deres Stakecube² adresser for at bekræfte at De ejer dem.</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Underskriv beskeder med Deres StakeCubeCore adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne Stakecube² adresse</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne StakeCubeCore adresse</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Åbn en Stakecube² URl eller betalingsanmodning</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Åbn en StakeCubeCore URl eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
-        <translation>Vis hjelpetekster fra Stakecube² kernen for at få en liste med mulige Stakecube² kommandolinie-startparametre</translation>
+        <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
+        <translation>Vis hjelpetekster fra StakeCubeCore kernen for at få en liste med mulige StakeCubeCore kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Stakecube² kerneklient</translation>
+        <source>StakeCubeCore client</source>
+        <translation>StakeCubeCore kerneklient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1114,8 +1114,8 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>Den indtastede adresse %1 er ikke en gyldig Stakecube² adresse</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>Den indtastede adresse %1 er ikke en gyldig StakeCubeCore adresse</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1160,16 +1160,16 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² kerne</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore kerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>om Stakecube² kerne</translation>
+        <source>About StakeCubeCore</source>
+        <translation>om StakeCubeCore kerne</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1215,16 +1215,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Velkommen til Stakecube² kerne</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Velkommen til StakeCubeCore kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Stakecube² Core will store its data.</source>
-        <translation>Da det er første gang programmet startes, kan De vælge hvor Stakecube² kernen skal lagre sine data</translation>
+        <source>As this is the first time the program is launched, you can choose where StakeCubeCore will store its data.</source>
+        <translation>Da det er første gang programmet startes, kan De vælge hvor StakeCubeCore kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Stakecube² Core will download and store a copy of the Stakecube² block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube² kernen vil nu hente og gemme en kopi af Stakecube² blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
+        <source>StakeCubeCore will download and store a copy of the StakeCubeCore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>StakeCubeCore kernen vil nu hente og gemme en kopi af StakeCubeCore blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1235,8 +1235,8 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² kerne</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore kerne</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1377,12 +1377,12 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Stakecube² addresses after it matures.
-To Add: enter percentage to give and Stakecube² address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other StakeCubeCore addresses after it matures.
+To Add: enter percentage to give and StakeCubeCore address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre Stakecube² adressater når den er tilstrækkelig stor. 
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den Stakecube² adresse som skal modtage via Multisendsystemet. 
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre StakeCubeCore adressater når den er tilstrækkelig stor. 
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den StakeCubeCore adresse som skal modtage via Multisendsystemet. 
 For at fjerne: Indtast adressen som skal slettes og klik på slet. 
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
@@ -1552,16 +1552,16 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Tilsløringskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne Stakecube² konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne StakeCubeCore konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne Stakecube² konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne StakeCubeCore konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne Stakecube² konfigurationsbillede.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne StakeCubeCore konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1622,8 +1622,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Hvis De slår "brug af ubekræftede penge tilbage" vil penge tilbage &lt;br/&gt; ikke kunne benyttes før transaktionen er bekræftet mindst en gang. &lt;br/&gt;Dette har også indflydelse på opgørelsen af saldoen.</translation>
     </message>
     <message>
-        <source>Automatically open the Stakecube² client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn Stakecube² klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
+        <source>Automatically open the StakeCubeCore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn StakeCubeCore klientporten på ruteren automatisk. Virker kun hvis UPnP er slået til i ruteren. </translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1642,12 +1642,12 @@ Kontroller adressen og prøv igen.</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically start Stakecube² after logging in to the system.</source>
-        <translation>Start Stakecube² automatisk, når der logges på systemet</translation>
+        <source>Automatically start StakeCubeCore after logging in to the system.</source>
+        <translation>Start StakeCubeCore automatisk, når der logges på systemet</translation>
     </message>
     <message>
-        <source>&amp;Start Stakecube² on system login</source>
-        <translation>&amp;start Stakecube² når der logges på systemet</translation>
+        <source>&amp;Start StakeCubeCore on system login</source>
+        <translation>&amp;start StakeCubeCore når der logges på systemet</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1662,8 +1662,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>når dette antal er nået slås tilsløringsfunktonen fra. </translation>
     </message>
     <message>
-        <source>Amount of Stakecube² to keep anonymized</source>
-        <translation>Antallet af Stakecube² som skal holdes tilslørede</translation>
+        <source>Amount of StakeCubeCore to keep anonymized</source>
+        <translation>Antallet af StakeCubeCore som skal holdes tilslørede</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1690,8 +1690,8 @@ Kontroller adressen og prøv igen.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube².</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang Stakecube² klienten startes</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StakeCubeCore.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang StakeCubeCore klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1704,8 +1704,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Stakecube² network through a SOCKS5 proxy.</source>
-        <translation>Tilslut Stakecube² netværket gennem en SOCKS5 PROXY</translation>
+        <source>Connect to the StakeCubeCore network through a SOCKS5 proxy.</source>
+        <translation>Tilslut StakeCubeCore netværket gennem en SOCKS5 PROXY</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Saldi</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube² network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med Stakecube² netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StakeCubeCore network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste informationer kan være uddaterede. Deres tegnebog synkronisere automatism med StakeCubeCore netværket så snart en forbindelse er etalbleret, men denne proces er ikke færdiggjort endnu. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -2060,10 +2060,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Cannot start stakecube: click-to-pay handler</source>
-        <translation>Kan ikke starte Stakecube² "klik for at betale" systemet</translation>
+        <translation>Kan ikke starte StakeCubeCore "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Stakecube² address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid StakeCubeCore address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -2149,8 +2149,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a Stakecube² address (e.g. %1)</source>
-        <translation>Indtast en Stakecube² adresse (F.eks. %1)</translation>
+        <source>Enter a StakeCubeCore address (e.g. %1)</source>
+        <translation>Indtast en StakeCubeCore adresse (F.eks. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2283,8 +2283,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Stakecube² debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Stakecube² debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
+        <source>Open the StakeCubeCore debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn StakeCubeCore debug logfilen fra den aktuelle datamappe. Det kan godt tage lidt tid hvis filen er meget stor.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2451,8 +2451,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Ud:</translation>
     </message>
     <message>
-        <source>Welcome to the Stakecube² RPC console.</source>
-        <translation>Velkommen til Stakecube² RPC konsollet</translation>
+        <source>Welcome to the StakeCubeCore RPC console.</source>
+        <translation>Velkommen til StakeCubeCore RPC konsollet</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2522,12 +2522,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube² network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Stakecube² netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the StakeCubeCore network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på StakeCubeCore netværket.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube² network.</source>
-        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på Stakecube² netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the StakeCubeCore network.</source>
+        <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. &lt;br&gt;Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på StakeCubeCore netværket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2815,7 +2815,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uSCCs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uSCC i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uSCCs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube² transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for StakeCubeCore transactions than the network can process.</source>
         <translation>Betaling af mindste transaktionsgebyr vil være fint så længe der er færre transaktioner end der er plads til i blokkene. &lt;br /&gt; Men opmærksomheden henledes på, at det kan resultere i en transaktion der aldrig bliver bekræftet i det øjeblik der er større behov for transaktioner end netværket har plads til. </translation>
     </message>
     <message>
@@ -2919,8 +2919,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Anonyme saldi</translation>
     </message>
     <message>
-        <source>Warning: Invalid Stakecube² address</source>
-        <translation>Advarsel! Ugyldig Stakecube² adresse</translation>
+        <source>Warning: Invalid StakeCubeCore address</source>
+        <translation>Advarsel! Ugyldig StakeCubeCore adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3026,8 +3026,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The Stakecube² address to send the payment to</source>
-        <translation>Stakecube² adressen, som betalingen skal sendes til</translation>
+        <source>The StakeCubeCore address to send the payment to</source>
+        <translation>StakeCubeCore adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3066,8 +3066,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the Stakecube²: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube² network.</source>
-        <translation>En besked, der var vedhæftet til Stakecube²: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the StakeCubeCore: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the StakeCubeCore network.</source>
+        <translation>En besked, der var vedhæftet til StakeCubeCore: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3093,8 +3093,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Stakecube² Core is shutting down...</source>
-        <translation>Stakecube² kernen lukker ned</translation>
+        <source>StakeCubeCore is shutting down...</source>
+        <translation>StakeCubeCore kernen lukker ned</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3116,8 +3116,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Den Stakecube² adresse, der skal bruges til at underskrive beskeden med.</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Den StakeCubeCore adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3148,16 +3148,16 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Underskriv beskeden for at bevise, at De ejer denne Stakecube² adresse.</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Underskriv beskeden for at bevise, at De ejer denne StakeCubeCore adresse.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Beskeden er underskrevet med denne Stakecube² adresse</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Beskeden er underskrevet med denne StakeCubeCore adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige Stakecube² adresse.</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige StakeCubeCore adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3243,8 +3243,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² kerne</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore kerne</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3259,8 +3259,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Stakecube² Core developers</source>
-        <translation>Stakecube² "core" udviklerne</translation>
+        <source>The StakeCubeCore developers</source>
+        <translation>StakeCubeCore "core" udviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3861,8 +3861,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Stakecube² Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Stakecube² core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. StakeCubeCore is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. StakeCubeCore kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3881,8 +3881,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
     </message>
     <message>
-        <source>Disable all Stakecube² specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle Stakecube² funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all StakeCubeCore specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle StakeCubeCore funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3983,7 +3983,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere Stakecube²</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere StakeCubeCore</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -3991,7 +3991,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Tilfør tilsløring likviditet  ved at tilføje flere Stakecube² løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
+        <translation>Tilfør tilsløring likviditet  ved at tilføje flere StakeCubeCore løbende (0-100, default:%u, 1=meget hyppigt, høje gebyrer, 100=sjældent, lave gebyrer)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
@@ -4043,7 +4043,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Stakecube² Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "StakeCubeCore Alert" admin@foo.com
 </source>
         <translation>For at bruge stakecubed eller -server muligheden sammen med stakecube-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
@@ -4054,12 +4054,12 @@ rpcpasswrd=%s
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
 Hvis filen ikke eksisterer, opret den med sikkerhedsindstillingen - ejer kun læserettigheder tilladelsen.
 Det anbefales tillige at vælge alertnotify til for at blive orienteret om eventuelle problemer.
-For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@administrator.dk
+For eksempel: alertnotify=Echo %% | mail - s "StakeCubeCore ALARM!" e-mail@administrator.dk
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Stakecube² Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. Stakecube² kører sandsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. StakeCubeCore is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. StakeCubeCore kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4086,8 +4086,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@adminis
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Stakecube² Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Stakecube² core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong StakeCubeCore will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil StakeCubeCore ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4234,8 +4234,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@adminis
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Stakecube² Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Stakecube² Core Developers</translation>
+        <source>Copyright (C) 2015-%i The StakeCubeCore Developers</source>
+        <translation>Copyright (C) 2015-%i The StakeCubeCore Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4306,8 +4306,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@adminis
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube² Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Stakecube² core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of StakeCubeCore</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af StakeCubeCore</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4418,8 +4418,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@adminis
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Stakecube² Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Stakecube² core lukker ned. </translation>
+        <source>Initialization sanity check failed. StakeCubeCore is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. StakeCubeCore lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4994,8 +4994,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Stakecube² ALARM!" e-mail@adminis
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Stakecube² Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Stakecube² core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart StakeCubeCore to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart StakeCubeCore for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

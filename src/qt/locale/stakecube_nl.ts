@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Stakecube²adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your StakeCubeCore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw StakeCubeCoreadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Stakecube²adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your StakeCubeCore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw StakeCubeCoreadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
-        <translation>Stakecube² zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw SCCs stelen.</translation>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>StakeCubeCore zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw SCCs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -236,15 +236,15 @@
     </message>
     <message>
         <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een Stakecube² adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <translation>Voer een StakeCubeCore adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Het Stakecube² adres om het bericht met te ondertekenen</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Het StakeCubeCore adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Stakecube² adres bezit</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het StakeCubeCore adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Het Stakecube² adres waarmee het bericht was ondertekend</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Het StakeCubeCore adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Stakecube² adres</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde StakeCubeCore adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Kern</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore Kern</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Verstuur munten naar een Stakecube² adres</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Verstuur munten naar een StakeCubeCore adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en Stakecube²: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR-codes en StakeCubeCore: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>&amp;Over Stakecube² Kern</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>&amp;Over StakeCubeCore Kern</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
-        <translation>Toon informatie over Stakecube² Kern</translation>
+        <source>Show information about StakeCubeCore</source>
+        <translation>Toon informatie over StakeCubeCore Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Wijzig Stakecube² configuratie opties</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Wijzig StakeCubeCore configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Stakecube² adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw StakeCubeCore adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Stakecube² adressen</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde StakeCubeCore adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Open een Stakecube²: URI of betaalverzoek</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Open een StakeCubeCore: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Stakecube² Core client</translation>
+        <source>StakeCubeCore client</source>
+        <translation>StakeCubeCore client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Stakecube² network</source>
-        <translation><numerusform>%n actieve connectie(s) naar Stakecube² netwerk</numerusform><numerusform>%n actieve connectie(s) naar Stakecube² netwerk</numerusform></translation>
+        <source>%n active connection(s) to StakeCubeCore network</source>
+        <translation><numerusform>%n actieve connectie(s) naar StakeCubeCore netwerk</numerusform><numerusform>%n actieve connectie(s) naar StakeCubeCore netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1010,8 +1010,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig Stakecube² adres.</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig StakeCubeCore adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1040,16 +1040,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Kern</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>Over Stakecube² Core</translation>
+        <source>About StakeCubeCore</source>
+        <translation>Over StakeCubeCore</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1079,16 +1079,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Welkom bij Stakecube² Core</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Welkom bij StakeCubeCore</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Kern</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1300,24 +1300,24 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Stakecube² after logging in to the system.</source>
-        <translation>Stakecube² automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start StakeCubeCore after logging in to the system.</source>
+        <translation>StakeCubeCore automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start Stakecube² on system login</source>
-        <translation>&amp;Stakecube² starten bij systeemlogin</translation>
+        <source>&amp;Start StakeCubeCore on system login</source>
+        <translation>&amp;StakeCubeCore starten bij systeemlogin</translation>
     </message>
     <message>
-        <source>Amount of Stakecube² to keep anonymized</source>
-        <translation>Hoeveelheid Stakecube² anoniem te houden</translation>
+        <source>Amount of StakeCubeCore to keep anonymized</source>
+        <translation>Hoeveelheid StakeCubeCore anoniem te houden</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube².</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Stakecube².</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StakeCubeCore.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van StakeCubeCore.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1512,8 +1512,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a Stakecube² address (e.g. %1)</source>
-        <translation>Voer een Stakecube² adres in (b.v. %1)</translation>
+        <source>Enter a StakeCubeCore address (e.g. %1)</source>
+        <translation>Voer een StakeCubeCore adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1702,8 +1702,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the Stakecube² RPC console.</source>
-        <translation>Welkom bij de Stakecube² RPC console.</translation>
+        <source>Welcome to the StakeCubeCore RPC console.</source>
+        <translation>Welkom bij de StakeCubeCore RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2024,8 +2024,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Stakecube² Core is shutting down...</source>
-        <translation>Stakecube² Core is aan het afsluiten...</translation>
+        <source>StakeCubeCore is shutting down...</source>
+        <translation>StakeCubeCore is aan het afsluiten...</translation>
     </message>
     </context>
 <context>
@@ -2035,8 +2035,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Het Stakecube² adres om het bericht met te ondertekenen</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Het StakeCubeCore adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2067,16 +2067,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Stakecube² adres bezit</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het StakeCubeCore adres bezit</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Het Stakecube² adres waarmee het bericht was ondertekend</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Het StakeCubeCore adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Stakecube² adres</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde StakeCubeCore adres</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2134,8 +2134,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Kern</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2150,8 +2150,8 @@ MultiSend: %1</translation>
         <translation>De Dash Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The Stakecube² Core developers</source>
-        <translation>De Stakecube² Core ontwikkelaars</translation>
+        <source>The StakeCubeCore developers</source>
+        <translation>De StakeCubeCore ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2504,8 +2504,8 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Stakecube² Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Stakecube² Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The StakeCubeCore Developers</source>
+        <translation>Copyright (C) 2015-%i The StakeCubeCore Ontwikkelaars</translation>
     </message>
     <message>
         <source>Error</source>

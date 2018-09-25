@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Stakecube² adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your StakeCubeCore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše StakeCubeCore adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Stakecube² adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your StakeCubeCore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše StakeCubeCore adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
-        <translation>Stakecube² se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše SCCy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>StakeCubeCore se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše SCCy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -240,15 +240,15 @@
     </message>
     <message>
         <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Stakecube² adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <translation>Zadejte StakeCubeCore adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Stakecube² adresa pro podepsání zprávy</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>StakeCubeCore adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Stakecube² adresu</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto StakeCubeCore adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Stakecube² adresa zprávy byla podpsána</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>StakeCubeCore adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Stakecube² adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou StakeCubeCore adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Odeslat platbuna Stakecube² adresu</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Odeslat platbuna StakeCubeCore adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>&amp;O Stakecube² Core</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>&amp;O StakeCubeCore</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
-        <translation>Zobraz informace o Stakecube² Core</translation>
+        <source>Show information about StakeCubeCore</source>
+        <translation>Zobraz informace o StakeCubeCore</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Upravit možnosti konfigurace pro Stakecube²</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Upravit možnosti konfigurace pro StakeCubeCore</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Stakecube² adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší StakeCubeCore adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Stakecube² adresami</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými StakeCubeCore adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Otevřít Stakecube²: URI nebo platební žádost</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Otevřít StakeCubeCore: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
-        <translation>Zobrazit Stakecube² Core pomocnou zpráv pro získání seznamu možných parametrů Stakecube² pro příkazy do příkazové řádky</translation>
+        <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
+        <translation>Zobrazit StakeCubeCore pomocnou zpráv pro získání seznamu možných parametrů StakeCubeCore pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Stakecube² Core klient</translation>
+        <source>StakeCubeCore client</source>
+        <translation>StakeCubeCore klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1070,8 +1070,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>Zadaná adresa "%1" není validní Stakecube² adresa.</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>Zadaná adresa "%1" není validní StakeCubeCore adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1116,12 +1116,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>O Stakecube² Core</translation>
+        <source>About StakeCubeCore</source>
+        <translation>O StakeCubeCore</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1155,16 +1155,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Vítejte v Stakecube² Core.</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Vítejte v StakeCubeCore.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Stakecube² Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Stakecube² Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where StakeCubeCore will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude StakeCubeCore ukládat svá data.</translation>
     </message>
     <message>
-        <source>Stakecube² Core will download and store a copy of the Stakecube² block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube² Core stáhne a uloží kopii Stakecube² blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>StakeCubeCore will download and store a copy of the StakeCubeCore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>StakeCubeCore stáhne a uloží kopii StakeCubeCore blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1175,8 +1175,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1524,16 +1524,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Stakecube² after logging in to the system.</source>
-        <translation>Automaticky spustit Stakecube² po přihlášení do systému</translation>
+        <source>Automatically start StakeCubeCore after logging in to the system.</source>
+        <translation>Automaticky spustit StakeCubeCore po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Stakecube² on system login</source>
-        <translation>&amp;Spusti Stakecube² při přihlášení do systému</translation>
+        <source>&amp;Start StakeCubeCore on system login</source>
+        <translation>&amp;Spusti StakeCubeCore při přihlášení do systému</translation>
     </message>
     <message>
-        <source>Amount of Stakecube² to keep anonymized</source>
-        <translation>Počet Stakecube² pro anonymní držení</translation>
+        <source>Amount of StakeCubeCore to keep anonymized</source>
+        <translation>Počet StakeCubeCore pro anonymní držení</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2199,8 +2199,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Stakecube² adresa pro podepsání zprávy</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>StakeCubeCore adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2227,16 +2227,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Stakecube² adresu</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto StakeCubeCore adresu</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Stakecube² adresa zprávy byla podpsána</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>StakeCubeCore adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Stakecube² adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou StakeCubeCore adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2278,8 +2278,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     </context>
 <context>

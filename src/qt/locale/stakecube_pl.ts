@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Stakecube² jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres StakeCubeCore jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
+        <source>StakeCubeCore</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Wyślij monety do adresu Stakecube²</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Wyślij monety do adresu StakeCubeCore</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
+        <source>&amp;About StakeCubeCore</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
+        <source>Show information about StakeCubeCore</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Modyfikuj opcje konfiguracji Stakecube²</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Modyfikuj opcje konfiguracji StakeCubeCore</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Stakecube², by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami StakeCubeCore, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Stakecube²</translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu StakeCubeCore</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Otwórz Stakecube²: URI i żądanie zapłaty</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Otwórz StakeCubeCore: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Stakecube², aby dostać listę możliwych opcji Stakecube² command-line</translation>
+        <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia StakeCubeCore, aby dostać listę możliwych opcji StakeCubeCore command-line</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Rdzeń Stakecube² klient</translation>
+        <source>StakeCubeCore client</source>
+        <translation>Rdzeń StakeCubeCore klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -916,7 +916,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Stakecube² Core</source>
+        <source>StakeCubeCore</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -931,7 +931,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
+        <source>StakeCubeCore</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     <message>
@@ -1192,16 +1192,16 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Stakecube² after logging in to the system.</source>
-        <translation>Automatycznie uruchom Stakecube² po zalogowaniu do systemu</translation>
+        <source>Automatically start StakeCubeCore after logging in to the system.</source>
+        <translation>Automatycznie uruchom StakeCubeCore po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Stakecube² on system login</source>
-        <translation>&amp;Uruchom Stakecube² podczas logowania do systemu</translation>
+        <source>&amp;Start StakeCubeCore on system login</source>
+        <translation>&amp;Uruchom StakeCubeCore podczas logowania do systemu</translation>
     </message>
     <message>
-        <source>Amount of Stakecube² to keep anonymized</source>
-        <translation>Liczba Stakecube² do anonimizacji</translation>
+        <source>Amount of StakeCubeCore to keep anonymized</source>
+        <translation>Liczba StakeCubeCore do anonimizacji</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1220,8 +1220,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube².</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Stakecube²</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StakeCubeCore.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie StakeCubeCore</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1230,8 +1230,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 https://www.transifex.com/stakecube-project/stakecube-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Stakecube² network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Stakecube² poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the StakeCubeCore network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią StakeCubeCore poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1458,8 +1458,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations </tra
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Stakecube² address (e.g. %1)</source>
-        <translation>Wprowadź adres Stakecube² (np. %1)</translation>
+        <source>Enter a StakeCubeCore address (e.g. %1)</source>
+        <translation>Wprowadź adres StakeCubeCore (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1897,8 +1897,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations </tra
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Stakecube² jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres StakeCubeCore jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1932,7 +1932,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations </tra
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
+        <source>StakeCubeCore</source>
         <translation>&amp;Rdzeń bitcoin</translation>
     </message>
     </context>

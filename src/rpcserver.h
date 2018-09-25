@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * Stakecube² RPC command dispatcher.
+ * StakeCubeCore RPC command dispatcher.
  */
 class CRPCTable
 {

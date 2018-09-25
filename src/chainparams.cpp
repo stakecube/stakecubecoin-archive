@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 stakecube² developers
+// Copyright (c) 2018 StakeCubeCore developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -193,8 +193,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Stakecube²: 1 day
-        nTargetSpacing = 1 * 60;  // Stakecube²: 1 minute
+        nTargetTimespan = 1 * 60; // StakeCubeCore: 1 day
+        nTargetSpacing = 1 * 60;  // StakeCubeCore: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -268,8 +268,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Stakecube²: 1 day
-        nTargetSpacing = 1 * 60;        // Stakecube²: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // StakeCubeCore: 1 day
+        nTargetSpacing = 1 * 60;        // StakeCubeCore: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1524873600;
         genesis.nBits = 0x207fffff;

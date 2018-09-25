@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши Stakecube²-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your StakeCubeCore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши StakeCubeCore-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your Stakecube² addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши Stakecube²-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your StakeCubeCore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши StakeCubeCore-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Stakecube² will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
-        <translation>Stakecube² сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Stakecube² от кражи с использованием вредоносного ПО.</translation>
+        <source>StakeCubeCore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>StakeCubeCore сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши StakeCubeCore от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -236,15 +236,15 @@
     </message>
     <message>
         <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите Stakecube² адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <translation>Введите StakeCubeCore адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Адрес Stakecube² для подписи сообщения с помощью</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Адрес StakeCubeCore для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Stakecube²</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес StakeCubeCore</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Адрес Stakecube², которым подписано сообщение</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Адрес StakeCubeCore, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Stakecube² адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным StakeCubeCore адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
-        <source>Send coins to a Stakecube² address</source>
-        <translation>Отправить монеты на Stakecube² адрес</translation>
+        <source>Send coins to a StakeCubeCore address</source>
+        <translation>Отправить монеты на StakeCubeCore адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and stakecube: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и Stakecube²: URI)</translation>
+        <translation>Запросить платежи (генерирует QR-код и StakeCubeCore: URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About Stakecube² Core</source>
-        <translation>&amp;О Stakecube² Core</translation>
+        <source>&amp;About StakeCubeCore</source>
+        <translation>&amp;О StakeCubeCore</translation>
     </message>
     <message>
-        <source>Show information about Stakecube² Core</source>
-        <translation>Показать информацию о Stakecube² Core</translation>
+        <source>Show information about StakeCubeCore</source>
+        <translation>Показать информацию о StakeCubeCore</translation>
     </message>
     <message>
-        <source>Modify configuration options for Stakecube²</source>
-        <translation>Изменение параметров конфигурации Stakecube²</translation>
+        <source>Modify configuration options for StakeCubeCore</source>
+        <translation>Изменение параметров конфигурации StakeCubeCore</translation>
     </message>
     <message>
-        <source>Sign messages with your Stakecube² addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими Stakecube² адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your StakeCubeCore addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими StakeCubeCore адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Stakecube² addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным Stakecube² адресом </translation>
+        <source>Verify messages to ensure they were signed with specified StakeCubeCore addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным StakeCubeCore адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a Stakecube²: URI or payment request</source>
-        <translation>Открыть Stakecube²: URI или запрос платежа</translation>
+        <source>Open a StakeCubeCore: URI or payment request</source>
+        <translation>Открыть StakeCubeCore: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,16 +674,16 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the Stakecube² Core help message to get a list with possible Stakecube² command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Stakecube²</translation>
+        <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды StakeCubeCore</translation>
     </message>
     <message>
-        <source>Stakecube² Core client</source>
-        <translation>Клиент Stakecube² Core</translation>
+        <source>StakeCubeCore client</source>
+        <translation>Клиент StakeCubeCore</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Stakecube² network</source>
-        <translation><numerusform>%n активное подключение к сети Stakecube²</numerusform><numerusform>%n активных подключений к сети Stakecube²</numerusform><numerusform>%n активных подключений к сети Stakecube²</numerusform><numerusform>%n активных подключений к сети Stakecube²</numerusform></translation>
+        <source>%n active connection(s) to StakeCubeCore network</source>
+        <translation><numerusform>%n активное подключение к сети StakeCubeCore</numerusform><numerusform>%n активных подключений к сети StakeCubeCore</numerusform><numerusform>%n активных подключений к сети StakeCubeCore</numerusform><numerusform>%n активных подключений к сети StakeCubeCore</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1138,8 +1138,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Stakecube² address.</source>
-        <translation>Введенный адрес "%1" не является Stakecube² адресом.</translation>
+        <source>The entered address "%1" is not a valid StakeCubeCore address.</source>
+        <translation>Введенный адрес "%1" не является StakeCubeCore адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,16 +1184,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Stakecube² Core</source>
-        <translation>О Stakecube² Core</translation>
+        <source>About StakeCubeCore</source>
+        <translation>О StakeCubeCore</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Stakecube² Core.</source>
-        <translation>Добро пожаловать в Stakecube² Core.</translation>
+        <source>Welcome to StakeCubeCore.</source>
+        <translation>Добро пожаловать в StakeCubeCore.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Stakecube² Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Stakecube² Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where StakeCubeCore will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные StakeCubeCore.</translation>
     </message>
     <message>
-        <source>Stakecube² Core will download and store a copy of the Stakecube² block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube² Core загрузит и сохранит копию цепочки блоков Stakecube². Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>StakeCubeCore will download and store a copy of the StakeCubeCore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>StakeCubeCore загрузит и сохранит копию цепочки блоков StakeCubeCore. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,12 +1401,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Stakecube² addresses after it matures.
-To Add: enter percentage to give and Stakecube² address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other StakeCubeCore addresses after it matures.
+To Add: enter percentage to give and StakeCubeCore address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие Stakecube² адреса.
-Для добавления: введите передаваемый процент и Stakecube² адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие StakeCubeCore адреса.
+Для добавления: введите передаваемый процент и StakeCubeCore адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1576,16 +1576,16 @@ Please check the address and try again.</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки Stakecube².</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки StakeCubeCore.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки Stakecube².</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки StakeCubeCore.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Stakecube²'s configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки Stakecube².</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening StakeCubeCore's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки StakeCubeCore.</translation>
     </message>
 </context>
 <context>
@@ -1646,8 +1646,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the Stakecube² client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт Stakecube² через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the StakeCubeCore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт StakeCubeCore через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1666,12 +1666,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start Stakecube² after logging in to the system.</source>
-        <translation>Автоматически запускать Stakecube² после входа в систему.</translation>
+        <source>Automatically start StakeCubeCore after logging in to the system.</source>
+        <translation>Автоматически запускать StakeCubeCore после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start Stakecube² on system login</source>
-        <translation>&amp;Запускать Stakecube² при входе в систему</translation>
+        <source>&amp;Start StakeCubeCore on system login</source>
+        <translation>&amp;Запускать StakeCubeCore при входе в систему</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1686,8 +1686,8 @@ Please check the address and try again.</source>
         <translation>При достижении этого значения Перемешивание будет отключено.</translation>
     </message>
     <message>
-        <source>Amount of Stakecube² to keep anonymized</source>
-        <translation>Количество Stakecube², держащихся анонимизированными</translation>
+        <source>Amount of StakeCubeCore to keep anonymized</source>
+        <translation>Количество StakeCubeCore, держащихся анонимизированными</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1714,8 +1714,8 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube².</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска Stakecube².</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting StakeCubeCore.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска StakeCubeCore.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1728,8 +1728,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Stakecube² network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети Stakecube² через SOCKS5 прокси.</translation>
+        <source>Connect to the StakeCubeCore network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети StakeCubeCore через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Балансы</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube² network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Stakecube² после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the StakeCubeCore network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью StakeCubeCore после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -2084,8 +2084,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Не удалось запустить stakecube: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Stakecube² address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный Stakecube² адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid StakeCubeCore address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный StakeCubeCore адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2170,8 +2170,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a Stakecube² address (e.g. %1)</source>
-        <translation>Введите адрес Stakecube² (например %1)</translation>
+        <source>Enter a StakeCubeCore address (e.g. %1)</source>
+        <translation>Введите адрес StakeCubeCore (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2304,8 +2304,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Stakecube² debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки Stakecube². Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the StakeCubeCore debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки StakeCubeCore. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2465,8 +2465,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the Stakecube² RPC console.</source>
-        <translation>Добро пожаловать в окружение Stakecube² RPC.</translation>
+        <source>Welcome to the StakeCubeCore RPC console.</source>
+        <translation>Добро пожаловать в окружение StakeCubeCore RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2769,8 +2769,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid Stakecube² address</source>
-        <translation>Предупреждение: неправильный Stakecube² адрес</translation>
+        <source>Warning: Invalid StakeCubeCore address</source>
+        <translation>Предупреждение: неправильный StakeCubeCore адрес</translation>
     </message>
     <message>
         <source>and SwiftTX</source>
@@ -2823,8 +2823,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Stakecube² Core is shutting down...</source>
-        <translation>Stakecube² Core выключается...</translation>
+        <source>StakeCubeCore is shutting down...</source>
+        <translation>StakeCubeCore выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2834,8 +2834,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Stakecube² address to sign the message with</source>
-        <translation>Адрес Stakecube² для подписи сообщения с помощью</translation>
+        <source>The StakeCubeCore address to sign the message with</source>
+        <translation>Адрес StakeCubeCore для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2858,16 +2858,16 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Stakecube² address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Stakecube²</translation>
+        <source>Sign the message to prove you own this StakeCubeCore address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес StakeCubeCore</translation>
     </message>
     <message>
-        <source>The Stakecube² address the message was signed with</source>
-        <translation>Адрес Stakecube², которым подписано сообщение</translation>
+        <source>The StakeCubeCore address the message was signed with</source>
+        <translation>Адрес StakeCubeCore, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Stakecube² address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Stakecube² адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified StakeCubeCore address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным StakeCubeCore адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2913,8 +2913,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Stakecube² Core</source>
-        <translation>Stakecube² Core</translation>
+        <source>StakeCubeCore</source>
+        <translation>StakeCubeCore</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2929,8 +2929,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The Stakecube² Core developers</source>
-        <translation>Разработчики Stakecube² Core</translation>
+        <source>The StakeCubeCore developers</source>
+        <translation>Разработчики StakeCubeCore</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3215,8 +3215,8 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Stakecube² Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики Stakecube² Core</translation>
+        <source>Copyright (C) 2015-%i The StakeCubeCore Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики StakeCubeCore</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
