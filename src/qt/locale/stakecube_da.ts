@@ -4118,8 +4118,8 @@ For eksempel: alertnotify=Echo %% | mail - s "StakeCubeCore ALARM!" e-mail@admin
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(39797 could be used only on mainnet)</source>
-        <translation>(39797 kunne kun bruges på hovednettet)</translation>
+        <source>(40000 could be used only on mainnet)</source>
+        <translation>(40000 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4130,8 +4130,8 @@ For eksempel: alertnotify=Echo %% | mail - s "StakeCubeCore ALARM!" e-mail@admin
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 39797 for mainnet)</source>
-        <translation>(skal være 39797 for hovednettet)</translation>
+        <source>(must be 40000 for mainnet)</source>
+        <translation>(skal være 40000 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

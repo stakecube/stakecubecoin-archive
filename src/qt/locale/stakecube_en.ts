@@ -5326,8 +5326,8 @@ for example: alertnotify=echo %%s | mail -s &quot;StakeCubeCore Alert&quot; admi
     </message>
     <message>
         <location line="+3"/>
-        <source>(39797 could be used only on mainnet)</source>
-        <translation type="unfinished">(39797 could be used only on mainnet)</translation>
+        <source>(40000 could be used only on mainnet)</source>
+        <translation type="unfinished">(40000 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5341,7 +5341,7 @@ for example: alertnotify=echo %%s | mail -s &quot;StakeCubeCore Alert&quot; admi
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 39797 for mainnet)</source>
+        <source>(must be 40000 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
