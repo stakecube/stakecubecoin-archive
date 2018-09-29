@@ -357,6 +357,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
+    wwwAction =  new QAction(QIcon(":/icons/bitcoin"), tr("&Stakecube Website"), this);
+    wwwAction->setToolTip(tr("Visit the Stakecube website"));
     aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About StakeCubeCore"), this);
     aboutAction->setStatusTip(tr("Show information about StakeCubeCore"));
     aboutAction->setMenuRole(QAction::AboutRole);
@@ -426,6 +428,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
+    connect(wwwAction, SIGNAL(triggered()), this, SLOT(wwwClicked()));
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
@@ -706,6 +709,11 @@ void BitcoinGUI::aboutClicked()
 
     HelpMessageDialog dlg(this, true);
     dlg.exec();
+}
+
+void BitcoinGUI::wwwClicked()
+{
+    QDesktopServices::openUrl(QUrl("https://stakecube.net/"));
 }
 
 void BitcoinGUI::showHelpMessageClicked()
