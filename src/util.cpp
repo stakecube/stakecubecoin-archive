@@ -439,7 +439,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "StakeCubeCore";
 #else
     // Unix
-    return pathRet / ".stakecube";
+    return pathRet / ".StakeCubeCore";
 #endif
 #endif
 }

@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("000003cc38b6803dd8b4a197e97ae7f0ee0bd492b72e700af20f1c966eb4d3f8"));
+    (0, uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1537550000,
+    1538198000,
     0,
     100
 };
@@ -79,10 +79,9 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     0,
     100};
 
-//CBlock(hash=000003cc38b6803dd8b4a197e97ae7f0ee0bd492b72e700af20f1c966eb4d3f8, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, 
-//hashMerkleRoot=04794158543d9f9c1dc4104a5005cbf832003d76dda9376f46afc0281ccea336, nTime=1537550000, nBits=1e0ffff0, nNonce=732090, vtx=1)
-//  CTransaction(hash=0479415854, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-//    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104197374616b656375626573717561726564203039303932303138)
+// CBlock(hash=000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2, nTime=1538198000, nBits=1e0ffff0, nNonce=721427, vtx=1)
+//  CTransaction(hash=81791231fe, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+//    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104147374616b65637562654d4e203239303932303138)
 //    CTxOut(nValue=0.00000000, scriptPubKey=0457c56ed69a1f42398804504fcab8)
 
 class CMainParams : public CChainParams
@@ -119,7 +118,7 @@ public:
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
 
-        const char* pszTimestamp = "stakecubesquared 09092018";
+        const char* pszTimestamp = "stakecubeMN 29092018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -130,13 +129,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1537550000;
+        genesis.nTime = 1538198000;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 732090;
+        genesis.nNonce = 721427;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("000003cc38b6803dd8b4a197e97ae7f0ee0bd492b72e700af20f1c966eb4d3f8"));
-        assert(genesis.hashMerkleRoot == uint256("04794158543d9f9c1dc4104a5005cbf832003d76dda9376f46afc0281ccea336"));
+        assert(hashGenesisBlock == uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
+        assert(genesis.hashMerkleRoot == uint256("81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2"));
 
         // vSeeds.push_back(CDNSSeedData("", ""));
 
