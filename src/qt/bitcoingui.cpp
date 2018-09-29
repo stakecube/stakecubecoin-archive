@@ -49,6 +49,7 @@
 #include <QMimeData>
 #include <QProgressBar>
 #include <QProgressDialog>
+#include <QDesktopServices>
 #include <QSettings>
 #include <QStackedWidget>
 #include <QStatusBar>
@@ -489,6 +490,8 @@ void BitcoinGUI::createMenuBar()
 
     if (walletFrame) {
         QMenu* tools = appMenuBar->addMenu(tr("&Tools"));
+               tools->addAction(wwwAction);
+               tools->addSeparator();
         tools->addAction(openInfoAction);
         tools->addAction(openRPCConsoleAction);
         tools->addAction(openNetworkAction);
