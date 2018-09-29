@@ -1,37 +1,60 @@
-Stakecube2 (fork of PIVX) integration/staging repository
-========================================================
+Stakecube [SCC] integration/staging tree
+========================================
 
-Quick installation of the Stakecube daemon under linux. See detailed instructions there [build-unix.md](build-unix.md)
 
-Installation of libraries (using root user):
+Brief Specifications
+--------------------
 
-    add-apt-repository ppa:bitcoin/bitcoin -y
-    apt-get update
-    apt-get install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-    apt-get install -y libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
-    apt-get install -y libdb4.8-dev libdb4.8++-dev
+* Coin Name:       StakeCubeCoin
+* Coin Ticker:     SCC
+* Consensus:       MN/PoS
+* MN Collateral:   1000 SCC
+* Block reward:    4-24 SCC
+* MN reward:       70-90%
+* PoS reward:      10-30%
+* Block spacing:   120 Seconds
+* Premine:         250000 SCC (1.4%)
+* Total supply:    18 Million
+* RPC port:        39999
+* P2P/MN port:     40000
 
-Cloning the repository and compiling (use any user with the sudo group):
 
-    cd Stakecube
-    ./autogen.sh
-    ./configure
-    sudo make install
-    cd src
-    strip stakecubed
-    strip stakecube-cli
-    strip stakecube-tx
-    cd ..
+What is Stakecube (SCC) ?
+-------------------------
 
-Running the daemon:
+Stakecube is a fork of the PIVX codebase; which uses a combination of Masternodes with PoS (Proof of stake) to secure the cryptocurrency network.
 
-    stakecubed 
+The first consequtive blocks contain premine; and additionally the coins allocated for the user coin swap, destined for holders of the previous PoW/PoS version of Stakecube.
 
-Stopping the daemon:
+A total of 1000 SC is required to run a masternode; while the minimum stake age has been set to one hour.
 
-    stakecube-cli stop
 
-Daemon status:
+Issue Tracker
+------------
 
-    stakecube-cli getinfo
-    stakecube-cli mnsync status
+The integrated GitHub issue tracker is used for this project. Upon running into an issue, please submit it [here](https://github.com/stakecube/stakecube/issues).
+
+
+Documentation
+-------------
+
+The documentation is a work-in-progress. It is located in the doc folder and [the wiki pages](https://github.com/stakecube/stakecube/wiki).
+
+
+Wiki
+----
+
+The answers to most technical questions can be found in the official SCC wiki:
+https://github.com/stakecube/stakecube/wiki
+
+This wiki will be updated with SCC specifications, docs, manuals and FAQs.
+
+
+License
+-------
+
+Stakecube is released under the terms of the MIT license.
+See COPYING for more information or see https://opensource.org/licenses/MIT.
+
+Stakecube is derived from code developed by both the Dashpay team (https://github.com/dashpay/dash) and the PIVX team (https://github.com/PIVX-Project/PIVX); and where possible, have left all copyright notices and trademarks untouched.
+
