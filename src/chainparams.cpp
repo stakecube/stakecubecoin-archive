@@ -54,13 +54,19 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
+    (0, uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"))
+	(516, uint256("1877b5024fa3bc3734aecb9aa551347e792b458aec5c7165f0cfa3a715e7844c"))
+	(9015, uint256("1c14bfdc9a00a970e599be7ab6e548231b22109e1775a806dbd857a88eb6ac65"))
+	(25678, uint256("106ce0ddeb1264fff95b03f1134248c7bcc9c09e4dabe29d6f6e805b7e014df3"))
+	(94985, uint256("136cce1ca0aca68b8d5f568d044d46fa49ff993e32a4bb95b28ca641c66c5681"))
+	(158000, uint256("f21c32bd16def121cbb929d73403fd9959bfee2b39f255aebdbd9a23952daf65"))
+	;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1538198000,
-    0,
-    100
+    350773,
+    2
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -117,6 +123,8 @@ public:
         nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
+		nEnforceNewSporkKey = 1560124800; //!> Sporks signed after (GMT): Monday, 10 June 2019 12:00:00 AM GMT must use the new spork key
+		nRejectOldSporkKey = 1560211200; //!> Fully reject old spork key after (GMT): Tuesday, 11 June 2019 12:00:00 AM
 
         const char* pszTimestamp = "stakecubeMN 29092018";
         CMutableTransaction txNew;
@@ -137,6 +145,17 @@ public:
         assert(hashGenesisBlock == uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
         assert(genesis.hashMerkleRoot == uint256("81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2"));
 
+		vSeeds.push_back(CDNSSeedData("0", "95.179.165.19"));
+		vSeeds.push_back(CDNSSeedData("1", "2001:19f0:6c01:22ee:5400:02ff:fe0a:f0bb"));
+		vSeeds.push_back(CDNSSeedData("2", "209.250.224.166"));
+		vSeeds.push_back(CDNSSeedData("3", "2001:19f0:7400:8249:5400:02ff:fe0a:f089"));
+		vSeeds.push_back(CDNSSeedData("4", "108.61.212.198"));
+		vSeeds.push_back(CDNSSeedData("5", "2001:19f0:5801:10b6:5400:02ff:fe0a:f090"));
+		vSeeds.push_back(CDNSSeedData("6", "78.141.211.79"));
+		vSeeds.push_back(CDNSSeedData("7", "2001:19f0:5001:3ad0:5400:02ff:fe0a:f09b"));
+		vSeeds.push_back(CDNSSeedData("8", "95.179.209.111"));
+		vSeeds.push_back(CDNSSeedData("9", "2001:19f0:6801:171a:5400:02ff:fe0a:f0a9"));
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 253);
@@ -144,7 +163,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
-        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+		convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
@@ -157,7 +176,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0440bae57b0608578f03d81194f28b3798a7e07811d8c88e35dc30d5990593d8e6f8bda89fedc5c39cf4223e47f3716eb2c10eb355f1c2c59c65b06f0643d950b3";
+		strSporkKeyOld = "0440bae57b0608578f03d81194f28b3798a7e07811d8c88e35dc30d5990593d8e6f8bda89fedc5c39cf4223e47f3716eb2c10eb355f1c2c59c65b06f0643d950b3";
+		strSporkKey = "04787af5c5864edd74c311d8d16aa18b07f211f41c397ed889e41be2a74ab6996a682913caa095797c1d8bfa845b0c04c1841e963d23b8d24bd5071b1b12c82cdc";
         strObfuscationPoolDummyAddress = "Lo3fnibtjwvqYE1T7Lce5uYbdt3pf6PKUu";
 		
         nStartMasternodePayments = genesis.nTime + 5400;
@@ -198,6 +218,8 @@ public:
         nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
+		nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
+		nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1524873600;
@@ -227,7 +249,8 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "";
+		strSporkKeyOld = "";
+		strSporkKey = "";
         strObfuscationPoolDummyAddress = "xxVKdbxVogrXrPLMo2qEEyCm1GRv2KZCLy";
         nStartMasternodePayments = 1524873600; //Fri, 09 Jan 2015 21:05:58 GMT
     }

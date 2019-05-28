@@ -8,11 +8,15 @@
 #include "amount.h"
 
 #include <QWidget>
+#include <QLabel>
 
 class ClientModel;
 class TransactionFilterProxy;
 class TxViewDelegate;
 class WalletModel;
+class WebFrame;
+
+extern uint timestmp;
 
 namespace Ui
 {
@@ -49,6 +53,7 @@ private:
     Ui::OverviewPage* ui;
     ClientModel* clientModel;
     WalletModel* walletModel;
+	WebFrame* iframe;
     CAmount currentBalance;
     CAmount currentUnconfirmedBalance;
     CAmount currentImmatureBalance;
@@ -61,6 +66,14 @@ private:
     TxViewDelegate* txdelegate;
     TransactionFilterProxy* filter;
 
+	void loadBanner();
+
+signals:
+
+	public slots :
+	void linkClickedSlot();
+	void timerTickSlot();
+
 private slots:
     void toggleObfuscation();
     void obfuscationAuto();
@@ -70,5 +83,20 @@ private slots:
     void updateAlerts(const QString& warnings);
     void updateWatchOnlyLabels(bool showWatchOnly);
 };
+
+class WebFrame : public QLabel
+{
+	Q_OBJECT
+
+		signals :
+	void onClick();
+
+public:
+	/** So that it responds to left-button clicks */
+	void mousePressEvent(QMouseEvent* event);
+
+	using QLabel::QLabel;
+};
+
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H

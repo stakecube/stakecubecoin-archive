@@ -4988,6 +4988,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     </message>
 </context>
 <context>
+    <name>AnnouncementView</name>
+    <message>
+        <source>Social Send Announcement</source>
+        <translation>Social Send Announcement</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Refresh</translation>
+    </message>
+</context>
+<context>
     <name>stakecube-core</name>
     <message>
         <location filename="../stakecubestrings.cpp" line="+12"/>
