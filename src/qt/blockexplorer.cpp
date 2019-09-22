@@ -8,7 +8,7 @@
 #include "clientmodel.h"
 #include "core_io.h"
 #include "guiutil.h"
-#include "validation.h"
+#include "main.h"
 #include "net.h"
 #include "txdb.h"
 #include "ui_blockexplorer.h"
