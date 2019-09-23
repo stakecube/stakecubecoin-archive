@@ -184,8 +184,8 @@
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCC&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS SCC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1678,8 +1678,8 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Dirección / Cantidad:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Agregue los destinos para enviar PIV</translation>
+        <source>Add destinations to send SCC to</source>
+        <translation>Agregue los destinos para enviar SCC</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1878,24 +1878,24 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Activar el minting automática de unidades PIV a zPIV</translation>
+        <source>Enable automatic minting of SCC units to zPIV</source>
+        <translation>Activar el minting automática de unidades SCC a zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
         <translation>Activar zPIV Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de PIV entrantes que serán automáticamente convertidos a zPIV a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de SCC entrantes que serán automáticamente convertidos a zPIV a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Porcentaje de zPIV autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes PIV disponibles para este tamaño de billete</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes SCC disponibles para este tamaño de billete</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2057,8 +2057,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Balance Total, incluidas todas las monedas no disponibles.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>Balance PIV</translation>
+        <source>SCC Balance</source>
+        <translation>Balance SCC</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2145,8 +2145,8 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>Disponible:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>PIV bloqueado o Masternode colaterales. Estos están excluidos de minting zPIV.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <translation>SCC bloqueado o Masternode colaterales. Estos están excluidos de minting zPIV.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -3571,8 +3571,8 @@ Por favor espere...</translation>
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 SCC</source>
+        <translation>0 SCC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3683,8 +3683,8 @@ Por favor espere...</translation>
         <translation>Añadir Destinatario</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>PIV anonimizados</translation>
+        <source>Anonymized SCC</source>
+        <translation>SCC anonimizados</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4327,8 +4327,8 @@ Por favor espere...</translation>
         <translation>Recibido por medio de Ofuscación</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>Stake PIV</translation>
+        <source>SCC Stake</source>
+        <translation>Stake SCC</translation>
     </message>
     <message>
         <source>zPIV Stake</source>
@@ -4351,24 +4351,24 @@ Por favor espere...</translation>
         <translation>Ofuscación Crea Billetes</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>PIV convertidos a zPIV</translation>
+        <source>Converted SCC to zPIV</source>
+        <translation>SCC convertidos a zPIV</translation>
     </message>
     <message>
         <source>Spent zPIV</source>
         <translation>Gastar zPIV</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>PIV recibidos desde zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>SCC recibidos desde zPIV</translation>
     </message>
     <message>
         <source>Minted Change as zPIV from zPIV Spend</source>
         <translation>Cambio de acuñación en zPIV al Gastar zPIV</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>zPIV convertidos a PIV</translation>
+        <source>Converted zPIV to SCC</source>
+        <translation>zPIV convertidos a SCC</translation>
     </message>
     <message>
         <source>Anonymous (zPIV Transaction)</source>
@@ -4586,8 +4586,8 @@ Por favor espere...</translation>
         <translation>Exportación Correcta</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>PIV recibidos desde zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>SCC recibidos desde zPIV</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPIV</source>
@@ -4627,8 +4627,8 @@ Por favor espere...</translation>
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCC.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 SCC.</translation>
     </message>
 </context>
 <context>
@@ -4740,8 +4740,8 @@ Por favor espere...</translation>
         <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zPIV (0-1, predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas PIV (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas SCC (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
@@ -4780,12 +4780,12 @@ Por favor espere...</translation>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en PIV/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en SCC/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en PIV/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en SCC/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4888,12 +4888,12 @@ Por favor espere...</translation>
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 SCC.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 SCC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5176,8 +5176,8 @@ Por favor espere...</translation>
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en PIV/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
+        <source>Fee (in SCC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en SCC/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5280,8 +5280,8 @@ Por favor espere...</translation>
         <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindexar as estatísticas de fornecimento de dinheiro PIV e zPIV</translation>
+        <source>Reindex the SCC and zPIV money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro SCC e zPIV</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

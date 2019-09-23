@@ -46,15 +46,15 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zPIV anonymizes your PIV by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zPIV anonymizes your SCC by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zPIV or convert back to PIV"));
+    ui->labelSubtitle2->setText(tr("Mint new zPIV or convert back to SCC"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
 
-    ui->lineEditAmount->setPlaceholderText("0.00 PIV ");
+    ui->lineEditAmount->setPlaceholderText("0.00 SCC ");
     ui->lineEditAmount->setValidator(new QRegExpValidator(QRegExp("[0-9]+")));
     initCssEditLine(ui->lineEditAmount);
 
@@ -113,7 +113,7 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to PIV enabled.
+    // Only Convert to SCC enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
@@ -122,7 +122,7 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     ui->btnTotalzPIV->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select PIV outputs to mint into zPIV.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select SCC outputs to mint into zPIV.");
 
     ui->btnDenomGeneration->setTitleClassAndText("btn-title-grey", "Denom Generation");
     ui->btnDenomGeneration->setSubTitleClassAndText("text-subtitle", "Select the denomination of the coins.");
@@ -196,11 +196,11 @@ void PrivacyWidget::onMintSelected(bool isMint){
     if(isMint){
         btnText = tr("Mint zPIV");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of PIV to mint into zPIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of SCC to mint into zPIV"));
     }else{
-        btnText = tr("Convert back to PIV");
+        btnText = tr("Convert back to SCC");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zPIV to convert back into PIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zPIV to convert back into SCC"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -297,7 +297,7 @@ void PrivacyWidget::spend(CAmount value){
         inform(receipt.GetStatusMessage().data());
     }else{
         // Spend succeed
-        inform(tr("zPIV converted back to PIV"));
+        inform(tr("zPIV converted back to SCC"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -314,7 +314,7 @@ void PrivacyWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any SCC to select."));
         }
     }
 }

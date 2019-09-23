@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE PIV&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCC&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE SCC&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1646,8 +1646,8 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Adresse / Beløb:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Tilføj destinationer for at sende PIV til</translation>
+        <source>Add destinations to send SCC to</source>
+        <translation>Tilføj destinationer for at sende SCC til</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1846,24 +1846,24 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Aktivér automatisk mintning af PIV-enheder til zPIV</translation>
+        <source>Enable automatic minting of SCC units to zPIV</source>
+        <translation>Aktivér automatisk mintning af SCC-enheder til zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
         <translation>Aktivér zPIV Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende PIV, som automatisk konverteres til zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende SCC, som automatisk konverteres til zPIV via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Procentdel af automatiseret zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok PIV til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok SCC til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2025,8 +2025,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Samlet saldo, inklusive alle utilgængelige mønter.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>PIV Balance</translation>
+        <source>SCC Balance</source>
+        <translation>SCC Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2113,8 +2113,8 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Låste PIV eller Masternode collaterals. Disse er udelukket fra zPIV-mintning.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <translation>Låste SCC eller Masternode collaterals. Disse er udelukket fra zPIV-mintning.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -3542,8 +3542,8 @@ Vær tålmodig...</translation>
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 SCC</source>
+        <translation>0 SCC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3654,8 +3654,8 @@ Vær tålmodig...</translation>
         <translation>Tilføj &amp;Modtager</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>Tilsløret PIV</translation>
+        <source>Anonymized SCC</source>
+        <translation>Tilsløret SCC</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4298,8 +4298,8 @@ Vær tålmodig...</translation>
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>SCC Stake</source>
+        <translation>SCC Stake</translation>
     </message>
     <message>
         <source>zPIV Stake</source>
@@ -4322,15 +4322,15 @@ Vær tålmodig...</translation>
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Konverteret PIV til zPIV</translation>
+        <source>Converted SCC to zPIV</source>
+        <translation>Konverteret SCC til zPIV</translation>
     </message>
     <message>
         <source>Spent zPIV</source>
         <translation>Brugt zPiv</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
+        <source>Received SCC from zPIV</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
@@ -4338,8 +4338,8 @@ Vær tålmodig...</translation>
         <translation>Minted Change som zPIV fra zPIV Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Konverteret PIV til zPIV</translation>
+        <source>Converted zPIV to SCC</source>
+        <translation>Konverteret SCC til zPIV</translation>
     </message>
     <message>
         <source>Anonymous (zPIV Transaction)</source>
@@ -4557,7 +4557,7 @@ Vær tålmodig...</translation>
         <translation>Eksporteret!</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
+        <source>Received SCC from zPIV</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
@@ -4598,7 +4598,7 @@ Vær tålmodig...</translation>
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCC.</source>
         <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1PIV.</translation>
     </message>
 </context>
@@ -4712,8 +4712,8 @@ Vær tålmodig...</translation>
         <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for PIV-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for SCC-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
@@ -4752,12 +4752,12 @@ Vær tålmodig...</translation>
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in SCC/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in SCC/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4860,12 +4860,12 @@ Vær tålmodig...</translation>
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 SCC.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 SCC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5148,8 +5148,8 @@ Vær tålmodig...</translation>
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i PIV/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in SCC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i SCC/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5252,8 +5252,8 @@ Vær tålmodig...</translation>
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindex PIV og zPIV pengemængde statistikker</translation>
+        <source>Reindex the SCC and zPIV money supply statistics</source>
+        <translation>Reindex SCC og zPIV pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

@@ -177,14 +177,14 @@
     </message>
     <message>
         <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <translation>PIVX se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SCC od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCC&lt;/b&gt;!</source>
         <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše PIVove 1 !</translation>
     </message>
     <message>
@@ -1629,8 +1629,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Dodajte odredišta za slanje PIV
+        <source>Add destinations to send SCC to</source>
+        <translation>Dodajte odredišta za slanje SCC
 </translation>
     </message>
     <message>
@@ -1831,24 +1831,24 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Omogućite automint PIV jedinica na zPIV</translation>
+        <source>Enable automatic minting of SCC units to zPIV</source>
+        <translation>Omogućite automint SCC jedinica na zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
         <translation>Omogući zPIV Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih PIV koji se automatski pretvara u zPIV putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih SCC koji se automatski pretvara u zPIV putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Postotak automatiziranog zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno PIV za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno SCC za apoen</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2010,8 +2010,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>PIV Saldo</translation>
+        <source>SCC Balance</source>
+        <translation>SCC Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2098,8 +2098,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Zaključani PIV ili Masternode kolateral. Oni su isključeni iz zPIV kovanja.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <translation>Zaključani SCC ili Masternode kolateral. Oni su isključeni iz zPIV kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -3524,8 +3524,8 @@ Please be patient...</source>
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 SCC</source>
+        <translation>0 SCC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3638,8 +3638,8 @@ Please be patient...</source>
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>Anonimiziran PIV</translation>
+        <source>Anonymized SCC</source>
+        <translation>Anonimiziran SCC</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4283,8 +4283,8 @@ Please be patient...</source>
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>SCC Stake</source>
+        <translation>SCC Stake</translation>
     </message>
     <message>
         <source>zPIV Stake</source>
@@ -4307,24 +4307,24 @@ Please be patient...</source>
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Pretvoreni PIV u zPIV</translation>
+        <source>Converted SCC to zPIV</source>
+        <translation>Pretvoreni SCC u zPIV</translation>
     </message>
     <message>
         <source>Spent zPIV</source>
         <translation>Utrošeni zPIV</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Primljeni PIV od zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>Primljeni SCC od zPIV</translation>
     </message>
     <message>
         <source>Minted Change as zPIV from zPIV Spend</source>
         <translation>Mintana razlika zPIV od zPIV Utroška</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Pretvoreni zPIV u PIV</translation>
+        <source>Converted zPIV to SCC</source>
+        <translation>Pretvoreni zPIV u SCC</translation>
     </message>
     <message>
         <source>Anonymous (zPIV Transaction)</source>
@@ -4542,8 +4542,8 @@ Please be patient...</source>
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Primljeni PIV od zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>Primljeni SCC od zPIV</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPIV</source>
@@ -4583,8 +4583,8 @@ Please be patient...</source>
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCC.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 SCC.</translation>
     </message>
 </context>
 <context>
@@ -4696,8 +4696,8 @@ Please be patient...</source>
         <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zPIV mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za PIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za SCC unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
@@ -4736,12 +4736,12 @@ Please be patient...</source>
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u SCC / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u SCC / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4844,12 +4844,12 @@ Please be patient...</source>
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 SCC.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 SCC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5129,8 +5129,8 @@ Please be patient...</source>
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u PIV / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in SCC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u SCC / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5233,8 +5233,8 @@ Please be patient...</source>
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku PIV i zPIV ponude novca</translation>
+        <source>Reindex the SCC and zPIV money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku SCC i zPIV ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>

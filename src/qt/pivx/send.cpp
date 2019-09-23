@@ -45,14 +45,14 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Button Group */
-    ui->pushLeft->setText("PIV");
+    ui->pushLeft->setText("SCC");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
     ui->pushRight->setText("zPIV");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (SCC) or private coins (zPIV)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
@@ -107,7 +107,7 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 PIV");
+    ui->labelAmountSend->setText("0.00 SCC");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -144,7 +144,7 @@ SendWidget::SendWidget(PIVXGUI* parent) :
 void SendWidget::refreshView(){
     QString btnText;
     if(ui->pushLeft->isChecked()){
-        btnText = tr("Send PIV");
+        btnText = tr("Send SCC");
         ui->pushButtonAddRecipient->setVisible(true);
     }else{
         btnText = tr("Send zPIV");
@@ -650,7 +650,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any SCC to select."));
         }
     }else{
         if (walletModel->getZerocoinBalance() > 0) {

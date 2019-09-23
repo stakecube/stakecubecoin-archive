@@ -480,7 +480,7 @@ for staking</source>
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCC&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1502,7 +1502,7 @@ Address: %4
         <location line="+27"/>
         <location line="+72"/>
         <location line="+360"/>
-        <source>0.00 PIV</source>
+        <source>0.00 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1774,7 +1774,7 @@ Address: %4
     </message>
     <message>
         <location line="+30"/>
-        <source>PIV:</source>
+        <source>SCC:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1935,7 +1935,7 @@ Address: %4
     </message>
     <message>
         <location line="+39"/>
-        <source>PIV</source>
+        <source>SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1980,7 +1980,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of PIV and zPIV staked.</source>
+        <source>Amount of SCC and zPIV staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2030,7 +2030,7 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get PIV or zPIV</source>
+        <source>How to get SCC or zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2592,7 +2592,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10.000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10.000 SCC (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2607,7 +2607,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 SCC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2879,7 +2879,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
+        <source>Not enough balance to create a masternode, 10,000 SCC required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3427,7 +3427,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send PIV to</source>
+        <source>Add destinations to send SCC to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3739,7 +3739,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of PIV units to zPIV</source>
+        <source>Enable automatic minting of SCC units to zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3759,7 +3759,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3770,7 +3770,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3994,7 +3994,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>PIV Balance</source>
+        <source>SCC Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4111,7 +4111,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5202,13 +5202,13 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zPIV anonymizes your SCC by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zPIV or convert back to PIV</source>
+        <source>Mint new zPIV or convert back to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5228,17 +5228,17 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of PIV to mint into zPIV</source>
+        <source>Enter amount of SCC to mint into zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Convert back to PIV</source>
+        <source>Convert back to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zPIV to convert back into PIV</source>
+        <source>Enter amount of zPIV to convert back into SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5278,12 +5278,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+23"/>
-        <source>zPIV converted back to PIV</source>
+        <source>zPIV converted back to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>You don&apos;t have any PIV to select.</source>
+        <source>You don&apos;t have any SCC to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6351,7 +6351,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
+        <source>Scan the QR code or copy the address to receive SCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6689,12 +6689,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 PIV</source>
+        <source>0 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+149"/>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 PIV applies</source>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 SCC applies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6835,7 +6835,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized PIV</source>
+        <source>Anonymized SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7225,7 +7225,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
+        <source>You can transfer public coins (SCC) or private coins (zPIV)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7270,7 +7270,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+40"/>
-        <source>Send PIV</source>
+        <source>Send SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7466,7 +7466,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+23"/>
-        <source>You don&apos;t have any PIV to select.</source>
+        <source>You don&apos;t have any SCC to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8007,7 +8007,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+28"/>
-        <source>2) Why are my PIV unspendable?</source>
+        <source>2) Why are my SCC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8028,12 +8028,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+20"/>
-        <source>6) How do I receive PIV/zPIV?</source>
+        <source>6) How do I receive SCC/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>7) How do I stake PIV/zPIV?</source>
+        <source>7) How do I stake SCC/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8086,7 +8086,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my PIV unspendable?</source>
+        <source>Why are my SCC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8119,7 +8119,7 @@ Verify that you have installed a predetermined text editor.</source>
                            zPIV is an optional privacy-centric method of coin mixing on the
                            PIVX blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt;
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt;
                            &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -8160,7 +8160,7 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
+                           By default the PIVX wallet will convert 10% of your entire SCC
                            balance to zPIV to assist the network. If you do not wish to
                            stake zPIV or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your PIVX wallet by
@@ -8170,7 +8170,7 @@ Verify that you have installed a predetermined text editor.</source>
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            You can read more about zPIV in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -8184,7 +8184,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive PIV/zPIV?</source>
+        <source>How do I receive SCC/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8206,7 +8206,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake PIV/zPIV?</source>
+        <source>How do I stake SCC/zPIV?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8256,10 +8256,10 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Discord.PIVX.com&apos;&gt;
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Discord.PIVX.com&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://PIVX.FreshDesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.FreshDesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -8280,7 +8280,7 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 SCC secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -8312,7 +8312,7 @@ Verify that you have installed a predetermined text editor.</source>
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SCC per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -8333,7 +8333,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9660,7 +9660,7 @@ Are you sure?
     <message>
         <location line="+96"/>
         <location line="+269"/>
-        <source>480.0685 PIV</source>
+        <source>480.0685 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9683,7 +9683,7 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>6.943 PIV</source>
+        <source>6.943 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9694,7 +9694,7 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>10 PIV</source>
+        <source>10 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10152,7 +10152,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>PIV Stake</source>
+        <source>SCC Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10182,7 +10182,7 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted PIV to zPIV</source>
+        <source>Converted SCC to zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10192,7 +10192,7 @@ Are you sure?
     </message>
     <message>
         <location line="+2"/>
-        <source>Received PIV from zPIV</source>
+        <source>Received SCC from zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10202,7 +10202,7 @@ Are you sure?
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPIV to PIV</source>
+        <source>Converted zPIV to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10481,7 +10481,7 @@ Are you sure?
     </message>
     <message>
         <location line="-310"/>
-        <source>Received PIV from zPIV</source>
+        <source>Received SCC from zPIV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10545,7 +10545,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>2 PIV</source>
+        <source>2 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10575,7 +10575,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>0.0001 PIV</source>
+        <source>0.0001 SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10678,7 +10678,7 @@ Are you sure?
     </message>
     <message>
         <location line="+15"/>
-        <source>+0.000585 PIV</source>
+        <source>+0.000585 SCC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -10710,7 +10710,7 @@ Are you sure?
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 SCC.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -11003,7 +11003,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11053,12 +11053,12 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11213,12 +11213,12 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11598,7 +11598,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in SCC/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11728,7 +11728,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating PIV supply...</source>
+        <source>Recalculating SCC supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11743,7 +11743,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
+        <source>Reindex the SCC and zPIV money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

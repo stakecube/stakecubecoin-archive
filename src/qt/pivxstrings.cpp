@@ -63,7 +63,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "Enable automatic wallet backups triggered after each zPIV minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Enable or disable staking functionality for PIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for SCC inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
@@ -102,10 +102,10 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in SCC/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in SCC/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -212,10 +212,10 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 PIV."),
+"transaction that are not equal 10000 SCC."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"PIV."),
+"SCC."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -333,7 +333,7 @@ QT_TRANSLATE_NOOP("pivx-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("pivx-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("pivx-core", "Fee (in PIV/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("pivx-core", "Fee (in SCC/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("pivx-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("pivx-core", "How many blocks to check at startup (default: %u, 0 = all)"),
@@ -398,11 +398,11 @@ QT_TRANSLATE_NOOP("pivx-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("pivx-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("pivx-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("pivx-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("pivx-core", "Recalculating PIV supply..."),
+QT_TRANSLATE_NOOP("pivx-core", "Recalculating SCC supply..."),
 QT_TRANSLATE_NOOP("pivx-core", "Recalculating minted ZPIV..."),
 QT_TRANSLATE_NOOP("pivx-core", "Recalculating spent ZPIV..."),
 QT_TRANSLATE_NOOP("pivx-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("pivx-core", "Reindex the PIV and zPIV money supply statistics"),
+QT_TRANSLATE_NOOP("pivx-core", "Reindex the SCC and zPIV money supply statistics"),
 QT_TRANSLATE_NOOP("pivx-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("pivx-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("pivx-core", "Reindexing zerocoin failed"),

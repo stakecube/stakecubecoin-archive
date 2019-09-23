@@ -688,7 +688,7 @@
                 <item>
                  <widget class="QLabel" name="labelPiv">
                   <property name="text">
-                   <string>PIV</string>
+                   <string>SCC</string>
                   </property>
                  </widget>
                 </item>

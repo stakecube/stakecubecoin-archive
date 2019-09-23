@@ -184,8 +184,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SCC&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ SCC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1628,8 +1628,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Добави получател на PIV</translation>
+        <source>Add destinations to send SCC to</source>
+        <translation>Добави получател на SCC</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1828,24 +1828,24 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Включи автоматичното емитиране на PIV единици в zPIV</translation>
+        <source>Enable automatic minting of SCC units to zPIV</source>
+        <translation>Включи автоматичното емитиране на SCC единици в zPIV</translation>
     </message>
     <message>
         <source>Enable zPIV Automint</source>
         <translation>Включи Автоматично емитиране на zPIV</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите PIV, който автоматично да се конвертира в zPIV посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите SCC, който автоматично да се конвертира в zPIV посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zPIV</source>
         <translation>Процент автоматично сечени zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zPIV докато не се съберат достатъчно PIV за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zPIV докато не се съберат достатъчно SCC за тази деноминация</translation>
     </message>
     <message>
         <source>Preferred Automint zPIV Denomination</source>
@@ -2007,8 +2007,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>PIV Наличности</translation>
+        <source>SCC Balance</source>
+        <translation>SCC Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2095,8 +2095,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Заключен PIV или допълнителни гаранции в Главни Възли. Тези не са включени в zPIV емитирането.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <translation>Заключен SCC или допълнителни гаранции в Главни Възли. Тези не са включени в zPIV емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -3513,8 +3513,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 SCC</source>
+        <translation>0 SCC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3625,8 +3625,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>Анонимизиран PIV</translation>
+        <source>Anonymized SCC</source>
+        <translation>Анонимизиран SCC</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3674,7 +3674,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Warning: Invalid PIVX address</source>
-        <translation>Предупреждение: Невалиден PIV адрес</translation>
+        <translation>Предупреждение: Невалиден SCC адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4269,8 +4269,8 @@ Please be patient...</source>
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>SCC Stake</source>
+        <translation>SCC Stake</translation>
     </message>
     <message>
         <source>zPIV Stake</source>
@@ -4293,24 +4293,24 @@ Please be patient...</source>
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Конвертиран PIV във zPIV</translation>
+        <source>Converted SCC to zPIV</source>
+        <translation>Конвертиран SCC във zPIV</translation>
     </message>
     <message>
         <source>Spent zPIV</source>
         <translation>Похарчени zPIV</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Получен PIV от zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>Получен SCC от zPIV</translation>
     </message>
     <message>
         <source>Minted Change as zPIV from zPIV Spend</source>
         <translation>Исечено ресто като zPIV от похарчените zPIV</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Конвертиран zPIV във PIV</translation>
+        <source>Converted zPIV to SCC</source>
+        <translation>Конвертиран zPIV във SCC</translation>
     </message>
     <message>
         <source>Anonymous (zPIV Transaction)</source>
@@ -4528,8 +4528,8 @@ Please be patient...</source>
         <translation>Експортирането Успешно</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Получен PIV от zPIV</translation>
+        <source>Received SCC from zPIV</source>
+        <translation>Получен SCC от zPIV</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPIV</source>
@@ -4569,8 +4569,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SCC.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 SCC.</translation>
     </message>
 </context>
 <context>
@@ -4682,8 +4682,8 @@ Please be patient...</source>
         <translation>Включи автоматичните бекъпи на портфейла след всяко zPIV емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за PIV входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за SCC входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
@@ -4722,12 +4722,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в PIV/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в SCC/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в PIV/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in SCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в SCC/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4830,12 +4830,12 @@ Please be patient...</source>
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 SCC.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SCC.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 SCC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5110,8 +5110,8 @@ Please be patient...</source>
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в PIV/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in SCC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в SCC/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5214,8 +5214,8 @@ Please be patient...</source>
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Индексирай наново PIV и zPIV данните по наличности</translation>
+        <source>Reindex the SCC and zPIV money supply statistics</source>
+        <translation>Индексирай наново SCC и zPIV данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
