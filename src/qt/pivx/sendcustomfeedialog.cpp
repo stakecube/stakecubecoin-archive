@@ -37,7 +37,7 @@ SendCustomFeeDialog::SendCustomFeeDialog(QWidget *parent) :
 
     // Custom
     setCssProperty(ui->labelCustomFee, "label-subtitle-dialog");
-    ui->lineEditCustomFee->setPlaceholderText("0.000001 PIV");
+    ui->lineEditCustomFee->setPlaceholderText("0.000001 SCC");
     initCssEditLine(ui->lineEditCustomFee, true);
 
     // Buttons

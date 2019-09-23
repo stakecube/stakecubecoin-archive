@@ -490,7 +490,7 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    // PIV Balance
+    // SCC Balance
     //CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
 

@@ -32,7 +32,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     setCssProperty(ui->comboBoxCoin, "btn-combo-coins");
     setCssProperty(ui->comboContainer, "container-purple");
 
-    ui->comboBoxCoin->addItem("PIV", 0);
+    ui->comboBoxCoin->addItem("SCC", 0);
     ui->comboBoxCoin->addItem("zPIV", 1);
     ui->comboBoxCoin->setView(new QListView());
 
@@ -45,7 +45,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     // Amount
     ui->labelSubtitleAmount->setText(tr("Amount"));
     setCssProperty(ui->labelSubtitleAmount, "text-title2-dialog");
-    ui->lineEditAmount->setPlaceholderText("0.00 PIV");
+    ui->lineEditAmount->setPlaceholderText("0.00 SCC");
     setCssEditLineDialog(ui->lineEditAmount, true);
 
     QDoubleValidator *doubleValidator = new QDoubleValidator(0, 9999999, 7, this);
@@ -105,7 +105,7 @@ void RequestDialog::onNextClicked(){
         if(value <= 0 || !isValueValid){
             return;
         }
-        ui->labelTitle->setText("Request for " + BitcoinUnits::format(displayUnit, value, false, BitcoinUnits::separatorAlways) + " PIV");
+        ui->labelTitle->setText("Request for " + BitcoinUnits::format(displayUnit, value, false, BitcoinUnits::separatorAlways) + " SCC");
         updateQr(info->address);
         ui->labelAddress->setText(info->address);
         ui->buttonsStack->setVisible(false);

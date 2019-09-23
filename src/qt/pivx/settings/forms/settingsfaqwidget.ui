@@ -188,7 +188,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>2) Why are my PIV unspendable?</string>
+                      <string>2) Why are my SCC unspendable?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -277,7 +277,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>6) How do I receive PIV/zPIV?</string>
+                      <string>6) How do I receive SCC/zPIV?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -296,7 +296,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>7) How do I stake PIV/zPIV?</string>
+                      <string>7) How do I stake SCC/zPIV?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -669,7 +669,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle2">
                         <property name="text">
-                         <string>Why are my PIV unspendable?</string>
+                         <string>Why are my SCC unspendable?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -798,7 +798,7 @@
                            zPIV is an optional privacy-centric method of coin mixing on the
                            PIVX blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
+                           &lt;a style='color: #7088ff' href='https://PIVX.org/zpiv/'&gt;
                            &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -989,7 +989,7 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
+                           By default the PIVX wallet will convert 10% of your entire SCC
                            balance to zPIV to assist the network. If you do not wish to
                            stake zPIV or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your PIVX wallet by
@@ -999,7 +999,7 @@
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style='color: #7088ff' href='https://PIVX.org/zpiv/'&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -1070,7 +1070,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle6">
                         <property name="text">
-                         <string>How do I receive PIV/zPIV?</string>
+                         <string>How do I receive SCC/zPIV?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1167,7 +1167,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle7">
                         <property name="text">
-                         <string>How do I stake PIV/zPIV?</string>
+                         <string>How do I stake SCC/zPIV?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1313,10 +1313,10 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://Discord.PIVX.com'&gt;
+                           &lt;a style='color: #7088ff' href='https://Discord.PIVX.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.FreshDesk.com'&gt;
+                           &lt;a style='color: #7088ff' href='https://PIVX.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -1412,7 +1412,7 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 SCC secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -1444,7 +1444,7 @@
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SCC per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -1540,7 +1540,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent10">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

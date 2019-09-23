@@ -338,7 +338,7 @@ void PIVXGUI::messageInfo(const QString& text){
 
 
 void PIVXGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
-    QString strTitle =  tr("PIVX Core"); // default title
+    QString strTitle =  tr("stakecube"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
 

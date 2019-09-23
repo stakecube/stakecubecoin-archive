@@ -34,7 +34,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::PIV)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SCC)
     {
     }
 
@@ -191,12 +191,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // PIV Balance
+    // SCC Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // PIV Watch-Only Balance
+    // SCC Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
@@ -211,7 +211,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = pivAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // PIV labels
+    // SCC labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pivAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -261,28 +261,28 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // PIV Available
+    // SCC Available
     bool showPIVAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
     bool showWatchOnlyPIVAvailable = showPIVAvailable || nAvailableWatchBalance != nTotalWatchBalance;
     ui->labelBalanceText->setVisible(showPIVAvailable || showWatchOnlyPIVAvailable);
     ui->labelBalance->setVisible(showPIVAvailable || showWatchOnlyPIVAvailable);
     ui->labelWatchAvailable->setVisible(showWatchOnlyPIVAvailable && showWatchOnly);
 
-    // PIV Pending
+    // SCC Pending
     bool showPIVPending = settingShowAllBalances || unconfirmedBalance != 0;
     bool showWatchOnlyPIVPending = showPIVPending || watchUnconfBalance != 0;
     ui->labelPendingText->setVisible(showPIVPending || showWatchOnlyPIVPending);
     ui->labelUnconfirmed->setVisible(showPIVPending || showWatchOnlyPIVPending);
     ui->labelWatchPending->setVisible(showWatchOnlyPIVPending && showWatchOnly);
 
-    // PIV Immature
+    // SCC Immature
     bool showPIVImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = showPIVImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showPIVImmature || showWatchOnlyImmature);
     ui->labelImmature->setVisible(showPIVImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // PIV Locked
+    // SCC Locked
     bool showPIVLocked = settingShowAllBalances || nLockedBalance != 0;
     bool showWatchOnlyPIVLocked = showPIVLocked || nWatchOnlyLockedBalance != 0;
     ui->labelLockedBalanceText->setVisible(showPIVLocked || showWatchOnlyPIVLocked);
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("PIV")
+    // update the display unit, to not use the default ("SCC")
     updateDisplayUnit();
 
     // Hide orphans

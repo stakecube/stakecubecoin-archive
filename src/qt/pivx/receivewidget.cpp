@@ -71,7 +71,7 @@ ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive PIV."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive SCC."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 
@@ -180,7 +180,7 @@ void ReceiveWidget::updateQr(QString address){
     ui->labelQrImg->setText("");
 
     QString error;
-    QColor qrColor("#382d4d");
+    QColor qrColor("#002d4d");
     QPixmap pixmap = encodeToQr(uri, error, qrColor);
     if(!pixmap.isNull()){
         qrImage = &pixmap;
