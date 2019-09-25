@@ -62,11 +62,11 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Nämä ovat sinun PIVX osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Nämä ovat sinun PIVX osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
@@ -565,11 +565,11 @@
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Lähetä kolikkoja PIVX osoitteeseen</translation>
     </message>
     <message>
@@ -585,11 +585,11 @@
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>PIVX Core &amp;ytimestä</translation>
+        <source>&amp;About Stakecube</source>
+        <translation>Stakecube &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
+        <source>Show information about Stakecube</source>
         <translation>Näytä tietoja PIVX Ytimestä</translation>
     </message>
     <message>
@@ -597,11 +597,11 @@
         <translation>Muokkaa konfiguraatio vaihtoehtoja PIVX:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä PIVX osoiteella.</translation>
     </message>
     <message>
@@ -645,11 +645,11 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
         <translation>Näytä PIVX Ydin apuviesti saadaksesi lista mahdollisista PIVX komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
+        <source>Stakecube client</source>
         <translation>PIVX Ydin asiakasohjelma</translation>
     </message>
     <message>
@@ -919,7 +919,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX Ydin</translation>
     </message>
     <message>
@@ -938,11 +938,11 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
+        <source>Welcome to Stakecube.</source>
         <translation>Tervetuloa PIVX Ytimeen.</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX Ydin</translation>
     </message>
     <message>
@@ -1391,7 +1391,7 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX Ydin</translation>
     </message>
     </context>
@@ -1885,7 +1885,7 @@
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation>Varoitus: Virheellinen PIVX osoite</translation>
     </message>
     <message>
@@ -1936,7 +1936,7 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation>PIVX osoite johon maksu lähetetään</translation>
     </message>
     <message>
@@ -1979,7 +1979,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
+        <source>Stakecube is shutting down...</source>
         <translation>PIVX core sammuu...</translation>
     </message>
     <message>
@@ -1998,7 +1998,7 @@
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>PIVX osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
@@ -2030,15 +2030,15 @@
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Allekirjoita viesti todistaaksesi, että omistat tämän PIVX osoitteen</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>PIVX osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla PIVX osoitteella.</translation>
     </message>
     <message>
@@ -2121,7 +2121,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX Ydin</translation>
     </message>
     <message>
@@ -2137,7 +2137,7 @@
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
+        <source>The Stakecube developers</source>
         <translation>PIVX core kehittäjät</translation>
     </message>
     <message>
@@ -2486,7 +2486,7 @@
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version PIVX Coresta</translation>
     </message>
     <message>

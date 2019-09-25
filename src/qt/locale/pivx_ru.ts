@@ -62,11 +62,11 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Это ваши PIVX-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Это ваши PIVX-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Введите PIVX адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation>Адрес PIVX для зашифровки</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation>Зашифровать личные ключи для этого PIVX адреса </translation>
     </message>
     <message>
@@ -645,11 +645,11 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Отправить монеты на PIVX адрес</translation>
     </message>
     <message>
@@ -669,23 +669,23 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;О PIVX Core</translation>
+        <source>&amp;About Stakecube</source>
+        <translation>&amp;О Stakecube</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Показать информацию о PIVX Core</translation>
+        <source>Show information about Stakecube</source>
+        <translation>Показать информацию о Stakecube</translation>
     </message>
     <message>
         <source>Modify configuration options for PIVX</source>
         <translation>Изменение параметров конфигурации PIVX</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Подписывайте сообщения вашими PIVX адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным PIVX адресом </translation>
     </message>
     <message>
@@ -729,12 +729,12 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
         <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды PIVX</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>Клиент PIVX Core</translation>
+        <source>Stakecube client</source>
+        <translation>Клиент Stakecube</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1165,7 +1165,7 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>Введенный адрес "%1" не является PIVX адресом.</translation>
     </message>
     <message>
@@ -1222,16 +1222,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>О PIVX Core</translation>
+        <source>About Stakecube</source>
+        <translation>О Stakecube</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1277,16 +1277,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Добро пожаловать в PIVX Core.</translation>
+        <source>Welcome to Stakecube.</source>
+        <translation>Добро пожаловать в Stakecube.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные PIVX Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Stakecube.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core загрузит и сохранит копию цепочки блоков PIVX. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube загрузит и сохранит копию цепочки блоков PIVX. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1297,8 +1297,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1439,8 +1439,8 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие PIVX адреса.
@@ -2171,7 +2171,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Не удалось запустить pivx: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
         <translation>URI не интерпретируется! Причиной этому может быть неверный PIVX адрес или неверные параметеры URI.</translation>
     </message>
     <message>
@@ -2341,7 +2341,7 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адрес PIVX для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
     </message>
     <message>
@@ -2797,7 +2797,7 @@ Please be patient...</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation>Введите адрес PIVX (например %1)</translation>
     </message>
     <message>
@@ -2841,8 +2841,8 @@ Please be patient...</source>
         <translation>%1 мс</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     </context>
 <context>
@@ -3684,7 +3684,7 @@ Please be patient...</source>
         <translation>Инструмент разделения блоков не работает с несколькими адресами. Попробуй еще раз.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation>Предупреждение: неправильный PIVX адрес</translation>
     </message>
     <message>
@@ -3783,7 +3783,7 @@ Please be patient...</source>
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation>Адрес PIVX для отправки платежа</translation>
     </message>
     <message>
@@ -3850,8 +3850,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core выключается...</translation>
+        <source>Stakecube is shutting down...</source>
+        <translation>Stakecube выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3873,7 +3873,7 @@ Please be patient...</source>
         <translation>Вы можете подписывать сообщения с вашими адресами, чтобы доказать, что вы ими владеете. Будьте осторожны, чтобы не подписывать ничего неопределенного, поскольку фишинг-атаки могут попытаться обмануть вас, подписав вашу личность на них. Подпишите только полные подробные заявления, с которыми вы согласны.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>Адрес PIVX для подписи сообщения с помощью</translation>
     </message>
     <message>
@@ -3905,15 +3905,15 @@ Please be patient...</source>
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Подпишите сообщение, чтобы подтвердить свой адрес PIVX</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>Адрес PIVX, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным PIVX адресом </translation>
     </message>
     <message>
@@ -4000,8 +4000,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4016,8 +4016,8 @@ Please be patient...</source>
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Разработчики PIVX Core</translation>
+        <source>The Stakecube developers</source>
+        <translation>Разработчики Stakecube</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4661,8 +4661,8 @@ Please be patient...</source>
         <translation>Расчетная контрольная точка  не является тем, что регистрируется блочным индексом</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. PIVX Core, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. Stakecube, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4833,8 +4833,8 @@ Please be patient...</source>
         <translation>Этот продукт включает программное обеспечение, разработанное OpenSSL Project для использования в OpenSSL Toolkit &lt;https://www.openssl.org/&gt; и криптографическом программном обеспечении, написанном Эриком Яном и программным обеспечением UPnP, написанным Томасом Бернардом.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. PIVX Core, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Stakecube is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. Stakecube, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4861,8 +4861,8 @@ Please be patient...</source>
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, PIVX Core не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Stakecube will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Stakecube не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4993,8 +4993,8 @@ Please be patient...</source>
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики PIVX Core</translation>
+        <source>Copyright (C) 2015-%i The Stakecube Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики Stakecube</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5073,8 +5073,8 @@ Please be patient...</source>
         <translation>Ошибка при загрузке wallet.dat: Кошелек поврежден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
+        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии Stakecube</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5169,8 +5169,8 @@ Please be patient...</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. PIVX Core отключается.</translation>
+        <source>Initialization sanity check failed. Stakecube is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. Stakecube отключается.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5845,8 +5845,8 @@ Please be patient...</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите PIVX Core, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите Stakecube, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>

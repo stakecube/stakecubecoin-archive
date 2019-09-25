@@ -62,11 +62,11 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Tai jūsų PIVX adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Tai jūsų PIVX adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Įveskite Pivx adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation>PIVX adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation>Užšifruoti šio PIVX adreso privatų raktą</translation>
     </message>
     <message>
@@ -641,11 +641,11 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Siųsti monetas į PIVX adresą</translation>
     </message>
     <message>
@@ -665,23 +665,23 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;Apie PIVX Core</translation>
+        <source>&amp;About Stakecube</source>
+        <translation>&amp;Apie Stakecube</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Rodyti informaciją apie PIVX Core</translation>
+        <source>Show information about Stakecube</source>
+        <translation>Rodyti informaciją apie Stakecube</translation>
     </message>
     <message>
         <source>Modify configuration options for PIVX</source>
         <translation>Keisti PIVX konfigūravimo parinktis</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Pasirašykite pranešimus naudodami savo PIVX adresus, kad įrodytumėte, kad juos turite</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais PIVX adresais</translation>
     </message>
     <message>
@@ -725,12 +725,12 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Rodyti PIVX Core žinyną, kad gautumėte sąrašą su galimomis PIVX komandinės eilutės parinktimis</translation>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
+        <translation>Rodyti Stakecube žinyną, kad gautumėte sąrašą su galimomis PIVX komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core piniginė</translation>
+        <source>Stakecube client</source>
+        <translation>Stakecube piniginė</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1153,7 +1153,7 @@ MultiSend: %1</translation>
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>Įvestas adresas "%1" nėra galiojantis PIVX adresas.</translation>
     </message>
     <message>
@@ -1210,16 +1210,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Apie PIVX Core</translation>
+        <source>About Stakecube</source>
+        <translation>Apie Stakecube</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1265,16 +1265,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Sveiki atvykę į PIVX Core</translation>
+        <source>Welcome to Stakecube.</source>
+        <translation>Sveiki atvykę į Stakecube</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur PIVX Core saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Stakecube saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core atsisiųs ir saugos PIVX blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube atsisiųs ir saugos PIVX blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1285,8 +1285,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1427,8 +1427,8 @@ MultiSend: %1</translation>
         <translation>Įveskite adresą kuriam norite siųsti</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus PIVX adresus.
@@ -2488,7 +2488,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation>Įveskite PIVX adresą (pvz. %1)</translation>
     </message>
     <message>
@@ -2524,8 +2524,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>N/A</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     </context>
 <context>
@@ -3007,7 +3007,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>PIVX adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
@@ -3031,15 +3031,15 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio PIVX adreso savininkas</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>PIVX adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu PIVX adresu</translation>
     </message>
     <message>
@@ -3078,8 +3078,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     </context>
 <context>
@@ -3335,8 +3335,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės PIVX Core versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Stakecube versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3511,8 +3511,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Piniginė %s yra ne duomenų kataloge %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite PIVX Core iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Stakecube iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

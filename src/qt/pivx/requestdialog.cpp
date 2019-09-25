@@ -25,7 +25,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     ui->labelTitle->setText(tr("New Request Payment"));
     setCssProperty(ui->labelTitle, "text-title-dialog");
 
-    ui->labelMessage->setText(tr("Instead of share a PIVX address, you can create a Payment Request message which bundles up more information than is contained in just a PIVX address."));
+    ui->labelMessage->setText(tr("Instead of share a SCC address, you can create a Payment Request message which bundles up more information than is contained in just a SCC address."));
     setCssProperty(ui->labelMessage, "text-main-grey");
 
     // Combo Coins

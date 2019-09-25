@@ -168,12 +168,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -313,7 +313,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter a PIVX address</source>
+        <source>Enter a SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -587,7 +587,7 @@ for staking</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -631,7 +631,7 @@ for staking</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1097,12 +1097,12 @@ for staking</source>
     <message>
         <location line="-448"/>
         <location line="+938"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-742"/>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1127,12 +1127,12 @@ for staking</source>
     </message>
     <message>
         <location line="+43"/>
-        <source>&amp;About PIVX Core</source>
+        <source>&amp;About Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PIVX Core</source>
+        <source>Show information about Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1142,12 +1142,12 @@ for staking</source>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1202,12 +1202,12 @@ for staking</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+234"/>
-        <source>PIVX Core client</source>
+        <source>Stakecube client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -2223,7 +2223,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid PIVX address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid SCC address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2345,7 +2345,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+0"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2356,7 +2356,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+6"/>
-        <source>About PIVX Core</source>
+        <source>About Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2419,17 +2419,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+90"/>
-        <source>Welcome to PIVX Core.</source>
+        <source>Welcome to Stakecube.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2454,7 +2454,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location filename="../intro.cpp" line="+101"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3105,8 +3105,8 @@ Are you sure?</source>
     </message>
     <message>
         <location line="-106"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -4171,7 +4171,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <location filename="../pivx/pivxgui.cpp" line="+42"/>
         <location line="+299"/>
         <location line="+68"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4206,7 +4206,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+35"/>
-        <source>PIVX Core client</source>
+        <source>Stakecube client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4312,7 +4312,7 @@ Address: %4
     </message>
     <message>
         <location line="+110"/>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4540,7 +4540,7 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <location line="+27"/>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5405,7 +5405,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+136"/>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5469,7 +5469,7 @@ transaction history, making transactions untraceable </source>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5494,7 +5494,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+61"/>
-        <source>PIVX Core didn&apos;t yet exit safely...</source>
+        <source>Stakecube didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6510,7 +6510,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location filename="../pivx/requestdialog.cpp" line="-18"/>
-        <source>Instead of share a PIVX address, you can create a Payment Request message which bundles up more information than is contained in just a PIVX address.</source>
+        <source>Instead of share a SCC address, you can create a Payment Request message which bundles up more information than is contained in just a SCC address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6583,7 +6583,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+3"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; PIVX address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; SCC address</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6895,7 +6895,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+653"/>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7034,7 +7034,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7235,7 +7235,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter a PIVX address or contact label</source>
+        <source>Enter a SCC address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7710,7 +7710,7 @@ Remember to write it down to not lose access to your funds.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Enter a PIVX address</source>
+        <source>Enter a SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8191,7 +8191,7 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
+                           zPIV can be spent and sent to any SCC address. The receiver will
                            receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            If you want more zPIV you will need to mint your balance in the “Privacy” tab.
@@ -8687,7 +8687,7 @@ Are you sure?
     </message>
     <message>
         <location filename="../pivx/settings/settingsmultisendwidget.cpp" line="+156"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8829,7 +8829,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+7"/>
-        <source>Enter a PIVX address or contact label</source>
+        <source>Enter a SCC address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9377,7 +9377,7 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+70"/>
-        <source>PIVX Core is shutting down...</source>
+        <source>Stakecube is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9405,7 +9405,7 @@ Are you sure?
     </message>
     <message>
         <location line="+15"/>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9447,17 +9447,17 @@ Are you sure?
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+103"/>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9598,7 +9598,7 @@ Are you sure?
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9618,7 +9618,7 @@ Are you sure?
     </message>
     <message>
         <location line="+1"/>
-        <source>The PIVX Core developers</source>
+        <source>The Stakecube developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10837,7 +10837,7 @@ Are you sure?
     <message>
         <location line="+89"/>
         <source>Welcome to
-PIVX Core Wallet</source>
+Stakecube Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10958,7 +10958,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11203,7 +11203,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Stakecube is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11238,7 +11238,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Stakecube will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11418,7 +11418,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <source>Copyright (C) 2015-%i The Stakecube Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11528,7 +11528,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11648,7 +11648,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
+        <source>Initialization sanity check failed. Stakecube is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -12550,7 +12550,7 @@ PIVX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

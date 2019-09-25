@@ -62,11 +62,11 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estas son sus direcciones PIVX para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estas son sus direcciones PIVX para recibir pagos. Es recomendable usar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Introduzca la dirección PIVX que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation>La dirección PIVX a cifrar</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation>Cifrar la llave privada para esta dirección PIVX</translation>
     </message>
     <message>
@@ -645,11 +645,11 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Enviar monedas a una dirección PIVX</translation>
     </message>
     <message>
@@ -669,23 +669,23 @@
         <translation>Explorar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;Sobre PIVX Core</translation>
+        <source>&amp;About Stakecube</source>
+        <translation>&amp;Sobre Stakecube</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Mostrar información sobre PIVX Core</translation>
+        <source>Show information about Stakecube</source>
+        <translation>Mostrar información sobre Stakecube</translation>
     </message>
     <message>
         <source>Modify configuration options for PIVX</source>
         <translation>Modificar las opciones de configuración de PIVX</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Firmar mensajes con sus direcciones PIVX para demostrar que le pertenecen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Verificar mensajes para asegurar que están firmados con la dirección PIVX especificada</translation>
     </message>
     <message>
@@ -729,12 +729,12 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Mostrar la ayuda de PIVX Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
+        <translation>Mostrar la ayuda de Stakecube para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>Cliente PIVX Core</translation>
+        <source>Stakecube client</source>
+        <translation>Cliente Stakecube</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1165,7 +1165,7 @@ MultiEnvío: %1</translation>
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>La dirección introducida "%1" no es una dirección PIVX válida.</translation>
     </message>
     <message>
@@ -1222,16 +1222,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Acerca de PIVX Core</translation>
+        <source>About Stakecube</source>
+        <translation>Acerca de Stakecube</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1277,16 +1277,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Bienvenido/a a PIVX Core.</translation>
+        <source>Welcome to Stakecube.</source>
+        <translation>Bienvenido/a a Stakecube.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará PIVX Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Stakecube sus datos.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core descargará y guardará una copia de la cadena de bloques PIVX. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube descargará y guardará una copia de la cadena de bloques PIVX. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1297,8 +1297,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1439,8 +1439,8 @@ MultiEnvío: %1</translation>
         <translation>Introduzca Dirección a la cual Enviar</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones PIVX después de su maduración.
@@ -2218,7 +2218,7 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en pi
         <translation>No se puede iniciar pivx: módulo click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
         <translation>¡El identificador de la dirección no puede ser analizado! Esto puede ser causado por una dirección PIVX inválida o parámetros del identificador malformados.</translation>
     </message>
     <message>
@@ -2388,7 +2388,7 @@ zPIV son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de la
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>La dirección PIVX a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
     </message>
     <message>
@@ -2845,7 +2845,7 @@ Por favor espere...</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation>Introduzca una dirección PIVX (p.e. %1)</translation>
     </message>
     <message>
@@ -2889,8 +2889,8 @@ Por favor espere...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     </context>
 <context>
@@ -3731,7 +3731,7 @@ Por favor espere...</translation>
         <translation>La herramienta de división de bloques no funciona con varias direcciones. Inténtelo otra vez.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation>Advertencia: Direcciones PIVX inválidas</translation>
     </message>
     <message>
@@ -3830,7 +3830,7 @@ Por favor espere...</translation>
         <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation>La dirección PIVX a la cual enviar el pago</translation>
     </message>
     <message>
@@ -3897,7 +3897,7 @@ Por favor espere...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
+        <source>Stakecube is shutting down...</source>
         <translation>El programa PIVX se está cerrando...</translation>
     </message>
     <message>
@@ -3920,7 +3920,7 @@ Por favor espere...</translation>
         <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>La dirección PIVX con la que desee firmar el mensaje</translation>
     </message>
     <message>
@@ -3952,15 +3952,15 @@ Por favor espere...</translation>
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección PIVX</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>La dirección PIVX con la que se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>Verifica el mensaje para asegurar que fue firmado con la dirección PIVX especificada</translation>
     </message>
     <message>
@@ -4047,8 +4047,8 @@ Por favor espere...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4063,8 +4063,8 @@ Por favor espere...</translation>
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Los desarrolladores de PIVX Core</translation>
+        <source>The Stakecube developers</source>
+        <translation>Los desarrolladores de Stakecube</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4708,8 +4708,8 @@ Por favor espere...</translation>
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. PIVX Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Stakecube esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4880,8 +4880,8 @@ Por favor espere...</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que PIVX Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. Stakecube is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que Stakecube ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4908,8 +4908,8 @@ Por favor espere...</translation>
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora PIVX Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Stakecube will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Stakecube no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5040,8 +5040,8 @@ Por favor espere...</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Stakecube Developers</source>
+        <translation>Copyright (C) 2015-%i The Stakecube Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5120,8 +5120,8 @@ Por favor espere...</translation>
         <translation>Error al cargar wallet.dat: Monedero dañado</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del Stakecube</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5216,8 +5216,8 @@ Por favor espere...</translation>
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. PIVX Core se cerrará.</translation>
+        <source>Initialization sanity check failed. Stakecube is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. Stakecube se cerrará.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5892,8 +5892,8 @@ Por favor espere...</translation>
         <translation>El monedero %s esta ubicada fuera del directorio de datos %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>El Monedero necesita ser reescrito: reinicie PIVX Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
+        <translation>El Monedero necesita ser reescrito: reinicie Stakecube para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -62,11 +62,11 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Aquestes són les teves adreces PIVX per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Aquestes són les teves adreces PIVX per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
@@ -421,11 +421,11 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Envia monedes a una adreça PIVX</translation>
     </message>
     <message>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;Sobre PIVX Core</translation>
+        <source>&amp;About Stakecube</source>
+        <translation>&amp;Sobre Stakecube</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,7 +461,7 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
+        <source>Stakecube client</source>
         <translation>Client PIVX core</translation>
     </message>
     <message>
@@ -805,7 +805,7 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>L'adreça introduïda "%1" no és una adreça PIVX vàlida.</translation>
     </message>
     <message>
@@ -862,16 +862,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Sobre PIVX Core</translation>
+        <source>About Stakecube</source>
+        <translation>Sobre Stakecube</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -917,12 +917,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Benvingut a PIVX Core.</translation>
+        <source>Welcome to Stakecube.</source>
+        <translation>Benvingut a Stakecube.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del PIVX Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Stakecube.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -933,8 +933,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1326,8 +1326,8 @@
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     </context>
 <context>
@@ -1650,8 +1650,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core s'està tancant...</translation>
+        <source>Stakecube is shutting down...</source>
+        <translation>Stakecube s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1716,8 +1716,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Stakecube</source>
+        <translation>Stakecube</translation>
     </message>
     <message>
         <source>Version %1</source>

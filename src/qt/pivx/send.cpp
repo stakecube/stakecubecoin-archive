@@ -44,24 +44,13 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     setCssProperty(ui->labelTitle, "text-title-screen");
     ui->labelTitle->setFont(fontLight);
 
-    /* Button Group */
-    ui->pushLeft->setText("SCC");
-    setCssProperty(ui->pushLeft, "btn-check-left");
-    ui->pushLeft->setChecked(true);
-    ui->pushRight->setText("zPIV");
-    setCssProperty(ui->pushRight, "btn-check-right");
-
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (SCC) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer Stakecube coins (SCC)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
-    ui->labelSubtitle2->setText(tr("Select coin type to spend"));
-    setCssProperty(ui->labelSubtitle2, "text-subtitle");
-
     /* Address */
-    ui->labelSubtitleAddress->setText(tr("Enter a PIVX address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Enter a SCC address or contact label"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
-
 
     /* Amount */
     ui->labelSubtitleAmount->setText(tr("Amount"));
@@ -134,24 +123,12 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     addEntry();
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
     connect(ui->pushButtonSave, SIGNAL(clicked()), this, SLOT(onSendClicked()));
     connect(ui->pushButtonAddRecipient, SIGNAL(clicked()), this, SLOT(onAddEntryClicked()));
     connect(ui->pushButtonClear, SIGNAL(clicked()), this, SLOT(clearAll()));
 }
 
 void SendWidget::refreshView(){
-    QString btnText;
-    if(ui->pushLeft->isChecked()){
-        btnText = tr("Send SCC");
-        ui->pushButtonAddRecipient->setVisible(true);
-    }else{
-        btnText = tr("Send zPIV");
-        ui->pushButtonAddRecipient->setVisible(false);
-    }
-    ui->pushButtonSave->setText(btnText);
-
     refreshAmounts();
 }
 
@@ -166,7 +143,7 @@ void SendWidget::refreshAmounts() {
             total += amount;
     }
 
-    bool isZpiv = ui->pushRight->isChecked();
+    bool isZpiv = false;
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
 
     ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZpiv));
@@ -315,7 +292,7 @@ void SendWidget::onSendClicked(){
         return;
     }
 
-    bool sendPiv = ui->pushLeft->isChecked();
+    bool sendPiv = true;
 
     // request unlock only if was locked or unlocked for mixing:
     // this way we let users unlock by walletpassphrase or by menu

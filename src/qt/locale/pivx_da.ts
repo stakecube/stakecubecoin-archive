@@ -62,11 +62,11 @@
         <translation>Modtageradresse</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dine adresser til at sende betalinger med. Kontroller altid både beløb og modtageradresse før afsendelse.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dette er dine modtager adresser. Det anbefales at anvende en ny adresse til hver transaktion</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Indtast en PIVX-adresse, som du gerne vil kryptere ved hjælp af BIP 38. Indtast en adgangskode i mellemkassen. Tryk på krypteringen for at beregne den krypterede private nøgle.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation>PIVX-adressen for at kryptere</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation>Krypter den private nøgle for denne PIVX-adresse</translation>
     </message>
     <message>
@@ -641,11 +641,11 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX kerne</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Send mønter til en PIVX adresse</translation>
     </message>
     <message>
@@ -665,11 +665,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
+        <source>&amp;About Stakecube</source>
         <translation>&amp;Om PIVX kerne</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
+        <source>Show information about Stakecube</source>
         <translation>Vis information om PIVX kerne</translation>
     </message>
     <message>
@@ -677,11 +677,11 @@
         <translation>Ret konfigurationsindstillinger for PIVX</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Underskriv beskeder med Deres PIVX adresser for at bekræfte at De ejer dem.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Verificer besked for at sikre, at den er underskrevet med den opgivne PIVX adresse</translation>
     </message>
     <message>
@@ -725,11 +725,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
         <translation>Vis hjelpetekster fra PIVX kernen for at få en liste med mulige PIVX kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
+        <source>Stakecube client</source>
         <translation>PIVX kerneklient</translation>
     </message>
     <message>
@@ -1161,7 +1161,7 @@ Adresse: %4
         <translation>Ret afsenderadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>Den indtastede adresse %1 er ikke en gyldig PIVX adresse</translation>
     </message>
     <message>
@@ -1218,7 +1218,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX kerne</translation>
     </message>
     <message>
@@ -1226,7 +1226,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
+        <source>About Stakecube</source>
         <translation>om PIVX kerne</translation>
     </message>
     <message>
@@ -1273,15 +1273,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
+        <source>Welcome to Stakecube.</source>
         <translation>Velkommen til PIVX kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor PIVX kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>PIVX kernen vil nu hente og gemme en kopi af PIVX blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1293,7 +1293,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX kerne</translation>
     </message>
     <message>
@@ -1435,8 +1435,8 @@ Adresse: %4
         <translation>Indtast modtageradresse</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre PIVX adressater når den er tilstrækkelig stor. 
@@ -2185,7 +2185,7 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Kan ikke starte PIVX "klik for at betale" systemet</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
         <translation>URl kan ikke fortolkes! Det kan skyldes en ugyldig adresse, eller forkerte URl parametre.</translation>
     </message>
     <message>
@@ -2355,7 +2355,7 @@ zPIV er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>PIVX-adressen for at sende betalingen til. Opretter lokal betaling til dig selv, når du er tom.</translation>
     </message>
     <message>
@@ -2812,7 +2812,7 @@ Vær tålmodig...</translation>
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation>Indtast en PIVX adresse (F.eks. %1)</translation>
     </message>
     <message>
@@ -2856,7 +2856,7 @@ Vær tålmodig...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX kerne</translation>
     </message>
     </context>
@@ -3702,7 +3702,7 @@ Vær tålmodig...</translation>
         <translation>Split blok værktøjet virker ikke med flere adresser. Prøv igen</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation>Advarsel! Ugyldig PIVX adresse</translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ Vær tålmodig...</translation>
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation>PIVX adressen, som betalingen skal sendes til</translation>
     </message>
     <message>
@@ -3868,7 +3868,7 @@ Vær tålmodig...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
+        <source>Stakecube is shutting down...</source>
         <translation>PIVX kernen lukker ned</translation>
     </message>
     <message>
@@ -3891,7 +3891,7 @@ Vær tålmodig...</translation>
         <translation>De kan underskrive beskeder med Deres adresser or at bevise ejerskab. Vær forsigtig med at underskrive noget De er usikker på såsom forsøg op at narre Dem til at oplyse Deres identitet. Skriv kun under på noget De kan stå inde for, og som De er enig i. </translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>Den PIVX adresse, der skal bruges til at underskrive beskeden med.</translation>
     </message>
     <message>
@@ -3923,15 +3923,15 @@ Vær tålmodig...</translation>
         <translation>Kopier den aktuelle underskrift til udklipsholderen.</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Underskriv beskeden for at bevise, at De ejer denne PIVX adresse.</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>Beskeden er underskrevet med denne PIVX adresse</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>verificer beskeden for at sikre, at den blev underskrevet med den rigtige PIVX adresse.</translation>
     </message>
     <message>
@@ -4018,7 +4018,7 @@ Vær tålmodig...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX kerne</translation>
     </message>
     <message>
@@ -4034,7 +4034,7 @@ Vær tålmodig...</translation>
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
+        <source>The Stakecube developers</source>
         <translation>PIVX "core" udviklerne</translation>
     </message>
     <message>
@@ -4679,7 +4679,7 @@ Vær tålmodig...</translation>
         <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
         <translation>Kan ikke låse datamappen %s. PIVX core kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -4852,7 +4852,7 @@ Vær tålmodig...</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Stakecube is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. PIVX kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -4880,7 +4880,7 @@ Vær tålmodig...</translation>
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Stakecube will not work properly.</source>
         <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil PIVX core ikke fungere ordentligt.</translation>
     </message>
     <message>
@@ -5012,8 +5012,8 @@ Vær tålmodig...</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Stakecube Developers</source>
+        <translation>Copyright (C) 2015-%i The Stakecube Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5092,7 +5092,7 @@ Vær tålmodig...</translation>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af PIVX core</translation>
     </message>
     <message>
@@ -5188,7 +5188,7 @@ Vær tålmodig...</translation>
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
+        <source>Initialization sanity check failed. Stakecube is shutting down.</source>
         <translation>Initiering af sanitetskontrollen fejlede. PIVX core lukker ned. </translation>
     </message>
     <message>
@@ -5864,7 +5864,7 @@ Vær tålmodig...</translation>
         <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
         <translation>Tegnebogen måtte genskrives. Genstart PIVX core for at gøre færdig</translation>
     </message>
     <message>

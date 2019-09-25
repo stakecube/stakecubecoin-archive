@@ -1098,7 +1098,7 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
+                           zPIV can be spent and sent to any SCC address. The receiver will
                            receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            If you want more zPIV you will need to mint your balance in the “Privacy” tab.

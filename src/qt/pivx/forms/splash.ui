@@ -87,25 +87,6 @@
         </property>
        </spacer>
       </item>
-      <item alignment="Qt::AlignHCenter">
-       <widget class="QToolButton" name="imgLogo">
-        <property name="minimumSize">
-         <size>
-          <width>300</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>300</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
       <item>
        <spacer name="verticalSpacer">
         <property name="orientation">

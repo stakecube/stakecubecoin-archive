@@ -62,11 +62,11 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Bunlar ödemeleri göndermek için olan PIVX adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Bunlar ödemeleri almak için olan PIVX adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>BIP 38 ile şifrelemek isteğiniz PIVX Adresini giriniz. Ortadaki kutucuğa bir parola giriniz. Şifrelenmiş özel anahtarı hesaplamak için şifrele tuşuna basınız. </translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
+        <source>The SCC address to encrypt</source>
         <translation>Şifrelenecek PIVX adresi</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Geçerli imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
+        <source>Encrypt the private key for this SCC address</source>
         <translation>Bu PIVX adresinin özel anahtarını şifreleyin</translation>
     </message>
     <message>
@@ -645,11 +645,11 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX CORE</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
+        <source>Send coins to a SCC address</source>
         <translation>Koinleri PIVX adresine gönder</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
+        <source>&amp;About Stakecube</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
+        <source>Show information about Stakecube</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
@@ -681,11 +681,11 @@
         <translation>PIVX için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
+        <source>Sign messages with your SCC addresses to prove you own them</source>
         <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı PIVX adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
+        <source>Verify messages to ensure they were signed with specified SCC addresses</source>
         <translation>Belirtilen PIVX adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
@@ -729,12 +729,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Olası PIVX komut satırı seçeneklerine sahip bir liste almak için PIVX Core yardım mesajını gösterin</translation>
+        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
+        <translation>Olası PIVX komut satırı seçeneklerine sahip bir liste almak için Stakecube yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core istemci</translation>
+        <source>Stakecube client</source>
+        <translation>Stakecube istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1162,7 +1162,7 @@ Adres: %4
         <translation>Gönderen adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SCC address.</source>
         <translation>Girilen "%1" adresi geçerli bir PIVX adresi değil.</translation>
     </message>
     <message>
@@ -1219,7 +1219,7 @@ Adres: %4
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX CORE</translation>
     </message>
     <message>
@@ -1227,8 +1227,8 @@ Adres: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>hakkında PIVX Core</translation>
+        <source>About Stakecube</source>
+        <translation>hakkında Stakecube</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ Adres: %4
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>PIVX Core'a hoşgeldiniz.</translation>
+        <source>Welcome to Stakecube.</source>
+        <translation>Stakecube'a hoşgeldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Program ilk başlatıldığında PIVX Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
+        <translation>Program ilk başlatıldığında Stakecube'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core, PIVX blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
+        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube, PIVX blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,7 +1294,7 @@ Adres: %4
         <translation>Özel bir veri dizini kullanın:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX CORE</translation>
     </message>
     <message>
@@ -1436,8 +1436,8 @@ Adres: %4
         <translation>Gönderim adresi girin</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SCC addresses after it matures.
+To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>ÇokluGönderi, olgunlaştıktan sonra diğer PIVX adreslerinin bir listesine staking ya da masternode ödülünüzün 100% 'ünü otomatik olarak göndermenize olanak tanır.
@@ -2199,7 +2199,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Pivx başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
         <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir PIVX adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
     </message>
     <message>
@@ -2369,7 +2369,7 @@ zPIV, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>şuna öde:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Ödemeyi göndermek için PIVX adresi. Boş olduğunda kendinize yerel ödeme oluşturur.</translation>
     </message>
     <message>
@@ -2685,7 +2685,7 @@ Lütfen sabırlı olun...</translation>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
+        <source>Enter a SCC address (e.g. %1)</source>
         <translation>Gir bir PIVX addres (e.g. %1)</translation>
     </message>
     <message>
@@ -2729,7 +2729,7 @@ Lütfen sabırlı olun...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX CORE</translation>
     </message>
     </context>
@@ -3491,7 +3491,7 @@ Lütfen sabırlı olun...</translation>
         <translation>Bloğu böl aygıtı multipl adresle çalışmaz Tekrar deneyin</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
+        <source>Warning: Invalid SCC address</source>
         <translation>Uyarı: Geçersiz PIVX adresi</translation>
     </message>
     <message>
@@ -3586,7 +3586,7 @@ Lütfen sabırlı olun...</translation>
         <translation>şuna öde:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
+        <source>The SCC address to send the payment to</source>
         <translation>Ödemeyi göndermek için PIVX adresi</translation>
     </message>
     <message>
@@ -3653,8 +3653,8 @@ Lütfen sabırlı olun...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core kapanıyor ...</translation>
+        <source>Stakecube is shutting down...</source>
+        <translation>Stakecube kapanıyor ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3676,7 +3676,7 @@ Lütfen sabırlı olun...</translation>
         <translation>Sahip olduğunuzu kanıtlamak için adreslerinizle mesaj imzalayabilirsiniz. Kimlik avı saldırıları sizi kimliğini onlara yazmaya kandırmaya çalışabilir, çünkü belirsiz bir şey imzalamamaya dikkat edin. Kabul ettiğiniz tamamen ayrıntılı ifadeleri yalnızca imzalayın.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
+        <source>The SCC address to sign the message with</source>
         <translation>Ile mesaj imzalamak için PIVX adresi</translation>
     </message>
     <message>
@@ -3708,15 +3708,15 @@ Lütfen sabırlı olun...</translation>
         <translation>Geçerli imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
+        <source>Sign the message to prove you own this SCC address</source>
         <translation>Bu PIVX adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
+        <source>The SCC address the message was signed with</source>
         <translation>Mesajın imzalandığı PIVX adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <source>Verify the message to ensure it was signed with the specified SCC address</source>
         <translation>Belirtilen PIVX adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
@@ -3803,7 +3803,7 @@ Lütfen sabırlı olun...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
+        <source>Stakecube</source>
         <translation>PIVX CORE</translation>
     </message>
     <message>
@@ -3819,8 +3819,8 @@ Lütfen sabırlı olun...</translation>
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>The PIVX Core developers</translation>
+        <source>The Stakecube developers</source>
+        <translation>The Stakecube developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4412,8 +4412,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. PIVX Core muhtemelen zaten çalışıyor.</translation>
+        <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. Stakecube muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>

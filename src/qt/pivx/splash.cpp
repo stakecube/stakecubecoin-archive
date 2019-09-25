@@ -39,7 +39,7 @@ Splash::Splash(QWidget *parent) :
     ui->progressBar->setProperty("cssClass", "progress-splash");
     ui->frame->setProperty("cssClass", "container-splash");
     ui->layoutProgress->setProperty("cssClass", "bg-progress");
-    ui->imgLogo->setProperty("cssClass", "img-splash-logo");
+    // ui->imgLogo->setProperty("cssClass", "img-splash-logo");
 
     // Resize window and move to center of desktop, disallow resizing
     QRect r(QPoint(), size());
