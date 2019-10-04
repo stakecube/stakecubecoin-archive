@@ -478,7 +478,7 @@ uint256 CConsensusVote::GetHash() const
 bool CConsensusVote::SignatureValid()
 {
     std::string errorMessage;
-    std::string strMessage = txHash.ToString().c_str() + std::to_string(nBlockHeight);
+    std::string strMessage = txHash.ToString().c_str() + boost::lexical_cast<std::string>(nBlockHeight);
     //LogPrintf("verify strMessage %s \n", strMessage.c_str());
 
     CMasternode* pmn = mnodeman.Find(vinMasternode);

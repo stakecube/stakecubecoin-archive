@@ -908,9 +908,6 @@ UniValue decodemasternodebroadcast(const UniValue& params, bool fHelp)
     if (!DecodeHexMnb(mnb, params[0].get_str()))
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Masternode broadcast message decode failed");
 
-    if(!mnb.VerifySignature())
-        throw JSONRPCError(RPC_INVALID_PARAMETER, "Masternode broadcast signature verification failed");
-
     UniValue resultObj(UniValue::VOBJ);
 
     resultObj.push_back(Pair("vin", mnb.vin.prevout.ToString()));
@@ -951,9 +948,6 @@ UniValue relaymasternodebroadcast(const UniValue& params, bool fHelp)
 
     if (!DecodeHexMnb(mnb, params[0].get_str()))
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Masternode broadcast message decode failed");
-
-    if(!mnb.VerifySignature())
-        throw JSONRPCError(RPC_INVALID_PARAMETER, "Masternode broadcast signature verification failed");
 
     mnodeman.UpdateMasternodeList(mnb);
     mnb.Relay();

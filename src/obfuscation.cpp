@@ -533,7 +533,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         for (CTxOut out : txVin.vout) {
-            if (out.nValue == 10000 * COIN) {
+            if (out.nValue == Params().MasternodeCollateralLimit() * COIN) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }
@@ -606,7 +606,7 @@ bool CObfuscationQueue::Sign()
 {
     if (!fMasterNode) return false;
 
-    std::string strMessage = vin.ToString() + std::to_string(nDenom) + std::to_string(time) + std::to_string(ready);
+    std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
 
     CKey key2;
     CPubKey pubkey2;

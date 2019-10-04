@@ -15,6 +15,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include <boost/filesystem.hpp>
+#include <boost/lexical_cast.hpp>
 
 /** Object for who's going to get paid on which blocks */
 CMasternodePayments masternodePayments;
@@ -326,22 +327,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i].nValue = masternodePayment;
 
             //subtract mn payment from the stake reward
-            if (!txNew.vout[1].IsZerocoinMint()) {
-                if (i == 2) {
-                    // Majority of cases; do it quick and move on
-                    txNew.vout[i - 1].nValue -= masternodePayment;
-                } else if (i > 2) {
-                    // special case, stake is split between (i-1) outputs
-                    unsigned int outputs = i-1;
-                    CAmount mnPaymentSplit = masternodePayment / outputs;
-                    CAmount mnPaymentRemainder = masternodePayment - (mnPaymentSplit * outputs);
-                    for (unsigned int j=1; j<=outputs; j++) {
-                        txNew.vout[j].nValue -= mnPaymentSplit;
-                    }
-                    // in case it's not an even division, take the last bit of dust from the last one
-                    txNew.vout[outputs].nValue -= mnPaymentRemainder;
-                }
-            }
+            txNew.vout[i - 1].nValue -= masternodePayment;
         } else {
             txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
@@ -354,6 +340,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CBitcoinAddress address2(address1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
+    } else {
+      	txNew.vout[0].nValue = blockValue;
     }
 }
 
@@ -427,10 +415,8 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
         }
 
         if (!winner.SignatureValid()) {
-            if (masternodeSync.IsSynced()) {
-                LogPrintf("CMasternodePayments::ProcessMessageMasternodePayments() : mnw - invalid signature\n");
-                Misbehaving(pfrom->GetId(), 20);
-            }
+            // LogPrintf("mnw - invalid signature\n");
+            if (masternodeSync.IsSynced()) Misbehaving(pfrom->GetId(), 20);
             // it could just be a non-synced masternode
             mnodeman.AskForMN(pfrom, winner.vinMasternode);
             return;
@@ -454,7 +440,9 @@ bool CMasternodePaymentWinner::Sign(CKey& keyMasternode, CPubKey& pubKeyMasterno
     std::string errorMessage;
     std::string strMasterNodeSignMessage;
 
-    std::string strMessage = vinMasternode.prevout.ToStringShort() + std::to_string(nBlockHeight) + payee.ToString();
+    std::string strMessage = vinMasternode.prevout.ToStringShort() +
+                             boost::lexical_cast<std::string>(nBlockHeight) +
+                             payee.ToString();
 
     if (!obfuScationSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
         LogPrint("masternode","CMasternodePing::Sign() - Error: %s\n", errorMessage.c_str());
@@ -610,9 +598,9 @@ std::string CMasternodeBlockPayees::GetRequiredPaymentsString()
         CBitcoinAddress address2(address1);
 
         if (ret != "Unknown") {
-            ret += ", " + address2.ToString() + ":" + std::to_string(payee.nVotes);
+            ret += ", " + address2.ToString() + ":" + boost::lexical_cast<std::string>(payee.nVotes);
         } else {
-            ret = address2.ToString() + ":" + std::to_string(payee.nVotes);
+            ret = address2.ToString() + ":" + boost::lexical_cast<std::string>(payee.nVotes);
         }
     }
 
@@ -786,7 +774,9 @@ bool CMasternodePaymentWinner::SignatureValid()
     CMasternode* pmn = mnodeman.Find(vinMasternode);
 
     if (pmn != NULL) {
-        std::string strMessage = vinMasternode.prevout.ToStringShort() + std::to_string(nBlockHeight) + payee.ToString();
+        std::string strMessage = vinMasternode.prevout.ToStringShort() +
+                                 boost::lexical_cast<std::string>(nBlockHeight) +
+                                 payee.ToString();
 
         std::string errorMessage = "";
         if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {

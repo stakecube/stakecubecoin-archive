@@ -142,6 +142,7 @@ public:
         nStakeMinDepth = 600;
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
+        nMasternodeCollateralLimit = 1000;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 20000000 * COIN;
 
