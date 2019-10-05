@@ -8,14 +8,14 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/contactsdropdown.h"
-#include "qt/pivx/sendmultirow.h"
-#include "qt/pivx/sendcustomfeedialog.h"
-#include "walletmodel.h"
-#include "coincontroldialog.h"
-#include "zpivcontroldialog.h"
-#include "qt/pivx/tooltipmenu.h"
+#include <qt/pivx/pwidget.h>
+#include <qt/pivx/contactsdropdown.h>
+#include <qt/pivx/sendmultirow.h>
+#include <qt/pivx/sendcustomfeedialog.h>
+#include <walletmodel.h>
+#include <coincontroldialog.h>
+#include <zpivcontroldialog.h>
+#include <qt/pivx/tooltipmenu.h>
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 

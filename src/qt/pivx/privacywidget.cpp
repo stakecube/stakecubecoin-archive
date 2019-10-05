@@ -2,17 +2,17 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/forms/ui_privacywidget.h"
-#include "qt/pivx/qtutils.h"
-#include "guiutil.h"
-#include "qt/pivx/denomgenerationdialog.h"
-#include "qt/pivx/txviewholder.h"
-#include "walletmodel.h"
-#include "optionsmodel.h"
-#include "coincontroldialog.h"
-#include "coincontrol.h"
-#include "zpiv/accumulators.h"
+#include <qt/pivx/privacywidget.h>
+#include <qt/pivx/forms/ui_privacywidget.h>
+#include <qt/pivx/qtutils.h>
+#include <guiutil.h>
+#include <qt/pivx/denomgenerationdialog.h>
+#include <qt/pivx/txviewholder.h>
+#include <walletmodel.h>
+#include <optionsmodel.h>
+#include <coincontroldialog.h>
+#include <coincontrol.h>
+#include <zpiv/accumulators.h>
 
 #define DECORATION_SIZE 65
 #define NUM_ITEMS 3

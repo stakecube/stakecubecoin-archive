@@ -6,8 +6,8 @@
 #define SETTINGSINFORMATIONWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "rpcconsole.h"
+#include <qt/pivx/pwidget.h>
+#include <rpcconsole.h>
 
 namespace Ui {
 class SettingsInformationWidget;

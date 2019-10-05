@@ -2,22 +2,22 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/send.h"
-#include "qt/pivx/forms/ui_send.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/sendchangeaddressdialog.h"
-#include "qt/pivx/optionbutton.h"
-#include "qt/pivx/sendconfirmdialog.h"
-#include "qt/pivx/myaddressrow.h"
-#include "clientmodel.h"
-#include "optionsmodel.h"
-#include "addresstablemodel.h"
-#include "coincontrol.h"
-#include "script/standard.h"
-#include "zpiv/deterministicmint.h"
-#include "openuridialog.h"
-#include "zpivcontroldialog.h"
+#include <qt/pivx/send.h>
+#include <qt/pivx/forms/ui_send.h>
+#include <qt/pivx/addnewcontactdialog.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/sendchangeaddressdialog.h>
+#include <qt/pivx/optionbutton.h>
+#include <qt/pivx/sendconfirmdialog.h>
+#include <qt/pivx/myaddressrow.h>
+#include <clientmodel.h>
+#include <optionsmodel.h>
+#include <addresstablemodel.h>
+#include <coincontrol.h>
+#include <script/standard.h>
+#include <zpiv/deterministicmint.h>
+#include <openuridialog.h>
+#include <zpivcontroldialog.h>
 
 SendWidget::SendWidget(PIVXGUI* parent) :
     PWidget(parent),

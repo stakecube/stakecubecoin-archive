@@ -5,12 +5,12 @@
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/furlistrow.h"
-#include "transactiontablemodel.h"
-#include "qt/pivx/txviewholder.h"
-#include "transactionfilterproxy.h"
+#include <qt/pivx/pwidget.h>
+#include <qt/pivx/furabstractlistitemdelegate.h>
+#include <qt/pivx/furlistrow.h>
+#include <transactiontablemodel.h>
+#include <qt/pivx/txviewholder.h>
+#include <transactionfilterproxy.h>
 
 #include <atomic>
 #include <cstdlib>
@@ -19,7 +19,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h" /* for USE_QTCHARTS */
+#include <config/pivx-config.h> /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS

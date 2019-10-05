@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/lockunlock.h"
-#include "qt/pivx/forms/ui_lockunlock.h"
+#include <qt/pivx/lockunlock.h>
+#include <qt/pivx/forms/ui_lockunlock.h>
 
 LockUnlock::LockUnlock(QWidget *parent) :
     QWidget(parent),

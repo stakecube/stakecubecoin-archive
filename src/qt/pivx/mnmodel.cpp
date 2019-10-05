@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/mnmodel.h"
-#include "masternode-sync.h"
-#include "masternodeman.h"
-#include "activemasternode.h"
-#include "sync.h"
-#include "uint256.h"
-#include "wallet/wallet.h"
+#include <qt/pivx/mnmodel.h>
+#include <masternode-sync.h>
+#include <masternodeman.h>
+#include <activemasternode.h>
+#include <sync.h>
+#include <uint256.h>
+#include <wallet/wallet.h>
 
 MNModel::MNModel(QObject *parent) : QAbstractTableModel(parent){
     updateMNList();

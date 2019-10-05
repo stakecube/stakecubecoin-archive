@@ -9,7 +9,7 @@
 #include <QThread>
 #include <iostream>
 #include <QTimer>
-#include "qt/pivx/prunnable.h"
+#include <qt/pivx/prunnable.h>
 
 namespace Ui {
 class LoadingDialog;

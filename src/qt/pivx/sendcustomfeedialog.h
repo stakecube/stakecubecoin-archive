@@ -6,7 +6,7 @@
 #define SENDCUSTOMFEEDIALOG_H
 
 #include <QDialog>
-#include "amount.h"
+#include <amount.h>
 
 class WalletModel;
 

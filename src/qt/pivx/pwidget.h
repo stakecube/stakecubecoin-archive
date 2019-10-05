@@ -8,7 +8,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QString>
-#include "qt/pivx/prunnable.h"
+#include <qt/pivx/prunnable.h>
 
 class PIVXGUI;
 class ClientModel;

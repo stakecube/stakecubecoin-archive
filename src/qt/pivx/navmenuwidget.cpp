@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/navmenuwidget.h"
-#include "qt/pivx/forms/ui_navmenuwidget.h"
-#include "qt/pivx/pivxgui.h"
-#include "qt/pivx/qtutils.h"
-#include "clientversion.h"
+#include <qt/pivx/navmenuwidget.h>
+#include <qt/pivx/forms/ui_navmenuwidget.h>
+#include <qt/pivx/pivxgui.h>
+#include <qt/pivx/qtutils.h>
+#include <clientversion.h>
 
 NavMenuWidget::NavMenuWidget(PIVXGUI *mainWindow, QWidget *parent) :
     QWidget(parent),

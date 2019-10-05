@@ -6,7 +6,7 @@
 #define PIVX_CORE_NEW_GUI_PIVXGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include <config/pivx-config.h>
 #endif
 
 #include <QMainWindow>
@@ -14,17 +14,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/pivx/navmenuwidget.h"
-#include "qt/pivx/topbar.h"
-#include "qt/pivx/dashboardwidget.h"
-#include "qt/pivx/send.h"
-#include "qt/pivx/receivewidget.h"
-#include "qt/pivx/addresseswidget.h"
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/masternodeswidget.h"
-#include "qt/pivx/snackbar.h"
-#include "qt/pivx/settings/settingswidget.h"
-#include "qt/rpcconsole.h"
+#include <qt/pivx/navmenuwidget.h>
+#include <qt/pivx/topbar.h>
+#include <qt/pivx/dashboardwidget.h>
+#include <qt/pivx/send.h>
+#include <qt/pivx/receivewidget.h>
+#include <qt/pivx/addresseswidget.h>
+#include <qt/pivx/privacywidget.h>
+#include <qt/pivx/masternodeswidget.h>
+#include <qt/pivx/snackbar.h>
+#include <qt/pivx/settings/settingswidget.h>
+#include <qt/rpcconsole.h>
 
 
 class ClientModel;

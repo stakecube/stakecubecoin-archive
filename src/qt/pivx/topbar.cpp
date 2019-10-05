@@ -2,24 +2,24 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/topbar.h"
-#include "qt/pivx/forms/ui_topbar.h"
+#include <qt/pivx/topbar.h>
+#include <qt/pivx/forms/ui_topbar.h>
 #include <QPixmap>
-#include "qt/pivx/lockunlock.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/receivedialog.h"
-#include "askpassphrasedialog.h"
+#include <qt/pivx/lockunlock.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/receivedialog.h>
+#include <askpassphrasedialog.h>
 
-#include "bitcoinunits.h"
-#include "clientmodel.h"
-#include "qt/guiconstants.h"
-#include "qt/guiutil.h"
-#include "optionsmodel.h"
-#include "qt/platformstyle.h"
-#include "wallet/wallet.h"
-#include "walletmodel.h"
-#include "addresstablemodel.h"
-#include "guiinterface.h"
+#include <bitcoinunits.h>
+#include <clientmodel.h>
+#include <qt/guiconstants.h>
+#include <qt/guiutil.h>
+#include <optionsmodel.h>
+#include <qt/platformstyle.h>
+#include <wallet/wallet.h>
+#include <walletmodel.h>
+#include <addresstablemodel.h>
+#include <guiinterface.h>
 
 
 TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :

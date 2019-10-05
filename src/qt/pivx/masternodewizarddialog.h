@@ -6,9 +6,9 @@
 #define MASTERNODEWIZARDDIALOG_H
 
 #include <QDialog>
-#include "walletmodel.h"
-#include "qt/pivx/snackbar.h"
-#include "masternodeconfig.h"
+#include <walletmodel.h>
+#include <qt/pivx/snackbar.h>
+#include <masternodeconfig.h>
 
 class WalletModel;
 

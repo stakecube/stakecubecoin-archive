@@ -2,21 +2,21 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/pivxgui.h"
+#include <qt/pivx/pivxgui.h>
 
 #ifdef Q_OS_MAC
-#include "macdockiconhandler.h"
+#include <macdockiconhandler.h>
 #endif
 
 #include <qt/guiutil.h>
-#include "clientmodel.h"
-#include "optionsmodel.h"
-#include "networkstyle.h"
-#include "notificator.h"
-#include "guiinterface.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/defaultdialog.h"
-#include "qt/pivx/settings/settingsfaqwidget.h"
+#include <clientmodel.h>
+#include <optionsmodel.h>
+#include <networkstyle.h>
+#include <notificator.h>
+#include <guiinterface.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/defaultdialog.h>
+#include <qt/pivx/settings/settingsfaqwidget.h>
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -25,7 +25,7 @@
 #include <QShortcut>
 #include <QKeySequence>
 
-#include "util.h"
+#include <util.h>
 
 
 const QString PIVXGUI::DEFAULT_WALLET = "~Default";

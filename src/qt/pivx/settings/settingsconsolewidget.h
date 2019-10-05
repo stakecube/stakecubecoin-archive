@@ -6,9 +6,9 @@
 #define SETTINGSCONSOLEWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "guiutil.h"
-#include "net.h"
+#include <qt/pivx/pwidget.h>
+#include <guiutil.h>
+#include <net.h>
 #include <QCompleter>
 
 class ClientModel;

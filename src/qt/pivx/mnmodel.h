@@ -6,8 +6,8 @@
 #define MNMODEL_H
 
 #include <QAbstractTableModel>
-#include "masternode.h"
-#include "masternodeconfig.h"
+#include <masternode.h>
+#include <masternodeconfig.h>
 
 class MNModel : public QAbstractTableModel
 {

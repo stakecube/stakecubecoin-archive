@@ -6,8 +6,8 @@
 #define SENDCONFIRMDIALOG_H
 
 #include <QDialog>
-#include "walletmodeltransaction.h"
-#include "qt/pivx/snackbar.h"
+#include <walletmodeltransaction.h>
+#include <qt/pivx/snackbar.h>
 
 class WalletModelTransaction;
 class WalletModel;

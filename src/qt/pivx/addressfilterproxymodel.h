@@ -6,7 +6,7 @@
 #define PIVX_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
 
 #include <QSortFilterProxyModel>
-#include "addresstablemodel.h"
+#include <addresstablemodel.h>
 
 
 class AddressFilterProxyModel final : public QSortFilterProxyModel

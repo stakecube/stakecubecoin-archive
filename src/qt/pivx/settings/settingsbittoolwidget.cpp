@@ -2,18 +2,18 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingsbittoolwidget.h"
-#include "qt/pivx/settings/forms/ui_settingsbittoolwidget.h"
-#include "qt/pivx/qtutils.h"
+#include <qt/pivx/settings/settingsbittoolwidget.h>
+#include <qt/pivx/settings/forms/ui_settingsbittoolwidget.h>
+#include <qt/pivx/qtutils.h>
 
-#include "guiutil.h"
-#include "walletmodel.h"
+#include <guiutil.h>
+#include <walletmodel.h>
 
-#include "base58.h"
-#include "bip38.h"
-#include "init.h"
-#include "wallet/wallet.h"
-#include "askpassphrasedialog.h"
+#include <base58.h>
+#include <bip38.h>
+#include <init.h>
+#include <wallet/wallet.h>
+#include <askpassphrasedialog.h>
 
 #include <string>
 #include <vector>

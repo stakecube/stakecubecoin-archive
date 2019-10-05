@@ -6,7 +6,7 @@
 #define LOCKUNLOCK_H
 
 #include <QWidget>
-#include "walletmodel.h"
+#include <walletmodel.h>
 
 namespace Ui {
 class LockUnlock;

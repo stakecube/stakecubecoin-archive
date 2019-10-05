@@ -5,10 +5,10 @@
 #ifndef RECEIVEWIDGET_H
 #define RECEIVEWIDGET_H
 
-#include "qt/pivx/pwidget.h"
-#include "addresstablemodel.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/addressfilterproxymodel.h"
+#include <qt/pivx/pwidget.h>
+#include <addresstablemodel.h>
+#include <qt/pivx/furabstractlistitemdelegate.h>
+#include <qt/pivx/addressfilterproxymodel.h>
 
 #include <QSpacerItem>
 #include <QWidget>

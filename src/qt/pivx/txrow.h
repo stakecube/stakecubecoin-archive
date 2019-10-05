@@ -7,7 +7,7 @@
 
 #include <QWidget>
 #include <QDateTime>
-#include "transactionrecord.h"
+#include <transactionrecord.h>
 
 namespace Ui {
 class TxRow;

@@ -2,16 +2,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/contactsdropdown.h"
+#include <qt/pivx/contactsdropdown.h>
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/pivx/addresslabelrow.h"
-#include "qt/pivx/contactdropdownrow.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/furlistrow.h"
-#include "walletmodel.h"
-#include "addresstablemodel.h"
+#include <qt/pivx/addresslabelrow.h>
+#include <qt/pivx/contactdropdownrow.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/furlistrow.h>
+#include <walletmodel.h>
+#include <addresstablemodel.h>
 
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3

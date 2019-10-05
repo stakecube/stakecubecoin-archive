@@ -2,19 +2,19 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/splash.h"
-#include "qt/pivx/forms/ui_splash.h"
+#include <qt/pivx/splash.h>
+#include <qt/pivx/forms/ui_splash.h>
 #include "QFile"
 
-#include "init.h"
-#include "guiinterface.h"
-#include "networkstyle.h"
-#include "util.h"
-#include "version.h"
-#include "guiutil.h"
+#include <init.h>
+#include <guiinterface.h>
+#include <networkstyle.h>
+#include <util.h>
+#include <version.h>
+#include <guiutil.h>
 
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
+#include <wallet/wallet.h>
 #endif
 
 #include <QCloseEvent>

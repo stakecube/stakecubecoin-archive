@@ -6,10 +6,10 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/mnmodel.h"
-#include "qt/pivx/tooltipmenu.h"
+#include <qt/pivx/pwidget.h>
+#include <qt/pivx/furabstractlistitemdelegate.h>
+#include <qt/pivx/mnmodel.h>
+#include <qt/pivx/tooltipmenu.h>
 #include <QTimer>
 
 class PIVXGUI;

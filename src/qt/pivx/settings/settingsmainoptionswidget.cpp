@@ -2,26 +2,26 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingsmainoptionswidget.h"
-#include "qt/pivx/settings/forms/ui_settingsmainoptionswidget.h"
+#include <qt/pivx/settings/settingsmainoptionswidget.h>
+#include <qt/pivx/settings/forms/ui_settingsmainoptionswidget.h>
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include <config/pivx-config.h>
 #endif
 
-#include "bitcoinunits.h"
-#include "guiutil.h"
-#include "optionsmodel.h"
-#include "clientmodel.h"
-#include "qt/pivx/qtutils.h"
+#include <bitcoinunits.h>
+#include <guiutil.h>
+#include <optionsmodel.h>
+#include <clientmodel.h>
+#include <qt/pivx/qtutils.h>
 
-#include "validation.h" // for MAX_SCRIPTCHECK_THREADS
-#include "netbase.h"
-#include "txdb.h" // for -dbcache defaults
+#include <validation.h> // for MAX_SCRIPTCHECK_THREADS
+#include <netbase.h>
+#include <txdb.h> // for -dbcache defaults
 
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h" // for CWallet::minTxFee
+#include <wallet/wallet.h> // for CWallet::minTxFee
 #endif
 
 #include <boost/thread.hpp>

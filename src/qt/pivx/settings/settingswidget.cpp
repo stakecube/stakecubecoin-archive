@@ -2,23 +2,23 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/settings/settingswidget.h"
-#include "qt/pivx/settings/forms/ui_settingswidget.h"
-#include "qt/pivx/settings/settingsbackupwallet.h"
-#include "qt/pivx/settings/settingsbittoolwidget.h"
-#include "qt/pivx/settings/settingswalletrepairwidget.h"
-#include "qt/pivx/settings/settingswalletoptionswidget.h"
-#include "qt/pivx/settings/settingsmainoptionswidget.h"
-#include "qt/pivx/settings/settingsdisplayoptionswidget.h"
-#include "qt/pivx/settings/settingsmultisendwidget.h"
-#include "qt/pivx/settings/settingsinformationwidget.h"
-#include "qt/pivx/settings/settingsconsolewidget.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/defaultdialog.h"
-#include "optionsmodel.h"
-#include "clientmodel.h"
-#include "utilitydialog.h"
-#include "wallet/wallet.h"
+#include <qt/pivx/settings/settingswidget.h>
+#include <qt/pivx/settings/forms/ui_settingswidget.h>
+#include <qt/pivx/settings/settingsbackupwallet.h>
+#include <qt/pivx/settings/settingsbittoolwidget.h>
+#include <qt/pivx/settings/settingswalletrepairwidget.h>
+#include <qt/pivx/settings/settingswalletoptionswidget.h>
+#include <qt/pivx/settings/settingsmainoptionswidget.h>
+#include <qt/pivx/settings/settingsdisplayoptionswidget.h>
+#include <qt/pivx/settings/settingsmultisendwidget.h>
+#include <qt/pivx/settings/settingsinformationwidget.h>
+#include <qt/pivx/settings/settingsconsolewidget.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/defaultdialog.h>
+#include <optionsmodel.h>
+#include <clientmodel.h>
+#include <utilitydialog.h>
+#include <wallet/wallet.h>
 #include <QScrollBar>
 #include <QDataWidgetMapper>
 

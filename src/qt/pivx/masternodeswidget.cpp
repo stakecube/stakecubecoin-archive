@@ -2,27 +2,27 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/masternodeswidget.h"
-#include "qt/pivx/forms/ui_masternodeswidget.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/mnrow.h"
-#include "qt/pivx/mninfodialog.h"
+#include <qt/pivx/masternodeswidget.h>
+#include <qt/pivx/forms/ui_masternodeswidget.h>
+#include <qt/pivx/qtutils.h>
+#include <qt/pivx/mnrow.h>
+#include <qt/pivx/mninfodialog.h>
 
-#include "qt/pivx/masternodewizarddialog.h"
+#include <qt/pivx/masternodewizarddialog.h>
 
-#include "activemasternode.h"
-#include "clientmodel.h"
-#include "guiutil.h"
-#include "init.h"
-#include "masternode-sync.h"
-#include "masternodeconfig.h"
-#include "masternodeman.h"
-#include "sync.h"
-#include "wallet/wallet.h"
-#include "walletmodel.h"
-#include "askpassphrasedialog.h"
-#include "util.h"
-#include "qt/pivx/optionbutton.h"
+#include <activemasternode.h>
+#include <clientmodel.h>
+#include <guiutil.h>
+#include <init.h>
+#include <masternode-sync.h>
+#include <masternodeconfig.h>
+#include <masternodeman.h>
+#include <sync.h>
+#include <wallet/wallet.h>
+#include <walletmodel.h>
+#include <askpassphrasedialog.h>
+#include <util.h>
+#include <qt/pivx/optionbutton.h>
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <fstream>

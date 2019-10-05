@@ -7,7 +7,7 @@
 
 #include <QDialog>
 #include <QPixmap>
-#include "walletmodel.h"
+#include <walletmodel.h>
 
 class WalletModel;
 class PIVXGUI;
