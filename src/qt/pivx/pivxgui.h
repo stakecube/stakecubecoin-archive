@@ -60,7 +60,7 @@ signals:
     void themeChanged(bool isLightTheme, QString& theme);
     void windowResizeEvent(QResizeEvent* event);
 public slots:
-    void changeTheme(bool isLightTheme);
+    void changeTheme(bool isLightTheme = false);
     void goToDashboard();
     void goToSend();
     void goToReceive();

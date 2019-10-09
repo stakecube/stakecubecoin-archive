@@ -179,7 +179,6 @@ void PIVXGUI::connectActions() {
         goToSettings();
     });
     connect(topBar, &TopBar::showHide, this, &PIVXGUI::showHide);
-    connect(topBar, &TopBar::themeChanged, this, &PIVXGUI::changeTheme);
     connect(settingsWidget, &SettingsWidget::showHide, this, &PIVXGUI::showHide);
     connect(sendWidget, &SendWidget::showHide, this, &PIVXGUI::showHide);
     connect(receiveWidget, &ReceiveWidget::showHide, this, &PIVXGUI::showHide);
@@ -483,7 +482,7 @@ void PIVXGUI::changeTheme(bool isLightTheme){
     this->setStyleSheet(css);
 
     // Notify
-    emit themeChanged(isLightTheme, css);
+    emit themeChanged(false, css);
 
     // Update style
     updateStyle(this);
@@ -509,11 +508,8 @@ void PIVXGUI::showHide(bool show){
         opEnabled = false;
     }else{
         QColor bg("#000000");
-        bg.setAlpha(200);
-        if(!isLightTheme()){
-            bg = QColor("#00000000");
-            bg.setAlpha(150);
-        }
+        bg = QColor("#00000000");
+        bg.setAlpha(150);
 
         QPalette palette;
         palette.setColor(QPalette::Window, bg);

@@ -116,9 +116,7 @@ QPixmap encodeToQr(QString str, QString &errorStr, QColor qrColor){
 }
 
 void setupSettings(QSettings *settings){
-    if(!settings->contains("lightTheme")){
-        settings->setValue("lightTheme", true);
-    }
+    settings->setValue("lightTheme", false);
 }
 
 QSettings *settings = nullptr;
@@ -134,13 +132,13 @@ QSettings* getSettings(){
 }
 
 bool isLightTheme(){
-    return getSettings()->value("lightTheme", true).toBool();
+    return getSettings()->value("lightTheme", false).toBool();
 }
 
 void setTheme(bool isLight){
     QSettings* settings =  getSettings();
-    settings->setValue("theme", isLight ? "default" : "default-dark");
-    settings->setValue("lightTheme", isLight);
+    settings->setValue("theme", "default-dark");
+    settings->setValue("lightTheme", false);
 }
 
 
