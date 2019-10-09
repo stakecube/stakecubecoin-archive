@@ -12,6 +12,7 @@
 #include <QMainWindow>
 #include <QStackedWidget>
 #include <QSystemTrayIcon>
+#include <QWindowStateChangeEvent>
 #include <QLabel>
 
 #include <qt/pivx/navmenuwidget.h>
@@ -31,7 +32,6 @@ class ClientModel;
 class NetworkStyle;
 class Notificator;
 class WalletModel;
-
 
 /**
   PIVX GUI main class. This class represents the main window of the PIVX UI. It communicates with both the client and

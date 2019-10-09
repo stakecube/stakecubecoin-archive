@@ -851,7 +851,7 @@ QString loadStyleSheet()
     QString styleSheet;
     QSettings settings;
     QString cssName;
-    QString theme = settings.value("theme", "").toString();
+    QString theme = settings.value("theme", "default-dark").toString();
 
     if (isExternal(theme)) {
         // External CSS
