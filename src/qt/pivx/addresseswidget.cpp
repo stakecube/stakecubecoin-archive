@@ -56,7 +56,7 @@ public:
 };
 
 
-AddressesWidget::AddressesWidget(PIVXGUI* parent) :
+AddressesWidget::AddressesWidget(SCCGUI* parent) :
     PWidget(parent),
     ui(new Ui::AddressesWidget)
 {

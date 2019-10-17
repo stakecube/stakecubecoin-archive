@@ -1,7 +1,7 @@
-Contributing to PIVX Core
+Contributing to Stakecube
 ============================
 
-The PIVX Core project operates an open contributor model where anyone is
+The Stakecube project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -203,10 +203,10 @@ workload on reviewing.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the PIVX Core project, and is not to be
+The following applies to code changes to the Stakecube project, and is not to be
 confused with overall PIVX Network Protocol consensus changes.
 
-Whether a pull request is merged into PIVX Core rests with the project merge
+Whether a pull request is merged into Stakecube rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -303,7 +303,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each PIVX Core release.
+The project leader is the release manager for each Stakecube release.
 
 Copyright
 ---------

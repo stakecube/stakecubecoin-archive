@@ -434,7 +434,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::StakeMint:
         return tr("SCC Stake");
     case TransactionRecord::StakeZPIV:
-        return tr("zPIV Stake");
+        return tr("zSCC Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ObfuscationDenominate:
@@ -448,15 +448,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted SCC to zPIV");
+        return tr("Converted SCC to zSCC");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zPIV");
+        return tr("Spent zSCC");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received SCC from zPIV");
+        return tr("Received SCC from zSCC");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as zPIV from zPIV Spend");
+        return tr("Minted Change as zSCC from zSCC Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zPIV to SCC");
+        return tr("Converted zSCC to SCC");
     default:
         return QString();
     }

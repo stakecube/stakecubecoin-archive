@@ -356,7 +356,7 @@
        <item row="17" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the Stakecube debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -425,7 +425,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../pivx.qrc">
+            <iconset resource="../stakecube.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1333,7 +1333,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>Custom zPIV Backup Path:</string>
+          <string>Custom zSCC Backup Path:</string>
          </property>
         </widget>
        </item>

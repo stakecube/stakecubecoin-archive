@@ -8,7 +8,7 @@
 #include <qt/pivx/qtutils.h>
 #include <clientversion.h>
 
-NavMenuWidget::NavMenuWidget(PIVXGUI *mainWindow, QWidget *parent) :
+NavMenuWidget::NavMenuWidget(SCCGUI *mainWindow, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::NavMenuWidget),
     window(mainWindow)

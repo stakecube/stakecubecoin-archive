@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start PIVX after logging in to the system.</string>
+          <string>Automatically start Stakecube after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start PIVX on system login</string>
+          <string>&amp;Start Stakecube on system login</string>
          </property>
         </widget>
        </item>
@@ -141,20 +141,20 @@
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintEnable">
               <property name="toolTip">
-               <string>Enable automatic minting of SCC units to zPIV</string>
+               <string>Enable automatic minting of SCC units to zSCC</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Enable zPIV Automint</string>
+               <string>Enable zSCC Automint</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintAddresses">
               <property name="toolTip">
-               <string>Enable automatic zPIV minting from specific addresses</string>
+               <string>Enable automatic zSCC minting from specific addresses</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
@@ -171,10 +171,10 @@
             <item>
              <widget class="QLabel" name="percentage_label">
               <property name="toolTip">
-               <string>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</string>
+               <string>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</string>
               </property>
               <property name="text">
-               <string>Percentage of autominted zPIV</string>
+               <string>Percentage of autominted zSCC</string>
               </property>
              </widget>
             </item>
@@ -207,7 +207,7 @@
                <string>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</string>
               </property>
               <property name="text">
-               <string>Preferred Automint zPIV Denomination</string>
+               <string>Preferred Automint zSCC Denomination</string>
               </property>
              </widget>
             </item>
@@ -325,7 +325,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -345,7 +345,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the PIVX network through a SOCKS5 proxy.</string>
+          <string>Connect to the Stakecube network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -511,7 +511,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting PIVX.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Stakecube.</string>
            </property>
           </widget>
          </item>

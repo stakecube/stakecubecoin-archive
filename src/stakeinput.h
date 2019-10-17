@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_STAKEINPUT_H
-#define PIVX_STAKEINPUT_H
+#ifndef SCC_STAKEINPUT_H
+#define SCC_STAKEINPUT_H
 
 #include "chain.h"
 #include "streams.h"
@@ -36,7 +36,7 @@ public:
 };
 
 
-// zPIVStake can take two forms
+// zSCCStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
 // 2) a staked zpiv, which is a zcspend that has successfully staked
 class CZPivStake : public CStakeInput
@@ -101,4 +101,4 @@ public:
 };
 
 
-#endif //PIVX_STAKEINPUT_H
+#endif //SCC_STAKEINPUT_H

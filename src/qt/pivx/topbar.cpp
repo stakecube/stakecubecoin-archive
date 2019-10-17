@@ -22,7 +22,7 @@
 #include <guiinterface.h>
 
 
-TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
+TopBar::TopBar(SCCGUI* _mainWindow, QWidget *parent) :
     PWidget(_mainWindow, parent),
     ui(new Ui::TopBar)
 {
@@ -59,10 +59,6 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     progressBar->raise();
     progressBar->move(0, 34);
 
-    // New button
-    ui->pushButtonFAQ->setButtonClassStyle("cssClass", "btn-check-faq");
-    ui->pushButtonFAQ->setButtonText("FAQ");
-
     ui->pushButtonConnection->setButtonClassStyle("cssClass", "btn-check-connect-inactive");
     ui->pushButtonConnection->setButtonText("No Connection");
 
@@ -97,7 +93,6 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonQR, SIGNAL(clicked()), this, SLOT(onBtnReceiveClicked()));
     connect(ui->btnQr, SIGNAL(clicked()), this, SLOT(onBtnReceiveClicked()));
     connect(ui->pushButtonLock, SIGNAL(Mouse_Pressed()), this, SLOT(onBtnLockClicked()));
-    connect(ui->pushButtonFAQ, SIGNAL(Mouse_Pressed()), _mainWindow, SLOT(openFAQ()));
 }
 
 void TopBar::onThemeClicked(){
@@ -410,7 +405,7 @@ void TopBar::loadWalletModel(){
     connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
 
-    // update the display unit, to not use the default ("PIVX")
+    // update the display unit, to not use the default ("SCC")
     updateDisplayUnit();
 
     refreshStatus();

@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLETDB_H
-#define BITCOIN_WALLETDB_H
+#ifndef STAKECUBE_WALLETDB_H
+#define STAKECUBE_WALLETDB_H
 
 #include "amount.h"
 #include "wallet/db.h"
@@ -209,4 +209,4 @@ bool BackupWallet(const CWallet& wallet, const boost::filesystem::path& strDest,
 bool AttemptBackupWallet(const CWallet& wallet, const boost::filesystem::path& pathSrc, const boost::filesystem::path& pathDest);
 
 
-#endif // BITCOIN_WALLETDB_H
+#endif // STAKECUBE_WALLETDB_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_WITNESS_H
-#define PIVX_WITNESS_H
+#ifndef SCC_WITNESS_H
+#define SCC_WITNESS_H
 
 
 #include <libzerocoin/Accumulator.h>
@@ -79,4 +79,4 @@ public:
         READWRITE(accumulatorDenom);
     };
 };
-#endif //PIVX_WITNESS_H
+#endif //SCC_WITNESS_H

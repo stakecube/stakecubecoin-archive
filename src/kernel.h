@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_KERNEL_H
-#define BITCOIN_KERNEL_H
+#ifndef STAKECUBE_KERNEL_H
+#define STAKECUBE_KERNEL_H
 
 #include "validation.h"
 #include "stakeinput.h"
@@ -40,4 +40,4 @@ bool CheckStakeModifierCheckpoints(int nHeight, unsigned int nStakeModifierCheck
 
 bool ContextualCheckZerocoinStake(int nPreviousBlockHeight, CStakeInput* stake);
 
-#endif // BITCOIN_KERNEL_H
+#endif // STAKECUBE_KERNEL_H

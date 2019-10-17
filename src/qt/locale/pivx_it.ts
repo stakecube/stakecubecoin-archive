@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi PIVX per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <translation>Questi sono gli indirizzi Stakecube per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi PIVX per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <translation>Questi sono gli indirizzi Stakecube per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SCC dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SCC dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo PIVX da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo Stakecube da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
-        <translation>Indirizzo PIVX da crittografare</translation>
+        <translation>Indirizzo Stakecube da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo PIVX</translation>
+        <translation>Crittografa la chiave privata per questo indirizzo Stakecube</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Operazioni di privacy per zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Operazioni di privacy per zSCC</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -646,7 +646,7 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Invia valuta all'indirizzo PIVX</translation>
+        <translation>Invia valuta all'indirizzo Stakecube</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -673,16 +673,16 @@
         <translation>Visualizza informazioni su Stakecube</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modifica le opzioni di configurazione per PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Modifica le opzioni di configurazione per Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi PIVX per dimostrare di essere il proprietario </translation>
+        <translation>Firma i messaggi con i tuoi indirizzi Stakecube per dimostrare di essere il proprietario </translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi PIVX specifici</translation>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Stakecube specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Apri un PIVX: URI o richiesta di pagamento</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Apri un Stakecube: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,8 +725,8 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Mostra il messaggio di aiuto Stakecube per ottenere un elenco con le possibili opzioni di riga di comando PIVX</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Mostra il messaggio di aiuto Stakecube per ottenere un elenco con le possibili opzioni di riga di comando Stakecube</translation>
     </message>
     <message>
         <source>Stakecube client</source>
@@ -1102,7 +1102,7 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
+        <source>Can vary +/- %1 uscc per input.</source>
         <translation>Può variare di +/- %1 uPIV per input.</translation>
     </message>
     <message>
@@ -1150,7 +1150,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo PIVX valido.</translation>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo Stakecube valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1269,8 +1269,8 @@ MultiSend: %1</translation>
         <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Stakecube salverà i propri dati.</translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube scaricherà e salverà una copia della blockchain PIVX. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube scaricherà e salverà una copia della blockchain Stakecube. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1427,8 +1427,8 @@ MultiSend: %1</translation>
 To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi PIVX fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo PIVX da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi Stakecube fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo Stakecube da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1638,24 +1638,24 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SCC units to zPIV</source>
-        <translation>Attiva il conio automatico di unità SCC in zPIV</translation>
+        <source>Enable automatic minting of SCC units to zSCC</source>
+        <translation>Attiva il conio automatico di unità SCC in zSCC</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Attiva Conio automatico zPIV</translation>
+        <source>Enable zSCC Automint</source>
+        <translation>Attiva Conio automatico zSCC</translation>
     </message>
     <message>
-        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di SCC in entrata che viene automaticamente convertita in zPIV attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di SCC in entrata che viene automaticamente convertita in zSCC attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentuale di zPIV Percentuale di zPIV da coniare automaticamente</translation>
+        <source>Percentage of autominted zSCC</source>
+        <translation>Percentuale di zSCC Percentuale di zSCC da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Denominazione preferita conio automatico zPIV</translation>
+        <source>Preferred Automint zSCC Denomination</source>
+        <translation>Denominazione preferita conio automatico zSCC</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1729,18 +1729,18 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo PIVX corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo Stakecube corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>Bilancio zPIV</translation>
+        <source>zSCC Balance</source>
+        <translation>Bilancio zSCC</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zSCC are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zPIV sono spendibili.</translation>
+Questi zSCC sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1771,8 +1771,8 @@ Questi zPIV sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>SCC bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zPIV.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</source>
+        <translation>SCC bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zSCC.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1783,18 +1783,18 @@ Questi zPIV sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Il tuo saldo zPIV corrente, inclusi zPIV non confermati e non maturi</translation>
+        <source>Your current zSCC balance, unconfirmed and immature zSCC included.</source>
+        <translation>Il tuo saldo zSCC corrente, inclusi zSCC non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zSCC.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zPIV.
+        <translation>Percentuale corrente di zSCC.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1858,8 +1858,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1870,12 +1870,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>Controllo zPIV</translation>
+        <source>zSCC Control</source>
+        <translation>Controllo zSCC</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV selezionati:</translation>
+        <source>zSCC Selected:</source>
+        <translation>zSCC selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1886,23 +1886,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>zPIV disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zSCC for spending</source>
+        <translation>zSCC disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zSCC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zPIV disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zPIV sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zSCC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zSCC disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zSCC sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zSCC</source>
+        <translation>0 zSCC</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1945,31 +1945,31 @@ Gli zPIV sono maturi quando hanno più di 20 conferme E più di 2 conii della st
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Saldo totale inclusi zPIV non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zSCC</source>
+        <translation>Saldo totale inclusi zSCC non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zSCC minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCC
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zPIV.
+        <translation>Mostra lo stato corrente del conio automatico zSCC.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a pivx.conf
 - disattivato: aggiungi 'enablezeromint=0' a pivx.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zPIV da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zSCC da coniare automaticamente
 
 </translation>
     </message>
@@ -2110,8 +2110,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Differenza:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>Conio zPIV</translation>
+        <source>zSCC Mint</source>
+        <translation>Conio zSCC</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2412,7 +2412,7 @@ Per cambiare la percentuale (riavvio non necessario):
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>L'indirizzo PIVX per firmare il messaggio con</translation>
+        <translation>L'indirizzo Stakecube per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2436,15 +2436,15 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo PIVX</translation>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Stakecube</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>L'indirizzo PIVX con cui è stato firmato il messaggio</translation>
+        <translation>L'indirizzo Stakecube con cui è stato firmato il messaggio</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo PIVX specificato </translation>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Stakecube specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2600,8 +2600,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     </context>
 <context>

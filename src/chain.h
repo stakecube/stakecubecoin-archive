@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAIN_H
-#define BITCOIN_CHAIN_H
+#ifndef STAKECUBE_CHAIN_H
+#define STAKECUBE_CHAIN_H
 
 #include "chainparams.h"
 #include "pow.h"
@@ -658,4 +658,4 @@ public:
     const CBlockIndex* FindFork(const CBlockIndex* pindex) const;
 };
 
-#endif // BITCOIN_CHAIN_H
+#endif // STAKECUBE_CHAIN_H

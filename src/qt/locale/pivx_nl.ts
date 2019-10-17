@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw PIVX adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <translation>Dit zijn uw Stakecube adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw PIVX adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <translation>Dit zijn uw Stakecube adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SCC's kunnen stelen.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SCC's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een PIVX adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een Stakecube adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
-        <translation>Het PIVX adres om te versleutelen</translation>
+        <translation>Het Stakecube adres om te versleutelen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Versleutel de privé sleutel voor dit PIVX adres</translation>
+        <translation>Versleutel de privé sleutel voor dit Stakecube adres</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Blader door transactiegescheidenis</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Privacy Acties voor zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Privacy Acties voor zSCC</translation>
     </message>
     <message>
         <source>&amp;Governance</source>
@@ -658,11 +658,11 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Verstuur munten naar een PIVX adres</translation>
+        <translation>Verstuur munten naar een Stakecube adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en PIVX: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR codes en Stakecube: URI's)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -682,19 +682,19 @@
     </message>
     <message>
         <source>Show information about Stakecube</source>
-        <translation>Toon informatie over PIVX Kern</translation>
+        <translation>Toon informatie over Stakecube Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Wijzig PIVX configuratie opties</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Wijzig Stakecube configuratie opties</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw PIVX adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
+        <translation>Onderteken berichten met uw Stakecube adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde PIVX adressen</translation>
+        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde Stakecube adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -725,8 +725,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Open een PIVX: URI of betaalverzoek</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Open een Stakecube: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -737,8 +737,8 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Toon het Stakecube help bericht om een ​​lijst te krijgen met mogelijke PIVX command line opties</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Toon het Stakecube help bericht om een ​​lijst te krijgen met mogelijke Stakecube command line opties</translation>
     </message>
     <message>
         <source>Stakecube client</source>
@@ -1118,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan +/-%1 upiv per invoer variëren.</translation>
+        <source>Can vary +/- %1 uscc per input.</source>
+        <translation>Kan +/-%1 uscc per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1174,7 +1174,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig PIVX adres.</translation>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Stakecube adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1321,8 +1321,8 @@ MultiSend: %1</translation>
         <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Stakecube zijn data opslaat.</translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube zal een kopie van de PIVX blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube zal een kopie van de Stakecube blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1479,8 +1479,8 @@ MultiSend: %1</translation>
 To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere PIVX adressen nadat het volwassen is. 
-Toevoegen: voer het te geven percentage in en PIVX adres om toe te voegen aan de MultiSend vector.
+        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere Stakecube adressen nadat het volwassen is. 
+Toevoegen: voer het te geven percentage in en Stakecube adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
 MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
     </message>
@@ -1868,8 +1868,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de PIVX client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Stakecube client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1888,12 +1888,12 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>PIVX automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Stakecube after logging in to the system.</source>
+        <translation>Stakecube automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;PIVX starten bij systeemlogin</translation>
+        <source>&amp;Start Stakecube on system login</source>
+        <translation>&amp;Stakecube starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1920,8 +1920,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Stakecube.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1934,40 +1934,40 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SCC units to zPIV</source>
-        <translation>Schakel automatisch slaan van SCC-eenheden in op zPIV</translation>
+        <source>Enable automatic minting of SCC units to zSCC</source>
+        <translation>Schakel automatisch slaan van SCC-eenheden in op zSCC</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Schakel zPIV Automint in</translation>
+        <source>Enable zSCC Automint</source>
+        <translation>Schakel zSCC Automint in</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende SCC die automatisch wordt omgezet naar zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende SCC die automatisch wordt omgezet naar zSCC via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentage autominted zPIV</translation>
+        <source>Percentage of autominted zSCC</source>
+        <translation>Percentage autominted zSCC</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
         <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg SCC voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Gewenste Automint zPIV denominatie</translation>
+        <source>Preferred Automint zSCC Denomination</source>
+        <translation>Gewenste Automint zSCC denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het PIVX netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the Stakecube network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het Stakecube netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2149,16 +2149,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Uw huidige PIVX-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
+        <translation>Uw huidige Stakecube-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV-saldo</translation>
+        <source>zSCC Balance</source>
+        <translation>zSCC-saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zSCC are spendable.</source>
         <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
 Deze zPIB zijn besteedbaar.</translation>
     </message>
@@ -2169,8 +2169,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het PIVX netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Stakecube netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2213,8 +2213,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Vergrendelde SCC of Masternode onderpanden. Deze zijn uitgesloten van de zPIV muntage.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</source>
+        <translation>Vergrendelde SCC of Masternode onderpanden. Deze zijn uitgesloten van de zSCC muntage.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2225,8 +2225,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Onbevestigd:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Uw huidige zPIV-saldo, onbevestigde en onvolgroeide zPIV inbegrepen.</translation>
+        <source>Your current zSCC balance, unconfirmed and immature zSCC included.</source>
+        <translation>Uw huidige zSCC-saldo, onbevestigde en onvolgroeide zSCC inbegrepen.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2237,10 +2237,10 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>niet gesynchroniseerd</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zSCC.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Huidige percentage van zPIV
+        <translation>Huidige percentage van zSCC
 Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
 </translation>
     </message>
@@ -2287,7 +2287,7 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig PIVX adres of misvormde URL parameters.</translation>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig Stakecube adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2372,8 +2372,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Zerocoin Acties:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het PIVX netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Stakecube netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2384,8 +2384,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2412,12 +2412,12 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV Control</translation>
+        <source>zSCC Control</source>
+        <translation>zSCC Control</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV geselecteerd:</translation>
+        <source>zSCC Selected:</source>
+        <translation>zSCC geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2432,24 +2432,24 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Beschikbare (volwassen en uitgeefbaar) zPIV voor besteding</translation>
+        <source>Available (mature and spendable) zSCC for spending</source>
+        <translation>Beschikbare (volwassen en uitgeefbaar) zSCC voor besteding</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zSCC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Beschikbare (volwwassen en uitgeefbaar) zPIV voor besteding
+zSCC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Beschikbare (volwwassen en uitgeefbaar) zSCC voor besteding
 
 zPiv zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zSCC</source>
+        <translation>0 zSCC</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2457,7 +2457,7 @@ zPiv zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
     </message>
     <message>
         <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het PIVX adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <translation>Het Stakecube adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2508,8 +2508,8 @@ zPiv zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
         <translation>Zerocoin Statistieken:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zPIV</translation>
+        <source>Total Balance including unconfirmed and immature zSCC</source>
+        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zSCC</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2530,24 +2530,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zSCC minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCC
 
 </source>
-        <translation>Toon de huidige status van automatische zPIV-markering.
+        <translation>Toon de huidige status van automatische zSCC-markering.
 
 Om de status te wijzigen (opnieuw opstarten vereist): 
 - enable: voeg 'enablezeromint = 1' toe aan pivx.conf
 - uitschakelen: voeg 'enablezeromint = 0' toe aan pivx.conf
 
 Om het percentage te wijzigen (geen herstart vereist): 
-- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zPIV
+- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zSCC
 </translation>
     </message>
     <message>
@@ -2595,8 +2595,8 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation> 0 x</translation>
     </message>
     <message>
-        <source>Show zPIV denominations list</source>
-        <translation>Toon zPIV denominatielijst</translation>
+        <source>Show zSCC denominations list</source>
+        <translation>Toon zSCC denominatielijst</translation>
     </message>
     <message>
         <source>Show Denominations</source>
@@ -2733,12 +2733,12 @@ Please be patient...</source>
 Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>zPIV besteed #:</translation>
+        <source>zSCC Spend #: </source>
+        <translation>zSCC besteed #:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>zPIV mint</translation>
+        <source>zSCC Mint</source>
+        <translation>zSCC mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2753,12 +2753,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>zPIV is momenteel uitgeschakeld vanwege onderhoud.</translation>
+        <source>zSCC is currently disabled due to maintenance.</source>
+        <translation>zSCC is momenteel uitgeschakeld vanwege onderhoud.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV wordt momenteel onderhouden.</translation>
+        <source>zSCC is currently undergoing maintenance.</source>
+        <translation>zSCC wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2974,7 +2974,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Enter a SCC address (e.g. %1)</source>
-        <translation>Voer een PIVX adres in (b.v. %1)</translation>
+        <translation>Voer een Stakecube adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3119,8 +3119,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het PIVX debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the Stakecube debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Stakecube debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3255,8 +3255,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Aangepast zPIV back-up pad:</translation>
+        <source>Custom zSCC Backup Path:</source>
+        <translation>Aangepast zSCC back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3335,8 +3335,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welkom bij de PIVX RPC console.</translation>
+        <source>Welcome to the Stakecube RPC console.</source>
+        <translation>Welkom bij de Stakecube RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3470,16 +3470,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>&amp;Hoeveelheid:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het PIVX netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het Stakecube netwerk.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ontvangen</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het PIVX netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het Stakecube netwerk.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3771,16 +3771,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPIVs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPIV's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uPIV's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSCCs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPIV's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uPIV's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPIVs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPIV's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uPIV's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uSCCs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPIV's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uPIV's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar PIVX transacties dan het netwerk kan verwerken.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube transactions than the network can process.</source>
+        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar Stakecube transacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3876,7 +3876,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Warning: Invalid SCC address</source>
-        <translation>Waarschuwing: Ongeldig PIVX adres</translation>
+        <translation>Waarschuwing: Ongeldig Stakecube adres</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3975,7 +3975,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>The SCC address to send the payment to</source>
-        <translation>Het PIVX adres om de betaling naar te verzenden</translation>
+        <translation>Het Stakecube adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4014,8 +4014,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bericht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
-        <translation>Een bericht dat is gehecht aan de PIVX: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het PIVX netwerk.</translation>
+        <source>A message that was attached to the Stakecube: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube network.</source>
+        <translation>Een bericht dat is gehecht aan de Stakecube: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het Stakecube netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4065,7 +4065,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>Het PIVX adres om het bericht met te ondertekenen</translation>
+        <translation>Het Stakecube adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4097,15 +4097,15 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het PIVX adres bezit</translation>
+        <translation>Onderteken het bericht om te bewijzen dat u het Stakecube adres bezit</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>Het PIVX adres waarmee het bericht was ondertekend</translation>
+        <translation>Het Stakecube adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde PIVX adres</translation>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Stakecube adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4208,7 +4208,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>The Stakecube developers</source>
-        <translation>De PIVX Kernontwikkelaars</translation>
+        <translation>De Stakecube Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4475,8 +4475,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>SCC Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zSCC Stake</source>
+        <translation>zSCC Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4495,32 +4495,32 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted SCC to zPIV</source>
-        <translation>Geconverteerde SCC naar zPIV</translation>
+        <source>Converted SCC to zSCC</source>
+        <translation>Geconverteerde SCC naar zSCC</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Bestede zPIV</translation>
+        <source>Spent zSCC</source>
+        <translation>Bestede zSCC</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Ontvangen SCC van zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Ontvangen SCC van zSCC</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Gemint wisselgeld als zPIV van bestede zPIV</translation>
+        <source>Minted Change as zSCC from zSCC Spend</source>
+        <translation>Gemint wisselgeld als zSCC van bestede zSCC</translation>
     </message>
     <message>
-        <source>Converted zPIV to SCC</source>
-        <translation>Geconverteerde zPIV naar SCC</translation>
+        <source>Converted zSCC to SCC</source>
+        <translation>Geconverteerde zSCC naar SCC</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Anonieme (zPIV transactie)</translation>
+        <source>Anonymous (zSCC Transaction)</source>
+        <translation>Anonieme (zSCC transactie)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Anonieme (zPIV stake)</translation>
+        <source>Anonymous (zSCC Stake)</source>
+        <translation>Anonieme (zSCC stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4734,12 +4734,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Ontvangen SCC van zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Ontvangen SCC van zSCC</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Zerocoin besteed, wisselgeld in zPIV</translation>
+        <source>Zerocoin Spend, Change in zSCC</source>
+        <translation>Zerocoin besteed, wisselgeld in zSCC</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4809,8 +4809,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Selecteer zPIV om te besteden</translation>
+        <source>Select zSCC to Spend</source>
+        <translation>Selecteer zSCC om te besteden</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4821,8 +4821,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4888,16 +4888,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zPIV (0-1, standaard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCC minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zSCC (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
         <translation>In- of uitschakelen staking functionaliteit voor SCC inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zPIV inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for zSCC inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zSCC inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5197,7 +5197,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Copyright (C) 2015-%i The Stakecube Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Kernontwikkelaars</translation>
+        <translation>Copyright (C) 2015-%i The Stakecube Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5436,8 +5436,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SCC and zPIV money supply statistics</source>
-        <translation>Indexeer de SCC- en zPIV-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the SCC and zSCC money supply statistics</source>
+        <translation>Indexeer de SCC- en zSCC-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5476,8 +5476,8 @@ Wees alsjeblieft geduldig...</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke PIVX functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all Stakecube specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke Stakecube functionaliteit uit (Masternodes, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5512,8 +5512,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zPIV back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zSCC back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5924,8 +5924,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchroniseren zPIV portemonnee...</translation>
+        <source>Syncing zSCC wallet...</source>
+        <translation>Synchroniseren zSCC portemonnee...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6036,8 +6036,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCC</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zSCC</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

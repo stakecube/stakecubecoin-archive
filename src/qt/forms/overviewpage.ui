@@ -232,7 +232,7 @@
                           <cursorShape>WhatsThisCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</string>
+                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</string>
                          </property>
                          <property name="styleSheet">
                           <string notr="true">QLabel { color: red; }</string>
@@ -650,7 +650,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</string>
+                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -669,7 +669,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</string>
+                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 SCC</string>
@@ -710,7 +710,7 @@
                        <item row="5" column="0">
                         <widget class="QLabel" name="labelTotalText">
                          <property name="toolTip">
-                          <string>Your current PIVX balance, unconfirmed and immature transactions included</string>
+                          <string>Your current Stakecube balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -729,7 +729,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current PIVX balance, unconfirmed and immature transactions included</string>
+                          <string>Your current Stakecube balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 SCC</string>
@@ -825,12 +825,12 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>zPIV Balance</string>
+                          <string>zSCC Balance</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelzPIVPercent">
+                        <widget class="QLabel" name="labelzSCCPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -879,7 +879,7 @@
                         <widget class="QLabel" name="labelzBalanceMatureText">
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</string>
+These zSCC are spendable.</string>
                          </property>
                          <property name="text">
                           <string>Available:</string>
@@ -896,7 +896,7 @@ These zPIV are spendable.</string>
                          </property>
                          <property name="toolTip">
                           <string>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</string>
+These zSCC are spendable.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 SCC</string>
@@ -971,7 +971,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelzBalanceText">
                          <property name="toolTip">
-                          <string>Your current zPIV balance, unconfirmed and immature zPIV included.</string>
+                          <string>Your current zSCC balance, unconfirmed and immature zSCC included.</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -990,7 +990,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current zPIV balance, unconfirmed and immature zPIV included.</string>
+                          <string>Your current zSCC balance, unconfirmed and immature zSCC included.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 SCC</string>
@@ -1084,7 +1084,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
                        <string notr="true">QLabel { color: red; }</string>

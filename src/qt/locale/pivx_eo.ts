@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ĉi tiuj estas viaj PIVX adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
+        <translation>Ĉi tiuj estas viaj Stakecube adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -176,8 +176,8 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn PIVs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn SCCs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,8 +254,8 @@
         <translation>Adreso:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Eniri unu PIVX adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Eniri unu Stakecube adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Ĉifri la privata ŝlosilo por ĉi tiu PIVX adreso</translation>
+        <translation>Ĉifri la privata ŝlosilo por ĉi tiu Stakecube adreso</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>&amp;Foliumi transakcio historio</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Privataj agoj por zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Privataj agoj por zSCC</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -642,11 +642,11 @@
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX kerno</translation>
+        <translation>Stakecube kerno</translation>
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Sendu mono al PIVX addreso</translation>
+        <translation>Sendu mono al Stakecube addreso</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -666,23 +666,23 @@
     </message>
     <message>
         <source>&amp;About Stakecube</source>
-        <translation>&amp;Pri PIVX Kerno</translation>
+        <translation>&amp;Pri Stakecube Kerno</translation>
     </message>
     <message>
         <source>Show information about Stakecube</source>
-        <translation>Montri informon pri PIVX Kerno</translation>
+        <translation>Montri informon pri Stakecube Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modifi agordajn opciojn por PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Modifi agordajn opciojn por Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Subskribu mesaĝo per via PIVX adreso por pruvi vi posedas ĝin</translation>
+        <translation>Subskribu mesaĝo per via Stakecube adreso por pruvi vi posedas ĝin</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita PIVX adreso</translation>
+        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita Stakecube adreso</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Malfermi unu PIVX: URI aŭ pago peto</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Malfermi unu Stakecube: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,12 +725,12 @@
         <translation>Bloko esplorilo fenestro</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Montri la PIVX Kore help-mesaĝo por havi liston de havebla PIVX komandlinion opciojn</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Montri la Stakecube Kore help-mesaĝo por havi liston de havebla Stakecube komandlinion opciojn</translation>
     </message>
     <message>
         <source>Stakecube client</source>
-        <translation>PIVX Kerno kliento</translation>
+        <translation>Stakecube Kerno kliento</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1098,8 +1098,8 @@ Muktisendi: %1</translation>
         <translation>Ĉi tiun etikedo ruĝiĝas se iu ajna ricevanto ricevas totalo pli malgranda ol %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Povas varii +/- %1 upiv per enigo.</translation>
+        <source>Can vary +/- %1 uscc per input.</source>
+        <translation>Povas varii +/- %1 uscc per enigo.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1154,7 +1154,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>La enirita "%1" adreso ne estas validan PIVX adreson.</translation>
+        <translation>La enirita "%1" adreso ne estas validan Stakecube adreson.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1211,7 +1211,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX kerno</translation>
+        <translation>Stakecube kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1219,7 +1219,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>About Stakecube</source>
-        <translation>Pri PIVX Kerno</translation>
+        <translation>Pri Stakecube Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1262,15 +1262,15 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Welcome to Stakecube.</source>
-        <translation>Bonvenon al la PIVX Kerno.</translation>
+        <translation>Bonvenon al la Stakecube Kerno.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
-        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie PIVX kernk storigis sian datumojn. </translation>
+        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie Stakecube kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX kerno elŝutos kaj konservi kopion de la PIVX blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube kerno elŝutos kaj konservi kopion de la Stakecube blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1282,7 +1282,7 @@ Muktisendi: %1</translation>
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX kerno</translation>
+        <translation>Stakecube kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1604,8 +1604,8 @@ Muktisendi: %1</translation>
         <translation>&amp;Monujo</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi PIVX klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
+        <source>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi Stakecube klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1616,8 +1616,8 @@ Muktisendi: %1</translation>
         <translation>Sperta</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Komencu PIVX en sistem-ensaluto</translation>
+        <source>&amp;Start Stakecube on system login</source>
+        <translation>&amp;Komencu Stakecube en sistem-ensaluto</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1628,8 +1628,8 @@ Muktisendi: %1</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci Stakecube.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1638,8 +1638,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
 https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Konekti al la PIVX reto per SOCKS5 prokurilo.</translation>
+        <source>Connect to the Stakecube network through a SOCKS5 proxy.</source>
+        <translation>Konekti al la Stakecube reto per SOCKS5 prokurilo.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1713,12 +1713,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Nematura:</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Via aktuala PIVX totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
+        <translation>Via aktuala Stakecube totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV kvanto</translation>
+        <source>zSCC Balance</source>
+        <translation>zSCC kvanto</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -1727,8 +1727,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mintita</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la PIVX reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Stakecube reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1780,28 +1780,28 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la PIVX reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Stakecube reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Restarigi</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV kontrolu</translation>
+        <source>zSCC Control</source>
+        <translation>zSCC kontrolu</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>Elektita zPIV</translation>
+        <source>zSCC Selected:</source>
+        <translation>Elektita zSCC</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1812,12 +1812,12 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Elspezi zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Havebla (matura kaj elspezebla) zPIV por elspezi</translation>
+        <source>Available (mature and spendable) zSCC for spending</source>
+        <translation>Havebla (matura kaj elspezebla) zSCC por elspezi</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zSCC</source>
+        <translation>0 zSCC</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1825,7 +1825,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>PIVX adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
+        <translation>Stakecube adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1929,7 +1929,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX kerno</translation>
+        <translation>Stakecube kerno</translation>
     </message>
     </context>
 <context>
@@ -1994,8 +1994,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Rekonstrui indekson</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bonvenon al la PIVX RPC konzolo.</translation>
+        <source>Welcome to the Stakecube RPC console.</source>
+        <translation>Bonvenon al la Stakecube RPC konzolo.</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
@@ -2243,7 +2243,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Warning: Invalid SCC address</source>
-        <translation>Averto: nevalida PIVX adreson</translation>
+        <translation>Averto: nevalida Stakecube adreson</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2305,7 +2305,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>ShutdownWindow</name>
     <message>
         <source>Stakecube is shutting down...</source>
-        <translation>PIVX kerno fermanta...</translation>
+        <translation>Stakecube kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -2359,7 +2359,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>SplashScreen</name>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX kerno</translation>
+        <translation>Stakecube kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2371,7 +2371,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The Stakecube developers</source>
-        <translation>La PIVX kerno programistoj</translation>
+        <translation>La Stakecube kerno programistoj</translation>
     </message>
     </context>
 <context>
@@ -2552,8 +2552,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     </context>
 <context>

@@ -160,7 +160,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>1) What is PIVX?</string>
+                      <string>1) What is Stakecube?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -213,7 +213,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>3) PIVX privacy? What is Zerocoin (zPIV)?</string>
+                      <string>3) Stakecube privacy? What is Zerocoin (zSCC)?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -238,7 +238,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>4) Why are my zPIV unspendable?</string>
+                      <string>4) Why are my zSCC unspendable?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -258,7 +258,7 @@
                      </property>
                      <property name="text">
                       <string>5) Why did my wallet convert the balance
-    into zPIV automatically?</string>
+    into zSCC automatically?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -277,7 +277,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>6) How do I receive SCC/zPIV?</string>
+                      <string>6) How do I receive SCC/zSCC?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -296,7 +296,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>7) How do I stake SCC/zPIV?</string>
+                      <string>7) How do I stake SCC/zSCC?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -563,7 +563,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle1">
                         <property name="text">
-                         <string>What is PIVX?</string>
+                         <string>What is Stakecube?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -591,14 +591,14 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           Stakecube is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  Stakecube incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zSCC) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           Stakecube utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of Stakecube to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -697,10 +697,10 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received Stakecube requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your Stakecube wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -767,7 +767,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle3">
                         <property name="text">
-                         <string>PIVX privacy? What is Zerocoin (zPIV)?</string>
+                         <string>Stakecube privacy? What is Zerocoin (zSCC)?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -795,11 +795,11 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zSCC is an optional privacy-centric method of coin mixing on the
+                           Stakecube blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #7088ff' href='https://PIVX.org/zpiv/'&gt;
-                           &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style='color: #7088ff' href='https://Stakecube.org/zpiv/'&gt;
+                           &quot;Stakecube Zerocoin (zSCC) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
                         </property>
@@ -865,7 +865,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle4">
                         <property name="text">
-                         <string>Why are my zPIV unspendable?</string>
+                         <string>Why are my zSCC unspendable?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -893,7 +893,7 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zSCC will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -961,7 +961,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle5">
                         <property name="text">
-                         <string>Why did my wallet convert the balance into zPIV automatically?</string>
+                         <string>Why did my wallet convert the balance into zSCC automatically?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -989,18 +989,18 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the PIVX wallet will convert 10% of your entire SCC
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
+                           By default the Stakecube wallet will convert 10% of your entire SCC
+                           balance to zSCC to assist the network. If you do not wish to
+                           stake zSCC or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your Stakecube wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zSCC Automint”.
+                           If you are not making use of the Stakecube-QT or GUI you can simply open
                            your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #7088ff' href='https://PIVX.org/zpiv/'&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
+                           You can read more about zSCC in the
+                           &lt;a style='color: #7088ff' href='https://Stakecube.org/zpiv/'&gt; &quot;Stakecube Zerocoin (zSCC) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zSCC, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -1070,7 +1070,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle6">
                         <property name="text">
-                         <string>How do I receive SCC/zPIV?</string>
+                         <string>How do I receive SCC/zSCC?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1098,10 +1098,10 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any SCC address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zSCC can be spent and sent to any SCC address. The receiver will
+                           receive standard Stakecube but the origin of the Stakecube is anonymized by the zSCC Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zSCC you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
                         </property>
@@ -1167,7 +1167,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle7">
                         <property name="text">
-                         <string>How do I stake SCC/zPIV?</string>
+                         <string>How do I stake SCC/zSCC?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1195,12 +1195,12 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake PIVX:
+                           To Stake Stakecube:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 101 confirmations.
+                           You must have a balance of Stakecube with a minimum of 101 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
@@ -1209,12 +1209,12 @@
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zPIV:
+                           To Stake zSCC:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zSCC balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -1313,10 +1313,10 @@
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #7088ff' href='https://Discord.PIVX.com'&gt;
+                           &lt;a style='color: #7088ff' href='https://Discord.Stakecube.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #7088ff' href='https://PIVX.FreshDesk.com'&gt;
+                           &lt;a style='color: #7088ff' href='https://Stakecube.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
@@ -1411,8 +1411,8 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 SCC secured collateral to provide extra services
+                           A masternode is a computer running a full node Stakecube core wallet with a
+                           requirement of 1,000 SCC secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -1434,17 +1434,17 @@
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in Stakecube Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the Stakecube network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 SCC per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;1,000 SCC per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -1540,7 +1540,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent10">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 1,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

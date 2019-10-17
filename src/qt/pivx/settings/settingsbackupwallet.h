@@ -17,7 +17,7 @@ class SettingsBackupWallet : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsBackupWallet(PIVXGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsBackupWallet(SCCGUI* _window, QWidget *parent = nullptr);
     ~SettingsBackupWallet();
 
 private slots:

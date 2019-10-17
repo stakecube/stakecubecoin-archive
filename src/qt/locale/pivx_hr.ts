@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše PIVX adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <translation>To su vaše Stakecube adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše PIVX adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <translation>To su vaše Stakecube adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SCC od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SCC od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -409,8 +409,8 @@
         <translation>Pregledajte povijest transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Aktivnosti na privatnost za zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Aktivnosti na privatnost za zSCC</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -622,7 +622,7 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Pošaljite kovanice na PIVX adresu</translation>
+        <translation>Pošaljite kovanice na Stakecube adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -642,23 +642,23 @@
     </message>
     <message>
         <source>&amp;About Stakecube</source>
-        <translation>&amp; O PIVX Coreu</translation>
+        <translation>&amp; O Stakecube Coreu</translation>
     </message>
     <message>
         <source>Show information about Stakecube</source>
-        <translation>Prikaz informacija o PIVX Coreu</translation>
+        <translation>Prikaz informacija o Stakecube Coreu</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Izmijenite opcije konfiguracije za PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Izmijenite opcije konfiguracije za Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim PIVX adresama kako biste dokazali da ih posjedujete</translation>
+        <translation>Potpišite poruke s vašim Stakecube adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim PIVX adresama</translation>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim Stakecube adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1330,7 +1330,7 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>PIVX adresa za potpisivanje poruke s</translation>
+        <translation>Stakecube adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1354,15 +1354,15 @@
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove PIVX adrese</translation>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove Stakecube adrese</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>PIVX adresa s kojom je potpisana poruka</translation>
+        <translation>Stakecube adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom PIVX adresom</translation>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom Stakecube adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

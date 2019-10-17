@@ -3,8 +3,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
 
-#ifndef PIVX_LIGHTZPIVTHREAD_H
-#define PIVX_LIGHTZPIVTHREAD_H
+#ifndef SCC_LIGHTZPIVTHREAD_H
+#define SCC_LIGHTZPIVTHREAD_H
 
 #include <atomic>
 #include "genwit.h"
@@ -42,7 +42,7 @@ public:
 
     bool addWitWork(CGenWit wit) {
         if (!isWorkerRunning) {
-            LogPrintf("%s not running trying to add wit work \n", "pivx-light-thread");
+            LogPrintf("%s not running trying to add wit work \n", "scc-light-thread");
             return false;
         }
         requestsQueue.push(wit);
@@ -50,13 +50,13 @@ public:
     }
 
     void StartLightZpivThread(boost::thread_group& threadGroup) {
-        LogPrintf("%s thread start\n", "pivx-light-thread");
+        LogPrintf("%s thread start\n", "scc-light-thread");
         threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZPIVSimplified, this));
     }
 
     void StopLightZpivThread() {
         threadIns.interrupt();
-        LogPrintf("%s thread interrupted\n", "pivx-light-thread");
+        LogPrintf("%s thread interrupted\n", "scc-light-thread");
     }
 
 private:
@@ -67,4 +67,4 @@ private:
 
 };
 
-#endif //PIVX_LIGHTZPIVTHREAD_H
+#endif //SCC_LIGHTZPIVTHREAD_H

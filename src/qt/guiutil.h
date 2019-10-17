@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_GUIUTIL_H
-#define BITCOIN_QT_GUIUTIL_H
+#ifndef STAKECUBE_QT_GUIUTIL_H
+#define STAKECUBE_QT_GUIUTIL_H
 
 #include "amount.h"
 #include "askpassphrasedialog.h"
@@ -32,7 +32,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the PIVX Qt UI.
+/** Utility functions used by the SCC Qt UI.
  */
 namespace GUIUtil
 {
@@ -57,7 +57,7 @@ bool requestUnlock(WalletModel* walletModel, AskPassphraseDialog::Context contex
 void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "pivx:" URI into recipient object, return true on successful parsing
+// Parse "scc:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -123,7 +123,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 bool openDebugLogfile();
 
-// Open pivx.conf
+// Open scc.conf
 bool openConfigfile();
 
 // Open masternode.conf
@@ -255,4 +255,4 @@ QString formatTimeOffset(int64_t nTimeOffset);
 
 } // namespace GUIUtil
 
-#endif // BITCOIN_QT_GUIUTIL_H
+#endif // STAKECUBE_QT_GUIUTIL_H

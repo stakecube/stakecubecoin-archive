@@ -6,8 +6,8 @@
 /**
  * Functionality for communicating with Tor.
  */
-#ifndef BITCOIN_TORCONTROL_H
-#define BITCOIN_TORCONTROL_H
+#ifndef STAKECUBE_TORCONTROL_H
+#define STAKECUBE_TORCONTROL_H
 
 #include <string>
 

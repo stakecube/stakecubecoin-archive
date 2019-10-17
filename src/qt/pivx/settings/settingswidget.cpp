@@ -22,7 +22,7 @@
 #include <QScrollBar>
 #include <QDataWidgetMapper>
 
-SettingsWidget::SettingsWidget(PIVXGUI* parent) :
+SettingsWidget::SettingsWidget(SCCGUI* parent) :
     PWidget(parent),
     ui(new Ui::SettingsWidget)
 {
@@ -66,10 +66,6 @@ SettingsWidget::SettingsWidget(PIVXGUI* parent) :
     setCssProperty(ui->pushButtonTools2, "btn-settings-options");
     setCssProperty(ui->pushButtonTools5, "btn-settings-options");
 
-    setCssProperty(ui->pushButtonHelp, "btn-settings-check");
-    setCssProperty(ui->pushButtonHelp1, "btn-settings-options");
-    setCssProperty(ui->pushButtonHelp2, "btn-settings-options");
-
     options = {
         ui->pushButtonFile2,
         ui->pushButtonFile3,
@@ -78,7 +74,6 @@ SettingsWidget::SettingsWidget(PIVXGUI* parent) :
         ui->pushButtonOptions5,
         ui->pushButtonConfiguration3,
         ui->pushButtonConfiguration4,
-        ui->pushButtonHelp2,
         ui->pushButtonTools1,
         ui->pushButtonTools2,
         ui->pushButtonTools5,
@@ -89,7 +84,6 @@ SettingsWidget::SettingsWidget(PIVXGUI* parent) :
     ui->optionsButtonsWidget->setVisible(false);
     ui->configurationButtonsWidget->setVisible(false);
     ui->toolsButtonsWidget->setVisible(false);
-    ui->helpButtonsWidget->setVisible(false);
 
     ui->pushButtonFile2->setChecked(true);
 
@@ -138,11 +132,6 @@ SettingsWidget::SettingsWidget(PIVXGUI* parent) :
     connect(ui->pushButtonTools2, SIGNAL(clicked()), this, SLOT(onDebugConsoleClicked()));
     ui->pushButtonTools2->setShortcut(QKeySequence(SHORT_KEY + Qt::Key_C));
     connect(ui->pushButtonTools5, SIGNAL(clicked()), this, SLOT(onWalletRepairClicked()));
-
-    // Help
-    connect(ui->pushButtonHelp, SIGNAL(clicked()), this, SLOT(onHelpClicked()));
-    connect(ui->pushButtonHelp1, SIGNAL(clicked()), window, SLOT(openFAQ()));
-    connect(ui->pushButtonHelp2, SIGNAL(clicked()), this, SLOT(onAboutClicked()));
 
     // Get restart command-line parameters and handle restart
     connect(settingsWalletRepairWidget, &SettingsWalletRepairWidget::handleRestart, [this](QStringList arg){emit handleRestart(arg);});
@@ -227,7 +216,6 @@ void SettingsWidget::onFileClicked() {
         ui->pushButtonOptions->setChecked(false);
         ui->pushButtonTools->setChecked(false);
         ui->pushButtonConfiguration->setChecked(false);
-        ui->pushButtonHelp->setChecked(false);
 
     } else {
         ui->fileButtonsWidget->setVisible(false);
@@ -255,7 +243,6 @@ void SettingsWidget::onConfigurationClicked() {
         ui->pushButtonOptions->setChecked(false);
         ui->pushButtonTools->setChecked(false);
         ui->pushButtonFile->setChecked(false);
-        ui->pushButtonHelp->setChecked(false);
 
     } else {
         ui->configurationButtonsWidget->setVisible(false);
@@ -283,7 +270,6 @@ void SettingsWidget::onOptionsClicked() {
         ui->pushButtonFile->setChecked(false);
         ui->pushButtonTools->setChecked(false);
         ui->pushButtonConfiguration->setChecked(false);
-        ui->pushButtonHelp->setChecked(false);
 
     } else {
         ui->optionsButtonsWidget->setVisible(false);
@@ -317,7 +303,6 @@ void SettingsWidget::onToolsClicked() {
         ui->pushButtonOptions->setChecked(false);
         ui->pushButtonFile->setChecked(false);
         ui->pushButtonConfiguration->setChecked(false);
-        ui->pushButtonHelp->setChecked(false);
 
     } else {
         ui->toolsButtonsWidget->setVisible(false);
@@ -348,20 +333,7 @@ void SettingsWidget::onWalletRepairClicked() {
 
 
 void SettingsWidget::onHelpClicked() {
-    if (ui->pushButtonHelp->isChecked()) {
-        ui->helpButtonsWidget->setVisible(true);
-
-        ui->toolsButtonsWidget->setVisible(false);
-        ui->optionsButtonsWidget->setVisible(false);
-        ui->fileButtonsWidget->setVisible(false);
-        ui->configurationButtonsWidget->setVisible(false);
-        ui->pushButtonOptions->setChecked(false);
-        ui->pushButtonFile->setChecked(false);
-        ui->pushButtonConfiguration->setChecked(false);
-        ui->pushButtonTools->setChecked(false);
-    } else {
-        ui->helpButtonsWidget->setVisible(false);
-    }
+    ui->helpButtonsWidget->setVisible(false);
 }
 
 void SettingsWidget::onAboutClicked() {

@@ -3,11 +3,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NETBASE_H
-#define BITCOIN_NETBASE_H
+#ifndef STAKECUBE_NETBASE_H
+#define STAKECUBE_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/stakecube-config.h"
 #endif
 
 #include "compat.h"
@@ -224,4 +224,4 @@ bool SetSocketNonBlocking(SOCKET& hSocket, bool fNonBlocking);
  */
 struct timeval MillisToTimeval(int64_t nTimeout);
 
-#endif // BITCOIN_NETBASE_H
+#endif // STAKECUBE_NETBASE_H

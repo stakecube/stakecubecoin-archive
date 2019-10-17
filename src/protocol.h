@@ -9,8 +9,8 @@
 #error This header can only be compiled as C++.
 #endif
 
-#ifndef BITCOIN_PROTOCOL_H
-#define BITCOIN_PROTOCOL_H
+#ifndef STAKECUBE_PROTOCOL_H
+#define STAKECUBE_PROTOCOL_H
 
 #include "netbase.h"
 #include "serialize.h"
@@ -180,4 +180,4 @@ enum {
     MSG_ACC_VALUE
 };
 
-#endif // BITCOIN_PROTOCOL_H
+#endif // STAKECUBE_PROTOCOL_H

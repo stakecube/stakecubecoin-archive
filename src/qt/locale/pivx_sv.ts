@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina PIVX adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <translation>Det här är dina Stakecube adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina PIVX adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <translation>Det här är dina Stakecube adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina PIVs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina SCCs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Fyll i en PIVX Adress som du skulle vilja kryptera med BIP 38. Skriv in en lösenfras i den mittersta raden. Tryck kryptera för att beräkna fram den krypterade privata nyckeln.</translation>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Fyll i en Stakecube Adress som du skulle vilja kryptera med BIP 38. Skriv in en lösenfras i den mittersta raden. Tryck kryptera för att beräkna fram den krypterade privata nyckeln.</translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
-        <translation>PIVX adressen som ska krypteras</translation>
+        <translation>Stakecube adressen som ska krypteras</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Kryptera den privata nyckeln för denna PIVX adressen</translation>
+        <translation>Kryptera den privata nyckeln för denna Stakecube adressen</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Bläddra i transaktions historiken</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Integritets funktioner för zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Integritets funktioner för zSCC</translation>
     </message>
     <message>
         <source>&amp;Governance</source>
@@ -662,7 +662,7 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Skicka mynt till en PIVX adress</translation>
+        <translation>Skicka mynt till en Stakecube adress</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -682,23 +682,23 @@
     </message>
     <message>
         <source>&amp;About Stakecube</source>
-        <translation>Om PIVX Kärnan</translation>
+        <translation>Om Stakecube Kärnan</translation>
     </message>
     <message>
         <source>Show information about Stakecube</source>
-        <translation>Visa information om PIVX Kärnan</translation>
+        <translation>Visa information om Stakecube Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Ändra konfigurationsval för PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Ändra konfigurationsval för Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Signera meddelanden med din PIVX adress för att visa att du äger dem</translation>
+        <translation>Signera meddelanden med din Stakecube adress för att visa att du äger dem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PIVX adressen.</translation>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Stakecube adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -729,8 +729,8 @@
         <translation>Öppna Huvudnodens konfigurations fil </translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Öppna en PIVX: URI eller betalningsförfrågan</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Öppna en Stakecube: URI eller betalningsförfrågan</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -741,16 +741,16 @@
         <translation>Blockera utforskarfönstret</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Visa Stakecube hjälp meddelande för att få en lista med möjliga PIVX kommandorad alternativ</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Visa Stakecube hjälp meddelande för att få en lista med möjliga Stakecube kommandorad alternativ</translation>
     </message>
     <message>
         <source>Stakecube client</source>
-        <translation>PIVX kärn klient</translation>
+        <translation>Stakecube kärn klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PIVX network</source>
-        <translation><numerusform>%n aktiva anslutningar till PIVX nätverket</numerusform><numerusform>%n aktiva  anslutningar till PIVX nätverket</numerusform></translation>
+        <source>%n active connection(s) to Stakecube network</source>
+        <translation><numerusform>%n aktiva anslutningar till Stakecube nätverket</numerusform><numerusform>%n aktiva  anslutningar till Stakecube nätverket</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -877,8 +877,8 @@ MultiSend: %1</translation>
         <translation>Plånbok är &lt;b&gt;krypterad&lt;/b&gt; och tillfälligt &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Ett fel inträffade. PIVX kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
+        <source>A fatal error occurred. Stakecube can no longer continue safely and will quit.</source>
+        <translation>Ett fel inträffade. Stakecube kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
     </message>
 </context>
 <context>
@@ -1146,8 +1146,8 @@ MultiSend: %1</translation>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan variera med +/- %1 upiv per inmatning.</translation>
+        <source>Can vary +/- %1 uscc per input.</source>
+        <translation>Kan variera med +/- %1 uscc per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1202,7 +1202,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>Den inmatade adressen "%1" är ej en giltig PIVX adress.</translation>
+        <translation>Den inmatade adressen "%1" är ej en giltig Stakecube adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1299,7 +1299,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>About Stakecube</source>
-        <translation>Om PIVX Kärna</translation>
+        <translation>Om Stakecube Kärna</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1353,8 +1353,8 @@ MultiSend: %1</translation>
         <translation>Eftersom detta är första gången programmet körs så kan du välja var Stakecube ska spara sin data.</translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Kärnan kommer ladda ner och spara en kopia av PIVX block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube Kärnan kommer ladda ner och spara en kopia av Stakecube block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1511,8 +1511,8 @@ MultiSend: %1</translation>
 To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend tillåter dig att automatiskt skicka upp till 100% av dina staking eller huvudnod belöningar till en lista av andra PIVX adresser efter att belöningarna har mognat.
-För att Lägga till: Ange procent att ge och PIVX adress för att lägga till i MultiSend vektorn.
+        <translation>MultiSend tillåter dig att automatiskt skicka upp till 100% av dina staking eller huvudnod belöningar till en lista av andra Stakecube adresser efter att belöningarna har mognat.
+För att Lägga till: Ange procent att ge och Stakecube adress för att lägga till i MultiSend vektorn.
 För att Ta Bort: Ange adressen som ska tas bort och tryck ta bort.
 MultiSend kommer inte aktiveras om du inte tryckt på Aktivera</translation>
     </message>
@@ -1904,8 +1904,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Om du avaktiverar spenderandet av okonfirmerad växel så kommer växeln från en transaktion &lt;br/&gt;ej kunna användas föräns transaktionen har minst en bekräftelse. &lt;br/&gt; Detta påverkar även hur ditt saldo beräknas.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt PIVX klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
+        <source>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Stakecube klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1924,12 +1924,12 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Starta PIVX automatiskt efter inloggning på systemet.</translation>
+        <source>Automatically start Stakecube after logging in to the system.</source>
+        <translation>Starta Stakecube automatiskt efter inloggning på systemet.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Starta PIVX vid systeminloggning</translation>
+        <source>&amp;Start Stakecube on system login</source>
+        <translation>&amp;Starta Stakecube vid systeminloggning</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1956,8 +1956,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube.</source>
+        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om Stakecube.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1970,44 +1970,44 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SCC units to zPIV</source>
-        <translation>Tillåt automatisk prägling med SCC enheter till zPIV</translation>
+        <source>Enable automatic minting of SCC units to zSCC</source>
+        <translation>Tillåt automatisk prägling med SCC enheter till zSCC</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Tillåt zPIV Autoprägling</translation>
+        <source>Enable zSCC Automint</source>
+        <translation>Tillåt zSCC Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Aktivera automatisk zPIV prägling från specifika adresser</translation>
+        <source>Enable automatic zSCC minting from specific addresses</source>
+        <translation>Aktivera automatisk zSCC prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande SCC som automatiskt konverteras till zPIV via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande SCC som automatiskt konverteras till zSCC via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procent av autopräglade zPIV</translation>
+        <source>Percentage of autominted zSCC</source>
+        <translation>Procent av autopräglade zSCC</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
         <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många SCC för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferens på zPIV valör i autoprägling</translation>
+        <source>Preferred Automint zSCC Denomination</source>
+        <translation>Preferens på zSCC valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Staking delnings tröskel:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Anslut till PIVX nätverket via en SOCKS5 proxy.</translation>
+        <source>Connect to the Stakecube network through a SOCKS5 proxy.</source>
+        <translation>Anslut till Stakecube nätverket via en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2189,18 +2189,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Nuvarande låst saldo endast i "watch only" adresser</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Ditt nuvarande PIVX saldo, obekräftade och omogna transaktioner är inkluderade</translation>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
+        <translation>Ditt nuvarande Stakecube saldo, obekräftade och omogna transaktioner är inkluderade</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV Saldo</translation>
+        <source>zSCC Balance</source>
+        <translation>zSCC Saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zSCC are spendable.</source>
         <translation>Mogna: över 20 bekräftelser och över 1 prägling av samma valör efter den blev myntad.
-Dessa zPIV kan spenderas.</translation>
+Dessa zSCC kan spenderas.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2209,8 +2209,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med PIVX nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med Stakecube nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2253,8 +2253,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Spenderbar:</translation>
     </message>
     <message>
-        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Låsta SCC eller masternode som säkerhet. Dessa är uteslutna från zPIV minting.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</source>
+        <translation>Låsta SCC eller masternode som säkerhet. Dessa är uteslutna från zSCC minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2265,8 +2265,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Obekräftade:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Ditt nuvarande zPIV saldo, obekräftade och omogna zPIV inräknade.</translation>
+        <source>Your current zSCC balance, unconfirmed and immature zSCC included.</source>
+        <translation>Ditt nuvarande zSCC saldo, obekräftade och omogna zSCC inräknade.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2277,10 +2277,10 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>osynkroniserad</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zSCC.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Nuvarande procent zPIV.
+        <translation>Nuvarande procent zSCC.
 Om AutoMint är tillåten så kommer denna procent att vara som den konfigurerade AutoMint procenten (standard = 10%).
 </translation>
     </message>
@@ -2327,7 +2327,7 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
-        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig PIVX adress eller felproducerade URI parametrar.</translation>
+        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig Stakecube adress eller felproducerade URI parametrar.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2412,8 +2412,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>Zerocoin Handlingar:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med PIVX nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med Stakecube nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2424,8 +2424,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2452,12 +2452,12 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>SEKRETESS</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV Kontroll</translation>
+        <source>zSCC Control</source>
+        <translation>zSCC Kontroll</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>Valda zPIV:</translation>
+        <source>zSCC Selected:</source>
+        <translation>Valda zSCC:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2472,24 +2472,24 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Tillgängliga (mogna och spenderbara) zPIV att spendera</translation>
+        <source>Available (mature and spendable) zSCC for spending</source>
+        <translation>Tillgängliga (mogna och spenderbara) zSCC att spendera</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Tillgängligt Saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zSCC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tillgängliga (mogna och spenderbara) zPIV att spendera
+zSCC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Tillgängliga (mogna och spenderbara) zSCC att spendera
 
-zPIV är mogna när de har över 20 bekräftelser OCH över 2 präglingar av samma valör efter de är myntade.</translation>
+zSCC är mogna när de har över 20 bekräftelser OCH över 2 präglingar av samma valör efter de är myntade.</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zSCC</source>
+        <translation>0 zSCC</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2497,7 +2497,7 @@ zPIV är mogna när de har över 20 bekräftelser OCH över 2 präglingar av sam
     </message>
     <message>
         <source>The SCC address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>PIVX adress att skicka betalningen till. Skapar betalning till dig själv när den är tom.</translation>
+        <translation>Stakecube adress att skicka betalningen till. Skapar betalning till dig själv när den är tom.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2548,8 +2548,8 @@ zPIV är mogna när de har över 20 bekräftelser OCH över 2 präglingar av sam
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Totalt Saldo, obekräftade och omogna zPIV inkluderade</translation>
+        <source>Total Balance including unconfirmed and immature zSCC</source>
+        <translation>Totalt Saldo, obekräftade och omogna zSCC inkluderade</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2570,24 +2570,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zSCC minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCC
 
 </source>
-        <translation>Visa den nuvarande statusen av automatisk zPIV minting.
+        <translation>Visa den nuvarande statusen av automatisk zSCC minting.
 
 För att ändra statusen (omstart krävs):
 -aktivera: lägg till 'enablezeromint=1' i pivx.conf
 -inaktivera: lägg till 'enablezeromint=0' i pivx.conf
 
 För att ändra procenten (ingen omstart krävs):
--meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zPIV
+-meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zSCC
 
 </translation>
     </message>
@@ -2636,20 +2636,20 @@ För att ändra procenten (ingen omstart krävs):
         <translation>0 x</translation>
     </message>
     <message>
-        <source>Show zPIV denominations list</source>
-        <translation>Visa zPIV valör lista</translation>
+        <source>Show zSCC denominations list</source>
+        <translation>Visa zSCC valör lista</translation>
     </message>
     <message>
         <source>Show Denominations</source>
         <translation>Visa Valörer</translation>
     </message>
     <message>
-        <source>zPIV minting is DISABLED</source>
-        <translation>zPIV prägling är inaktiverad</translation>
+        <source>zSCC minting is DISABLED</source>
+        <translation>zSCC prägling är inaktiverad</translation>
     </message>
     <message>
-        <source>zPIV spending is NOT private (links back to the mint transaction)</source>
-        <translation>Att spendera zPIV är INTE privat (länkar tillbaka till den myntade transaktionen)</translation>
+        <source>zSCC spending is NOT private (links back to the mint transaction)</source>
+        <translation>Att spendera zSCC är INTE privat (länkar tillbaka till den myntade transaktionen)</translation>
     </message>
     <message>
         <source>Denominations with value 5:</source>
@@ -2782,12 +2782,12 @@ Please be patient...</source>
 Ha lite tålamod...</translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>zPIV spendering #:</translation>
+        <source>zSCC Spend #: </source>
+        <translation>zSCC spendering #:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>zPIV Prägling</translation>
+        <source>zSCC Mint</source>
+        <translation>zSCC Prägling</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2802,12 +2802,12 @@ Ha lite tålamod...</translation>
         <translation>Konfigurerat procent mål: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>zPIV är för nuvarande inaktiverat p.g.a. underhåll.</translation>
+        <source>zSCC is currently disabled due to maintenance.</source>
+        <translation>zSCC är för nuvarande inaktiverat p.g.a. underhåll.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV genomgår för tillfället underhåll.</translation>
+        <source>zSCC is currently undergoing maintenance.</source>
+        <translation>zSCC genomgår för tillfället underhåll.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3043,7 +3043,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Enter a SCC address (e.g. %1)</source>
-        <translation>Mata in en PIVX adress (e.g. %1)</translation>
+        <translation>Mata in en Stakecube adress (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3200,8 +3200,8 @@ Var tålmodig...</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna PIVX felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
+        <source>Open the Stakecube debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna Stakecube felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3336,8 +3336,8 @@ Var tålmodig...</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Vanlig zPIV Backup Sökväg:</translation>
+        <source>Custom zSCC Backup Path:</source>
+        <translation>Vanlig zSCC Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3416,8 +3416,8 @@ Var tålmodig...</translation>
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Välkommen till PIVX RPC konsol.</translation>
+        <source>Welcome to the Stakecube RPC console.</source>
+        <translation>Välkommen till Stakecube RPC konsol.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3559,16 +3559,16 @@ Var tålmodig...</translation>
         <translation>&amp;Mängd:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, som kommer visas när förfrågan öppnas. Observera: Medelandet kommer inte skickas med betalningen över PIVX nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, som kommer visas när förfrågan öppnas. Observera: Medelandet kommer inte skickas med betalningen över Stakecube nätverket.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ERHÅLLA</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, vilket kommer visas när förfrågan öppnas.&lt;br&gt;Observera: Medelandet kommer inte skickas med betalningen över PIVX nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, vilket kommer visas när förfrågan öppnas.&lt;br&gt;Observera: Medelandet kommer inte skickas med betalningen över Stakecube nätverket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3864,16 +3864,16 @@ Var tålmodig...</translation>
         <translation>Mynt automatiskt valda</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uPIVs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uPIVs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uPIVs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uSCCs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSCCs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uSCCs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uPIVs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uPIVs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uPIVs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uSCCs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uSCCs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uSCCs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
-        <translation>Att endast betala minimum avgift är okej så länge som transaktionsvolymen är mindre än rummet i blocken.&lt;br /&gt;Men var medveten om att detta kan sluta som en transaktion som aldrig blir bekräftad när det finns ett större behov av PIVX transaktioner än nätverket kan bearbeta.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube transactions than the network can process.</source>
+        <translation>Att endast betala minimum avgift är okej så länge som transaktionsvolymen är mindre än rummet i blocken.&lt;br /&gt;Men var medveten om att detta kan sluta som en transaktion som aldrig blir bekräftad när det finns ett större behov av Stakecube transaktioner än nätverket kan bearbeta.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3969,7 +3969,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Warning: Invalid SCC address</source>
-        <translation>Varning: Ogiltig PIVX adress</translation>
+        <translation>Varning: Ogiltig Stakecube adress</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4072,7 +4072,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>The SCC address to send the payment to</source>
-        <translation>PIVX adressen att skicka betalningen till</translation>
+        <translation>Stakecube adressen att skicka betalningen till</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4111,8 +4111,8 @@ Var tålmodig...</translation>
         <translation>Medelande:</translation>
     </message>
     <message>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
-        <translation>Ett medelande som var bifogat till PIVX: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom PIVX nätverket.</translation>
+        <source>A message that was attached to the Stakecube: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube network.</source>
+        <translation>Ett medelande som var bifogat till Stakecube: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom Stakecube nätverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4162,7 +4162,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>PIVX adressen för signera meddelandet med</translation>
+        <translation>Stakecube adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4194,15 +4194,15 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna PIVX adress</translation>
+        <translation>Signera meddelandet för att bevisa att du äger denna Stakecube adress</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>PIVX adressen meddelandet blev signerat med</translation>
+        <translation>Stakecube adressen meddelandet blev signerat med</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PIVX adressen.</translation>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika Stakecube adressen.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4584,8 +4584,8 @@ Var tålmodig...</translation>
         <translation>SCC staking</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Staking</translation>
+        <source>zSCC Stake</source>
+        <translation>zSCC Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4604,32 +4604,32 @@ Var tålmodig...</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted SCC to zPIV</source>
-        <translation>Konvertera SCC till zPIV</translation>
+        <source>Converted SCC to zSCC</source>
+        <translation>Konvertera SCC till zSCC</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spendera zPIV</translation>
+        <source>Spent zSCC</source>
+        <translation>Spendera zSCC</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Mottog SCC från zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Mottog SCC från zSCC</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Myntad Växel som zPIV från zPIV Spendering</translation>
+        <source>Minted Change as zSCC from zSCC Spend</source>
+        <translation>Myntad Växel som zSCC från zSCC Spendering</translation>
     </message>
     <message>
-        <source>Converted zPIV to SCC</source>
-        <translation>Konverterad zPIV till SCC</translation>
+        <source>Converted zSCC to SCC</source>
+        <translation>Konverterad zSCC till SCC</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Anonym (zPIV Transaktion)</translation>
+        <source>Anonymous (zSCC Transaction)</source>
+        <translation>Anonym (zSCC Transaktion)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Anonym (zPIV Stake)</translation>
+        <source>Anonymous (zSCC Stake)</source>
+        <translation>Anonym (zSCC Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4843,12 +4843,12 @@ Var tålmodig...</translation>
         <translation>Exportering Lyckat</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Mottog SCC från zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Mottog SCC från zSCC</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Zerocoin spendera, Växel i zPIV</translation>
+        <source>Zerocoin Spend, Change in zSCC</source>
+        <translation>Zerocoin spendera, Växel i zSCC</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4918,8 +4918,8 @@ Var tålmodig...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Välj zPIV att Spendera</translation>
+        <source>Select zSCC to Spend</source>
+        <translation>Välj zSCC att Spendera</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4930,8 +4930,8 @@ Var tålmodig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4966,7 +4966,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
-        <translation>Kan ej låsa in på data katalog %s. PIVX Kärna körs förmodligen redan.</translation>
+        <translation>Kan ej låsa in på data katalog %s. Stakecube Kärna körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4993,16 +4993,16 @@ Var tålmodig...</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zPIV minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCC minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zSCC minting (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
         <translation>Aktivera eller avaktivera staking funktionalitet för SCC inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zPIV inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zSCC inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zSCC inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5386,7 +5386,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Stakecube</source>
-        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare PIVX Kärna version</translation>
+        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare Stakecube Kärna version</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5482,7 +5482,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. Stakecube is shutting down.</source>
-        <translation>Initierings renlighetscheck misslyckades. PIVX Kärna stängs ner.</translation>
+        <translation>Initierings renlighetscheck misslyckades. Stakecube Kärna stängs ner.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5545,8 +5545,8 @@ Var tålmodig...</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SCC and zPIV money supply statistics</source>
-        <translation>Indexera SCC och zPIV pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the SCC and zSCC money supply statistics</source>
+        <translation>Indexera SCC och zSCC pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5589,8 +5589,8 @@ Var tålmodig...</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Avaktivera all PIVX funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
+        <source>Disable all Stakecube specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Avaktivera all Stakecube funktionalitet (Huvudnoder, SwiftX, Budgeting) (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5625,8 +5625,8 @@ Var tålmodig...</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zPIV backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zSCC backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6041,8 +6041,8 @@ Var tålmodig...</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synkroniserar zPIV plånbok...</translation>
+        <source>Syncing zSCC wallet...</source>
+        <translation>Synkroniserar zSCC plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6153,8 +6153,8 @@ Var tålmodig...</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCC</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zSCC</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6170,7 +6170,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart Stakecube to complete</source>
-        <translation>Plånbok behöver skrivas om: starta om PIVX Kärna för att göra klart</translation>
+        <translation>Plånbok behöver skrivas om: starta om Stakecube Kärna för att göra klart</translation>
     </message>
     <message>
         <source>Wallet options:</source>

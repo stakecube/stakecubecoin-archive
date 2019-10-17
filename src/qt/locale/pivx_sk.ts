@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše PIVX adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <translation>Toto sú vaše Stakecube adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše PIVX adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <translation>Toto sú vaše Stakecube adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše SCC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše SCC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -574,7 +574,7 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Odoslať mince na adresu PIVX</translation>
+        <translation>Odoslať mince na adresu Stakecube</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -597,16 +597,16 @@
         <translation>Zobraziť informácie o Stakecube</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Zmeňte možnosti konfigurácie pre PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Zmeňte možnosti konfigurácie pre Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy PIVX, aby ste preukázali, že ich vlastníte</translation>
+        <translation>Podpíšte správy pomocou adresy Stakecube, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými PIVX adresami</translation>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Stakecube adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -637,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Otvorte PIVX: URI alebo žiadosť o platbu</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Otvorte Stakecube: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -649,8 +649,8 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Stakecube a získajte zoznam možností príkazového riadka PIVX</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Stakecube a získajte zoznam možností príkazového riadka Stakecube</translation>
     </message>
     <message>
         <source>Stakecube client</source>
@@ -1118,7 +1118,7 @@ MultiSend: %1</translation>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>Adresa PIVX, ktorou chcete správu podpísať</translation>
+        <translation>Adresa Stakecube, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1142,15 +1142,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto PIVX adresy</translation>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Stakecube adresy</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>PIVX adresa, ktorou bola správa podpísaná</translation>
+        <translation>Stakecube adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou PIVX adresou</translation>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Stakecube adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

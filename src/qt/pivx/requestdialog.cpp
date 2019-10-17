@@ -33,7 +33,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     setCssProperty(ui->comboContainer, "container-purple");
 
     ui->comboBoxCoin->addItem("SCC", 0);
-    ui->comboBoxCoin->addItem("zPIV", 1);
+    ui->comboBoxCoin->addItem("zSCC", 1);
     ui->comboBoxCoin->setView(new QListView());
 
     // Label

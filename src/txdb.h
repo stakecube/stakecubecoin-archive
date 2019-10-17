@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TXDB_H
-#define BITCOIN_TXDB_H
+#ifndef STAKECUBE_TXDB_H
+#define STAKECUBE_TXDB_H
 
 #include "leveldbwrapper.h"
 #include "validation.h"
@@ -107,11 +107,11 @@ private:
     void operator=(const CZerocoinDB&);
 
 public:
-    /** Write zPIV mints to the zerocoinDB in a batch */
+    /** Write zSCC mints to the zerocoinDB in a batch */
     bool WriteCoinMintBatch(const std::vector<std::pair<libzerocoin::PublicCoin, uint256> >& mintInfo);
     bool ReadCoinMint(const CBigNum& bnPubcoin, uint256& txHash);
     bool ReadCoinMint(const uint256& hashPubcoin, uint256& hashTx);
-    /** Write zPIV spends to the zerocoinDB in a batch */
+    /** Write zSCC spends to the zerocoinDB in a batch */
     bool WriteCoinSpendBatch(const std::vector<std::pair<libzerocoin::CoinSpend, uint256> >& spendInfo);
     bool ReadCoinSpend(const CBigNum& bnSerial, uint256& txHash);
     bool ReadCoinSpend(const uint256& hashSerial, uint256 &txHash);
@@ -123,4 +123,4 @@ public:
     bool EraseAccumulatorValue(const uint32_t& nChecksum);
 };
 
-#endif // BITCOIN_TXDB_H
+#endif // STAKECUBE_TXDB_H

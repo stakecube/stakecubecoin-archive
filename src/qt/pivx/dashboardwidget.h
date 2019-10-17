@@ -19,7 +19,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/pivx-config.h> /* for USE_QTCHARTS */
+#include <config/stakecube-config.h> /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS
@@ -37,7 +37,7 @@ using namespace QtCharts;
 
 #endif
 
-class PIVXGUI;
+class SCCGUI;
 class WalletModel;
 
 namespace Ui {
@@ -96,7 +96,7 @@ class DashboardWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit DashboardWidget(PIVXGUI* _window);
+    explicit DashboardWidget(SCCGUI* _window);
     ~DashboardWidget();
 
     void loadWalletModel() override;

@@ -10,7 +10,7 @@
 #include <qt/pivx/pwidget.h>
 #include <qt/pivx/furabstractlistitemdelegate.h>
 
-class PIVXGUI;
+class SCCGUI;
 
 namespace Ui {
 class SettingsMultisendWidget;

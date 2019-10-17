@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_TRANSACTIONVIEW_H
-#define BITCOIN_QT_TRANSACTIONVIEW_H
+#ifndef STAKECUBE_QT_TRANSACTIONVIEW_H
+#define STAKECUBE_QT_TRANSACTIONVIEW_H
 
 #include "guiutil.h"
 
@@ -119,4 +119,4 @@ public slots:
     void computeSum();
 };
 
-#endif // BITCOIN_QT_TRANSACTIONVIEW_H
+#endif // STAKECUBE_QT_TRANSACTIONVIEW_H

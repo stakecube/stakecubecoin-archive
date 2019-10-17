@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_ISMINE_H
-#define BITCOIN_WALLET_ISMINE_H
+#ifndef STAKECUBE_WALLET_ISMINE_H
+#define STAKECUBE_WALLET_ISMINE_H
 
 #include "key.h"
 #include "script/standard.h"
@@ -29,4 +29,4 @@ typedef uint8_t isminefilter;
 isminetype IsMine(const CKeyStore& keystore, const CScript& scriptPubKey);
 isminetype IsMine(const CKeyStore& keystore, const CTxDestination& dest);
 
-#endif // BITCOIN_WALLET_ISMINE_H
+#endif // STAKECUBE_WALLET_ISMINE_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_MULTISIGDIALOG_H
-#define BITCOIN_QT_MULTISIGDIALOG_H
+#ifndef STAKECUBE_QT_MULTISIGDIALOG_H
+#define STAKECUBE_QT_MULTISIGDIALOG_H
 
 #include <QDialog>
 #include <QFrame>
@@ -68,4 +68,4 @@ private slots:
    void on_importAddressButton_clicked();
 };
 
-#endif // BITCOIN_QT_MULTISIGDIALOG_H
+#endif // STAKECUBE_QT_MULTISIGDIALOG_H

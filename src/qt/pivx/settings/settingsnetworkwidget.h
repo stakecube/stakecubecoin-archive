@@ -18,7 +18,7 @@ class SettingsNetworkWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsNetworkWidget(PIVXGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsNetworkWidget(SCCGUI* _window, QWidget *parent = nullptr);
     ~SettingsNetworkWidget();
 
     void setMapper(QDataWidgetMapper *mapper);

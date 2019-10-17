@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите PIVX адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <translation>Това са вашите Stakecube адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите PIVX адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <translation>Това са вашите Stakecube адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия PIVX от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Stakecube от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Въведете Pivx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
-        <translation>PIVX Адреса за криптиране</translation>
+        <translation>Stakecube Адреса за криптиране</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Криптирай тайния ключ за този PIVX адрес</translation>
+        <translation>Криптирай тайния ключ за този Stakecube адрес</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,7 +433,7 @@
         <translation>История на транзакциите</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
+        <source>Privacy Actions for zSCC</source>
         <translation>Поверителни Действия за ZPIV</translation>
     </message>
     <message>
@@ -642,15 +642,15 @@
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX Ядро</translation>
+        <translation>Stakecube Ядро</translation>
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Изпратете монети до PIVX адрес</translation>
+        <translation>Изпратете монети до Stakecube адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  PIVX:URI)</translation>
+        <translation>Поискай плащане (генерира QR кодове и  Stakecube:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -666,23 +666,23 @@
     </message>
     <message>
         <source>&amp;About Stakecube</source>
-        <translation>&amp;Относно PIVX Ядрото</translation>
+        <translation>&amp;Относно Stakecube Ядрото</translation>
     </message>
     <message>
         <source>Show information about Stakecube</source>
-        <translation>Информациза за PIVX Ядрото</translation>
+        <translation>Информациза за Stakecube Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Промени PIVX конфигурацията</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Промени Stakecube конфигурацията</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте PIVX адреси, за да докажете че са Ваши</translation>
+        <translation>Подпишете съобщения със своте Stakecube адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните PIVX адреси</translation>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Stakecube адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Отвори PIVX:URI платежно нареждане</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Отвори Stakecube:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,12 +725,12 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Разкрийте Помощ за PIVX Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Разкрийте Помощ за Stakecube Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
         <source>Stakecube client</source>
-        <translation>Клиент PIVX Ядро</translation>
+        <translation>Клиент Stakecube Ядро</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1106,8 +1106,8 @@ Address: %4
         <translation>Етикета става червен, когато получателя ще получи сума по-малка от %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Може да има разлика от +/- %1 upiv на вх.</translation>
+        <source>Can vary +/- %1 uscc per input.</source>
+        <translation>Може да има разлика от +/- %1 uscc на вх.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1162,7 +1162,7 @@ Address: %4
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>Зададения адрес "%1"не е валиден PIVX адрес.</translation>
+        <translation>Зададения адрес "%1"не е валиден Stakecube адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,7 +1219,7 @@ Address: %4
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX Ядро</translation>
+        <translation>Stakecube Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1227,7 +1227,7 @@ Address: %4
     </message>
     <message>
         <source>About Stakecube</source>
-        <translation>Относно PIVX Ядрото</translation>
+        <translation>Относно Stakecube Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,15 +1274,15 @@ Address: %4
     </message>
     <message>
         <source>Welcome to Stakecube.</source>
-        <translation>Добре Дошли в PIVX Ядрото</translation>
+        <translation>Добре Дошли в Stakecube Ядрото</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Stakecube will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде PIVX Ядрото ще съхранява своите данни.</translation>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Stakecube Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Ядрото ще изтегли и запише копие на целия PIVX блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube Ядрото ще изтегли и запише копие на целия Stakecube блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,7 +1294,7 @@ Address: %4
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX Ядро</translation>
+        <translation>Stakecube Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1439,8 +1439,8 @@ Address: %4
 To Add: enter percentage to give and SCC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други PIVX адреси.
-Да Добавите: въведете процент и задайте PIVX адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Stakecube адреси.
+Да Добавите: въведете процент и задайте Stakecube адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1762,8 +1762,8 @@ Please be patient after clicking import.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори PIVX порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори Stakecube порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1782,12 +1782,12 @@ Please be patient after clicking import.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Стартирай PIVX автоматично след влизане в системата.</translation>
+        <source>Automatically start Stakecube after logging in to the system.</source>
+        <translation>Стартирай Stakecube автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Стартирай PIVX заедно с операционната система</translation>
+        <source>&amp;Start Stakecube on system login</source>
+        <translation>&amp;Стартирай Stakecube заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1814,7 +1814,7 @@ Please be patient after clicking import.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
@@ -1828,36 +1828,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SCC units to zPIV</source>
-        <translation>Включи автоматичното емитиране на SCC единици в zPIV</translation>
+        <source>Enable automatic minting of SCC units to zSCC</source>
+        <translation>Включи автоматичното емитиране на SCC единици в zSCC</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Включи Автоматично емитиране на zPIV</translation>
+        <source>Enable zSCC Automint</source>
+        <translation>Включи Автоматично емитиране на zSCC</translation>
     </message>
     <message>
-        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите SCC, който автоматично да се конвертира в zPIV посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите SCC, който автоматично да се конвертира в zSCC посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Процент автоматично сечени zPIV</translation>
+        <source>Percentage of autominted zSCC</source>
+        <translation>Процент автоматично сечени zSCC</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SCC for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zPIV докато не се съберат достатъчно SCC за тази деноминация</translation>
+        <translation>Не бързай с автоматичното конвертиране в zSCC докато не се съберат достатъчно SCC за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zPIV</translation>
+        <source>Preferred Automint zSCC Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zSCC</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Праг на споделеното съхранение:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с PIVX мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the Stakecube network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с Stakecube мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2031,18 +2031,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Сегашния баланс по портфейли в режим на наблюдение само</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Вашите PIVX наличности, включително непотвърдените и неузрели преводи</translation>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
+        <translation>Вашите Stakecube наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV Наличности</translation>
+        <source>zSCC Balance</source>
+        <translation>zSCC Наличности</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zSCC are spendable.</source>
         <translation>Узрели: повече от 20 потвърждения и повече от 1 емисии от същата деноминация след като е била емитирана.
-Тези zPIV могат да се похарчат.</translation>
+Тези zSCC могат да се похарчат.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2051,8 +2051,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Неузрели: потвърдени, но с по-малко от 1 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с PIVX мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Stakecube мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2095,8 +2095,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Заключен SCC или допълнителни гаранции в Главни Възли. Тези не са включени в zPIV емитирането.</translation>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</source>
+        <translation>Заключен SCC или допълнителни гаранции в Главни Възли. Тези не са включени в zSCC емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2107,8 +2107,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Непотвърден</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Вашите zPIV наличности, включеително непотвърдените и неузрелите zPIV.</translation>
+        <source>Your current zSCC balance, unconfirmed and immature zSCC included.</source>
+        <translation>Вашите zSCC наличности, включеително непотвърдените и неузрелите zSCC.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2161,7 +2161,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid SCC address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден PIVX адрес или зле-форматирани URI Параметри.</translation>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден Stakecube адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2246,8 +2246,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с PIVX мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Stakecube мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2258,8 +2258,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2286,12 +2286,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>КОНФИДЕНЦИАЛНОСТ</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV Контрол</translation>
+        <source>zSCC Control</source>
+        <translation>zSCC Контрол</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>Избрани zPIV:</translation>
+        <source>zSCC Selected:</source>
+        <translation>Избрани zSCC:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2306,24 +2306,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Налични (узрели и готови за харчене) zPIV за употреба</translation>
+        <source>Available (mature and spendable) zSCC for spending</source>
+        <translation>Налични (узрели и готови за харчене) zSCC за употреба</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zSCC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Налични (узрели и готови за харчене) zPIV за употреба
+zSCC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Налични (узрели и готови за харчене) zSCC за употреба
 
-zPIV са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
+zSCC са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zSCC</source>
+        <translation>0 zSCC</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2363,7 +2363,7 @@ zPIV са узрели, тогава когато имат повече от 20 
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zPIV от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zSCC от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2382,8 +2382,8 @@ zPIV са узрели, тогава когато имат повече от 20 
         <translation>Zerocoin статистика:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Обща Наличност включеително непотвърдените и неузрели zPIV</translation>
+        <source>Total Balance including unconfirmed and immature zSCC</source>
+        <translation>Обща Наличност включеително непотвърдените и неузрели zSCC</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2404,24 +2404,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Неузрели: потвърдени, но с по-малко от 1 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zSCC minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCC
 
 </source>
-        <translation>Покажи състоянието на автоматичното zPIV емитиране.
+        <translation>Покажи състоянието на автоматичното zSCC емитиране.
 
 За да пормените състоянието (изисква рестарт):
 - вклчване: добавете 'enablezeromint=1' в pivx.conf
 - изключване: добавете 'enablezeromint=0' в pivx.conf
 
 За промяна в процентите (не изисква рестарт):
-- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zPIV
+- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zSCC
 </translation>
     </message>
     <message>
@@ -2595,12 +2595,12 @@ Please be patient...</source>
 Моля изчакате...</translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>zPIV Похарчени #:</translation>
+        <source>zSCC Spend #: </source>
+        <translation>zSCC Похарчени #:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>Сечене на zPIV</translation>
+        <source>zSCC Mint</source>
+        <translation>Сечене на zSCC</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2615,12 +2615,12 @@ Please be patient...</source>
         <translation>Конфигуриран целеви процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>В момента zPIV не работи поради ремонт.</translation>
+        <source>zSCC is currently disabled due to maintenance.</source>
+        <translation>В момента zSCC не работи поради ремонт.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>В момента zPIV е в ремонт.</translation>
+        <source>zSCC is currently undergoing maintenance.</source>
+        <translation>В момента zSCC е в ремонт.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2710,7 +2710,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Invalid Pivx Address</source>
-        <translation>Невалиден PIVX адрес</translation>
+        <translation>Невалиден Stakecube адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2788,7 +2788,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Enter a SCC address (e.g. %1)</source>
-        <translation>Задайте PIVX адрес (например %1)</translation>
+        <translation>Задайте Stakecube адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2832,7 +2832,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX Ядро</translation>
+        <translation>Stakecube Ядро</translation>
     </message>
     </context>
 <context>
@@ -2929,8 +2929,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори PIVX дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the Stakecube debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори Stakecube дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3065,8 +3065,8 @@ Please be patient...</source>
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Персонализиран zPIV резервен път:</translation>
+        <source>Custom zSCC Backup Path:</source>
+        <translation>Персонализиран zSCC резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3145,8 +3145,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на PIVX.</translation>
+        <source>Welcome to the Stakecube RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на Stakecube.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3272,16 +3272,16 @@ Please be patient...</source>
         <translation>Сума:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по PIVX мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Stakecube мрежата.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ПОЛУЧИ</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по PIVX мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Stakecube мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3569,15 +3569,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Ако собствената такса е настроена на 1000 uPIV и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPIV входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uPIV. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uSCCs in fee,&lt;br /&gt;while "total at least" pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Ако собствената такса е настроена на 1000 uPIV и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPIV входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPIV. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3773,7 +3773,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>The SCC address to send the payment to</source>
-        <translation>PIVX адреса - получател на плащането</translation>
+        <translation>Stakecube адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3812,8 +3812,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
-        <translation>Съобщение, което е било прикачено към PIVX:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по PIVX мрежата.</translation>
+        <source>A message that was attached to the Stakecube: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube network.</source>
+        <translation>Съобщение, което е било прикачено към Stakecube:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Stakecube мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3840,7 +3840,7 @@ Please be patient...</source>
     <name>ShutdownWindow</name>
     <message>
         <source>Stakecube is shutting down...</source>
-        <translation>Изключване на PIVX Ядрото...</translation>
+        <translation>Изключване на Stakecube Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3863,7 +3863,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>PIVX адреса, с който да подпишете съобщението</translation>
+        <translation>Stakecube адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3895,15 +3895,15 @@ Please be patient...</source>
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този PIVX адрес</translation>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този Stakecube адрес</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>PIVX адреса, който е подписано съобщението</translation>
+        <translation>Stakecube адреса, който е подписано съобщението</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения PIVX адрес</translation>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Stakecube адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3990,7 +3990,7 @@ Please be patient...</source>
     <name>SplashScreen</name>
     <message>
         <source>Stakecube</source>
-        <translation>PIVX Ядро</translation>
+        <translation>Stakecube Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4273,8 +4273,8 @@ Please be patient...</source>
         <translation>SCC Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zSCC Stake</source>
+        <translation>zSCC Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4293,32 +4293,32 @@ Please be patient...</source>
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted SCC to zPIV</source>
-        <translation>Конвертиран SCC във zPIV</translation>
+        <source>Converted SCC to zSCC</source>
+        <translation>Конвертиран SCC във zSCC</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Похарчени zPIV</translation>
+        <source>Spent zSCC</source>
+        <translation>Похарчени zSCC</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Получен SCC от zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Получен SCC от zSCC</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Исечено ресто като zPIV от похарчените zPIV</translation>
+        <source>Minted Change as zSCC from zSCC Spend</source>
+        <translation>Исечено ресто като zSCC от похарчените zSCC</translation>
     </message>
     <message>
-        <source>Converted zPIV to SCC</source>
-        <translation>Конвертиран zPIV във SCC</translation>
+        <source>Converted zSCC to SCC</source>
+        <translation>Конвертиран zSCC във SCC</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Анонимен (транзакция zPIV)</translation>
+        <source>Anonymous (zSCC Transaction)</source>
+        <translation>Анонимен (транзакция zSCC)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Анонимен (zPIV Stake)</translation>
+        <source>Anonymous (zSCC Stake)</source>
+        <translation>Анонимен (zSCC Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4528,12 +4528,12 @@ Please be patient...</source>
         <translation>Експортирането Успешно</translation>
     </message>
     <message>
-        <source>Received SCC from zPIV</source>
-        <translation>Получен SCC от zPIV</translation>
+        <source>Received SCC from zSCC</source>
+        <translation>Получен SCC от zSCC</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Харчене на Zerocoin, Ресто в zPIV</translation>
+        <source>Zerocoin Spend, Change in zSCC</source>
+        <translation>Харчене на Ресто в zSCC</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4603,8 +4603,8 @@ Please be patient...</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Изберете zPIV за Изпращане</translation>
+        <source>Select zSCC to Spend</source>
+        <translation>Изберете zSCC за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4615,8 +4615,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zSCC</source>
+        <translation>zSCC</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4651,7 +4651,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Stakecube is probably already running.</source>
-        <translation>Не може да заключи папката с данни %s. PIVX Портфейла вероятно вече е стартиран.</translation>
+        <translation>Не може да заключи папката с данни %s. Stakecube Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4678,16 +4678,16 @@ Please be patient...</source>
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Включи автоматичните бекъпи на портфейла след всяко zPIV емитиране (0-1, по подразбиране: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSCC minting (0-1, default: %u)</source>
+        <translation>Включи автоматичните бекъпи на портфейла след всяко zSCC емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SCC inputs (0-1, default: %u)</source>
         <translation>Активиране или деактивиране на функцията за зареждане за SCC входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zPIV входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for zSCC inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zSCC входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4823,7 +4823,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. Stakecube is probably already running.</source>
-        <translation>Не може да се прикачи към %s на този компютър. PIVX Портфейла вероятно вече е стартиран.</translation>
+        <translation>Не може да се прикачи към %s на този компютър. Stakecube Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4851,7 +4851,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Stakecube will not work properly.</source>
-        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, PIVX Портфейла няма да работи правилно.</translation>
+        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, Stakecube Портфейла няма да работи правилно.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5214,8 +5214,8 @@ Please be patient...</source>
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SCC and zPIV money supply statistics</source>
-        <translation>Индексирай наново SCC и zPIV данните по наличности</translation>
+        <source>Reindex the SCC and zSCC money supply statistics</source>
+        <translation>Индексирай наново SCC и zSCC данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5254,8 +5254,8 @@ Please be patient...</source>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи PIVX специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
+        <source>Disable all Stakecube specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи Stakecube специфичната функционалност (Главни възли, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5290,8 +5290,8 @@ Please be patient...</source>
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zPIV. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSCC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zSCC. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5702,8 +5702,8 @@ Please be patient...</source>
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Синхронизиране на zPIV портфейла ...</translation>
+        <source>Syncing zSCC wallet...</source>
+        <translation>Синхронизиране на zSCC портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5810,8 +5810,8 @@ Please be patient...</source>
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSCC</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zSCC</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

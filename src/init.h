@@ -4,14 +4,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_INIT_H
-#define BITCOIN_INIT_H
+#ifndef STAKECUBE_INIT_H
+#define STAKECUBE_INIT_H
 
 #include <string>
 
 class CScheduler;
 class CWallet;
-class CzPIVWallet;
+class CzSCCWallet;
 
 namespace boost
 {
@@ -19,7 +19,7 @@ class thread_group;
 } // namespace boost
 
 extern CWallet* pwalletMain;
-extern CzPIVWallet* zwalletMain;
+extern CzSCCWallet* zwalletMain;
 
 void StartShutdown();
 bool ShutdownRequested();
@@ -40,4 +40,4 @@ std::string HelpMessage(HelpMessageMode mode);
 /** Returns licensing information (for -version) */
 std::string LicenseInfo();
 
-#endif // BITCOIN_INIT_H
+#endif // STAKECUBE_INIT_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_BITCOINAMOUNTFIELD_H
-#define BITCOIN_QT_BITCOINAMOUNTFIELD_H
+#ifndef STAKECUBE_QT_BITCOINAMOUNTFIELD_H
+#define STAKECUBE_QT_BITCOINAMOUNTFIELD_H
 
 #include "amount.h"
 
@@ -71,4 +71,4 @@ private slots:
     void unitChanged(int idx);
 };
 
-#endif // BITCOIN_QT_BITCOINAMOUNTFIELD_H
+#endif // STAKECUBE_QT_BITCOINAMOUNTFIELD_H

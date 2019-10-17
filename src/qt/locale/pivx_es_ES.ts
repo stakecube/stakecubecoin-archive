@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones de PIVX para enviar pagos. Compruebe siempre la cantidad así como la dirección de destino antes de enviar moneda.</translation>
+        <translation>Estas son sus direcciones de Stakecube para enviar pagos. Compruebe siempre la cantidad así como la dirección de destino antes de enviar moneda.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de PIVX para recibir pagos. Es recomendable que use una dirección nueva para cada transacción.</translation>
+        <translation>Estas son sus direcciones de Stakecube para recibir pagos. Es recomendable que use una dirección nueva para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus PIVs frente a malware que infecte su ordenador.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus SCCs frente a malware que infecte su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Dirección:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ingrese una dirección PIVX que le gustaría encriptar usando BIP 38. Ingrese una contraseña en el cuadro del medio. Presione encriptar para calcular la clave privada encriptada.</translation>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ingrese una dirección Stakecube que le gustaría encriptar usando BIP 38. Ingrese una contraseña en el cuadro del medio. Presione encriptar para calcular la clave privada encriptada.</translation>
     </message>
     <message>
         <source>The SCC address to encrypt</source>
-        <translation>La dirección PIVX a encriptar</translation>
+        <translation>La dirección Stakecube a encriptar</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this SCC address</source>
-        <translation>Cifrar la llave privada para esta dirección PIVX</translation>
+        <translation>Cifrar la llave privada para esta dirección Stakecube</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -538,7 +538,7 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>Dirección PIVX con la que firmar el mensaje</translation>
+        <translation>Dirección Stakecube con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -562,7 +562,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección PIVX</translation>
+        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección Stakecube</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

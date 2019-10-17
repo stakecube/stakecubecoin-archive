@@ -19,7 +19,7 @@
 #include <vector>
 
 
-SettingsBitToolWidget::SettingsBitToolWidget(PIVXGUI* _window, QWidget *parent) :
+SettingsBitToolWidget::SettingsBitToolWidget(SCCGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBitToolWidget)
 {

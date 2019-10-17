@@ -23,7 +23,7 @@
 #define REQUEST_LOAD_TASK 1
 #define CHART_LOAD_MIN_TIME_INTERVAL 15
 
-DashboardWidget::DashboardWidget(PIVXGUI* parent) :
+DashboardWidget::DashboardWidget(SCCGUI* parent) :
     PWidget(parent),
     ui(new Ui::DashboardWidget)
 {
@@ -466,7 +466,7 @@ void DashboardWidget::updateStakeFilter() {
     }
 }
 
-// pair SCC, zPIV
+// pair SCC, zSCC
 QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
     updateStakeFilter();
     int size = stakesFilter->rowCount();
@@ -521,7 +521,7 @@ void DashboardWidget::loadChartData(bool withMonthNames) {
 
     chartData = new ChartData();
 
-    chartData->amountsByCache = getAmountBy(); // pair SCC, zPIV
+    chartData->amountsByCache = getAmountBy(); // pair SCC, zSCC
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     bool isOrderedByMonth = chartShow == MONTH;
     int daysInMonth = QDate(yearFilter, monthFilter, 1).daysInMonth();
@@ -594,7 +594,7 @@ void DashboardWidget::onChartRefreshed() {
     }
     // init sets
     set0 = new QBarSet("SCC");
-    set1 = new QBarSet("zPIV");
+    set1 = new QBarSet("zSCC");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
 

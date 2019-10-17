@@ -50,7 +50,7 @@ public:
     MyAddressRow* cachedRow = nullptr;
 };
 
-ReceiveWidget::ReceiveWidget(PIVXGUI* parent) :
+ReceiveWidget::ReceiveWidget(SCCGUI* parent) :
     PWidget(parent),
     ui(new Ui::ReceiveWidget)
 {

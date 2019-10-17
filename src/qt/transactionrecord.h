@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_TRANSACTIONRECORD_H
-#define BITCOIN_QT_TRANSACTIONRECORD_H
+#ifndef STAKECUBE_QT_TRANSACTIONRECORD_H
+#define STAKECUBE_QT_TRANSACTIONRECORD_H
 
 #include "amount.h"
 #include "uint256.h"
@@ -158,4 +158,4 @@ public:
     std::string statusToString();
 };
 
-#endif // BITCOIN_QT_TRANSACTIONRECORD_H
+#endif // STAKECUBE_QT_TRANSACTIONRECORD_H

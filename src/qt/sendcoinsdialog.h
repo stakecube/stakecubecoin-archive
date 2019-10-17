@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_SENDCOINSDIALOG_H
-#define BITCOIN_QT_SENDCOINSDIALOG_H
+#ifndef STAKECUBE_QT_SENDCOINSDIALOG_H
+#define STAKECUBE_QT_SENDCOINSDIALOG_H
 
 #include "walletmodel.h"
 
@@ -106,4 +106,4 @@ signals:
     void message(const QString& title, const QString& message, unsigned int style);
 };
 
-#endif // BITCOIN_QT_SENDCOINSDIALOG_H
+#endif // STAKECUBE_QT_SENDCOINSDIALOG_H

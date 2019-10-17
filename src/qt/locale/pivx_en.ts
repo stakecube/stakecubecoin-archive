@@ -470,7 +470,7 @@ for staking</source>
     </message>
     <message>
         <location line="+143"/>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -582,7 +582,7 @@ for staking</source>
     </message>
     <message>
         <location line="-424"/>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Stakecube Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -813,7 +813,7 @@ for staking</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zPIV</source>
+        <source>Privacy Actions for zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1137,7 +1137,7 @@ for staking</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Modify configuration options for PIVX</source>
+        <source>Modify configuration options for Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1187,7 +1187,7 @@ for staking</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a PIVX: URI or payment request</source>
+        <source>Open a Stakecube: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1202,7 +1202,7 @@ for staking</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1212,7 +1212,7 @@ for staking</source>
     </message>
     <message numerus="yes">
         <location line="+219"/>
-        <source>%n active connection(s) to PIVX network</source>
+        <source>%n active connection(s) to Stakecube network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1735,7 +1735,7 @@ Address: %4
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 upiv per input.</source>
+        <source>Can vary +/- %1 uscc per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1940,7 +1940,7 @@ Address: %4
     </message>
     <message>
         <location line="+42"/>
-        <source>zPIV</source>
+        <source>zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1980,7 +1980,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of SCC and zPIV staked.</source>
+        <source>Amount of SCC and zSCC staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2030,7 +2030,7 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get SCC or zPIV</source>
+        <source>How to get SCC or zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2429,7 +2429,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+18"/>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2592,7 +2592,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10.000 SCC (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Stakecube Masternode you must dedicate 10.000 SCC (the unit of Stakecube) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2607,7 +2607,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 SCC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1,000 SCC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2879,7 +2879,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>Not enough balance to create a masternode, 10,000 SCC required.</source>
+        <source>Not enough balance to create a masternode, 1,000 SCC required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3658,7 +3658,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Stakecube client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3683,12 +3683,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start PIVX after logging in to the system.</source>
+        <source>Automatically start Stakecube after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start PIVX on system login</source>
+        <source>&amp;Start Stakecube on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3723,7 +3723,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Stakecube.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3739,17 +3739,17 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of SCC units to zPIV</source>
+        <source>Enable automatic minting of SCC units to zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zPIV Automint</source>
+        <source>Enable zSCC Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zPIV minting from specific addresses</source>
+        <source>Enable automatic zSCC minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3759,12 +3759,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming SCC which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SCC which get automatically converted to zSCC via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zPIV</source>
+        <source>Percentage of autominted zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3775,7 +3775,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zPIV Denomination</source>
+        <source>Preferred Automint zSCC Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3785,7 +3785,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
+        <source>Connect to the Stakecube network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4026,19 +4026,19 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <message>
         <location line="+16"/>
         <location line="+19"/>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
+        <source>Your current Stakecube balance, unconfirmed and immature transactions included</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>zPIV Balance</source>
+        <source>zSCC Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zSCC are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4053,7 +4053,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="-725"/>
         <location line="+852"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4111,7 +4111,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked SCC or Masternode collaterals. These are excluded from zPIV minting.</source>
+        <source>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4127,7 +4127,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
+        <source>Your current zSCC balance, unconfirmed and immature zSCC included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4143,7 +4143,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+111"/>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zSCC.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -4166,7 +4166,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
 </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>StakecubeGUI</name>
     <message>
         <location filename="../pivx/pivxgui.cpp" line="+42"/>
         <location line="+299"/>
@@ -4259,7 +4259,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx.cpp" line="+507"/>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Stakecube can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4420,7 +4420,7 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Stakecube network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4436,7 +4436,7 @@ Address: %4
     </message>
     <message>
         <location line="+229"/>
-        <source>zPIV</source>
+        <source>zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4471,12 +4471,12 @@ Address: %4
     </message>
     <message>
         <location line="+462"/>
-        <source>zPIV Control</source>
+        <source>zSCC Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zPIV Selected:</source>
+        <source>zSCC Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4501,7 +4501,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zPIV for spending</source>
+        <source>Available (mature and spendable) zSCC for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4511,9 +4511,9 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zSCC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zSCC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4530,7 +4530,7 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 zPIV</source>
+        <source>0 zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4608,7 +4608,7 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+25"/>
         <location line="+704"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
+        <source>Total Balance including unconfirmed and immature zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4642,14 +4642,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zSCC minting.
 
 To change the status (restart required):
 - enable: add &apos;enablezeromint=1&apos; to pivx.conf
 - disable: add &apos;enablezeromint=0&apos; to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSCC
 
 </source>
         <translation type="unfinished"></translation>
@@ -4719,7 +4719,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="-1092"/>
-        <source>Show zPIV denominations list</source>
+        <source>Show zSCC denominations list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4729,12 +4729,12 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+29"/>
-        <source>zPIV minting is DISABLED</source>
+        <source>zSCC minting is DISABLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+131"/>
-        <source>zPIV spending is NOT private (links back to the mint transaction)</source>
+        <source>zSCC spending is NOT private (links back to the mint transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4900,12 +4900,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+241"/>
-        <source>zPIV Spend #: </source>
+        <source>zSCC Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>zPIV Mint</source>
+        <source>zSCC Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4925,12 +4925,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>zPIV is currently disabled due to maintenance.</source>
+        <source>zSCC is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-538"/>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>zSCC is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5202,13 +5202,13 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zPIV anonymizes your SCC by removing any
+        <source>Minting zSCC anonymizes your SCC by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zPIV or convert back to SCC</source>
+        <source>Mint new zSCC or convert back to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5223,12 +5223,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+83"/>
-        <source>Mint zPIV</source>
+        <source>Mint zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of SCC to mint into zPIV</source>
+        <source>Enter amount of SCC to mint into zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5238,7 +5238,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zPIV to convert back into SCC</source>
+        <source>Enter amount of zSCC to convert back into SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5248,12 +5248,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+0"/>
-        <source>zPIV is currently undergoing maintenance</source>
+        <source>zSCC is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
+        <source>You need to unlock the wallet to be able to %1 zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5273,12 +5273,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>zPIV minted successfully</source>
+        <source>zSCC minted successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>zPIV converted back to SCC</source>
+        <source>zSCC converted back to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5642,7 +5642,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Stakecube debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5824,7 +5824,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zPIV Backup Path:</source>
+        <source>Custom zSCC Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5924,7 +5924,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the PIVX RPC console.</source>
+        <source>Welcome to the Stakecube RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6109,7 +6109,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+26"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Stakecube network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6119,7 +6119,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+182"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Stakecube network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6764,18 +6764,18 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+1026"/>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPIVs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSCCs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPIVs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSCCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSCCs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uSCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Stakecube transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7088,7 +7088,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
+        <source>A message that was attached to the Stakecube: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Stakecube network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7225,7 +7225,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (SCC) or private coins (zPIV)</source>
+        <source>You can transfer public coins (SCC) or private coins (zSCC)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7275,7 +7275,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Send zPIV</source>
+        <source>Send zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7337,7 +7337,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="-38"/>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>zSCC is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7359,12 +7359,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+31"/>
-        <source>zPIV transaction sent!</source>
+        <source>zSCC transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zSCC require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7471,7 +7471,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zPIV in your balance to select.</source>
+        <source>You don&apos;t have any zSCC in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7877,7 +7877,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+137"/>
-        <source>Welcome to the PIVX RPC console.</source>
+        <source>Welcome to the Stakecube RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8002,7 +8002,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-250"/>
-        <source>1) What is PIVX?</source>
+        <source>1) What is Stakecube?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8012,28 +8012,28 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+25"/>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
+        <source>3) Stakecube privacy? What is Zerocoin (zSCC)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>4) Why are my zPIV unspendable?</source>
+        <source>4) Why are my zSCC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zSCC automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+20"/>
-        <source>6) How do I receive SCC/zPIV?</source>
+        <source>6) How do I receive SCC/zSCC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>7) How do I stake SCC/zPIV?</source>
+        <source>7) How do I stake SCC/zSCC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8058,21 +8058,21 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>What is PIVX?</source>
+        <source>What is Stakecube?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           Stakecube is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  Stakecube incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zSCC) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           Stakecube utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of Stakecube to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -8093,10 +8093,10 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received Stakecube requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your Stakecube wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -8109,18 +8109,18 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
+        <source>Stakecube privacy? What is Zerocoin (zSCC)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zSCC is an optional privacy-centric method of coin mixing on the
+                           Stakecube blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt;
-                           &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Stakecube.org/zpiv/&apos;&gt;
+                           &quot;Stakecube Zerocoin (zSCC) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -8132,14 +8132,14 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my zSCC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zSCC will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -8153,25 +8153,25 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <source>Why did my wallet convert the balance into zSCC automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the PIVX wallet will convert 10% of your entire SCC
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
+                           By default the Stakecube wallet will convert 10% of your entire SCC
+                           balance to zSCC to assist the network. If you do not wish to
+                           stake zSCC or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your Stakecube wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zSCC Automint”.
+                           If you are not making use of the Stakecube-QT or GUI you can simply open
                            your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zPIV in the
-                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.org/zpiv/&apos;&gt; &quot;PIVX Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
+                           You can read more about zSCC in the
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Stakecube.org/zpiv/&apos;&gt; &quot;Stakecube Zerocoin (zSCC) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zSCC, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -8184,17 +8184,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive SCC/zPIV?</source>
+        <source>How do I receive SCC/zSCC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any SCC address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zSCC can be spent and sent to any SCC address. The receiver will
+                           receive standard Stakecube but the origin of the Stakecube is anonymized by the zSCC Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zSCC you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -8206,33 +8206,33 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake SCC/zPIV?</source>
+        <source>How do I stake SCC/zSCC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake PIVX:
+                           To Stake Stakecube:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 101 confirmations.
+                           You must have a balance of Stakecube with a minimum of 101 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (stakecube-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zPIV:
+                           To Stake zSCC:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zSCC balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -8256,10 +8256,10 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Discord.PIVX.com&apos;&gt;
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Discord.Stakecube.com&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://PIVX.FreshDesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #7088ff&apos; href=&apos;https://Stakecube.FreshDesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -8279,8 +8279,8 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 SCC secured collateral to provide extra services
+                           A masternode is a computer running a full node Stakecube core wallet with a
+                           requirement of 1,000 SCC secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -8302,17 +8302,17 @@ Verify that you have installed a predetermined text editor.</source>
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in Stakecube Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the Stakecube network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 SCC per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;1,000 SCC per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -8333,7 +8333,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 1,000 SCC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8571,7 +8571,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Start PIVX on system login</source>
+        <source>Start Stakecube on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9310,7 +9310,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+28"/>
-        <source>About PIVX</source>
+        <source>About Stakecube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9666,7 +9666,7 @@ Are you sure?
     <message>
         <location line="-200"/>
         <location line="+311"/>
-        <source>1,000 zPIV</source>
+        <source>1,000 zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9699,12 +9699,12 @@ Are you sure?
     </message>
     <message>
         <location line="+77"/>
-        <source>60 zPIV</source>
+        <source>60 zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>10 zPIV</source>
+        <source>10 zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10157,7 +10157,7 @@ Are you sure?
     </message>
     <message>
         <location line="+2"/>
-        <source>zPIV Stake</source>
+        <source>zSCC Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10182,27 +10182,27 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted SCC to zPIV</source>
+        <source>Converted SCC to zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zPIV</source>
+        <source>Spent zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received SCC from zPIV</source>
+        <source>Received SCC from zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zPIV from zPIV Spend</source>
+        <source>Minted Change as zSCC from zSCC Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPIV to SCC</source>
+        <source>Converted zSCC to SCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10481,12 +10481,12 @@ Are you sure?
     </message>
     <message>
         <location line="-310"/>
-        <source>Received SCC from zPIV</source>
+        <source>Received SCC from zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in zPIV</source>
+        <source>Zerocoin Spend, Change in zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10842,17 +10842,17 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>PIVX is the world’s most advanced privacy-enabled Proof of Stake blockchain technology, all developed by a team of highly experienced developers and cryptographers.</source>
+        <source>Stakecube is the world’s most advanced privacy-enabled Proof of Stake blockchain technology, all developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+73"/>
-        <source>How PIVX respects your privacy?</source>
+        <source>How Stakecube respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+20"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom the share their data whenever and with whomever they want - PIVX believes in self sovereignty&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom the share their data whenever and with whomever they want - Stakecube believes in self sovereignty&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10862,7 +10862,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+23"/>
-        <source>The masternode network is PIVX&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance, treasury, and SwiftX transactions.</source>
+        <source>The masternode network is Stakecube&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance, treasury, and SwiftX transactions.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10875,7 +10875,7 @@ Stakecube Wallet</source>
     <name>ZPivControlDialog</name>
     <message>
         <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
-        <source>Select zPIV to Spend</source>
+        <source>Select zSCC to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10920,7 +10920,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location filename="../zpivcontroldialog.cpp" line="+39"/>
-        <source>Select zPIV Denominations to Spend</source>
+        <source>Select zSCC Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -10998,7 +10998,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zSCC minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11008,7 +11008,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zSCC inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11483,7 +11483,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zSCC spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11743,7 +11743,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the SCC and zPIV money supply statistics</source>
+        <source>Reindex the SCC and zSCC money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11795,7 +11795,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Stakecube specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11840,7 +11840,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zSCC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -12390,7 +12390,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zPIV wallet...</source>
+        <source>Syncing zSCC wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -12530,7 +12530,7 @@ Stakecube Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
+        <source>Value is below the smallest available denomination (= 1) of zSCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

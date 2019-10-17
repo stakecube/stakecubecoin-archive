@@ -43,11 +43,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case SCC:
-        return QString("pivx");
+        return QString("scc");
     case mPIV:
-        return QString("mpivx");
+        return QString("mscc");
     case uPIV:
-        return QString::fromUtf8("upivx");
+        return QString::fromUtf8("uscc");
     default:
         return QString("???");
     }
@@ -98,7 +98,7 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case SCC:
-            return QString("TestPIVs");
+            return QString("TestSCCs");
         case mPIV:
             return QString("Milli-TestPIV (1 / 1" THIN_SP_UTF8 "000)");
         case uPIV:

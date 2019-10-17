@@ -74,19 +74,11 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
     ui->pushNumber1->setEnabled(false);
     ui->pushNumber2->setProperty("cssClass", "btn-welcome-number-check");
     ui->pushNumber2->setEnabled(false);
-    ui->pushNumber3->setProperty("cssClass", "btn-welcome-number-check");
-    ui->pushNumber3->setEnabled(false);
-    ui->pushNumber4->setProperty("cssClass", "btn-welcome-number-check");
-    ui->pushNumber4->setEnabled(false);
 
     ui->pushName1->setProperty("cssClass", "btn-welcome-name-check");
     ui->pushName1->setEnabled(false);
     ui->pushName2->setProperty("cssClass", "btn-welcome-name-check");
     ui->pushName2->setEnabled(false);
-    ui->pushName3->setProperty("cssClass", "btn-welcome-name-check");
-    ui->pushName3->setEnabled(false);
-    ui->pushName4->setProperty("cssClass", "btn-welcome-name-check");
-    ui->pushName4->setEnabled(false);
 
     ui->stackedWidget->setCurrentIndex(0);
 
@@ -101,21 +93,9 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
     ui->labelTitle2->setProperty("cssClass", "text-title-welcome");
     ui->labelMessage2->setProperty("cssClass", "text-main-white");
 
-    // Frame 3
-    ui->page_3->setProperty("cssClass", "container-welcome-step3");
-    ui->labelTitle3->setProperty("cssClass", "text-title-welcome");
-    ui->labelMessage3->setProperty("cssClass", "text-main-white");
-
-    // Frame 4
-    ui->page_4->setProperty("cssClass", "container-welcome-step4");
-    ui->labelTitle4->setProperty("cssClass", "text-title-welcome");
-    ui->labelMessage4->setProperty("cssClass", "text-main-white");
-
     // Confirm icons
     icConfirm1 = new QPushButton(ui->layoutIcon1_2);
     icConfirm2 = new QPushButton(ui->layoutIcon2_2);
-    icConfirm3 = new QPushButton(ui->layoutIcon3_2);
-    icConfirm4 = new QPushButton(ui->layoutIcon4_2);
 
     QSize BUTTON_CONFIRM_SIZE = QSize(22, 22);
     int posX = 0;
@@ -135,25 +115,9 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
     icConfirm2->show();
     icConfirm2->raise();
     icConfirm2->setVisible(false);
-    icConfirm3->setProperty("cssClass", "ic-step-confirm-welcome");
-    icConfirm3->setMinimumSize(BUTTON_CONFIRM_SIZE);
-    icConfirm3->setMaximumSize(BUTTON_CONFIRM_SIZE);
-    icConfirm3->move(posX, posY);
-    icConfirm3->show();
-    icConfirm3->raise();
-    icConfirm3->setVisible(false);
-    icConfirm4->setProperty("cssClass", "ic-step-confirm-welcome");
-    icConfirm4->setMinimumSize(BUTTON_CONFIRM_SIZE);
-    icConfirm4->setMaximumSize(BUTTON_CONFIRM_SIZE);
-    icConfirm4->move(posX, posY);
-    icConfirm4->show();
-    icConfirm4->raise();
-    icConfirm4->setVisible(false);
 
-    ui->pushButtonSkip->setProperty("cssClass", "btn-close-white");
     onNextClicked();
 
-    connect(ui->pushButtonSkip, SIGNAL(clicked()), this, SLOT(close()));
     connect(nextButton, SIGNAL(clicked()), this, SLOT(onNextClicked()));
     connect(backButton, SIGNAL(clicked()), this, SLOT(onBackClicked()));
 
@@ -209,35 +173,11 @@ void WelcomeContentWidget::onNextClicked(){
         case 1:{
             backButton->setVisible(true);
             ui->stackedWidget->setCurrentIndex(2);
-            ui->pushNumber2->setChecked(true);
-            ui->pushName4->setChecked(false);
-            ui->pushName3->setChecked(false);
             ui->pushName2->setChecked(true);
             ui->pushName1->setChecked(true);
-            icConfirm1->setVisible(true);
             break;
         }
         case 2:{
-            ui->stackedWidget->setCurrentIndex(3);
-            ui->pushNumber3->setChecked(true);
-            ui->pushName4->setChecked(false);
-            ui->pushName3->setChecked(true);
-            ui->pushName2->setChecked(true);
-            ui->pushName1->setChecked(true);
-            icConfirm2->setVisible(true);
-            break;
-        }
-        case 3:{
-            ui->stackedWidget->setCurrentIndex(4);
-            ui->pushNumber4->setChecked(true);
-            ui->pushName4->setChecked(true);
-            ui->pushName3->setChecked(true);
-            ui->pushName2->setChecked(true);
-            ui->pushName1->setChecked(true);
-            icConfirm3->setVisible(true);
-            break;
-        }
-        case 4:{
             isOk = true;
             accept();
             break;
@@ -253,44 +193,6 @@ void WelcomeContentWidget::onBackClicked(){
     switch(pos){
         case 0:{
             ui->stackedWidget->setCurrentIndex(0);
-            break;
-        }
-        case 1:{
-            ui->stackedWidget->setCurrentIndex(1);
-            ui->pushNumber1->setChecked(true);
-            ui->pushNumber4->setChecked(false);
-            ui->pushNumber3->setChecked(false);
-            ui->pushNumber2->setChecked(false);
-            ui->pushName4->setChecked(false);
-            ui->pushName3->setChecked(false);
-            ui->pushName2->setChecked(false);
-            ui->pushName1->setChecked(true);
-            icConfirm1->setVisible(false);
-            backButton->setVisible(false);
-
-            break;
-        }
-        case 2:{
-            ui->stackedWidget->setCurrentIndex(2);
-            ui->pushNumber2->setChecked(true);
-            ui->pushNumber4->setChecked(false);
-            ui->pushNumber3->setChecked(false);
-            ui->pushName4->setChecked(false);
-            ui->pushName3->setChecked(false);
-            ui->pushName2->setChecked(true);
-            ui->pushName1->setChecked(true);
-            icConfirm2->setVisible(false);
-            break;
-        }
-        case 3:{
-            ui->stackedWidget->setCurrentIndex(3);
-            ui->pushNumber3->setChecked(true);
-            ui->pushNumber4->setChecked(false);
-            ui->pushName4->setChecked(false);
-            ui->pushName3->setChecked(true);
-            ui->pushName2->setChecked(true);
-            ui->pushName1->setChecked(true);
-            icConfirm3->setVisible(false);
             break;
         }
 

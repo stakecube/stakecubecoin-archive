@@ -10,7 +10,7 @@
 #include <qt/pivx/qtutils.h>
 #include <guiinterface.h>
 #include <qt/pivx/qtutils.h>
-SettingsBackupWallet::SettingsBackupWallet(PIVXGUI* _window, QWidget *parent) :
+SettingsBackupWallet::SettingsBackupWallet(SCCGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)
 {

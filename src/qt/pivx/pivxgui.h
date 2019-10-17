@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_CORE_NEW_GUI_PIVXGUI_H
-#define PIVX_CORE_NEW_GUI_PIVXGUI_H
+#ifndef SCC_CORE_NEW_GUI_SCCGUI_H
+#define SCC_CORE_NEW_GUI_SCCGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/pivx-config.h>
+#include <config/stakecube-config.h>
 #endif
 
 #include <QMainWindow>
@@ -34,18 +34,18 @@ class Notificator;
 class WalletModel;
 
 /**
-  PIVX GUI main class. This class represents the main window of the PIVX UI. It communicates with both the client and
+  SCC GUI main class. This class represents the main window of the SCC UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class PIVXGUI : public QMainWindow
+class SCCGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const QString DEFAULT_WALLET;
 
-    explicit PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
-    ~PIVXGUI();
+    explicit SCCGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
+    ~SCCGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
@@ -83,8 +83,6 @@ public slots:
     void message(const QString& title, const QString& message, unsigned int style, bool* ret = nullptr);
     void messageInfo(const QString& message);
     bool execDialog(QDialog *dialog, int xDiv = 3, int yDiv = 5);
-    /** Open FAQ dialog **/
-    void openFAQ(int section = 0);
 
     /** Show incoming transaction notification for new transactions. */
     void incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address);
@@ -181,4 +179,4 @@ signals:
 };
 
 
-#endif //PIVX_CORE_NEW_GUI_PIVXGUI_H
+#endif //SCC_CORE_NEW_GUI_SCCGUI_H

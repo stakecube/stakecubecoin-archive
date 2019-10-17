@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_ZPIVWALLET_H
-#define PIVX_ZPIVWALLET_H
+#ifndef SCC_ZPIVWALLET_H
+#define SCC_ZPIVWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -13,7 +13,7 @@
 
 class CDeterministicMint;
 
-class CzPIVWallet
+class CzSCCWallet
 {
 private:
     uint256 seedMaster;
@@ -22,7 +22,7 @@ private:
     CMintPool mintPool;
 
 public:
-    CzPIVWallet(std::string strWalletFile);
+    CzSCCWallet(std::string strWalletFile);
 
     void AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose);
     bool SetMasterSeed(const uint256& seedMaster, bool fResetCount = false);
@@ -46,4 +46,4 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //PIVX_ZPIVWALLET_H
+#endif //SCC_ZPIVWALLET_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_BIP38_H
-#define BITCOIN_BIP38_H
+#ifndef STAKECUBE_BIP38_H
+#define STAKECUBE_BIP38_H
 
 #include "pubkey.h"
 #include "uint256.h"

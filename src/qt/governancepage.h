@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_GOVERNANCEPAGE_H
-#define BITCOIN_QT_GOVERNANCEPAGE_H
+#ifndef STAKECUBE_QT_GOVERNANCEPAGE_H
+#define STAKECUBE_QT_GOVERNANCEPAGE_H
 
 #include "masternode.h"
 #include "platformstyle.h"
@@ -67,4 +67,4 @@ private Q_SLOTS:
     void on_UpdateButton_clicked();
 };
 
-#endif // BITCOIN_QT_GOVERNANCEPAGE_H
+#endif // STAKECUBE_QT_GOVERNANCEPAGE_H

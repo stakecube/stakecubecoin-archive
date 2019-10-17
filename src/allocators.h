@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ALLOCATORS_H
-#define BITCOIN_ALLOCATORS_H
+#ifndef STAKECUBE_ALLOCATORS_H
+#define STAKECUBE_ALLOCATORS_H
 
 #include "support/cleanse.h"
 
@@ -264,4 +264,4 @@ typedef std::basic_string<char, std::char_traits<char>, secure_allocator<char> >
 // Byte-vector that clears its contents before deletion.
 typedef std::vector<char, zero_after_free_allocator<char> > CSerializeData;
 
-#endif // BITCOIN_ALLOCATORS_H
+#endif // STAKECUBE_ALLOCATORS_H

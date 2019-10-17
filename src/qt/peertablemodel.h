@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_PEERTABLEMODEL_H
-#define BITCOIN_QT_PEERTABLEMODEL_H
+#ifndef STAKECUBE_QT_PEERTABLEMODEL_H
+#define STAKECUBE_QT_PEERTABLEMODEL_H
 
 #include "validation.h"
 #include "net.h"
@@ -78,4 +78,4 @@ private:
     QTimer* timer;
 };
 
-#endif // BITCOIN_QT_PEERTABLEMODEL_H
+#endif // STAKECUBE_QT_PEERTABLEMODEL_H

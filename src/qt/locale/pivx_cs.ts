@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your SCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše PIVX adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <translation>Toto jsou Vaše Stakecube adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
         <source>These are your SCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše PIVX adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <translation>Toto jsou Vaše Stakecube adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše PIVy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Stakecube will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SCCs from being stolen by malware infecting your computer.</source>
+        <translation>Stakecube se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše PIVy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -397,8 +397,8 @@
         <translation>Procházet historii transakcí</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Řešení soukromí pro zPIV</translation>
+        <source>Privacy Actions for zSCC</source>
+        <translation>Řešení soukromí pro zSCC</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -606,7 +606,7 @@
     </message>
     <message>
         <source>Send coins to a SCC address</source>
-        <translation>Odeslat platbuna PIVX adresu</translation>
+        <translation>Odeslat platbuna Stakecube adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -633,16 +633,16 @@
         <translation>Zobraz informace o Stakecube</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Upravit možnosti konfigurace pro PIVX</translation>
+        <source>Modify configuration options for Stakecube</source>
+        <translation>Upravit možnosti konfigurace pro Stakecube</translation>
     </message>
     <message>
         <source>Sign messages with your SCC addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší PIVX adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <translation>Podepsat zprávy Vaší Stakecube adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified SCC addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými PIVX adresami</translation>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Stakecube adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Otevřít PIVX: URI nebo platební žádost</translation>
+        <source>Open a Stakecube: URI or payment request</source>
+        <translation>Otevřít Stakecube: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -685,8 +685,8 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Stakecube help message to get a list with possible PIVX command-line options</source>
-        <translation>Zobrazit Stakecube pomocnou zpráv pro získání seznamu možných parametrů PIVX pro příkazy do příkazové řádky</translation>
+        <source>Show the Stakecube help message to get a list with possible Stakecube command-line options</source>
+        <translation>Zobrazit Stakecube pomocnou zpráv pro získání seznamu možných parametrů Stakecube pro příkazy do příkazové řádky</translation>
     </message>
     <message>
         <source>Stakecube client</source>
@@ -1082,7 +1082,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid SCC address.</source>
-        <translation>Zadaná adresa "%1" není validní PIVX adresa.</translation>
+        <translation>Zadaná adresa "%1" není validní Stakecube adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Při prvním spuštění programu si můžete vybrat, kam bude Stakecube ukládat svá data.</translation>
     </message>
     <message>
-        <source>Stakecube will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Stakecube stáhne a uloží kopii PIVX blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Stakecube will download and store a copy of the Stakecube block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Stakecube stáhne a uloží kopii Stakecube blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1480,12 +1480,12 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automaticky spustit PIVX po přihlášení do systému</translation>
+        <source>Automatically start Stakecube after logging in to the system.</source>
+        <translation>Automaticky spustit Stakecube po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Spusti PIVX při přihlášení do systému</translation>
+        <source>&amp;Start Stakecube on system login</source>
+        <translation>&amp;Spusti Stakecube při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2142,7 +2142,7 @@ MultiSend: %1</translation>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The SCC address to sign the message with</source>
-        <translation>PIVX adresa pro podepsání zprávy</translation>
+        <translation>Stakecube adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2170,15 +2170,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this SCC address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto PIVX adresu</translation>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Stakecube adresu</translation>
     </message>
     <message>
         <source>The SCC address the message was signed with</source>
-        <translation>PIVX adresa zprávy byla podpsána</translation>
+        <translation>Stakecube adresa zprávy byla podpsána</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified SCC address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou PIVX adresou</translation>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Stakecube adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

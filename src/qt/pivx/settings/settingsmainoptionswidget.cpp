@@ -7,7 +7,7 @@
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include <config/pivx-config.h>
+#include <config/stakecube-config.h>
 #endif
 
 #include <bitcoinunits.h>
@@ -32,7 +32,7 @@
 #include <QTimer>
 
 
-SettingsMainOptionsWidget::SettingsMainOptionsWidget(PIVXGUI* _window, QWidget *parent) :
+SettingsMainOptionsWidget::SettingsMainOptionsWidget(SCCGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsMainOptionsWidget)
 {
@@ -61,7 +61,7 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(PIVXGUI* _window, QWidget *
     ui->labelTitleThreads->setProperty("cssClass", "text-main-settings");
 
     // Switch
-    ui->pushSwitchStart->setText(tr("Start PIVX on system login"));
+    ui->pushSwitchStart->setText(tr("Start Stakecube on system login"));
     ui->pushSwitchStart->setProperty("cssClass", "btn-switch");
 
     // Combobox

@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_ADDRESSBOOKPAGE_H
-#define BITCOIN_QT_ADDRESSBOOKPAGE_H
+#ifndef STAKECUBE_QT_ADDRESSBOOKPAGE_H
+#define STAKECUBE_QT_ADDRESSBOOKPAGE_H
 
 #include <QDialog>
 
@@ -86,4 +86,4 @@ signals:
     void sendCoins(QString addr);
 };
 
-#endif // BITCOIN_QT_ADDRESSBOOKPAGE_H
+#endif // STAKECUBE_QT_ADDRESSBOOKPAGE_H

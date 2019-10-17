@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_COMPRESSOR_H
-#define BITCOIN_COMPRESSOR_H
+#ifndef STAKECUBE_COMPRESSOR_H
+#define STAKECUBE_COMPRESSOR_H
 
 #include "primitives/transaction.h"
 #include "script/script.h"
@@ -127,4 +127,4 @@ public:
     }
 };
 
-#endif // BITCOIN_COMPRESSOR_H
+#endif // STAKECUBE_COMPRESSOR_H

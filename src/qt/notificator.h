@@ -3,11 +3,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_NOTIFICATOR_H
-#define BITCOIN_QT_NOTIFICATOR_H
+#ifndef STAKECUBE_QT_NOTIFICATOR_H
+#define STAKECUBE_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/stakecube-config.h"
 #endif
 
 #include <QIcon>
@@ -73,4 +73,4 @@ private:
 #endif
 };
 
-#endif // BITCOIN_QT_NOTIFICATOR_H
+#endif // STAKECUBE_QT_NOTIFICATOR_H

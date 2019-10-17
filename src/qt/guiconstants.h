@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_GUICONSTANTS_H
-#define BITCOIN_QT_GUICONSTANTS_H
+#ifndef STAKECUBE_QT_GUICONSTANTS_H
+#define STAKECUBE_QT_GUICONSTANTS_H
 
 /* Milliseconds between model updates */
 static const int MODEL_UPDATE_DELAY = 1000;
@@ -13,7 +13,7 @@ static const int MODEL_UPDATE_DELAY = 1000;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* Pivx GUI -- Size of icons in status bar */
+/* Scc GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -58,4 +58,4 @@ static const int MAX_URI_LENGTH = 255;
 #define QAPP_APP_NAME_DEFAULT "Stakecube-Qt"
 #define QAPP_APP_NAME_TESTNET "Stakecube-Qt-testnet"
 
-#endif // BITCOIN_QT_GUICONSTANTS_H
+#endif // STAKECUBE_QT_GUICONSTANTS_H

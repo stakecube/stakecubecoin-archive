@@ -61,7 +61,7 @@ public:
     MNRow* cachedRow = nullptr;
 };
 
-MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
+MasterNodesWidget::MasterNodesWidget(SCCGUI *parent) :
     PWidget(parent),
     ui(new Ui::MasterNodesWidget)
 {
@@ -98,12 +98,6 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
     ui->pushButtonSave->setText(tr("Create Masternode Controller"));
     setCssBtnPrimary(ui->pushButtonSave);
 
-    /* Options */
-    ui->btnAbout->setTitleClassAndText("btn-title-grey", "What is a Masternode?");
-    ui->btnAbout->setSubTitleClassAndText("text-subtitle", "FAQ explaining what Masternodes are");
-    ui->btnAboutController->setTitleClassAndText("btn-title-grey", "What is a Controller?");
-    ui->btnAboutController->setSubTitleClassAndText("text-subtitle", "FAQ explaining what is a Masternode Controller");
-
     setCssProperty(ui->listMn, "container");
     ui->listMn->setItemDelegate(delegate);
     ui->listMn->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
@@ -118,8 +112,6 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
 
     connect(ui->pushButtonSave, SIGNAL(clicked()), this, SLOT(onCreateMNClicked()));
     connect(ui->listMn, SIGNAL(clicked(QModelIndex)), this, SLOT(onMNClicked(QModelIndex)));
-    connect(ui->btnAbout, &OptionButton::clicked, [this](){window->openFAQ(9);});
-    connect(ui->btnAboutController, &OptionButton::clicked, [this](){window->openFAQ(10);});
 }
 
 void MasterNodesWidget::showEvent(QShowEvent *event){
@@ -144,13 +136,6 @@ void MasterNodesWidget::loadWalletModel(){
 }
 
 void MasterNodesWidget::updateListState() {
-    if (mnModel->rowCount() > 0) {
-        ui->listMn->setVisible(true);
-        ui->emptyContainer->setVisible(false);
-    } else {
-        ui->listMn->setVisible(false);
-        ui->emptyContainer->setVisible(true);
-    }
 }
 
 void MasterNodesWidget::onMNClicked(const QModelIndex &index){
@@ -235,7 +220,7 @@ void MasterNodesWidget::onInfoMNClicked(){
     if (dialog->exportMN){
         if (ask(tr("Remote Masternode Data"),
                 tr("You are just about to export the required data to run a Masternode\non a remote server to your clipboard.\n\n\n"
-                   "You will only have to paste the data in the pivx.conf file\nof your remote server and start it, "
+                   "You will only have to paste the data in the scc.conf file\nof your remote server and start it, "
                    "then start the Masternode using\nthis controller wallet (select the Masternode in the list and press \"start\").\n"
                 ))) {
             // export data
@@ -346,7 +331,7 @@ void MasterNodesWidget::onDeleteMNClicked(){
 void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
         if(walletModel->getBalance() <= (COIN * 10000)){
-            inform(tr("Not enough balance to create a masternode, 10,000 SCC required."));
+            inform(tr("Not enough balance to create a masternode, 1,000 SCC required."));
             return;
         }
         showHideOp(true);

@@ -688,44 +688,6 @@
                     </widget>
                    </item>
                    <item>
-                    <layout class="QHBoxLayout" name="horizontalHelp">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <property name="leftMargin">
-                      <number>20</number>
-                     </property>
-                     <property name="rightMargin">
-                      <number>20</number>
-                     </property>
-                     <item alignment="Qt::AlignTop">
-                      <widget class="QPushButton" name="pushButtonHelp">
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="text">
-                        <string>Help</string>
-                       </property>
-                       <property name="checkable">
-                        <bool>true</bool>
-                       </property>
-                       <property name="autoExclusive">
-                        <bool>false</bool>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
                     <widget class="QWidget" name="helpButtonsWidget" native="true">
                      <layout class="QVBoxLayout" name="verticalHelp">
                       <property name="spacing">
@@ -786,7 +748,7 @@
                          </size>
                         </property>
                         <property name="text">
-                         <string>About PIVX</string>
+                         <string>About Stakecube</string>
                         </property>
                         <property name="checkable">
                          <bool>false</bool>

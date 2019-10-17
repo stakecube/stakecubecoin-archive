@@ -10,7 +10,7 @@
 #include <walletmodel.h>
 
 class WalletModel;
-class PIVXGUI;
+class SCCGUI;
 
 namespace Ui {
 class RequestDialog;

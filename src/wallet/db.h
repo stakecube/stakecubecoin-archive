@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_DB_H
-#define BITCOIN_DB_H
+#ifndef STAKECUBE_DB_H
+#define STAKECUBE_DB_H
 
 #include "clientversion.h"
 #include "serialize.h"
@@ -313,4 +313,4 @@ public:
     bool static Rewrite(const std::string& strFile, const char* pszSkip = NULL);
 };
 
-#endif // BITCOIN_DB_H
+#endif // STAKECUBE_DB_H

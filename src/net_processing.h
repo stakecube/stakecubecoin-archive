@@ -1,10 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2018-2019 Barrystyle/Stakecube PoS Pool
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_PROCESSING_H
-#define BITCOIN_NET_PROCESSING_H
+#ifndef STAKECUBE_NET_PROCESSING_H
+#define STAKECUBE_NET_PROCESSING_H
 
 #include "net.h"
 #include "lightzpivthread.h"
@@ -117,4 +118,4 @@ bool ProcessMessages(CNode* pfrom);
 bool SendMessages(CNode* pto, bool fSendTrickle);
 int ActiveProtocol();
 
-#endif // BITCOIN_NET_PROCESSING_H
+#endif // STAKECUBE_NET_PROCESSING_H

@@ -7,7 +7,7 @@
 
 #include <QDialog>
 
-class PIVXGUI;
+class SCCGUI;
 
 namespace Ui {
 class SnackBar;
@@ -18,7 +18,7 @@ class SnackBar : public QDialog
     Q_OBJECT
 
 public:
-    explicit SnackBar(PIVXGUI* _window = nullptr, QWidget *parent = nullptr);
+    explicit SnackBar(SCCGUI* _window = nullptr, QWidget *parent = nullptr);
     ~SnackBar();
 
     virtual void showEvent(QShowEvent *event) override;
@@ -29,7 +29,7 @@ private slots:
     void windowResizeEvent(QResizeEvent *event);
 private:
     Ui::SnackBar *ui;
-    PIVXGUI* window = nullptr;
+    SCCGUI* window = nullptr;
 };
 
 #endif // SNACKBAR_H

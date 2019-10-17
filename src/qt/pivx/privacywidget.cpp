@@ -17,7 +17,7 @@
 #define DECORATION_SIZE 65
 #define NUM_ITEMS 3
 
-PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
+PrivacyWidget::PrivacyWidget(SCCGUI* parent) :
     PWidget(parent),
     ui(new Ui::PrivacyWidget)
 {
@@ -46,10 +46,10 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zPIV anonymizes your SCC by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zSCC anonymizes your SCC by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zPIV or convert back to SCC"));
+    ui->labelSubtitle2->setText(tr("Mint new zSCC or convert back to SCC"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
@@ -61,42 +61,42 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     /* Denom */
     ui->labelTitleDenom1->setText("Denom. with value 1:");
     setCssProperty(ui->labelTitleDenom1, "text-subtitle");
-    ui->labelValueDenom1->setText("0x1 = 0 zPIV");
+    ui->labelValueDenom1->setText("0x1 = 0 zSCC");
     setCssProperty(ui->labelValueDenom1, "text-body2");
 
     ui->labelTitleDenom5->setText("Denom. with value 5:");
     setCssProperty(ui->labelTitleDenom5, "text-subtitle");
-    ui->labelValueDenom5->setText("0x5 = 0 zPIV");
+    ui->labelValueDenom5->setText("0x5 = 0 zSCC");
     setCssProperty(ui->labelValueDenom5, "text-body2");
 
     ui->labelTitleDenom10->setText("Denom. with value 10:");
     setCssProperty(ui->labelTitleDenom10, "text-subtitle");
-    ui->labelValueDenom10->setText("0x10 = 0 zPIV");
+    ui->labelValueDenom10->setText("0x10 = 0 zSCC");
     setCssProperty(ui->labelValueDenom10, "text-body2");
 
     ui->labelTitleDenom50->setText("Denom. with value 50:");
     setCssProperty(ui->labelTitleDenom50, "text-subtitle");
-    ui->labelValueDenom50->setText("0x50 = 0 zPIV");
+    ui->labelValueDenom50->setText("0x50 = 0 zSCC");
     setCssProperty(ui->labelValueDenom50, "text-body2");
 
     ui->labelTitleDenom100->setText("Denom. with value 100:");
     setCssProperty(ui->labelTitleDenom100, "text-subtitle");
-    ui->labelValueDenom100->setText("0x100 = 0 zPIV");
+    ui->labelValueDenom100->setText("0x100 = 0 zSCC");
     setCssProperty(ui->labelValueDenom100, "text-body2");
 
     ui->labelTitleDenom500->setText("Denom. with value 500:");
     setCssProperty(ui->labelTitleDenom500, "text-subtitle");
-    ui->labelValueDenom500->setText("0x500 = 0 zPIV");
+    ui->labelValueDenom500->setText("0x500 = 0 zSCC");
     setCssProperty(ui->labelValueDenom500, "text-body2");
 
     ui->labelTitleDenom1000->setText("Denom. with value 1000:");
     setCssProperty(ui->labelTitleDenom1000, "text-subtitle");
-    ui->labelValueDenom1000->setText("0x1000 = 0 zPIV");
+    ui->labelValueDenom1000->setText("0x1000 = 0 zSCC");
     setCssProperty(ui->labelValueDenom1000, "text-body2");
 
     ui->labelTitleDenom5000->setText("Denom. with value 5000:");
     setCssProperty(ui->labelTitleDenom5000, "text-subtitle");
-    ui->labelValueDenom5000->setText("0x5000 = 0 zPIV");
+    ui->labelValueDenom5000->setText("0x5000 = 0 zSCC");
     setCssProperty(ui->labelValueDenom5000, "text-body2");
 
     ui->layoutDenom->setVisible(false);
@@ -117,12 +117,12 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
-    ui->btnTotalzPIV->setTitleClassAndText("btn-title-grey", "Total 0 zPIV");
-    ui->btnTotalzPIV->setSubTitleClassAndText("text-subtitle", "Show denominations of zPIV owned.");
-    ui->btnTotalzPIV->setRightIconClass("ic-arrow");
+    ui->btnTotalzSCC->setTitleClassAndText("btn-title-grey", "Total 0 zSCC");
+    ui->btnTotalzSCC->setSubTitleClassAndText("text-subtitle", "Show denominations of zSCC owned.");
+    ui->btnTotalzSCC->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select SCC outputs to mint into zPIV.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select SCC outputs to mint into zSCC.");
 
     ui->btnDenomGeneration->setTitleClassAndText("btn-title-grey", "Denom Generation");
     ui->btnDenomGeneration->setSubTitleClassAndText("text-subtitle", "Select the denomination of the coins.");
@@ -134,7 +134,7 @@ PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
     ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Zerocoin");
     ui->btnResetZerocoin->setSubTitleClassAndText("text-subtitle", "Reset zerocoin database.");
 
-    connect(ui->btnTotalzPIV, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
+    connect(ui->btnTotalzSCC, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
     connect(ui->btnCoinControl, SIGNAL(clicked()), this, SLOT(onCoinControlClicked()));
     connect(ui->btnDenomGeneration, SIGNAL(clicked()), this, SLOT(onDenomClicked()));
     connect(ui->btnRescanMints, SIGNAL(clicked()), this, SLOT(onRescanMintsClicked()));
@@ -194,13 +194,13 @@ void PrivacyWidget::loadWalletModel(){
 void PrivacyWidget::onMintSelected(bool isMint){
     QString btnText;
     if(isMint){
-        btnText = tr("Mint zPIV");
+        btnText = tr("Mint zSCC");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of SCC to mint into zPIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of SCC to mint into zSCC"));
     }else{
         btnText = tr("Convert back to SCC");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zPIV to convert back into SCC"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zSCC to convert back into SCC"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -223,10 +223,10 @@ void PrivacyWidget::onTotalZpivClicked(){
     bool isVisible = ui->layoutDenom->isVisible();
     if(!isVisible){
         ui->layoutDenom->setVisible(true);
-        ui->btnTotalzPIV->setRightIconClass("btn-dropdown", true);
+        ui->btnTotalzSCC->setRightIconClass("btn-dropdown", true);
     }else{
         ui->layoutDenom->setVisible(false);
-        ui->btnTotalzPIV->setRightIconClass("ic-arrow", true);
+        ui->btnTotalzSCC->setRightIconClass("ic-arrow", true);
     }
 }
 
@@ -235,15 +235,15 @@ void PrivacyWidget::onSendClicked(){
         return;
 
     if(true) {
-        warn(tr("Zerocoin"), tr("zPIV is currently undergoing maintenance"));
+        warn(tr("Zerocoin"), tr("zSCC is currently undergoing maintenance"));
         return;
     }
 
     // Only convert enabled.
     bool isConvert = true;// ui->pushLeft->isChecked();
 
-    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zPIV, true)){
-        inform(tr("You need to unlock the wallet to be able to %1 zPIV").arg(isConvert ? tr("convert") : tr("mint")));
+    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zSCC, true)){
+        inform(tr("You need to unlock the wallet to be able to %1 zSCC").arg(isConvert ? tr("convert") : tr("mint")));
         return;
     }
 
@@ -274,7 +274,7 @@ void PrivacyWidget::mint(CAmount value){
         inform(tr(strError.data()));
     }else{
         // Mint succeed
-        inform(tr("zPIV minted successfully"));
+        inform(tr("zSCC minted successfully"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -297,7 +297,7 @@ void PrivacyWidget::spend(CAmount value){
         inform(receipt.GetStatusMessage().data());
     }else{
         // Spend succeed
-        inform(tr("zPIV converted back to SCC"));
+        inform(tr("zSCC converted back to SCC"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -398,7 +398,7 @@ void PrivacyWidget::updateDenomsSupply(){
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zPIV </b>";
+                        QString::number(nSumPerCoin) + " zSCC </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -432,7 +432,7 @@ void PrivacyWidget::updateDenomsSupply(){
     }
 
     CAmount matureZerocoinBalance = walletModel->getZerocoinBalance() - walletModel->getUnconfirmedZerocoinBalance() - walletModel->getImmatureZerocoinBalance();
-    ui->btnTotalzPIV->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
+    ui->btnTotalzSCC->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
 }
 
 void PrivacyWidget::changeTheme(bool isLightTheme, QString& theme){

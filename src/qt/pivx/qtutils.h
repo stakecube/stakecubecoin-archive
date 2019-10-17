@@ -27,11 +27,11 @@ static Qt::Modifier SHORT_KEY
 #endif
 
 bool openDialog(QDialog *widget, QWidget *gui);
-void closeDialog(QDialog *widget, PIVXGUI *gui);
+void closeDialog(QDialog *widget, SCCGUI *gui);
 void openDialogFullScreen(QWidget *parent, QWidget * dialog);
-bool openDialogWithOpaqueBackgroundY(QDialog *widget, PIVXGUI *gui, double posX = 3, int posY = 5);
-bool openDialogWithOpaqueBackground(QDialog *widget, PIVXGUI *gui, double posX = 3);
-bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, PIVXGUI *gui);
+bool openDialogWithOpaqueBackgroundY(QDialog *widget, SCCGUI *gui, double posX = 3, int posY = 5);
+bool openDialogWithOpaqueBackground(QDialog *widget, SCCGUI *gui, double posX = 3);
+bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, SCCGUI *gui);
 
 //
 QPixmap encodeToQr(QString str, QString &errorStr, QColor qrColor = Qt::black);

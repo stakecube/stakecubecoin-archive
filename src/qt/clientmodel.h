@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_CLIENTMODEL_H
-#define BITCOIN_QT_CLIENTMODEL_H
+#ifndef STAKECUBE_QT_CLIENTMODEL_H
+#define STAKECUBE_QT_CLIENTMODEL_H
 
 #include "uint256.h"
 #include <QObject>
@@ -38,7 +38,7 @@ enum NumConnections {
     CONNECTIONS_ALL = (CONNECTIONS_IN | CONNECTIONS_OUT),
 };
 
-/** Model for PIVX network client. */
+/** Model for SCC network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT
@@ -120,4 +120,4 @@ public slots:
     void updateBanlist();
 };
 
-#endif // BITCOIN_QT_CLIENTMODEL_H
+#endif // STAKECUBE_QT_CLIENTMODEL_H
