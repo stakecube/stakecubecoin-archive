@@ -73,8 +73,8 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/stakecube/StakeCubeCore.git
-    cd StakeCubeCore
+    git clone https://github.com/stakecube/StakeCubeCoin.git
+    cd StakeCubeCoin
 
 ## Building for 64-bit Windows
 
