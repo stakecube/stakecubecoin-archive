@@ -837,11 +837,10 @@ EOF
 	UNAME_PROCESSOR=`/usr/bin/uname -p`
 	case ${UNAME_PROCESSOR} in
 	    amd64)
-		UNAME_PROCESSOR=x86_64 ;;
-	    i386)
-		UNAME_PROCESSOR=i586 ;;
+		echo x86_64-unknown-freebsd`echo ${UNAME_RELEASE}|sed -e 's/[-(].*//'` ;;
+	    *)
+		echo ${UNAME_PROCESSOR}-unknown-freebsd`echo ${UNAME_RELEASE}|sed -e 's/[-(].*//'` ;;
 	esac
-	echo ${UNAME_PROCESSOR}-unknown-freebsd`echo ${UNAME_RELEASE}|sed -e 's/[-(].*//'`
 	exit ;;
     i*:CYGWIN*:*)
 	echo ${UNAME_MACHINE}-pc-cygwin
@@ -1001,9 +1000,6 @@ EOF
 	eval `$CC_FOR_BUILD -E $dummy.c 2>/dev/null | grep '^CPU'`
 	test x"${CPU}" != x && { echo "${CPU}-unknown-linux-${LIBC}"; exit; }
 	;;
-    mips64el:Linux:*:*)
-	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
-	exit ;;
     openrisc*:Linux:*:*)
 	echo or1k-unknown-linux-${LIBC}
 	exit ;;
@@ -1035,9 +1031,6 @@ EOF
 	exit ;;
     ppcle:Linux:*:*)
 	echo powerpcle-unknown-linux-${LIBC}
-	exit ;;
-    riscv32:Linux:*:* | riscv64:Linux:*:*)
-	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
 	exit ;;
     s390:Linux:*:* | s390x:Linux:*:*)
 	echo ${UNAME_MACHINE}-ibm-linux-${LIBC}
@@ -1343,9 +1336,6 @@ EOF
 	exit ;;
     NSR-?:NONSTOP_KERNEL:*:*)
 	echo nsr-tandem-nsk${UNAME_RELEASE}
-	exit ;;
-    NSX-?:NONSTOP_KERNEL:*:*)
-	echo nsx-tandem-nsk${UNAME_RELEASE}
 	exit ;;
     *:NonStop-UX:*:*)
 	echo mips-compaq-nonstopux
