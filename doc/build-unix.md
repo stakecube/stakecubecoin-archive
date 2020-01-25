@@ -15,6 +15,13 @@ the usage of the absolute path.
 To Build
 ---------------------
 
+Acquire the source in the usual way:
+
+    git clone https://github.com/stakecube/StakeCubeCoin.git
+    cd StakeCubeCoin
+    
+Build using:
+
 ```bash
 cd depends
 make
