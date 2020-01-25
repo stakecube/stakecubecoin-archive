@@ -25,6 +25,7 @@ Build using:
 ```bash
 cd depends
 make
+cd ..
 ./autogen.sh
 CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/
 make
