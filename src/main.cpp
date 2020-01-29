@@ -2280,7 +2280,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
     CAmount nExpectedMint = GetBlockValue(pindex->nHeight);
 
-    if (200000 == pindex->nHeight || 250000 == pindex->nHeight || 300000 == pindex->nHeight) {
+    if (50000 == pindex->nHeight || 100000 == pindex->nHeight || 150000 == pindex->nHeight || 200000 == pindex->nHeight || 250000 == pindex->nHeight || 300000 == pindex->nHeight) {
         // Account for that one wrong block
         LogPrintf("ConnectBlock(): Ignoring overmint at block %d\n", pindex->nHeight);
         nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
