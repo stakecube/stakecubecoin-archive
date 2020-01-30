@@ -2279,6 +2279,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
     CAmount nExpectedMint = GetBlockValue(pindex->nHeight);
+
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
@@ -3443,7 +3444,6 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         // return state.DoS(20, error("AcceptBlock() : already have block %d %s", pindex->nHeight, pindex->GetBlockHash().ToString()), REJECT_DUPLICATE, "duplicate");
         return true;
     }
-
     if ((!CheckBlock(block, state)) || !ContextualCheckBlock(block, state, pindex->pprev)) {
         if (state.IsInvalid() && !state.CorruptionPossible()) {
             pindex->nStatus |= BLOCK_FAILED_VALID;
@@ -4506,7 +4506,8 @@ void static ProcessGetData(CNode* pfrom)
                         }
                     }
                 }
-                if (send) {
+                // Do not send blocks which are not-validated
+                if (send && (mi->second->nStatus & BLOCK_HAVE_DATA)) {
                     // Send block from disk
                     CBlock block;
                     if (!ReadBlockFromDisk(block, (*mi).second))

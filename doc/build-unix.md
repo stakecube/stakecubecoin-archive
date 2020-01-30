@@ -16,8 +16,10 @@ To Build
 ---------------------
 
 ```bash
+cd depends
+make
 ./autogen.sh
-./configure
+CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/
 make
 make install # optional
 ```
@@ -57,7 +59,7 @@ Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+	sudo apt-get install build-essential libtool autotools-dev automake autoconf pkg-config libssl-dev
 
 For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be installed:
 
@@ -66,8 +68,8 @@ For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be inst
  db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
  You can add the repository using the following command:
 
-        sudo add-apt-repository ppa:bitcoin/bitcoin
-        sudo apt-get update
+	sudo add-apt-repository ppa:bitcoin/bitcoin
+	sudo apt-get update
 
  Ubuntu 12.04 and later have packages for libdb5.1-dev and libdb5.1++-dev,
  but using these will break binary wallet compatibility, and is not recommended.

@@ -22,7 +22,7 @@ Brief Specifications
 What is Stakecube (SCC) ?
 -------------------------
 
-Stakecube is a fork of the PIVX codebase; which uses a combination of Masternodes with PoS (Proof of stake) to secure the cryptocurrency network.
+StakeCubeCoin is a fork of the PIVX codebase; which uses a combination of Masternodes with PoS (Proof of stake) to secure the cryptocurrency network.
 
 The first consequtive blocks contain premine; and additionally the coins allocated for the user coin swap, destined for holders of the previous PoW/PoS version of Stakecube.
 
