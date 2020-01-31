@@ -227,8 +227,9 @@ QT_MOC = \
   qt/stakecube.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+  qt/rpcconsole.moc \
+  qt/pivx/settings/moc_settingsconsolewidget.cpp \
+  qt/overviewpage.moc
 
 QT_QRC_CPP = qt/qrc_pivx.cpp
 QT_QRC = qt/stakecube.qrc
