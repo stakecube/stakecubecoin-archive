@@ -177,7 +177,7 @@ public:
 
         nPoolMaxTransactions = 3;
 		strSporkKeyOld = "0440bae57b0608578f03d81194f28b3798a7e07811d8c88e35dc30d5990593d8e6f8bda89fedc5c39cf4223e47f3716eb2c10eb355f1c2c59c65b06f0643d950b3";
-		strSporkKey = "04787af5c5864edd74c311d8d16aa18b07f211f41c397ed889e41be2a74ab6996a682913caa095797c1d8bfa845b0c04c1841e963d23b8d24bd5071b1b12c82cdc";
+		strSporkKey = "0443ff99e61c766b44ed346c58f127099a6b36e60b5f1ca306abb55005278f1d53a6cdb6b6cc3d7a9c1d1ddef5510f240874c3cdf4acf3d9b181866d1cae3cbeda";
         strObfuscationPoolDummyAddress = "Lo3fnibtjwvqYE1T7Lce5uYbdt3pf6PKUu";
 		
         nStartMasternodePayments = genesis.nTime + 5400;
