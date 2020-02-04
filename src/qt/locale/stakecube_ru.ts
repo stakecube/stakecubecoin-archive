@@ -2929,6 +2929,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
+        <source>The PIVX Core developers</source>
+        <translation>Разработчики PIVX Core</translation>
+    </message>
+    <message>
         <source>The StakeCubeCore developers</source>
         <translation>Разработчики StakeCubeCore</translation>
     </message>
