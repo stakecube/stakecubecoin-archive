@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 StakeCubeCore developers
+// Copyright (c) 2018-2020 StakeCubeCore developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -516,7 +516,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(_("Copyright (C) 2018 The StakeCubeCore Developers")) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) 2018-%i The StakeCubeCore Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
