@@ -21,7 +21,6 @@
 #include "transactiontablemodel.h"
 #include "transactionview.h"
 #include "walletmodel.h"
-#include "announcementview.h"
 
 #include "ui_interface.h"
 
@@ -40,7 +39,6 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
                                           walletModel(0)
 {
     // Create tabs
-	annView = new AnnouncementView();
     overviewPage = new OverviewPage();
     explorerWindow = new BlockExplorer(this);
     transactionsPage = new QWidget(this);
@@ -119,7 +117,6 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     sendCoinsPage = new SendCoinsDialog();
 
     addWidget(overviewPage);
-	addWidget(annView);
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
@@ -233,10 +230,6 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
     QString address = ttm->index(start, TransactionTableModel::ToAddress, parent).data().toString();
 
     emit incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address);
-}
-
-void WalletView::gotoAnnView() {
-	setCurrentWidget(annView);
 }
 
 void WalletView::gotoOverviewPage()
