@@ -50,8 +50,6 @@ private:
     WalletView* currentWalletView();
 
 public slots:
-	/** Switch to announcement page */
-	void gotoAnnView();
 	/** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
