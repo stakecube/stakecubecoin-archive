@@ -2793,9 +2793,13 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>(no amount)</source>
         <translation>(без суммы)</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>SEND</source>
+        <translation>ОТПРАВИТЬ</translation>
+    </message>
     <message>
         <source>Send Coins</source>
         <translation>Отправить монеты</translation>
@@ -3138,10 +3142,6 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
 </context>
 <context>
     <name>SendCoinsEntry</name>
-    <message>
-        <source>SEND</source>
-        <translation>ОТПРАВИТЬ</translation>
-    </message>
     <message>
         <source>This is a normal payment.</source>
         <translation>Это нормальный платёж.</translation>

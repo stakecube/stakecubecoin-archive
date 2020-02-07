@@ -3493,6 +3493,18 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 <context>
     <name>SendCoinsDialog</name>
     <message>
+        <source>SEND</source>
+        <translation type="unfinished">SEND</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+114"/>
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation type="unfinished">
+            <numerusform>Estimated to begin confirmation within %n block.</numerusform>
+            <numerusform>Estimated to begin confirmation within %n blocks.</numerusform>
+        </translation>
+    </message>
+    <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
         <location filename="../sendcoinsdialog.cpp" line="+234"/>
         <location line="+25"/>
@@ -3847,14 +3859,6 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation type="unfinished">A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
     </message>
-    <message numerus="yes">
-        <location line="+114"/>
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation type="unfinished">
-            <numerusform>Estimated to begin confirmation within %n block.</numerusform>
-            <numerusform>Estimated to begin confirmation within %n blocks.</numerusform>
-        </translation>
-    </message>
     <message>
         <location line="-145"/>
         <source>The recipient address is not valid, please recheck.</source>
@@ -3933,10 +3937,6 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 </context>
 <context>
     <name>SendCoinsEntry</name>
-    <message>
-        <source>SEND</source>
-        <translation type="unfinished">SEND</translation>
-    </message>
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="+21"/>
         <source>This is a normal payment.</source>
