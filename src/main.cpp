@@ -3607,7 +3607,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
             return error("%s : CheckBlock FAILED", __func__);
         }
 
-		if (pindex && pfrom && GetBoolArg("-blockspamfilter", DEFAULT_BLOCK_SPAM_FILTER)) {
+		if (pfrom && GetBoolArg("-blockspamfilter", DEFAULT_BLOCK_SPAM_FILTER)) {
 
 			if (chainActive.Height() > DEFAULT_BLOCK_SPAM_START ) {
 				CNodeState *nodestate = State(pfrom->GetId());
