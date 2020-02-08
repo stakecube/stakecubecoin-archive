@@ -445,7 +445,7 @@
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>&amp;Опции...</translation>
+        <translation>&amp;Настройки...</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -579,10 +579,8 @@
         <source>Processed %n blocks of transaction history.</source>
         <translation>
             <numerusform>Обработан %n блок истории транзакций.</numerusform>
-            <numerusform>Обработан %n блока истории транзакций.</numerusform>
-            <numerusform>Обработан %n блока истории транзакций.</numerusform>
-            <numerusform>Обработан %n блока истории транзакций.</numerusform>
-            <numerusform>Обработан %n блоков истории транзакций.</numerusform>
+            <numerusform>Обработано %n блока истории транзакций.</numerusform>
+            <numerusform>Обработано %n блоков истории транзакций.</numerusform>
         </translation>
     </message>
     <message>
@@ -691,7 +689,7 @@
     </message>
     <message>
         <source>Show the StakeCubeCore help message to get a list with possible StakeCubeCore command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды StakeCubeCore</translation>
+        <translation>Смотрите помощь к программе, чтобы получить описание всех возможных консольных команд StakeCubeCore</translation>
     </message>
     <message>
         <source>StakeCubeCore client</source>
@@ -701,8 +699,7 @@
         <source>%n active connection(s) to StakeCubeCore network</source>
         <translation>
 			<numerusform>%n активное подключение к сети StakeCubeCore</numerusform>
-			<numerusform>%n активных подключений к сети StakeCubeCore</numerusform>
-			<numerusform>%n активных подключений к сети StakeCubeCore</numerusform>
+			<numerusform>%n активных подключения к сети StakeCubeCore</numerusform>
 			<numerusform>%n активных подключений к сети StakeCubeCore</numerusform>
 		</translation>
     </message>
@@ -731,8 +728,6 @@
         <translation>
 			<numerusform>%n час</numerusform>
 			<numerusform>%n часа</numerusform>
-			<numerusform>%n часа</numerusform>
-			<numerusform>%n часа</numerusform>
 			<numerusform>%n часов</numerusform>
 		</translation>
     </message>
@@ -741,8 +736,6 @@
         <translation>
 			<numerusform>%n день</numerusform>
 			<numerusform>%n дня</numerusform>
-			<numerusform>%n дня</numerusform>
-			<numerusform>%n дня</numerusform>
 			<numerusform>%n дней</numerusform>
 		</translation>
     </message>
@@ -750,8 +743,6 @@
         <source>%n week(s)</source>
         <translation>
 			<numerusform>%n неделя</numerusform>
-			<numerusform>%n недели</numerusform>
-			<numerusform>%n недели</numerusform>
 			<numerusform>%n недели</numerusform>
 			<numerusform>%n недель</numerusform>
 		</translation>
@@ -764,8 +755,6 @@
         <source>%n year(s)</source>
         <translation>
 			<numerusform>%n год</numerusform>
-			<numerusform>%n года</numerusform>
-			<numerusform>%n года</numerusform>
 			<numerusform>%n года</numerusform>
 			<numerusform>%n лет</numerusform>
 		</translation>
@@ -1254,7 +1243,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>Опции интерфейса</translation>
+        <translation>Настройки интерфейса</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
@@ -2070,8 +2059,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>%n Rounds</source>
         <translation>
 			<numerusform>%n Цикл</numerusform>
-			<numerusform>%n Циклов</numerusform>
-			<numerusform>%n Циклов</numerusform>
+			<numerusform>%n Цикла</numerusform>
 			<numerusform>%n Циклов</numerusform>
 		</translation>
     </message>
@@ -2094,6 +2082,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     <message numerus="yes">
         <source>Denominated inputs have %5 of %n rounds on average</source>
         <translation>
+            <numerusform>Денонимированные входы имеют в среднем %5 от %n цикла</numerusform>
             <numerusform>Денонимированные входы имеют в среднем %5 от %n циклов</numerusform>
             <numerusform>Денонимированные входы имеют в среднем %5 от %n циклов</numerusform>
         </translation>
@@ -2541,11 +2530,11 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями кммандной строки чтобы отремотировать кошелёк, файлы блокчейна и пропавшие / устаревшие транзакции. </translation>
+        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями кммандной строки чтобы отремотировать кошелёк, файлы блокчейна и пропавшие/устаревшие транзакции. </translation>
     </message>
     <message>
         <source>Wallet repair options.</source>
-        <translation>Опции ремонта кошелька.</translation>
+        <translation>Настройки ремонта кошелька.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
@@ -3072,13 +3061,6 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Плата в %1 раз выше, чем %2 за килобайт считается невероятно высокой платой.</translation>
     </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
-            <numerusform>Предполагается начать подтверждение в %n блоке.</numerusform>
-            <numerusform>Предполагается начать подтверждение в %n блоках.</numerusform>
-        </translation>
-    </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>Адрес получателя неправильный, пожалуйста, проверьте еще раз.</translation>
@@ -3086,6 +3068,18 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     <message>
         <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
         <translation>(Обфускация требует округления этой суммы до ближайшего %1).</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation>
+            <numerusform>Предполагается начать подтверждение в %n блоке.</numerusform>
+            <numerusform>Предполагается начать подтверждение в %n блоках.</numerusform>
+            <numerusform>Предполагается начать подтверждение в %n блоках.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>Estimated to begin confirmation within %1 block(s).</source>
+        <translation>Предполагается начать подтверждение в %1 блоке(блоках).</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3409,6 +3403,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Открыть еще на %n блок</numerusform>
+            <numerusform>Открыть еще на %n блока</numerusform>
             <numerusform>Открыть еще на %n блоков</numerusform>
         </translation>
     </message>
@@ -3477,6 +3472,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>, broadcast through %n node(s)</source>
         <translation>
             <numerusform>, вещание через %n узел</numerusform>
+            <numerusform>, вещание через %n узла</numerusform>
             <numerusform>, вещание через %n узлов</numerusform>
         </translation>
     </message>
@@ -3524,6 +3520,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>matures in %n more block(s)</source>
         <translation>
             <numerusform>созреет через %n блок</numerusform>
+            <numerusform>созреет через %n блока</numerusform>
             <numerusform>созреет через %n блоков</numerusform>
         </translation>
     </message>
@@ -3629,6 +3626,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Открыть еще на %n блок</numerusform>
+            <numerusform>Открыть еще на %n блока</numerusform>
             <numerusform>Открыть еще на %n блоков</numerusform>
         </translation>
     </message>
