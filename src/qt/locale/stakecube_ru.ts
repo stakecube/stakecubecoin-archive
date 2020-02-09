@@ -1328,20 +1328,29 @@ MultiSend: %1</translation>
         <translation>Мои Мастерноды</translation>
     </message>
     <message>
-							  
         <source>All Masternodes</source>
         <translation>Все Мастерноды</translation>
     </message>
     <message>
-							  
         <source>Node Count:</source>
         <translation>Количество:</translation>
     </message>
     <message>
-							  
         <source>Filter List:</source>
         <translation>Фильтр:</translation>
     </message>
+    <message>
+        <source>Filter masternode list</source>
+        <translation>Отфильтровать список мастернод</translation>
+    </message>
+    <message>
+		<source>Please wait... %1</source>
+        <translation>Пожалуйста, ждите... %1</translation>
+	</message>
+    <message>
+		<source>Updating...</source>
+        <translation>Обновление...</translation>
+	</message>
     <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
         <translation>Примечание: Состояние ваших мастернод в локальном кошельке может слегка отличаться от действительности. &lt;br /&gt;Всегда дожидайтесь окончания синхронизации дополнительных данных и затем дважды проверьте с другого узла&lt;br /&gt;если ваша нода должна работать, но в окне &quot;Состояние&quot; пишет &quot;MISSING&quot; (&quot;НЕАКТИВНО&quot;)</translation>
@@ -2803,7 +2812,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>automatically selected</source>
-        <translation>автоматически выбранное</translation>
+        <translation>выбрать автоматически...</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -2863,7 +2872,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source># of outputs</source>
-        <translation>количество выходов</translation>
+        <translation>кол-во выходов</translation>
     </message>
     <message>
         <source>UTXO Size:</source>
@@ -2947,7 +2956,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>Подтвердите отправку</translation>
+        <translation>Подтвердить отправку</translation>
     </message>
     <message>
         <source>S&amp;end</source>
@@ -3607,7 +3616,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Эта панель показывает подробное описание транзакции</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>TransactionTableModel</name>
     <message>
@@ -3640,7 +3649,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>Неподтвержденный</translation>
+        <translation>Не подтверждено</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
@@ -3664,11 +3673,11 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Received with</source>
-        <translation>Получено с</translation>
+        <translation>Получено от</translation>
     </message>
     <message>
         <source>Masternode Reward</source>
-        <translation>Вознаграждение Мастерноды</translation>
+        <translation>Вознаграждение мастерноды</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -3680,7 +3689,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Obfuscation Denominate</source>
-        <translation>Обфускационная Деноминация</translation>
+        <translation>Обфускационная деноминация</translation>
     </message>
     <message>
         <source>Obfuscation Collateral Payment</source>
@@ -3696,11 +3705,11 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Отправить</translation>
+        <translation>Отправлено</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
-        <translation>Сиротский блок - Создан, но не принят. Это не влияет на ваши вклады.</translation>
+        <translation>Сиротский блок - создан, но не принят. Это не влияет на ваши вклады.</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -3752,7 +3761,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     </context>
 <context>
-    <name>TransactionView</name>
+<name>TransactionView</name>
     <message>
         <source>All</source>
         <translation>Все</translation>
@@ -3791,7 +3800,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Отправить</translation>
+        <translation>Отправлено</translation>
     </message>
     <message>
         <source>Obfuscated</source>
@@ -3831,7 +3840,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>Other</source>
-        <translation>Другой</translation>
+        <translation>Другое</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>

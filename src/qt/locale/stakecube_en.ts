@@ -1647,20 +1647,29 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-							  
         <source>All Masternodes</source>
         <translation type="unfinished">All Masternodes</translation>
     </message>
     <message>
-							  
         <source>Node Count:</source>
         <translation type="unfinished">Node Count:</translation>
     </message>
     <message>
-							  
         <source>Filter List:</source>
         <translation type="unfinished">Filter List:</translation>
     </message>
+    <message>
+        <source>Filter masternode list</source>
+        <translation type="unfinished">Filter masternode list</translation>
+    </message>
+    <message>
+		<source>Please wait... %1</source>
+        <translation type="unfinished">Please wait... %1</translation>
+	</message>
+    <message>
+		<source>Updating...</source>
+        <translation type="unfinished">Updating...</translation>
+	</message>
     <message>
         <location line="+16"/>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see &quot;MISSING&quot; in &quot;Status&quot; field.</source>
