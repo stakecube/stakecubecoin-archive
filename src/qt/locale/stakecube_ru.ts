@@ -2277,11 +2277,11 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</tran
     </message>
     <message>
         <source>NETWORK</source>
-        <translation>СЕТЬ</translation>
+        <translation>NETWORK</translation>
     </message>
     <message>
         <source>BLOOM</source>
-        <translation>ЦВЕТЕНИЕ</translation>
+        <translation>BLOOM</translation>
     </message>
     <message>
         <source>UNKNOWN</source>
