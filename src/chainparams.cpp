@@ -60,6 +60,9 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(25678, uint256("106ce0ddeb1264fff95b03f1134248c7bcc9c09e4dabe29d6f6e805b7e014df3"))
 	(94985, uint256("136cce1ca0aca68b8d5f568d044d46fa49ff993e32a4bb95b28ca641c66c5681"))
 	(158048, uint256("f21c32bd16def121cbb929d73403fd9959bfee2b39f255aebdbd9a23952daf65"))
+	(230058, uint256("235cb7eb308bdc8aeb807a4a7383a72d490a951204efaa580b2d00ea029a03b1"))
+	(280676, uint256("09089d35e97f2eba0953b0041852266c00d5abbe8cbc617888c1768758c3d40b"))
+	(321054, uint256("ea63f61cff196b22c51d7bc1c32b52c4d3f28147c03eec1fbbc23b9e50cbd783"))
 	;
 
 static const Checkpoints::CCheckpointData data = {
@@ -147,13 +150,13 @@ public:
 
 		vSeeds.push_back(CDNSSeedData("0", "95.179.165.19"));
 		vSeeds.push_back(CDNSSeedData("1", "2001:19f0:6c01:22ee:5400:02ff:fe0a:f0bb"));
-		vSeeds.push_back(CDNSSeedData("2", "209.250.224.166"));
+		vSeeds.push_back(CDNSSeedData("dns01", "scc01.stakecube.net"));
 		vSeeds.push_back(CDNSSeedData("3", "2001:19f0:7400:8249:5400:02ff:fe0a:f089"));
-		vSeeds.push_back(CDNSSeedData("4", "108.61.212.198"));
+		vSeeds.push_back(CDNSSeedData("dns02", "scc02.stakecube.net"));
 		vSeeds.push_back(CDNSSeedData("5", "2001:19f0:5801:10b6:5400:02ff:fe0a:f090"));
-		vSeeds.push_back(CDNSSeedData("6", "78.141.211.79"));
+		vSeeds.push_back(CDNSSeedData("dns03", "scc03.stakecube.net"));
 		vSeeds.push_back(CDNSSeedData("7", "2001:19f0:5001:3ad0:5400:02ff:fe0a:f09b"));
-		vSeeds.push_back(CDNSSeedData("8", "95.179.209.111"));
+		vSeeds.push_back(CDNSSeedData("dns04", "scc04.stakecube.net"));
 		vSeeds.push_back(CDNSSeedData("9", "2001:19f0:6801:171a:5400:02ff:fe0a:f0a9"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
