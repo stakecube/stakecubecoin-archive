@@ -6,77 +6,77 @@
     <message>
         <location filename="../forms/addressbookpage.ui" line="+67"/>
         <source>Right-click to edit address or label</source>
-        <translation>Right-click to edit address or label</translation>
+        <translation type="unfinished">Right-click to edit address or label</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>Create a new address</translation>
+        <translation type="unfinished">Create a new address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;New</source>
-        <translation>&amp;New</translation>
+        <translation type="unfinished">&amp;New</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copy the currently selected address to the system clipboard</translation>
+        <translation type="unfinished">Copy the currently selected address to the system clipboard</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Copy</source>
-        <translation>&amp;Copy</translation>
+        <translation type="unfinished">&amp;Copy</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Delete the currently selected address from the list</source>
-        <translation>Delete the currently selected address from the list</translation>
+        <translation type="unfinished">Delete the currently selected address from the list</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Delete</translation>
+        <translation type="unfinished">&amp;Delete</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Export the data in the current tab to a file</source>
-        <translation>Export the data in the current tab to a file</translation>
+        <translation type="unfinished">Export the data in the current tab to a file</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
+        <translation type="unfinished">&amp;Export</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>C&amp;lose</source>
-        <translation>C&amp;lose</translation>
+        <translation type="unfinished">C&amp;lose</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+44"/>
         <source>Choose the address to send coins to</source>
-        <translation>Choose the address to send coins to</translation>
+        <translation type="unfinished">Choose the address to send coins to</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Choose the address to receive coins with</source>
-        <translation>Choose the address to receive coins with</translation>
+        <translation type="unfinished">Choose the address to receive coins with</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>C&amp;hoose</source>
-        <translation>C&amp;hoose</translation>
+        <translation type="unfinished">C&amp;hoose</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Sending addresses</source>
-        <translation>Sending addresses</translation>
+        <translation type="unfinished">Sending addresses</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Receiving addresses</source>
-        <translation>Receiving addresses</translation>
+        <translation type="unfinished">Receiving addresses</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -91,37 +91,37 @@
     <message>
         <location line="+6"/>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Copy Address</translation>
+        <translation type="unfinished">&amp;Copy Address</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy &amp;Label</source>
-        <translation>Copy &amp;Label</translation>
+        <translation type="unfinished">Copy &amp;Label</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation type="unfinished">&amp;Edit</translation>
     </message>
     <message>
         <location line="+187"/>
         <source>Export Address List</source>
-        <translation>Export Address List</translation>
+        <translation type="unfinished">Export Address List</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
+        <translation type="unfinished">Comma separated file (*.csv)</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Exporting Failed</source>
-        <translation>Exporting Failed</translation>
+        <translation type="unfinished">Exporting Failed</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>There was an error trying to save the address list to %1. Please try again.</translation>
+        <translation type="unfinished">There was an error trying to save the address list to %1. Please try again.</translation>
     </message>
 </context>
 <context>
@@ -129,17 +129,17 @@
     <message>
         <location filename="../addresstablemodel.cpp" line="+157"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="unfinished">Label</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation type="unfinished">Address</translation>
     </message>
     <message>
         <location line="+33"/>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation type="unfinished">(no label)</translation>
     </message>
 </context>
 <context>
@@ -147,77 +147,77 @@
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation>Passphrase Dialog</translation>
+        <translation type="unfinished">Passphrase Dialog</translation>
     </message>
     <message>
         <location line="+30"/>
         <source>Enter passphrase</source>
-        <translation>Enter passphrase</translation>
+        <translation type="unfinished">Enter passphrase</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>New passphrase</source>
-        <translation>New passphrase</translation>
+        <translation type="unfinished">New passphrase</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Repeat new passphrase</source>
-        <translation>Repeat new passphrase</translation>
+        <translation type="unfinished">Repeat new passphrase</translation>
     </message>
     <message>
         <location line="+33"/>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</translation>
+        <translation type="unfinished">Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>For anonymization and staking only</source>
-        <translation>For anonymization and staking only</translation>
+        <translation type="unfinished">For anonymization and staking only</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="+44"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
+        <translation type="unfinished">Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Encrypt wallet</source>
-        <translation>Encrypt wallet</translation>
+        <translation type="unfinished">Encrypt wallet</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>This operation needs your wallet passphrase to unlock the wallet.</translation>
+        <translation type="unfinished">This operation needs your wallet passphrase to unlock the wallet.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Unlock wallet</source>
-        <translation>Unlock wallet</translation>
+        <translation type="unfinished">Unlock wallet</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>This operation needs your wallet passphrase to decrypt the wallet.</translation>
+        <translation type="unfinished">This operation needs your wallet passphrase to decrypt the wallet.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Decrypt wallet</source>
-        <translation>Decrypt wallet</translation>
+        <translation type="unfinished">Decrypt wallet</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Change passphrase</source>
-        <translation>Change passphrase</translation>
+        <translation type="unfinished">Change passphrase</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Enter the old and new passphrase to the wallet.</translation>
+        <translation type="unfinished">Enter the old and new passphrase to the wallet.</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Confirm wallet encryption</source>
-        <translation>Confirm wallet encryption</translation>
+        <translation type="unfinished">Confirm wallet encryption</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -227,7 +227,7 @@
     <message>
         <location line="-8"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Are you sure you wish to encrypt your wallet?</translation>
+        <translation type="unfinished">Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -238,12 +238,12 @@
         <location line="+6"/>
         <location line="+45"/>
         <source>Wallet encrypted</source>
-        <translation>Wallet encrypted</translation>
+        <translation type="unfinished">Wallet encrypted</translation>
     </message>
     <message>
         <location line="-39"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
+        <translation type="unfinished">IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -251,46 +251,46 @@
         <location line="+31"/>
         <location line="+4"/>
         <source>Wallet encryption failed</source>
-        <translation>Wallet encryption failed</translation>
+        <translation type="unfinished">Wallet encryption failed</translation>
     </message>
     <message>
         <location line="-39"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
+        <translation type="unfinished">Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+35"/>
         <source>The supplied passphrases do not match.</source>
-        <translation>The supplied passphrases do not match.</translation>
+        <translation type="unfinished">The supplied passphrases do not match.</translation>
     </message>
     <message>
         <location line="-26"/>
         <source>Wallet unlock failed</source>
-        <translation>Wallet unlock failed</translation>
+        <translation type="unfinished">Wallet unlock failed</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+8"/>
         <location line="+13"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>The passphrase entered for the wallet decryption was incorrect.</translation>
+        <translation type="unfinished">The passphrase entered for the wallet decryption was incorrect.</translation>
     </message>
     <message>
         <location line="-14"/>
         <source>Wallet decryption failed</source>
-        <translation>Wallet decryption failed</translation>
+        <translation type="unfinished">Wallet decryption failed</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Wallet passphrase was successfully changed.</translation>
+        <translation type="unfinished">Wallet passphrase was successfully changed.</translation>
     </message>
     <message>
         <location line="+43"/>
         <location line="+24"/>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Warning: The Caps Lock key is on!</translation>
+        <translation type="unfinished">Warning: The Caps Lock key is on!</translation>
     </message>
 </context>
 <context>
@@ -507,233 +507,233 @@
     <message>
         <location filename="../bitcoingui.cpp" line="+123"/>
         <source>Wallet</source>
-        <translation>Wallet</translation>
+        <translation type="unfinished">Wallet</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Node</source>
-        <translation>Node</translation>
+        <translation type="unfinished">Node</translation>
     </message>
     <message>
         <location line="+157"/>
         <source>&amp;Overview</source>
-        <translation>&amp;Overview</translation>
+        <translation type="unfinished">&amp;Overview</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show general overview of wallet</source>
-        <translation>Show general overview of wallet</translation>
+        <translation type="unfinished">Show general overview of wallet</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Send</source>
-        <translation>&amp;Send</translation>
+        <translation type="unfinished">&amp;Send</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Receive</source>
-        <translation>&amp;Receive</translation>
+        <translation type="unfinished">&amp;Receive</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
+        <translation type="unfinished">&amp;Transactions</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation>Browse transaction history</translation>
+        <translation type="unfinished">Browse transaction history</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
+        <translation type="unfinished">E&amp;xit</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation type="unfinished">Quit application</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation>About &amp;Qt</translation>
+        <translation type="unfinished">About &amp;Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Show information about Qt</source>
-        <translation>Show information about Qt</translation>
+        <translation type="unfinished">Show information about Qt</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation>&amp;Options...</translation>
+        <translation type="unfinished">&amp;Options...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Show / Hide</translation>
+        <translation type="unfinished">&amp;Show / Hide</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Show or hide the main Window</translation>
+        <translation type="unfinished">Show or hide the main Window</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encrypt Wallet...</translation>
+        <translation type="unfinished">&amp;Encrypt Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encrypt the private keys that belong to your wallet</translation>
+        <translation type="unfinished">Encrypt the private keys that belong to your wallet</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup Wallet...</translation>
+        <translation type="unfinished">&amp;Backup Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Backup wallet to another location</source>
-        <translation>Backup wallet to another location</translation>
+        <translation type="unfinished">Backup wallet to another location</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Change Passphrase...</translation>
+        <translation type="unfinished">&amp;Change Passphrase...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Change the passphrase used for wallet encryption</translation>
+        <translation type="unfinished">Change the passphrase used for wallet encryption</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Unlock Wallet...</translation>
+        <translation type="unfinished">&amp;Unlock Wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unlock wallet</source>
-        <translation>Unlock wallet</translation>
+        <translation type="unfinished">Unlock wallet</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Lock Wallet</source>
-        <translation>&amp;Lock Wallet</translation>
+        <translation type="unfinished">&amp;Lock Wallet</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sign &amp;message...</source>
-        <translation>Sign &amp;message...</translation>
+        <translation type="unfinished">Sign &amp;message...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Verify message...</translation>
+        <translation type="unfinished">&amp;Verify message...</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <translation type="unfinished">&amp;Information</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show diagnostic information</source>
-        <translation>Show diagnostic information</translation>
+        <translation type="unfinished">Show diagnostic information</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
+        <translation type="unfinished">&amp;Debug console</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging console</source>
-        <translation>Open debugging console</translation>
+        <translation type="unfinished">Open debugging console</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Network Monitor</source>
-        <translation>&amp;Network Monitor</translation>
+        <translation type="unfinished">&amp;Network Monitor</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show network monitor</source>
-        <translation>Show network monitor</translation>
+        <translation type="unfinished">Show network monitor</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Peers list</source>
-        <translation>&amp;Peers list</translation>
+        <translation type="unfinished">&amp;Peers list</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show peers info</source>
-        <translation>Show peers info</translation>
+        <translation type="unfinished">Show peers info</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Wallet &amp;Repair</source>
-        <translation>Wallet &amp;Repair</translation>
+        <translation type="unfinished">Wallet &amp;Repair</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show wallet repair options</source>
-        <translation>Show wallet repair options</translation>
+        <translation type="unfinished">Show wallet repair options</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Open configuration file</source>
-        <translation>Open configuration file</translation>
+        <translation type="unfinished">Open configuration file</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Show Automatic &amp;Backups</source>
-        <translation>Show Automatic &amp;Backups</translation>
+        <translation type="unfinished">Show Automatic &amp;Backups</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show automatically created wallet backups</source>
-        <translation>Show automatically created wallet backups</translation>
+        <translation type="unfinished">Show automatically created wallet backups</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;Sending addresses...</translation>
+        <translation type="unfinished">&amp;Sending addresses...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Show the list of used sending addresses and labels</translation>
+        <translation type="unfinished">Show the list of used sending addresses and labels</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Receiving addresses...</translation>
+        <translation type="unfinished">&amp;Receiving addresses...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>Show the list of used receiving addresses and labels</translation>
+        <translation type="unfinished">Show the list of used receiving addresses and labels</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
+        <translation type="unfinished">Open &amp;URI...</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>&amp;Command-line options</source>
-        <translation>&amp;Command-line options</translation>
+        <translation type="unfinished">&amp;Command-line options</translation>
     </message>
     <message numerus="yes">
         <location line="+428"/>
         <source>Processed %n blocks of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>Processed %n block of transaction history.</numerusform>
             <numerusform>Processed %n blocks of transaction history.</numerusform>
         </translation>
@@ -741,32 +741,32 @@
     <message>
         <location line="+32"/>
         <source>Synchronizing additional data: %p%</source>
-        <translation>Synchronizing additional data: %p%</translation>
+        <translation type="unfinished">Synchronizing additional data: %p%</translation>
     </message>
     <message>
         <location line="-421"/>
         <source>&amp;File</source>
-        <translation>&amp;File</translation>
+        <translation type="unfinished">&amp;File</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Settings</translation>
+        <translation type="unfinished">&amp;Settings</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Tools</source>
-        <translation>&amp;Tools</translation>
+        <translation type="unfinished">&amp;Tools</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
+        <translation type="unfinished">&amp;Help</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Tabs toolbar</source>
-        <translation>Tabs toolbar</translation>
+        <translation type="unfinished">Tabs toolbar</translation>
     </message>
     <message>
         <location line="-396"/>
@@ -890,32 +890,32 @@
     <message>
         <location line="+15"/>
         <source>Synchronizing with network...</source>
-        <translation>Synchronizing with network...</translation>
+        <translation type="unfinished">Synchronizing with network...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Importing blocks from disk...</source>
-        <translation>Importing blocks from disk...</translation>
+        <translation type="unfinished">Importing blocks from disk...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Reindexing blocks on disk...</source>
-        <translation>Reindexing blocks on disk...</translation>
+        <translation type="unfinished">Reindexing blocks on disk...</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>No block source available...</source>
-        <translation>No block source available...</translation>
+        <translation type="unfinished">No block source available...</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Up to date</source>
-        <translation>Up to date</translation>
+        <translation type="unfinished">Up to date</translation>
     </message>
     <message numerus="yes">
         <location line="+41"/>
         <source>%n hour(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n hour</numerusform>
             <numerusform>%n hours</numerusform>
         </translation>
@@ -923,7 +923,7 @@
     <message numerus="yes">
         <location line="+2"/>
         <source>%n day(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n day</numerusform>
             <numerusform>%n days</numerusform>
         </translation>
@@ -932,7 +932,7 @@
         <location line="+2"/>
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n week</numerusform>
             <numerusform>%n weeks</numerusform>
         </translation>
@@ -940,12 +940,12 @@
     <message>
         <location line="+0"/>
         <source>%1 and %2</source>
-        <translation>%1 and %2</translation>
+        <translation type="unfinished">%1 and %2</translation>
     </message>
     <message numerus="yes">
         <location line="+0"/>
         <source>%n year(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n year</numerusform>
             <numerusform>%n years</numerusform>
         </translation>
@@ -953,47 +953,47 @@
     <message>
         <location line="+4"/>
         <source>%1 behind</source>
-        <translation>%1 behind</translation>
+        <translation type="unfinished">%1 behind</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Catching up...</source>
-        <translation>Catching up...</translation>
+        <translation type="unfinished">Catching up...</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Last received block was generated %1 ago.</translation>
+        <translation type="unfinished">Last received block was generated %1 ago.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Transactions after this will not yet be visible.</translation>
+        <translation type="unfinished">Transactions after this will not yet be visible.</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation type="unfinished">Error</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning</source>
-        <translation>Warning</translation>
+        <translation type="unfinished">Warning</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation type="unfinished">Information</translation>
     </message>
     <message>
         <location line="+67"/>
         <source>Sent transaction</source>
-        <translation>Sent transaction</translation>
+        <translation type="unfinished">Sent transaction</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Incoming transaction</source>
-        <translation>Incoming transaction</translation>
+        <translation type="unfinished">Incoming transaction</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1007,7 +1007,7 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation>Date: %1
+        <translation type="unfinished">Date: %1
 Amount: %2
 Type: %3
 Address: %4
@@ -1040,7 +1040,7 @@ Address: %4
     <message>
         <location line="+30"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
+        <translation type="unfinished">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1050,7 +1050,7 @@ Address: %4
     <message>
         <location line="+10"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
+        <translation type="unfinished">Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1086,12 +1086,12 @@ Address: %4
     <message>
         <location filename="../clientmodel.cpp" line="+73"/>
         <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>Total: %1 (OBF compatible: %2 / Enabled: %3)</translation>
+        <translation type="unfinished">Total: %1 (OBF compatible: %2 / Enabled: %3)</translation>
     </message>
     <message>
         <location line="+101"/>
         <source>Network Alert</source>
-        <translation>Network Alert</translation>
+        <translation type="unfinished">Network Alert</translation>
     </message>
 </context>
 <context>
@@ -1099,52 +1099,52 @@ Address: %4
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+48"/>
         <source>Quantity:</source>
-        <translation>Quantity:</translation>
+        <translation type="unfinished">Quantity:</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation type="unfinished">Bytes:</translation>
     </message>
     <message>
         <location line="+45"/>
         <source>Amount:</source>
-        <translation>Amount:</translation>
+        <translation type="unfinished">Amount:</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Priority:</source>
-        <translation>Priority:</translation>
+        <translation type="unfinished">Priority:</translation>
     </message>
     <message>
         <location line="+45"/>
         <source>Fee:</source>
-        <translation>Fee:</translation>
+        <translation type="unfinished">Fee:</translation>
     </message>
     <message>
         <location line="-182"/>
         <source>Coin Selection</source>
-        <translation>Coin Selection</translation>
+        <translation type="unfinished">Coin Selection</translation>
     </message>
     <message>
         <location line="+214"/>
         <source>Dust:</source>
-        <translation>Dust:</translation>
+        <translation type="unfinished">Dust:</translation>
     </message>
     <message>
         <location line="+48"/>
         <source>After Fee:</source>
-        <translation>After Fee:</translation>
+        <translation type="unfinished">After Fee:</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Change:</source>
-        <translation>Change:</translation>
+        <translation type="unfinished">Change:</translation>
     </message>
     <message>
         <location line="+56"/>
         <source>(un)select all</source>
-        <translation>(un)select all</translation>
+        <translation type="unfinished">(un)select all</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -1154,32 +1154,32 @@ Address: %4
     <message>
         <location line="+16"/>
         <source>Tree mode</source>
-        <translation>Tree mode</translation>
+        <translation type="unfinished">Tree mode</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>List mode</source>
-        <translation>List mode</translation>
+        <translation type="unfinished">List mode</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>(1 locked)</source>
-        <translation>(1 locked)</translation>
+        <translation type="unfinished">(1 locked)</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Received with label</source>
-        <translation>Received with label</translation>
+        <translation type="unfinished">Received with label</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Received with address</source>
-        <translation>Received with address</translation>
+        <translation type="unfinished">Received with address</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1189,88 +1189,88 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation type="unfinished">Date</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Confirmations</source>
-        <translation>Confirmations</translation>
+        <translation type="unfinished">Confirmations</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Confirmed</source>
-        <translation>Confirmed</translation>
+        <translation type="unfinished">Confirmed</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Priority</source>
-        <translation>Priority</translation>
+        <translation type="unfinished">Priority</translation>
     </message>
     <message>
         <location filename="../coincontroldialog.cpp" line="+50"/>
         <source>Copy address</source>
-        <translation>Copy address</translation>
+        <translation type="unfinished">Copy address</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation>Copy label</translation>
+        <translation type="unfinished">Copy label</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+26"/>
         <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <translation type="unfinished">Copy amount</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Copy transaction ID</source>
-        <translation>Copy transaction ID</translation>
+        <translation type="unfinished">Copy transaction ID</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Lock unspent</source>
-        <translation>Lock unspent</translation>
+        <translation type="unfinished">Lock unspent</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unlock unspent</source>
-        <translation>Unlock unspent</translation>
+        <translation type="unfinished">Unlock unspent</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Copy quantity</source>
-        <translation>Copy quantity</translation>
+        <translation type="unfinished">Copy quantity</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Copy fee</source>
-        <translation>Copy fee</translation>
+        <translation type="unfinished">Copy fee</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy after fee</source>
-        <translation>Copy after fee</translation>
+        <translation type="unfinished">Copy after fee</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy bytes</source>
-        <translation>Copy bytes</translation>
+        <translation type="unfinished">Copy bytes</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy priority</source>
-        <translation>Copy priority</translation>
+        <translation type="unfinished">Copy priority</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy dust</source>
-        <translation>Copy dust</translation>
+        <translation type="unfinished">Copy dust</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy change</source>
-        <translation>Copy change</translation>
+        <translation type="unfinished">Copy change</translation>
     </message>
     <message>
         <location line="+157"/>
@@ -1285,126 +1285,126 @@ Address: %4
     <message>
         <location line="+31"/>
         <source>highest</source>
-        <translation>highest</translation>
+        <translation type="unfinished">highest</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>higher</source>
-        <translation>higher</translation>
+        <translation type="unfinished">higher</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>high</source>
-        <translation>high</translation>
+        <translation type="unfinished">high</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>medium-high</source>
-        <translation>medium-high</translation>
+        <translation type="unfinished">medium-high</translation>
     </message>
     <message>
         <location line="+207"/>
         <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Can vary +/- %1 duff(s) per input.</translation>
+        <translation type="unfinished">Can vary +/- %1 duff(s) per input.</translation>
     </message>
     <message>
         <location line="+130"/>
         <source>n/a</source>
-        <translation>n/a</translation>
+        <translation type="unfinished">n/a</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="-334"/>
         <location filename="../coincontroldialog.cpp" line="-335"/>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation type="unfinished">medium</translation>
     </message>
     <message>
         <location filename="../coincontroldialog.cpp" line="+2"/>
         <source>low-medium</source>
-        <translation>low-medium</translation>
+        <translation type="unfinished">low-medium</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>low</source>
-        <translation>low</translation>
+        <translation type="unfinished">low</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>lower</source>
-        <translation>lower</translation>
+        <translation type="unfinished">lower</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>lowest</source>
-        <translation>lowest</translation>
+        <translation type="unfinished">lowest</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>(%1 locked)</source>
-        <translation>(%1 locked)</translation>
+        <translation type="unfinished">(%1 locked)</translation>
     </message>
     <message>
         <location line="+26"/>
         <source>none</source>
-        <translation>none</translation>
+        <translation type="unfinished">none</translation>
     </message>
     <message>
         <location line="+131"/>
         <source>yes</source>
-        <translation>yes</translation>
+        <translation type="unfinished">yes</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+80"/>
         <location filename="../coincontroldialog.cpp" line="+0"/>
         <source>no</source>
-        <translation>no</translation>
+        <translation type="unfinished">no</translation>
     </message>
     <message>
         <location filename="../coincontroldialog.cpp" line="+15"/>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>This label turns red, if the transaction size is greater than 1000 bytes.</translation>
+        <translation type="unfinished">This label turns red, if the transaction size is greater than 1000 bytes.</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+5"/>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>This means a fee of at least %1 per kB is required.</translation>
+        <translation type="unfinished">This means a fee of at least %1 per kB is required.</translation>
     </message>
     <message>
         <location line="-4"/>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Can vary +/- 1 byte per input.</translation>
+        <translation type="unfinished">Can vary +/- 1 byte per input.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transactions with higher priority are more likely to get included into a block.</translation>
+        <translation type="unfinished">Transactions with higher priority are more likely to get included into a block.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This label turns red, if the priority is smaller than &quot;medium&quot;.</source>
-        <translation>This label turns red, if the priority is smaller than &quot;medium&quot;.</translation>
+        <translation type="unfinished">This label turns red, if the priority is smaller than &quot;medium&quot;.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>This label turns red, if any recipient receives an amount smaller than %1.</translation>
+        <translation type="unfinished">This label turns red, if any recipient receives an amount smaller than %1.</translation>
     </message>
     <message>
         <location line="+54"/>
         <location line="+62"/>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation type="unfinished">(no label)</translation>
     </message>
     <message>
         <location line="-5"/>
         <source>change from %1 (%2)</source>
-        <translation>change from %1 (%2)</translation>
+        <translation type="unfinished">change from %1 (%2)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>(change)</source>
-        <translation>(change)</translation>
+        <translation type="unfinished">(change)</translation>
     </message>
 </context>
 <context>
@@ -1412,47 +1412,47 @@ Address: %4
     <message>
         <location filename="../forms/editaddressdialog.ui" line="+14"/>
         <source>Edit Address</source>
-        <translation>Edit Address</translation>
+        <translation type="unfinished">Edit Address</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Label</source>
-        <translation>&amp;Label</translation>
+        <translation type="unfinished">&amp;Label</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>The label associated with this address list entry</source>
-        <translation>The label associated with this address list entry</translation>
+        <translation type="unfinished">The label associated with this address list entry</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Address</source>
-        <translation>&amp;Address</translation>
+        <translation type="unfinished">&amp;Address</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>The address associated with this address list entry. This can only be modified for sending addresses.</translation>
+        <translation type="unfinished">The address associated with this address list entry. This can only be modified for sending addresses.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="+28"/>
         <source>New receiving address</source>
-        <translation>New receiving address</translation>
+        <translation type="unfinished">New receiving address</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>New sending address</source>
-        <translation>New sending address</translation>
+        <translation type="unfinished">New sending address</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Edit receiving address</source>
-        <translation>Edit receiving address</translation>
+        <translation type="unfinished">Edit receiving address</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Edit sending address</source>
-        <translation>Edit sending address</translation>
+        <translation type="unfinished">Edit sending address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -1462,17 +1462,17 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
-        <translation>The entered address &quot;%1&quot; is already in the address book.</translation>
+        <translation type="unfinished">The entered address &quot;%1&quot; is already in the address book.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Could not unlock wallet.</source>
-        <translation>Could not unlock wallet.</translation>
+        <translation type="unfinished">Could not unlock wallet.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>New key generation failed.</source>
-        <translation>New key generation failed.</translation>
+        <translation type="unfinished">New key generation failed.</translation>
     </message>
 </context>
 <context>
@@ -1480,27 +1480,27 @@ Address: %4
     <message>
         <location filename="../intro.cpp" line="+70"/>
         <source>A new data directory will be created.</source>
-        <translation>A new data directory will be created.</translation>
+        <translation type="unfinished">A new data directory will be created.</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>name</source>
-        <translation>name</translation>
+        <translation type="unfinished">name</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Directory already exists. Add %1 if you intend to create a new directory here.</translation>
+        <translation type="unfinished">Directory already exists. Add %1 if you intend to create a new directory here.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Path already exists, and is not a directory.</translation>
+        <translation type="unfinished">Path already exists, and is not a directory.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Cannot create data directory here.</source>
-        <translation>Cannot create data directory here.</translation>
+        <translation type="unfinished">Cannot create data directory here.</translation>
     </message>
 </context>
 <context>
@@ -1508,7 +1508,7 @@ Address: %4
     <message>
         <location filename="../utilitydialog.cpp" line="+37"/>
         <source>version</source>
-        <translation>version</translation>
+        <translation type="unfinished">version</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1519,7 +1519,7 @@ Address: %4
         <location line="+5"/>
         <location line="+2"/>
         <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
+        <translation type="unfinished">(%1-bit)</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1529,17 +1529,17 @@ Address: %4
     <message>
         <location line="+20"/>
         <source>Command-line options</source>
-        <translation>Command-line options</translation>
+        <translation type="unfinished">Command-line options</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Usage:</source>
-        <translation>Usage:</translation>
+        <translation type="unfinished">Usage:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>command-line options</source>
-        <translation>command-line options</translation>
+        <translation type="unfinished">command-line options</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -1559,17 +1559,17 @@ Address: %4
     <message>
         <location line="-3"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
-        <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
+        <translation type="unfinished">Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Start minimized</source>
-        <translation>Start minimized</translation>
+        <translation type="unfinished">Start minimized</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Set SSL root certificates for payment request (default: -system-)</translation>
+        <translation type="unfinished">Set SSL root certificates for payment request (default: -system-)</translation>
     </message>
 </context>
 <context>
@@ -1577,7 +1577,7 @@ Address: %4
     <message>
         <location filename="../forms/intro.ui" line="+14"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation type="unfinished">Welcome</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1597,12 +1597,12 @@ Address: %4
     <message>
         <location line="+10"/>
         <source>Use the default data directory</source>
-        <translation>Use the default data directory</translation>
+        <translation type="unfinished">Use the default data directory</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Use a custom data directory:</source>
-        <translation>Use a custom data directory:</translation>
+        <translation type="unfinished">Use a custom data directory:</translation>
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
@@ -1612,22 +1612,22 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Error: Specified data directory &quot;%1&quot; cannot be created.</source>
-        <translation>Error: Specified data directory &quot;%1&quot; cannot be created.</translation>
+        <translation type="unfinished">Error: Specified data directory &quot;%1&quot; cannot be created.</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation type="unfinished">Error</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>%1 GB of free space available</source>
-        <translation>%1 GB of free space available</translation>
+        <translation type="unfinished">%1 GB of free space available</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>(of %1 GB needed)</source>
-        <translation>(of %1 GB needed)</translation>
+        <translation type="unfinished">(of %1 GB needed)</translation>
     </message>
 </context>
 <context>
@@ -1638,10 +1638,38 @@ Address: %4
         <translation type="unfinished">Form</translation>
     </message>
     <message>
+        <source>MASTERNODES</source>
+        <translation type="unfinished">MASTERNODES</translation>
+    </message>
+    <message>
         <location line="+18"/>
         <source>My Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation type="unfinished">All Masternodes</translation>
+    </message>
+    <message>
+        <source>Node Count:</source>
+        <translation type="unfinished">Node Count:</translation>
+    </message>
+    <message>
+        <source>Filter List:</source>
+        <translation type="unfinished">Filter List:</translation>
+    </message>
+    <message>
+        <source>Filter masternode list</source>
+        <translation type="unfinished">Filter masternode list</translation>
+    </message>
+    <message>
+		<source>Please wait... %1</source>
+        <translation type="unfinished">Please wait... %1</translation>
+	</message>
+    <message>
+		<source>Updating...</source>
+        <translation type="unfinished">Updating...</translation>
+	</message>
     <message>
         <location line="+16"/>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see &quot;MISSING&quot; in &quot;Status&quot; field.</source>
@@ -2009,27 +2037,27 @@ Please check the address and try again.</source>
     <message>
         <location filename="../forms/openuridialog.ui" line="+14"/>
         <source>Open URI</source>
-        <translation>Open URI</translation>
+        <translation type="unfinished">Open URI</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Open payment request from URI or file</source>
-        <translation>Open payment request from URI or file</translation>
+        <translation type="unfinished">Open payment request from URI or file</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>URI:</source>
-        <translation>URI:</translation>
+        <translation type="unfinished">URI:</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Select payment request file</source>
-        <translation>Select payment request file</translation>
+        <translation type="unfinished">Select payment request file</translation>
     </message>
     <message>
         <location filename="../openuridialog.cpp" line="+47"/>
         <source>Select payment request file to open</source>
-        <translation>Select payment request file to open</translation>
+        <translation type="unfinished">Select payment request file to open</translation>
     </message>
 </context>
 <context>
@@ -2037,42 +2065,42 @@ Please check the address and try again.</source>
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
         <source>Options</source>
-        <translation>Options</translation>
+        <translation type="unfinished">Options</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Main</source>
-        <translation>&amp;Main</translation>
+        <translation type="unfinished">&amp;Main</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Size of &amp;database cache</source>
-        <translation>Size of &amp;database cache</translation>
+        <translation type="unfinished">Size of &amp;database cache</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>MB</source>
-        <translation>MB</translation>
+        <translation type="unfinished">MB</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Number of script &amp;verification threads</source>
-        <translation>Number of script &amp;verification threads</translation>
+        <translation type="unfinished">Number of script &amp;verification threads</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
+        <translation type="unfinished">(0 = auto, &lt;0 = leave that many cores free)</translation>
     </message>
     <message>
         <location line="+105"/>
         <source>W&amp;allet</source>
-        <translation>W&amp;allet</translation>
+        <translation type="unfinished">W&amp;allet</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
+        <translation type="unfinished">If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -2082,22 +2110,22 @@ Please check the address and try again.</source>
     <message>
         <location line="+10"/>
         <source>Accept connections from outside</source>
-        <translation>Accept connections from outside</translation>
+        <translation type="unfinished">Accept connections from outside</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Allow incoming connections</source>
-        <translation>Allow incoming connections</translation>
+        <translation type="unfinished">Allow incoming connections</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Connect through SOCKS5 proxy (default proxy):</translation>
+        <translation type="unfinished">&amp;Connect through SOCKS5 proxy (default proxy):</translation>
     </message>
     <message>
         <location line="-82"/>
         <source>Expert</source>
-        <translation>Expert</translation>
+        <translation type="unfinished">Expert</translation>
     </message>
     <message>
         <location line="-179"/>
@@ -2112,7 +2140,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+102"/>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</translation>
+        <translation type="unfinished">This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2132,12 +2160,12 @@ Please check the address and try again.</source>
     <message>
         <location line="+38"/>
         <source>Whether to show coin control features or not.</source>
-        <translation>Whether to show coin control features or not.</translation>
+        <translation type="unfinished">Whether to show coin control features or not.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Enable coin &amp;control features</source>
-        <translation>Enable coin &amp;control features</translation>
+        <translation type="unfinished">Enable coin &amp;control features</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2152,12 +2180,12 @@ Please check the address and try again.</source>
     <message>
         <location line="+10"/>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Spend unconfirmed change</translation>
+        <translation type="unfinished">&amp;Spend unconfirmed change</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>&amp;Network</source>
-        <translation>&amp;Network</translation>
+        <translation type="unfinished">&amp;Network</translation>
     </message>
     <message>
         <location line="+192"/>
@@ -2173,7 +2201,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-204"/>
         <source>Map port using &amp;UPnP</source>
-        <translation>Map port using &amp;UPnP</translation>
+        <translation type="unfinished">Map port using &amp;UPnP</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2183,149 +2211,149 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+12"/>
         <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
+        <translation type="unfinished">Proxy &amp;IP:</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation type="unfinished">IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <translation type="unfinished">&amp;Port:</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Port of the proxy (e.g. 9050)</translation>
+        <translation type="unfinished">Port of the proxy (e.g. 9050)</translation>
     </message>
     <message>
         <location line="+36"/>
         <source>&amp;Window</source>
-        <translation>&amp;Window</translation>
+        <translation type="unfinished">&amp;Window</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Show only a tray icon after minimizing the window.</translation>
+        <translation type="unfinished">Show only a tray icon after minimizing the window.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimize to the tray instead of the taskbar</translation>
+        <translation type="unfinished">&amp;Minimize to the tray instead of the taskbar</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</translation>
+        <translation type="unfinished">Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimize on close</translation>
+        <translation type="unfinished">M&amp;inimize on close</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation>&amp;Display</translation>
+        <translation type="unfinished">&amp;Display</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>User Interface &amp;language:</source>
-        <translation>User Interface &amp;language:</translation>
+        <translation type="unfinished">User Interface &amp;language:</translation>
     </message>
     <message>
         <location line="+53"/>
         <source>User Interface Theme:</source>
-        <translation>User Interface Theme:</translation>
+        <translation type="unfinished">User Interface Theme:</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unit to show amounts in:</translation>
+        <translation type="unfinished">&amp;Unit to show amounts in:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Choose the default subdivision unit to show in the interface and when sending coins.</translation>
+        <translation type="unfinished">Choose the default subdivision unit to show in the interface and when sending coins.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Decimal digits</source>
-        <translation>Decimal digits</translation>
+        <translation type="unfinished">Decimal digits</translation>
     </message>
     <message>
         <location line="+14"/>
         <location line="+13"/>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</translation>
+        <translation type="unfinished">Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</translation>
     </message>
     <message>
         <location line="-10"/>
         <source>Third party transaction URLs</source>
-        <translation>Third party transaction URLs</translation>
+        <translation type="unfinished">Third party transaction URLs</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Active command-line options that override above options:</source>
-        <translation>Active command-line options that override above options:</translation>
+        <translation type="unfinished">Active command-line options that override above options:</translation>
     </message>
     <message>
         <location line="+43"/>
         <source>Reset all client options to default.</source>
-        <translation>Reset all client options to default.</translation>
+        <translation type="unfinished">Reset all client options to default.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Reset Options</translation>
+        <translation type="unfinished">&amp;Reset Options</translation>
     </message>
     <message>
         <location line="+61"/>
         <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <translation type="unfinished">&amp;OK</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Cancel</translation>
+        <translation type="unfinished">&amp;Cancel</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+99"/>
         <source>default</source>
-        <translation>default</translation>
+        <translation type="unfinished">default</translation>
     </message>
     <message>
         <location line="+55"/>
         <source>none</source>
-        <translation>none</translation>
+        <translation type="unfinished">none</translation>
     </message>
     <message>
         <location line="+87"/>
         <source>Confirm options reset</source>
-        <translation>Confirm options reset</translation>
+        <translation type="unfinished">Confirm options reset</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+30"/>
         <source>Client restart required to activate changes.</source>
-        <translation>Client restart required to activate changes.</translation>
+        <translation type="unfinished">Client restart required to activate changes.</translation>
     </message>
     <message>
         <location line="-30"/>
         <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Client will be shutdown, do you want to proceed?</translation>
+        <translation type="unfinished">Client will be shutdown, do you want to proceed?</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>This change would require a client restart.</source>
-        <translation>This change would require a client restart.</translation>
+        <translation type="unfinished">This change would require a client restart.</translation>
     </message>
     <message>
         <location line="+24"/>
         <source>The supplied proxy address is invalid.</source>
-        <translation>The supplied proxy address is invalid.</translation>
+        <translation type="unfinished">The supplied proxy address is invalid.</translation>
     </message>
 </context>
 <context>
@@ -2333,42 +2361,46 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/overviewpage.ui" line="+20"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+302"/>
         <source>Available:</source>
-        <translation>Available:</translation>
+        <translation type="unfinished">Available:</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Your current spendable balance</source>
-        <translation>Your current spendable balance</translation>
+        <translation type="unfinished">Your current spendable balance</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Pending:</source>
-        <translation>Pending:</translation>
+        <translation type="unfinished">Pending:</translation>
     </message>
     <message>
         <location line="-236"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</translation>
+        <translation type="unfinished">Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</translation>
     </message>
     <message>
         <location line="+112"/>
         <source>Immature:</source>
-        <translation>Immature:</translation>
+        <translation type="unfinished">Immature:</translation>
     </message>
     <message>
         <location line="-29"/>
         <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staked or masternode rewards that has not yet matured</translation>
+        <translation type="unfinished">Staked or masternode rewards that has not yet matured</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation type="unfinished">OVERVIEW</translation>
     </message>
     <message>
         <location line="-163"/>
         <source>Balances</source>
-        <translation>Balances</translation>
+        <translation type="unfinished">Balances</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2380,47 +2412,47 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-1063"/>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Unconfirmed transactions to watch-only addresses</translation>
+        <translation type="unfinished">Unconfirmed transactions to watch-only addresses</translation>
     </message>
     <message>
         <location line="+50"/>
         <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staked or masternode rewards in watch-only addresses that has not yet matured</translation>
+        <translation type="unfinished">Staked or masternode rewards in watch-only addresses that has not yet matured</translation>
     </message>
     <message>
         <location line="+42"/>
         <source>Total:</source>
-        <translation>Total:</translation>
+        <translation type="unfinished">Total:</translation>
     </message>
     <message>
         <location line="+61"/>
         <source>Your current total balance</source>
-        <translation>Your current total balance</translation>
+        <translation type="unfinished">Your current total balance</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Current total balance in watch-only addresses</source>
-        <translation>Current total balance in watch-only addresses</translation>
+        <translation type="unfinished">Current total balance in watch-only addresses</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Watch-only:</source>
-        <translation>Watch-only:</translation>
+        <translation type="unfinished">Watch-only:</translation>
     </message>
     <message>
         <location line="+51"/>
         <source>Your current balance in watch-only addresses</source>
-        <translation>Your current balance in watch-only addresses</translation>
+        <translation type="unfinished">Your current balance in watch-only addresses</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Spendable:</source>
-        <translation>Spendable:</translation>
+        <translation type="unfinished">Spendable:</translation>
     </message>
     <message>
         <location line="+51"/>
         <source>Status:</source>
-        <translation>Status:</translation>
+        <translation type="unfinished">Status:</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -2435,7 +2467,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+24"/>
         <source>Enabled/Disabled</source>
-        <translation>Enabled/Disabled</translation>
+        <translation type="unfinished">Enabled/Disabled</translation>
     </message>
     <message>
         <location line="+516"/>
@@ -2459,59 +2491,59 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-637"/>
         <source>Completion:</source>
-        <translation>Completion:</translation>
+        <translation type="unfinished">Completion:</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Amount and Rounds:</source>
-        <translation>Amount and Rounds:</translation>
+        <translation type="unfinished">Amount and Rounds:</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Submitted Denom:</source>
-        <translation>Submitted Denom:</translation>
+        <translation type="unfinished">Submitted Denom:</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>n/a</source>
-        <translation>n/a</translation>
+        <translation type="unfinished">n/a</translation>
     </message>
     <message>
         <location line="+663"/>
         <source>Recent transactions</source>
-        <translation>Recent transactions</translation>
+        <translation type="unfinished">Recent transactions</translation>
     </message>
     <message>
         <location line="-197"/>
         <source>Start/Stop Mixing</source>
-        <translation>Start/Stop Mixing</translation>
+        <translation type="unfinished">Start/Stop Mixing</translation>
     </message>
     <message>
         <location line="-469"/>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</translation>
+        <translation type="unfinished">The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</translation>
     </message>
     <message>
         <location line="+501"/>
         <source>(Last Message)</source>
-        <translation>(Last Message)</translation>
+        <translation type="unfinished">(Last Message)</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Try Mix</source>
-        <translation>Try Mix</translation>
+        <translation type="unfinished">Try Mix</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Reset</source>
-        <translation>Reset</translation>
+        <translation type="unfinished">Reset</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="-381"/>
         <location line="+1"/>
         <location line="+1"/>
         <source>out of sync</source>
-        <translation>out of sync</translation>
+        <translation type="unfinished">out of sync</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2519,20 +2551,20 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+1"/>
         <location line="+293"/>
         <source>Disabled</source>
-        <translation>Disabled</translation>
+        <translation type="unfinished">Disabled</translation>
     </message>
     <message>
         <location line="-117"/>
         <location line="+6"/>
         <source>No inputs detected</source>
-        <translation>No inputs detected</translation>
+        <translation type="unfinished">No inputs detected</translation>
     </message>
     <message numerus="yes">
         <location line="-2"/>
         <location line="+35"/>
         <location line="+10"/>
         <source>%n Rounds</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>%n Round</numerusform>
             <numerusform>%n Rounds</numerusform>
         </translation>
@@ -2540,27 +2572,27 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-7"/>
         <source>Not enough compatible inputs to anonymize &lt;span style=&apos;color:red;&apos;&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style=&apos;color:red;&apos;&gt;%2&lt;/span&gt; instead</source>
-        <translation>Not enough compatible inputs to anonymize &lt;span style=&apos;color:red;&apos;&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style=&apos;color:red;&apos;&gt;%2&lt;/span&gt; instead</translation>
+        <translation type="unfinished">Not enough compatible inputs to anonymize &lt;span style=&apos;color:red;&apos;&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style=&apos;color:red;&apos;&gt;%2&lt;/span&gt; instead</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Overall progress</source>
-        <translation>Overall progress</translation>
+        <translation type="unfinished">Overall progress</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Denominated</source>
-        <translation>Denominated</translation>
+        <translation type="unfinished">Denominated</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Anonymized</source>
-        <translation>Anonymized</translation>
+        <translation type="unfinished">Anonymized</translation>
     </message>
     <message numerus="yes">
         <location line="+1"/>
         <source>Denominated inputs have %5 of %n rounds on average</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>Denominated inputs have %5 of %n rounds on average</numerusform>
             <numerusform>Denominated inputs have %5 of %n rounds on average</numerusform>
         </translation>
@@ -2594,7 +2626,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-160"/>
         <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Found enough compatible inputs to anonymize %1</translation>
+        <translation type="unfinished">Found enough compatible inputs to anonymize %1</translation>
     </message>
     <message>
         <location line="-208"/>
@@ -2612,17 +2644,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-121"/>
         <source>Mixed</source>
-        <translation>Mixed</translation>
+        <translation type="unfinished">Mixed</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Enabled</source>
-        <translation>Enabled</translation>
+        <translation type="unfinished">Enabled</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation type="unfinished">N/A</translation>
     </message>
 </context>
 <context>
@@ -2635,29 +2667,29 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+12"/>
         <location line="+14"/>
         <source>Payment request error</source>
-        <translation>Payment request error</translation>
+        <translation type="unfinished">Payment request error</translation>
     </message>
     <message>
         <location line="-275"/>
         <location line="+12"/>
         <location line="+5"/>
         <source>URI handling</source>
-        <translation>URI handling</translation>
+        <translation type="unfinished">URI handling</translation>
     </message>
     <message>
         <location line="-16"/>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Payment request fetch URL is invalid: %1</translation>
+        <translation type="unfinished">Payment request fetch URL is invalid: %1</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Payment request file handling</source>
-        <translation>Payment request file handling</translation>
+        <translation type="unfinished">Payment request file handling</translation>
     </message>
     <message>
         <location line="-18"/>
         <source>Invalid payment address %1</source>
-        <translation>Invalid payment address %1</translation>
+        <translation type="unfinished">Invalid payment address %1</translation>
     </message>
     <message>
         <location line="-108"/>
@@ -2672,79 +2704,79 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+13"/>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Payment request file cannot be read! This can be caused by an invalid payment request file.</translation>
+        <translation type="unfinished">Payment request file cannot be read! This can be caused by an invalid payment request file.</translation>
     </message>
     <message>
         <location line="+67"/>
         <location line="+8"/>
         <location line="+30"/>
         <source>Payment request rejected</source>
-        <translation>Payment request rejected</translation>
+        <translation type="unfinished">Payment request rejected</translation>
     </message>
     <message>
         <location line="-38"/>
         <source>Payment request network doesn&apos;t match client network.</source>
-        <translation>Payment request network doesn&apos;t match client network.</translation>
+        <translation type="unfinished">Payment request network doesn&apos;t match client network.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Payment request has expired.</source>
-        <translation>Payment request has expired.</translation>
+        <translation type="unfinished">Payment request has expired.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Payment request is not initialized.</source>
-        <translation>Payment request is not initialized.</translation>
+        <translation type="unfinished">Payment request is not initialized.</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Unverified payment requests to custom payment scripts are unsupported.</translation>
+        <translation type="unfinished">Unverified payment requests to custom payment scripts are unsupported.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Requested payment amount of %1 is too small (considered dust).</translation>
+        <translation type="unfinished">Requested payment amount of %1 is too small (considered dust).</translation>
     </message>
     <message>
         <location line="+48"/>
         <source>Refund from %1</source>
-        <translation>Refund from %1</translation>
+        <translation type="unfinished">Refund from %1</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</translation>
+        <translation type="unfinished">Payment request %1 is too large (%2 bytes, allowed %3 bytes).</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Payment request DoS protection</source>
-        <translation>Payment request DoS protection</translation>
+        <translation type="unfinished">Payment request DoS protection</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Error communicating with %1: %2</source>
-        <translation>Error communicating with %1: %2</translation>
+        <translation type="unfinished">Error communicating with %1: %2</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Payment request cannot be parsed!</source>
-        <translation>Payment request cannot be parsed!</translation>
+        <translation type="unfinished">Payment request cannot be parsed!</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Bad response from server %1</source>
-        <translation>Bad response from server %1</translation>
+        <translation type="unfinished">Bad response from server %1</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Network request error</source>
-        <translation>Network request error</translation>
+        <translation type="unfinished">Network request error</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Payment acknowledged</source>
-        <translation>Payment acknowledged</translation>
+        <translation type="unfinished">Payment acknowledged</translation>
     </message>
 </context>
 <context>
@@ -2752,17 +2784,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../peertablemodel.cpp" line="+113"/>
         <source>Address/Hostname</source>
-        <translation>Address/Hostname</translation>
+        <translation type="unfinished">Address/Hostname</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation type="unfinished">Version</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Ping Time</source>
-        <translation>Ping Time</translation>
+        <translation type="unfinished">Ping Time</translation>
     </message>
 </context>
 <context>
@@ -2770,7 +2802,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../bitcoinunits.cpp" line="+252"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
@@ -2780,27 +2812,27 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+762"/>
         <source>%1 d</source>
-        <translation>%1 d</translation>
+        <translation type="unfinished">%1 d</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 h</source>
-        <translation>%1 h</translation>
+        <translation type="unfinished">%1 h</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 m</source>
-        <translation>%1 m</translation>
+        <translation type="unfinished">%1 m</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 s</source>
-        <translation>%1 s</translation>
+        <translation type="unfinished">%1 s</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>NETWORK</source>
-        <translation>NETWORK</translation>
+        <translation type="unfinished">NETWORK</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2810,22 +2842,22 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+3"/>
         <source>UNKNOWN</source>
-        <translation>UNKNOWN</translation>
+        <translation type="unfinished">UNKNOWN</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>None</source>
-        <translation>None</translation>
+        <translation type="unfinished">None</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation type="unfinished">N/A</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>%1 ms</source>
-        <translation>%1 ms</translation>
+        <translation type="unfinished">%1 ms</translation>
     </message>
 </context>
 <context>
@@ -2833,22 +2865,22 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../receiverequestdialog.cpp" line="+35"/>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <translation type="unfinished">&amp;Save Image...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Copy Image</source>
-        <translation>&amp;Copy Image</translation>
+        <translation type="unfinished">&amp;Copy Image</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Save QR Code</source>
-        <translation>Save QR Code</translation>
+        <translation type="unfinished">Save QR Code</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>PNG Image (*.png)</source>
-        <translation>PNG Image (*.png)</translation>
+        <translation type="unfinished">PNG Image (*.png)</translation>
     </message>
 </context>
 <context>
@@ -2856,27 +2888,27 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/rpcconsole.ui" line="+14"/>
         <source>Tools window</source>
-        <translation>Tools window</translation>
+        <translation type="unfinished">Tools window</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
+        <translation type="unfinished">&amp;Information</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>General</source>
-        <translation>General</translation>
+        <translation type="unfinished">General</translation>
     </message>
     <message>
         <location line="+164"/>
         <source>Name</source>
-        <translation>Name</translation>
+        <translation type="unfinished">Name</translation>
     </message>
     <message>
         <location line="-157"/>
         <source>Client name</source>
-        <translation>Client name</translation>
+        <translation type="unfinished">Client name</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2905,67 +2937,67 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+23"/>
         <location line="+78"/>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation type="unfinished">N/A</translation>
     </message>
     <message>
         <location line="-891"/>
         <source>Number of connections</source>
-        <translation>Number of connections</translation>
+        <translation type="unfinished">Number of connections</translation>
     </message>
     <message>
         <location line="+125"/>
         <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
+        <translation type="unfinished">&amp;Open</translation>
     </message>
     <message>
         <location line="-184"/>
         <source>Startup time</source>
-        <translation>Startup time</translation>
+        <translation type="unfinished">Startup time</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Network</source>
-        <translation>Network</translation>
+        <translation type="unfinished">Network</translation>
     </message>
     <message>
         <location line="+103"/>
         <source>Last block time</source>
-        <translation>Last block time</translation>
+        <translation type="unfinished">Last block time</translation>
     </message>
     <message>
         <location line="+42"/>
         <source>Debug log file</source>
-        <translation>Debug log file</translation>
+        <translation type="unfinished">Debug log file</translation>
     </message>
     <message>
         <location line="-249"/>
         <source>Using OpenSSL version</source>
-        <translation>Using OpenSSL version</translation>
+        <translation type="unfinished">Using OpenSSL version</translation>
     </message>
     <message>
         <location line="+52"/>
         <source>Build date</source>
-        <translation>Build date</translation>
+        <translation type="unfinished">Build date</translation>
     </message>
     <message>
         <location line="+132"/>
         <source>Current number of blocks</source>
-        <translation>Current number of blocks</translation>
+        <translation type="unfinished">Current number of blocks</translation>
     </message>
     <message>
         <location line="-207"/>
         <source>Client version</source>
-        <translation>Client version</translation>
+        <translation type="unfinished">Client version</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Using BerkeleyDB version</source>
-        <translation>Using BerkeleyDB version</translation>
+        <translation type="unfinished">Using BerkeleyDB version</translation>
     </message>
     <message>
         <location line="+151"/>
         <source>Block chain</source>
-        <translation>Block chain</translation>
+        <translation type="unfinished">Block chain</translation>
     </message>
     <message>
         <location line="+79"/>
@@ -2975,59 +3007,59 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-99"/>
         <source>Number of Masternodes</source>
-        <translation>Number of Masternodes</translation>
+        <translation type="unfinished">Number of Masternodes</translation>
     </message>
     <message>
         <location line="+113"/>
         <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
+        <translation type="unfinished">&amp;Console</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Clear console</source>
-        <translation>Clear console</translation>
+        <translation type="unfinished">Clear console</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;Network Traffic</translation>
+        <translation type="unfinished">&amp;Network Traffic</translation>
     </message>
     <message>
         <location line="+52"/>
         <source>&amp;Clear</source>
-        <translation>&amp;Clear</translation>
+        <translation type="unfinished">&amp;Clear</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Totals</source>
-        <translation>Totals</translation>
+        <translation type="unfinished">Totals</translation>
     </message>
     <message>
         <location line="+64"/>
         <source>Received</source>
-        <translation>Received</translation>
+        <translation type="unfinished">Received</translation>
     </message>
     <message>
         <location line="+80"/>
         <source>Sent</source>
-        <translation>Sent</translation>
+        <translation type="unfinished">Sent</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
+        <translation type="unfinished">&amp;Peers</translation>
     </message>
     <message>
         <location line="+41"/>
         <location filename="../rpcconsole.cpp" line="+261"/>
         <location line="+460"/>
         <source>Select a peer to view detailed information.</source>
-        <translation>Select a peer to view detailed information.</translation>
+        <translation type="unfinished">Select a peer to view detailed information.</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Direction</source>
-        <translation>Direction</translation>
+        <translation type="unfinished">Direction</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3037,62 +3069,62 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+23"/>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation type="unfinished">Version</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Services</source>
-        <translation>Services</translation>
+        <translation type="unfinished">Services</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Starting Height</source>
-        <translation>Starting Height</translation>
+        <translation type="unfinished">Starting Height</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Sync Height</source>
-        <translation>Sync Height</translation>
+        <translation type="unfinished">Sync Height</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Ban Score</source>
-        <translation>Ban Score</translation>
+        <translation type="unfinished">Ban Score</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Connection Time</source>
-        <translation>Connection Time</translation>
+        <translation type="unfinished">Connection Time</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Last Send</source>
-        <translation>Last Send</translation>
+        <translation type="unfinished">Last Send</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Last Receive</source>
-        <translation>Last Receive</translation>
+        <translation type="unfinished">Last Receive</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Bytes Sent</source>
-        <translation>Bytes Sent</translation>
+        <translation type="unfinished">Bytes Sent</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Bytes Received</source>
-        <translation>Bytes Received</translation>
+        <translation type="unfinished">Bytes Received</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Ping Time</source>
-        <translation>Ping Time</translation>
+        <translation type="unfinished">Ping Time</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>&amp;Wallet Repair</source>
-        <translation>&amp;Wallet Repair</translation>
+        <translation type="unfinished">&amp;Wallet Repair</translation>
     </message>
     <message>
         <location line="+38"/>
@@ -3102,7 +3134,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+42"/>
         <source>Salvage wallet</source>
-        <translation>Salvage wallet</translation>
+        <translation type="unfinished">Salvage wallet</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3112,7 +3144,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Rescan blockchain files</source>
-        <translation>Rescan blockchain files</translation>
+        <translation type="unfinished">Rescan blockchain files</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3122,7 +3154,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Recover transactions 1</source>
-        <translation>Recover transactions 1</translation>
+        <translation type="unfinished">Recover transactions 1</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3132,7 +3164,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Recover transactions 2</source>
-        <translation>Recover transactions 2</translation>
+        <translation type="unfinished">Recover transactions 2</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -3142,7 +3174,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Upgrade wallet format</source>
-        <translation>Upgrade wallet format</translation>
+        <translation type="unfinished">Upgrade wallet format</translation>
     </message>
     <message>
         <location line="+44"/>
@@ -3152,12 +3184,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-216"/>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
+        <translation type="unfinished">The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
     </message>
     <message>
         <location line="-13"/>
         <source>Wallet repair options.</source>
-        <translation>Wallet repair options.</translation>
+        <translation type="unfinished">Wallet repair options.</translation>
     </message>
     <message>
         <location line="+199"/>
@@ -3167,17 +3199,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Rebuild index</source>
-        <translation>Rebuild index</translation>
+        <translation type="unfinished">Rebuild index</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-206"/>
         <source>In:</source>
-        <translation>In:</translation>
+        <translation type="unfinished">In:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Out:</source>
-        <translation>Out:</translation>
+        <translation type="unfinished">Out:</translation>
     </message>
     <message>
         <location line="-36"/>
@@ -3187,88 +3219,92 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+1"/>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</translation>
+        <translation type="unfinished">Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
+        <translation type="unfinished">Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
     </message>
     <message>
         <location line="+138"/>
         <source>%1 B</source>
-        <translation>%1 B</translation>
+        <translation type="unfinished">%1 B</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 KB</source>
-        <translation>%1 KB</translation>
+        <translation type="unfinished">%1 KB</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 MB</source>
-        <translation>%1 MB</translation>
+        <translation type="unfinished">%1 MB</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 GB</source>
-        <translation>%1 GB</translation>
+        <translation type="unfinished">%1 GB</translation>
     </message>
     <message>
         <location line="+128"/>
         <source>via %1</source>
-        <translation>via %1</translation>
+        <translation type="unfinished">via %1</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+1"/>
         <source>never</source>
-        <translation>never</translation>
+        <translation type="unfinished">never</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Inbound</source>
-        <translation>Inbound</translation>
+        <translation type="unfinished">Inbound</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Outbound</source>
-        <translation>Outbound</translation>
+        <translation type="unfinished">Outbound</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Unknown</source>
-        <translation>Unknown</translation>
+        <translation type="unfinished">Unknown</translation>
     </message>
     <message>
         <location line="+2"/>
         <location line="+1"/>
         <source>Fetching...</source>
-        <translation>Fetching...</translation>
+        <translation type="unfinished">Fetching...</translation>
     </message>
 </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>RECEIVE</source>
+        <translation type="unfinished">RECEIVE</translation>
+    </message>
+    <message>
         <location filename="../forms/receivecoinsdialog.ui" line="+34"/>
         <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</translation>
+        <translation type="unfinished">Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;euse an existing receiving address (not recommended)</translation>
+        <translation type="unfinished">R&amp;euse an existing receiving address (not recommended)</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>&amp;Message:</source>
-        <translation>&amp;Message:</translation>
+        <translation type="unfinished">&amp;Message:</translation>
     </message>
     <message>
         <location line="+13"/>
         <location line="+21"/>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>An optional label to associate with the new receiving address.</translation>
+        <translation type="unfinished">An optional label to associate with the new receiving address.</translation>
     </message>
     <message>
         <location line="-37"/>
@@ -3283,78 +3319,78 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+7"/>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</translation>
+        <translation type="unfinished">Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <translation type="unfinished">&amp;Label:</translation>
     </message>
     <message>
         <location line="+13"/>
         <location line="+22"/>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>An optional amount to request. Leave this empty or zero to not request a specific amount.</translation>
+        <translation type="unfinished">An optional amount to request. Leave this empty or zero to not request a specific amount.</translation>
     </message>
     <message>
         <location line="-19"/>
         <source>&amp;Amount:</source>
-        <translation>&amp;Amount:</translation>
+        <translation type="unfinished">&amp;Amount:</translation>
     </message>
     <message>
         <location line="+34"/>
         <source>&amp;Request payment</source>
-        <translation>&amp;Request payment</translation>
+        <translation type="unfinished">&amp;Request payment</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Clear all fields of the form.</source>
-        <translation>Clear all fields of the form.</translation>
+        <translation type="unfinished">Clear all fields of the form.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Clear</source>
-        <translation>Clear</translation>
+        <translation type="unfinished">Clear</translation>
     </message>
     <message>
         <location line="+75"/>
         <source>Requested payments history</source>
-        <translation>Requested payments history</translation>
+        <translation type="unfinished">Requested payments history</translation>
     </message>
     <message>
         <location line="+62"/>
         <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Show the selected request (does the same as double clicking an entry)</translation>
+        <translation type="unfinished">Show the selected request (does the same as double clicking an entry)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Show</source>
-        <translation>Show</translation>
+        <translation type="unfinished">Show</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Remove the selected entries from the list</source>
-        <translation>Remove the selected entries from the list</translation>
+        <translation type="unfinished">Remove the selected entries from the list</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Remove</source>
-        <translation>Remove</translation>
+        <translation type="unfinished">Remove</translation>
     </message>
     <message>
         <location filename="../receivecoinsdialog.cpp" line="+38"/>
         <source>Copy label</source>
-        <translation>Copy label</translation>
+        <translation type="unfinished">Copy label</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy message</source>
-        <translation>Copy message</translation>
+        <translation type="unfinished">Copy message</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <translation type="unfinished">Copy amount</translation>
     </message>
 </context>
 <context>
@@ -3362,67 +3398,67 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/receiverequestdialog.ui" line="+29"/>
         <source>QR Code</source>
-        <translation>QR Code</translation>
+        <translation type="unfinished">QR Code</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>Copy &amp;URI</source>
-        <translation>Copy &amp;URI</translation>
+        <translation type="unfinished">Copy &amp;URI</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Copy &amp;Address</source>
-        <translation>Copy &amp;Address</translation>
+        <translation type="unfinished">Copy &amp;Address</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <translation type="unfinished">&amp;Save Image...</translation>
     </message>
     <message>
         <location filename="../receiverequestdialog.cpp" line="+63"/>
         <source>Request payment to %1</source>
-        <translation>Request payment to %1</translation>
+        <translation type="unfinished">Request payment to %1</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Payment information</source>
-        <translation>Payment information</translation>
+        <translation type="unfinished">Payment information</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>URI</source>
-        <translation>URI</translation>
+        <translation type="unfinished">URI</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation type="unfinished">Address</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="unfinished">Label</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation type="unfinished">Message</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulting URI too long, try to reduce the text for label / message.</translation>
+        <translation type="unfinished">Resulting URI too long, try to reduce the text for label / message.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error encoding URI into QR Code.</source>
-        <translation>Error encoding URI into QR Code.</translation>
+        <translation type="unfinished">Error encoding URI into QR Code.</translation>
     </message>
 </context>
 <context>
@@ -3430,128 +3466,140 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../recentrequeststablemodel.cpp" line="+27"/>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation type="unfinished">Date</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="unfinished">Label</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation type="unfinished">Message</translation>
     </message>
     <message>
         <location line="+87"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="-50"/>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation type="unfinished">(no label)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>(no message)</source>
-        <translation>(no message)</translation>
+        <translation type="unfinished">(no message)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>(no amount)</source>
-        <translation>(no amount)</translation>
+        <translation type="unfinished">(no amount)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>SEND</source>
+        <translation type="unfinished">SEND</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+114"/>
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation type="unfinished">
+            <numerusform>Estimated to begin confirmation within %n block.</numerusform>
+            <numerusform>Estimated to begin confirmation within %n blocks.</numerusform>
+        </translation>
+    </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
         <location filename="../sendcoinsdialog.cpp" line="+234"/>
         <location line="+25"/>
         <location line="+413"/>
         <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <translation type="unfinished">Send Coins</translation>
     </message>
     <message>
         <location line="+76"/>
         <source>Coin Control Features</source>
-        <translation>Coin Control Features</translation>
+        <translation type="unfinished">Coin Control Features</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>Inputs...</source>
-        <translation>Inputs...</translation>
+        <translation type="unfinished">Inputs...</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>automatically selected</source>
-        <translation>automatically selected</translation>
+        <translation type="unfinished">automatically selected</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Insufficient funds!</source>
-        <translation>Insufficient funds!</translation>
+        <translation type="unfinished">Insufficient funds!</translation>
     </message>
     <message>
         <location line="+89"/>
         <source>Quantity:</source>
-        <translation>Quantity:</translation>
+        <translation type="unfinished">Quantity:</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation type="unfinished">Bytes:</translation>
     </message>
     <message>
         <location line="+48"/>
         <source>Amount:</source>
-        <translation>Amount:</translation>
+        <translation type="unfinished">Amount:</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Priority:</source>
-        <translation>Priority:</translation>
+        <translation type="unfinished">Priority:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>medium</source>
-        <translation>medium</translation>
+        <translation type="unfinished">medium</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Fee:</source>
-        <translation>Fee:</translation>
+        <translation type="unfinished">Fee:</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Dust:</source>
-        <translation>Dust:</translation>
+        <translation type="unfinished">Dust:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>no</source>
-        <translation>no</translation>
+        <translation type="unfinished">no</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>After Fee:</source>
-        <translation>After Fee:</translation>
+        <translation type="unfinished">After Fee:</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Change:</source>
-        <translation>Change:</translation>
+        <translation type="unfinished">Change:</translation>
     </message>
     <message>
         <location line="+44"/>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
+        <translation type="unfinished">If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Custom change address</source>
-        <translation>Custom change address</translation>
+        <translation type="unfinished">Custom change address</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3576,22 +3624,22 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+193"/>
         <source>Transaction Fee:</source>
-        <translation>Transaction Fee:</translation>
+        <translation type="unfinished">Transaction Fee:</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Choose...</source>
-        <translation>Choose...</translation>
+        <translation type="unfinished">Choose...</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>collapse fee-settings</source>
-        <translation>collapse fee-settings</translation>
+        <translation type="unfinished">collapse fee-settings</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Minimize</source>
-        <translation>Minimize</translation>
+        <translation type="unfinished">Minimize</translation>
     </message>
     <message>
         <location line="+582"/>
@@ -3601,32 +3649,32 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-501"/>
         <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
+        <translation type="unfinished">per kilobyte</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>total at least</source>
-        <translation>total at least</translation>
+        <translation type="unfinished">total at least</translation>
     </message>
     <message>
         <location line="+46"/>
         <source>(read the tooltip)</source>
-        <translation>(read the tooltip)</translation>
+        <translation type="unfinished">(read the tooltip)</translation>
     </message>
     <message>
         <location line="+228"/>
         <source>Custom:</source>
-        <translation>Custom:</translation>
+        <translation type="unfinished">Custom:</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee not initialized yet. This usually takes a few blocks...)</translation>
+        <translation type="unfinished">(Smart fee not initialized yet. This usually takes a few blocks...)</translation>
     </message>
     <message>
         <location line="-155"/>
         <source>Confirmation time:</source>
-        <translation>Confirmation time:</translation>
+        <translation type="unfinished">Confirmation time:</translation>
     </message>
     <message>
         <location line="-165"/>
@@ -3647,12 +3695,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+163"/>
         <source>normal</source>
-        <translation>normal</translation>
+        <translation type="unfinished">normal</translation>
     </message>
     <message>
         <location line="+20"/>
         <source>fast</source>
-        <translation>fast</translation>
+        <translation type="unfinished">fast</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -3662,92 +3710,92 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+73"/>
         <source>Send as zero-fee transaction if possible</source>
-        <translation>Send as zero-fee transaction if possible</translation>
+        <translation type="unfinished">Send as zero-fee transaction if possible</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>(confirmation may take longer)</source>
-        <translation>(confirmation may take longer)</translation>
+        <translation type="unfinished">(confirmation may take longer)</translation>
     </message>
     <message>
         <location line="+67"/>
         <source>Confirm the send action</source>
-        <translation>Confirm the send action</translation>
+        <translation type="unfinished">Confirm the send action</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
+        <translation type="unfinished">S&amp;end</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Clear all fields of the form.</source>
-        <translation>Clear all fields of the form.</translation>
+        <translation type="unfinished">Clear all fields of the form.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <translation type="unfinished">Clear &amp;All</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Send to multiple recipients at once</source>
-        <translation>Send to multiple recipients at once</translation>
+        <translation type="unfinished">Send to multiple recipients at once</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>Add &amp;Recipient</translation>
+        <translation type="unfinished">Add &amp;Recipient</translation>
     </message>
     <message>
         <location line="+57"/>
         <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <translation type="unfinished">SwiftTX</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Balance:</source>
-        <translation>Balance:</translation>
+        <translation type="unfinished">Balance:</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-584"/>
         <source>Copy quantity</source>
-        <translation>Copy quantity</translation>
+        <translation type="unfinished">Copy quantity</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <translation type="unfinished">Copy amount</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy fee</source>
-        <translation>Copy fee</translation>
+        <translation type="unfinished">Copy fee</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy after fee</source>
-        <translation>Copy after fee</translation>
+        <translation type="unfinished">Copy after fee</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy bytes</source>
-        <translation>Copy bytes</translation>
+        <translation type="unfinished">Copy bytes</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy priority</source>
-        <translation>Copy priority</translation>
+        <translation type="unfinished">Copy priority</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy dust</source>
-        <translation>Copy dust</translation>
+        <translation type="unfinished">Copy dust</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy change</source>
-        <translation>Copy change</translation>
+        <translation type="unfinished">Copy change</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3764,13 +3812,13 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+6"/>
         <location line="+9"/>
         <source>using</source>
-        <translation>using</translation>
+        <translation type="unfinished">using</translation>
     </message>
     <message>
         <location line="-15"/>
         <location line="+6"/>
         <source>anonymous funds</source>
-        <translation>anonymous funds</translation>
+        <translation type="unfinished">anonymous funds</translation>
     </message>
     <message>
         <location line="+632"/>
@@ -3780,12 +3828,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-623"/>
         <source>any available funds (not recommended)</source>
-        <translation>any available funds (not recommended)</translation>
+        <translation type="unfinished">any available funds (not recommended)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>and SwiftTX</source>
-        <translation>and SwiftTX</translation>
+        <translation type="unfinished">and SwiftTX</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3793,45 +3841,37 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+4"/>
         <location line="+3"/>
         <source>%1 to %2</source>
-        <translation>%1 to %2</translation>
+        <translation type="unfinished">%1 to %2</translation>
     </message>
     <message>
         <location line="+51"/>
         <source>Are you sure you want to send?</source>
-        <translation>Are you sure you want to send?</translation>
+        <translation type="unfinished">Are you sure you want to send?</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>are added as transaction fee</source>
-        <translation>are added as transaction fee</translation>
+        <translation type="unfinished">are added as transaction fee</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
+        <translation type="unfinished">Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Confirm send coins</source>
-        <translation>Confirm send coins</translation>
+        <translation type="unfinished">Confirm send coins</translation>
     </message>
     <message>
         <location line="+233"/>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+114"/>
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
-            <numerusform>Estimated to begin confirmation within %n block.</numerusform>
-            <numerusform>Estimated to begin confirmation within %n blocks.</numerusform>
-        </translation>
+        <translation type="unfinished">A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
     </message>
     <message>
         <location line="-145"/>
         <source>The recipient address is not valid, please recheck.</source>
-        <translation>The recipient address is not valid, please recheck.</translation>
+        <translation type="unfinished">The recipient address is not valid, please recheck.</translation>
     </message>
     <message>
         <location line="-343"/>
@@ -3846,42 +3886,42 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+89"/>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</translation>
+        <translation type="unfinished">&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+208"/>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>The amount to pay must be larger than 0.</translation>
+        <translation type="unfinished">The amount to pay must be larger than 0.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>The amount exceeds your balance.</source>
-        <translation>The amount exceeds your balance.</translation>
+        <translation type="unfinished">The amount exceeds your balance.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>The total exceeds your balance when the %1 transaction fee is included.</translation>
+        <translation type="unfinished">The total exceeds your balance when the %1 transaction fee is included.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Duplicate address found, can only send to each address once per send operation.</translation>
+        <translation type="unfinished">Duplicate address found, can only send to each address once per send operation.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Transaction creation failed!</source>
-        <translation>Transaction creation failed!</translation>
+        <translation type="unfinished">Transaction creation failed!</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
+        <translation type="unfinished">The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Error: The wallet was unlocked only to anonymize coins.</translation>
+        <translation type="unfinished">Error: The wallet was unlocked only to anonymize coins.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -3891,17 +3931,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+84"/>
         <source>Pay only the minimum fee of %1</source>
-        <translation>Pay only the minimum fee of %1</translation>
+        <translation type="unfinished">Pay only the minimum fee of %1</translation>
     </message>
     <message>
         <location line="+166"/>
         <source>Warning: Unknown change address</source>
-        <translation>Warning: Unknown change address</translation>
+        <translation type="unfinished">Warning: Unknown change address</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>(no label)</source>
-        <translation>(no label)</translation>
+        <translation type="unfinished">(no label)</translation>
     </message>
 </context>
 <context>
@@ -3909,12 +3949,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/sendcoinsentry.ui" line="+21"/>
         <source>This is a normal payment.</source>
-        <translation>This is a normal payment.</translation>
+        <translation type="unfinished">This is a normal payment.</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay &amp;To:</source>
-        <translation>Pay &amp;To:</translation>
+        <translation type="unfinished">Pay &amp;To:</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -3924,51 +3964,51 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+7"/>
         <source>Choose previously used address</source>
-        <translation>Choose previously used address</translation>
+        <translation type="unfinished">Choose previously used address</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
+        <translation type="unfinished">Paste address from clipboard</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+524"/>
         <location line="+536"/>
         <source>Remove this entry</source>
-        <translation>Remove this entry</translation>
+        <translation type="unfinished">Remove this entry</translation>
     </message>
     <message>
         <location line="-1044"/>
         <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <translation type="unfinished">&amp;Label:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Enter a label for this address to add it to the list of used addresses</translation>
+        <translation type="unfinished">Enter a label for this address to add it to the list of used addresses</translation>
     </message>
     <message>
         <location line="+7"/>
         <location line="+521"/>
         <location line="+536"/>
         <source>A&amp;mount:</source>
-        <translation>A&amp;mount:</translation>
+        <translation type="unfinished">A&amp;mount:</translation>
     </message>
     <message>
         <location line="-1041"/>
         <source>Message:</source>
-        <translation>Message:</translation>
+        <translation type="unfinished">Message:</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -3978,29 +4018,29 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+426"/>
         <source>This is an unverified payment request.</source>
-        <translation>This is an unverified payment request.</translation>
+        <translation type="unfinished">This is an unverified payment request.</translation>
     </message>
     <message>
         <location line="+18"/>
         <location line="+532"/>
         <source>Pay To:</source>
-        <translation>Pay To:</translation>
+        <translation type="unfinished">Pay To:</translation>
     </message>
     <message>
         <location line="-498"/>
         <location line="+536"/>
         <source>Memo:</source>
-        <translation>Memo:</translation>
+        <translation type="unfinished">Memo:</translation>
     </message>
     <message>
         <location line="-56"/>
         <source>This is a verified payment request.</source>
-        <translation>This is a verified payment request.</translation>
+        <translation type="unfinished">This is a verified payment request.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+31"/>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>Enter a label for this address to add it to your address book</translation>
+        <translation type="unfinished">Enter a label for this address to add it to your address book</translation>
     </message>
 </context>
 <context>
@@ -4013,7 +4053,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+1"/>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Do not shut down the computer until this window disappears.</translation>
+        <translation type="unfinished">Do not shut down the computer until this window disappears.</translation>
     </message>
 </context>
 <context>
@@ -4021,17 +4061,17 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Sign / Verify a Message</translation>
+        <translation type="unfinished">Signatures - Sign / Verify a Message</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>&amp;Sign Message</source>
-        <translation>&amp;Sign Message</translation>
+        <translation type="unfinished">&amp;Sign Message</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <translation type="unfinished">You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -4042,38 +4082,38 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+7"/>
         <location line="+210"/>
         <source>Choose previously used address</source>
-        <translation>Choose previously used address</translation>
+        <translation type="unfinished">Choose previously used address</translation>
     </message>
     <message>
         <location line="-200"/>
         <location line="+210"/>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
         <location line="-200"/>
         <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
+        <translation type="unfinished">Paste address from clipboard</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Enter the message you want to sign here</source>
-        <translation>Enter the message you want to sign here</translation>
+        <translation type="unfinished">Enter the message you want to sign here</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Signature</source>
-        <translation>Signature</translation>
+        <translation type="unfinished">Signature</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Copy the current signature to the system clipboard</source>
-        <translation>Copy the current signature to the system clipboard</translation>
+        <translation type="unfinished">Copy the current signature to the system clipboard</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -4093,49 +4133,49 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-140"/>
         <source>Sign &amp;Message</source>
-        <translation>Sign &amp;Message</translation>
+        <translation type="unfinished">Sign &amp;Message</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Reset all sign message fields</source>
-        <translation>Reset all sign message fields</translation>
+        <translation type="unfinished">Reset all sign message fields</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+143"/>
         <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <translation type="unfinished">Clear &amp;All</translation>
     </message>
     <message>
         <location line="-84"/>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Verify Message</translation>
+        <translation type="unfinished">&amp;Verify Message</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
+        <translation type="unfinished">Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
     </message>
     <message>
         <location line="+61"/>
         <source>Verify &amp;Message</source>
-        <translation>Verify &amp;Message</translation>
+        <translation type="unfinished">Verify &amp;Message</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Reset all verify message fields</source>
-        <translation>Reset all verify message fields</translation>
+        <translation type="unfinished">Reset all verify message fields</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Click &quot;Sign Message&quot; to generate signature</translation>
+        <translation type="unfinished">Click &quot;Sign Message&quot; to generate signature</translation>
     </message>
     <message>
         <location line="+80"/>
         <location line="+73"/>
         <source>The entered address is invalid.</source>
-        <translation>The entered address is invalid.</translation>
+        <translation type="unfinished">The entered address is invalid.</translation>
     </message>
     <message>
         <location line="-73"/>
@@ -4143,59 +4183,59 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+66"/>
         <location line="+7"/>
         <source>Please check the address and try again.</source>
-        <translation>Please check the address and try again.</translation>
+        <translation type="unfinished">Please check the address and try again.</translation>
     </message>
     <message>
         <location line="-73"/>
         <location line="+73"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
+        <translation type="unfinished">The entered address does not refer to a key.</translation>
     </message>
     <message>
         <location line="-66"/>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet unlock was cancelled.</translation>
+        <translation type="unfinished">Wallet unlock was cancelled.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Private key for the entered address is not available.</source>
-        <translation>Private key for the entered address is not available.</translation>
+        <translation type="unfinished">Private key for the entered address is not available.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Message signing failed.</source>
-        <translation>Message signing failed.</translation>
+        <translation type="unfinished">Message signing failed.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message signed.</source>
-        <translation>Message signed.</translation>
+        <translation type="unfinished">Message signed.</translation>
     </message>
     <message>
         <location line="+53"/>
         <source>The signature could not be decoded.</source>
-        <translation>The signature could not be decoded.</translation>
+        <translation type="unfinished">The signature could not be decoded.</translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+12"/>
         <source>Please check the signature and try again.</source>
-        <translation>Please check the signature and try again.</translation>
+        <translation type="unfinished">Please check the signature and try again.</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The signature did not match the message digest.</source>
-        <translation>The signature did not match the message digest.</translation>
+        <translation type="unfinished">The signature did not match the message digest.</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Message verification failed.</source>
-        <translation>Message verification failed.</translation>
+        <translation type="unfinished">Message verification failed.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Message verified.</source>
-        <translation>Message verified.</translation>
+        <translation type="unfinished">Message verified.</translation>
     </message>
 </context>
 <context>
@@ -4208,12 +4248,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+1"/>
         <source>Version %1</source>
-        <translation>Version %1</translation>
+        <translation type="unfinished">Version %1</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>The Bitcoin Core developers</source>
-        <translation>The Bitcoin Core developers</translation>
+        <translation type="unfinished">The Bitcoin Core developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4228,7 +4268,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../networkstyle.cpp" line="+19"/>
         <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <translation type="unfinished">[testnet]</translation>
     </message>
 </context>
 <context>
@@ -4236,7 +4276,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../trafficgraphwidget.cpp" line="+78"/>
         <source>KB/s</source>
-        <translation>KB/s</translation>
+        <translation type="unfinished">KB/s</translation>
     </message>
 </context>
 <context>
@@ -4244,7 +4284,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message numerus="yes">
         <location filename="../transactiondesc.cpp" line="+33"/>
         <source>Open for %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>Open for %n more block</numerusform>
             <numerusform>Open for %n more blocks</numerusform>
         </translation>
@@ -4252,7 +4292,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+2"/>
         <source>Open until %1</source>
-        <translation>Open until %1</translation>
+        <translation type="unfinished">Open until %1</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -4260,78 +4300,78 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+10"/>
         <location line="+12"/>
         <source>conflicted</source>
-        <translation>conflicted</translation>
+        <translation type="unfinished">conflicted</translation>
     </message>
     <message>
         <location line="-31"/>
         <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verified via swifttx)</translation>
+        <translation type="unfinished">%1/offline (verified via swifttx)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmed (verified via swifttx)</translation>
+        <translation type="unfinished">%1/confirmed (verified via swifttx)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmations (verified via swifttx)</translation>
+        <translation type="unfinished">%1 confirmations (verified via swifttx)</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>%1/offline</source>
-        <translation>%1/offline</translation>
+        <translation type="unfinished">%1/offline</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/unconfirmed</source>
-        <translation>%1/unconfirmed</translation>
+        <translation type="unfinished">%1/unconfirmed</translation>
     </message>
     <message>
         <location line="-10"/>
         <location line="+12"/>
         <source>%1 confirmations</source>
-        <translation>%1 confirmations</translation>
+        <translation type="unfinished">%1 confirmations</translation>
     </message>
     <message>
         <location line="-26"/>
         <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <translation type="unfinished">%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
+        <translation type="unfinished">%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <translation type="unfinished">%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verification failed)</translation>
+        <translation type="unfinished">%1/offline (SwiftTX verification failed)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/confirmed (SwiftTX verification failed)</translation>
+        <translation type="unfinished">%1/confirmed (SwiftTX verification failed)</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="unfinished">Status</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>, has not been successfully broadcast yet</source>
-        <translation>, has not been successfully broadcast yet</translation>
+        <translation type="unfinished">, has not been successfully broadcast yet</translation>
     </message>
     <message numerus="yes">
         <location line="+2"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>, broadcast through %n node</numerusform>
             <numerusform>, broadcast through %n nodes</numerusform>
         </translation>
@@ -4339,52 +4379,52 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+4"/>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation type="unfinished">Date</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Source</source>
-        <translation>Source</translation>
+        <translation type="unfinished">Source</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Generated</source>
-        <translation>Generated</translation>
+        <translation type="unfinished">Generated</translation>
     </message>
     <message>
         <location line="+3"/>
         <location line="+8"/>
         <location line="+63"/>
         <source>From</source>
-        <translation>From</translation>
+        <translation type="unfinished">From</translation>
     </message>
     <message>
         <location line="-63"/>
         <source>unknown</source>
-        <translation>unknown</translation>
+        <translation type="unfinished">unknown</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+19"/>
         <location line="+58"/>
         <source>To</source>
-        <translation>To</translation>
+        <translation type="unfinished">To</translation>
     </message>
     <message>
         <location line="-75"/>
         <source>own address</source>
-        <translation>own address</translation>
+        <translation type="unfinished">own address</translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+60"/>
         <source>watch-only</source>
-        <translation>watch-only</translation>
+        <translation type="unfinished">watch-only</translation>
     </message>
     <message>
         <location line="-58"/>
         <source>label</source>
-        <translation>label</translation>
+        <translation type="unfinished">label</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -4393,12 +4433,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+23"/>
         <location line="+50"/>
         <source>Credit</source>
-        <translation>Credit</translation>
+        <translation type="unfinished">Credit</translation>
     </message>
     <message numerus="yes">
         <location line="-126"/>
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>matures in %n more block</numerusform>
             <numerusform>matures in %n more blocks</numerusform>
         </translation>
@@ -4406,50 +4446,50 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+2"/>
         <source>not accepted</source>
-        <translation>not accepted</translation>
+        <translation type="unfinished">not accepted</translation>
     </message>
     <message>
         <location line="+49"/>
         <location line="+22"/>
         <location line="+50"/>
         <source>Debit</source>
-        <translation>Debit</translation>
+        <translation type="unfinished">Debit</translation>
     </message>
     <message>
         <location line="-63"/>
         <source>Total debit</source>
-        <translation>Total debit</translation>
+        <translation type="unfinished">Total debit</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Total credit</source>
-        <translation>Total credit</translation>
+        <translation type="unfinished">Total credit</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Transaction fee</source>
-        <translation>Transaction fee</translation>
+        <translation type="unfinished">Transaction fee</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>Net amount</source>
-        <translation>Net amount</translation>
+        <translation type="unfinished">Net amount</translation>
     </message>
     <message>
         <location line="+6"/>
         <location line="+10"/>
         <source>Message</source>
-        <translation>Message</translation>
+        <translation type="unfinished">Message</translation>
     </message>
     <message>
         <location line="-8"/>
         <source>Comment</source>
-        <translation>Comment</translation>
+        <translation type="unfinished">Comment</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Transaction ID</source>
-        <translation>Transaction ID</translation>
+        <translation type="unfinished">Transaction ID</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4459,44 +4499,44 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+16"/>
         <source>Merchant</source>
-        <translation>Merchant</translation>
+        <translation type="unfinished">Merchant</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
+        <translation type="unfinished">Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Debug information</source>
-        <translation>Debug information</translation>
+        <translation type="unfinished">Debug information</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Transaction</source>
-        <translation>Transaction</translation>
+        <translation type="unfinished">Transaction</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Inputs</source>
-        <translation>Inputs</translation>
+        <translation type="unfinished">Inputs</translation>
     </message>
     <message>
         <location line="+17"/>
         <source>Amount</source>
-        <translation>Amount</translation>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+1"/>
         <source>true</source>
-        <translation>true</translation>
+        <translation type="unfinished">true</translation>
     </message>
     <message>
         <location line="-1"/>
         <location line="+1"/>
         <source>false</source>
-        <translation>false</translation>
+        <translation type="unfinished">false</translation>
     </message>
 </context>
 <context>
@@ -4504,12 +4544,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+14"/>
         <source>Transaction details</source>
-        <translation>Transaction details</translation>
+        <translation type="unfinished">Transaction details</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>This pane shows a detailed description of the transaction</translation>
+        <translation type="unfinished">This pane shows a detailed description of the transaction</translation>
     </message>
 </context>
 <context>
@@ -4517,22 +4557,22 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../transactiontablemodel.cpp" line="+213"/>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation type="unfinished">Date</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation type="unfinished">Type</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation type="unfinished">Address</translation>
     </message>
     <message numerus="yes">
         <location line="+57"/>
         <source>Open for %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform>Open for %n more block</numerusform>
             <numerusform>Open for %n more blocks</numerusform>
         </translation>
@@ -4540,47 +4580,47 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+3"/>
         <source>Open until %1</source>
-        <translation>Open until %1</translation>
+        <translation type="unfinished">Open until %1</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Offline</source>
-        <translation>Offline</translation>
+        <translation type="unfinished">Offline</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Unconfirmed</source>
-        <translation>Unconfirmed</translation>
+        <translation type="unfinished">Unconfirmed</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Confirming (%1 of %2 recommended confirmations)</translation>
+        <translation type="unfinished">Confirming (%1 of %2 recommended confirmations)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Confirmed (%1 confirmations)</source>
-        <translation>Confirmed (%1 confirmations)</translation>
+        <translation type="unfinished">Confirmed (%1 confirmations)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Conflicted</source>
-        <translation>Conflicted</translation>
+        <translation type="unfinished">Conflicted</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Immature (%1 confirmations, will be available after %2)</translation>
+        <translation type="unfinished">Immature (%1 confirmations, will be available after %2)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>This block was not received by any other nodes and will probably not be accepted!</translation>
+        <translation type="unfinished">This block was not received by any other nodes and will probably not be accepted!</translation>
     </message>
     <message>
         <location line="+38"/>
         <source>Received with</source>
-        <translation>Received with</translation>
+        <translation type="unfinished">Received with</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4590,7 +4630,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+2"/>
         <source>Received from</source>
-        <translation>Received from</translation>
+        <translation type="unfinished">Received from</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4620,7 +4660,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="-14"/>
         <source>Sent to</source>
-        <translation>Sent to</translation>
+        <translation type="unfinished">Sent to</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -4630,7 +4670,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+46"/>
         <source>Payment to yourself</source>
-        <translation>Payment to yourself</translation>
+        <translation type="unfinished">Payment to yourself</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4640,52 +4680,52 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+2"/>
         <source>Mined</source>
-        <translation>Mined</translation>
+        <translation type="unfinished">Mined</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Obfuscated</source>
-        <translation>Obfuscated</translation>
+        <translation type="unfinished">Obfuscated</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>watch-only</source>
-        <translation>watch-only</translation>
+        <translation type="unfinished">watch-only</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>(n/a)</source>
-        <translation>(n/a)</translation>
+        <translation type="unfinished">(n/a)</translation>
     </message>
     <message>
         <location line="+200"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transaction status. Hover over this field to show number of confirmations.</translation>
+        <translation type="unfinished">Transaction status. Hover over this field to show number of confirmations.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>Date and time that the transaction was received.</translation>
+        <translation type="unfinished">Date and time that the transaction was received.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Type of transaction.</source>
-        <translation>Type of transaction.</translation>
+        <translation type="unfinished">Type of transaction.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Whether or not a watch-only address is involved in this transaction.</translation>
+        <translation type="unfinished">Whether or not a watch-only address is involved in this transaction.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Destination address of transaction.</translation>
+        <translation type="unfinished">Destination address of transaction.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Amount removed from or added to balance.</source>
-        <translation>Amount removed from or added to balance.</translation>
+        <translation type="unfinished">Amount removed from or added to balance.</translation>
     </message>
 </context>
 <context>
@@ -4694,57 +4734,57 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location filename="../transactionview.cpp" line="+68"/>
         <location line="+17"/>
         <source>All</source>
-        <translation>All</translation>
+        <translation type="unfinished">All</translation>
     </message>
     <message>
         <location line="-16"/>
         <source>Today</source>
-        <translation>Today</translation>
+        <translation type="unfinished">Today</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This week</source>
-        <translation>This week</translation>
+        <translation type="unfinished">This week</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This month</source>
-        <translation>This month</translation>
+        <translation type="unfinished">This month</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Last month</source>
-        <translation>Last month</translation>
+        <translation type="unfinished">Last month</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This year</source>
-        <translation>This year</translation>
+        <translation type="unfinished">This year</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Range...</source>
-        <translation>Range...</translation>
+        <translation type="unfinished">Range...</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Most Common</source>
-        <translation>Most Common</translation>
+        <translation type="unfinished">Most Common</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Received with</source>
-        <translation>Received with</translation>
+        <translation type="unfinished">Received with</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sent to</source>
-        <translation>Sent to</translation>
+        <translation type="unfinished">Sent to</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Obfuscated</source>
-        <translation>Obfuscated</translation>
+        <translation type="unfinished">Obfuscated</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4769,12 +4809,12 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+1"/>
         <source>To yourself</source>
-        <translation>To yourself</translation>
+        <translation type="unfinished">To yourself</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Mined</source>
-        <translation>Mined</translation>
+        <translation type="unfinished">Mined</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4789,122 +4829,122 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location line="+1"/>
         <source>Other</source>
-        <translation>Other</translation>
+        <translation type="unfinished">Other</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Enter address or label to search</source>
-        <translation>Enter address or label to search</translation>
+        <translation type="unfinished">Enter address or label to search</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Min amount</source>
-        <translation>Min amount</translation>
+        <translation type="unfinished">Min amount</translation>
     </message>
     <message>
         <location line="+36"/>
         <source>Copy address</source>
-        <translation>Copy address</translation>
+        <translation type="unfinished">Copy address</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation>Copy label</translation>
+        <translation type="unfinished">Copy label</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <translation type="unfinished">Copy amount</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy transaction ID</source>
-        <translation>Copy transaction ID</translation>
+        <translation type="unfinished">Copy transaction ID</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Edit label</source>
-        <translation>Edit label</translation>
+        <translation type="unfinished">Edit label</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show transaction details</source>
-        <translation>Show transaction details</translation>
+        <translation type="unfinished">Show transaction details</translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Export Transaction History</source>
-        <translation>Export Transaction History</translation>
+        <translation type="unfinished">Export Transaction History</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
+        <translation type="unfinished">Comma separated file (*.csv)</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Confirmed</source>
-        <translation>Confirmed</translation>
+        <translation type="unfinished">Confirmed</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Watch-only</source>
-        <translation>Watch-only</translation>
+        <translation type="unfinished">Watch-only</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Date</source>
-        <translation>Date</translation>
+        <translation type="unfinished">Date</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation type="unfinished">Type</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation type="unfinished">Label</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Address</source>
-        <translation>Address</translation>
+        <translation type="unfinished">Address</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>ID</source>
-        <translation>ID</translation>
+        <translation type="unfinished">ID</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Exporting Failed</source>
-        <translation>Exporting Failed</translation>
+        <translation type="unfinished">Exporting Failed</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>There was an error trying to save the transaction history to %1.</translation>
+        <translation type="unfinished">There was an error trying to save the transaction history to %1.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Exporting Successful</source>
-        <translation>Exporting Successful</translation>
+        <translation type="unfinished">Exporting Successful</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The transaction history was successfully saved to %1.</source>
-        <translation>The transaction history was successfully saved to %1.</translation>
+        <translation type="unfinished">The transaction history was successfully saved to %1.</translation>
     </message>
     <message>
         <location line="+117"/>
         <source>Range:</source>
-        <translation>Range:</translation>
+        <translation type="unfinished">Range:</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>to</source>
-        <translation>to</translation>
+        <translation type="unfinished">to</translation>
     </message>
 </context>
 <context>
@@ -4912,7 +4952,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../bitcoingui.cpp" line="+102"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Unit to show amounts in. Click to select another unit.</translation>
+        <translation type="unfinished">Unit to show amounts in. Click to select another unit.</translation>
     </message>
 </context>
 <context>
@@ -4920,7 +4960,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
     <message>
         <location filename="../walletframe.cpp" line="+25"/>
         <source>No wallet has been loaded.</source>
-        <translation>No wallet has been loaded.</translation>
+        <translation type="unfinished">No wallet has been loaded.</translation>
     </message>
 </context>
 <context>
@@ -4930,7 +4970,7 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="+9"/>
         <location line="+9"/>
         <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <translation type="unfinished">Send Coins</translation>
     </message>
     <message>
         <location line="-18"/>
@@ -4942,49 +4982,53 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 <context>
     <name>WalletView</name>
     <message>
+        <source>HISTORY</source>
+        <translation type="unfinished">HISTORY</translation>
+    </message>
+    <message>
         <location filename="../walletview.cpp" line="+49"/>
         <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
+        <translation type="unfinished">&amp;Export</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation>Export the data in the current tab to a file</translation>
+        <translation type="unfinished">Export the data in the current tab to a file</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Selected amount:</source>
-        <translation>Selected amount:</translation>
+        <translation type="unfinished">Selected amount:</translation>
     </message>
     <message>
         <location line="+236"/>
         <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
+        <translation type="unfinished">Backup Wallet</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
+        <translation type="unfinished">Wallet Data (*.dat)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Backup Failed</source>
-        <translation>Backup Failed</translation>
+        <translation type="unfinished">Backup Failed</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>There was an error trying to save the wallet data to %1.</translation>
+        <translation type="unfinished">There was an error trying to save the wallet data to %1.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Successful</source>
-        <translation>Backup Successful</translation>
+        <translation type="unfinished">Backup Successful</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>The wallet data was successfully saved to %1.</source>
-        <translation>The wallet data was successfully saved to %1.</translation>
+        <translation type="unfinished">The wallet data was successfully saved to %1.</translation>
     </message>
 </context>
 <context>
@@ -5467,12 +5511,17 @@ for example: alertnotify=echo %%s | mail -s &quot;StakeCubeCore Alert&quot; admi
     <message>
         <location line="+1"/>
         <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The StakeCubeCore Developers</source>
-        <translation type="unfinished"></translation>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation type="unfinished">Copyright (C) 2015-%i The PIVX Core Developers</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copyright (C) 2018-%i The StakeCubeCore Developers</source>
+        <translation type="unfinished">Copyright (C) 2018-%i The StakeCubeCore Developers</translation>
     </message>
     <message>
         <location line="+1"/>
