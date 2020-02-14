@@ -1638,10 +1638,38 @@ Address: %4
         <translation type="unfinished">Form</translation>
     </message>
     <message>
+        <source>MASTERNODES</source>
+        <translation>MASTERNODES</translation>
+    </message>
+    <message>
         <location line="+18"/>
         <source>My Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>All Masternodes</translation>
+    </message>
+    <message>
+        <source>Node Count:</source>
+        <translation>Node Count:</translation>
+    </message>
+    <message>
+        <source>Filter List:</source>
+        <translation>Filter List:</translation>
+    </message>
+    <message>
+        <source>Filter masternode list</source>
+        <translation>Filter masternode list</translation>
+    </message>
+    <message>
+		<source>Please wait... %1</source>
+        <translation>Please wait... %1</translation>
+	</message>
+    <message>
+		<source>Updating...</source>
+        <translation>Updating...</translation>
+	</message>
     <message>
         <location line="+16"/>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see &quot;MISSING&quot; in &quot;Status&quot; field.</source>
@@ -2364,6 +2392,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
         <location line="-29"/>
         <source>Staked or masternode rewards that has not yet matured</source>
         <translation>Staked or masternode rewards that has not yet matured</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation>OVERVIEW</translation>
     </message>
     <message>
         <location line="-163"/>
@@ -3250,6 +3282,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>RECEIVE</source>
+        <translation>RECEIVE</translation>
+    </message>
+    <message>
         <location filename="../forms/receivecoinsdialog.ui" line="+34"/>
         <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
         <translation>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</translation>
@@ -3465,6 +3501,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 </context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>SEND</source>
+        <translation>SEND</translation>
+    </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
         <location filename="../sendcoinsdialog.cpp" line="+234"/>
@@ -4942,6 +4982,10 @@ https://www.transifex.com/stakecube-project/stakecube-project-translations</sour
 <context>
     <name>WalletView</name>
     <message>
+        <source>HISTORY</source>
+        <translation>HISTORY</translation>
+    </message>
+    <message>
         <location filename="../walletview.cpp" line="+49"/>
         <source>&amp;Export</source>
         <translation>&amp;Export</translation>
@@ -5473,6 +5517,11 @@ for example: alertnotify=echo %%s | mail -s &quot;StakeCubeCore Alert&quot; admi
         <location line="+1"/>
         <source>Copyright (C) 2015-%i The StakeCubeCore Developers</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copyright (C) 2018-%i The StakeCubeCore Developers</source>
+        <translation type="unfinished">Copyright (C) 2018-%i The StakeCubeCore Developers</translation>
     </message>
     <message>
         <location line="+1"/>
