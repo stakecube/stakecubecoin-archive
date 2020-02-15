@@ -151,13 +151,10 @@ public:
 		vSeeds.push_back(CDNSSeedData("0", "95.179.165.19"));
 		vSeeds.push_back(CDNSSeedData("1", "2001:19f0:6c01:22ee:5400:02ff:fe0a:f0bb"));
 		vSeeds.push_back(CDNSSeedData("dns01", "scc01.stakecube.net"));
-		vSeeds.push_back(CDNSSeedData("3", "2001:19f0:7400:8249:5400:02ff:fe0a:f089"));
 		vSeeds.push_back(CDNSSeedData("dns02", "scc02.stakecube.net"));
-		vSeeds.push_back(CDNSSeedData("5", "2001:19f0:5801:10b6:5400:02ff:fe0a:f090"));
 		vSeeds.push_back(CDNSSeedData("dns03", "scc03.stakecube.net"));
-		vSeeds.push_back(CDNSSeedData("7", "2001:19f0:5001:3ad0:5400:02ff:fe0a:f09b"));
 		vSeeds.push_back(CDNSSeedData("dns04", "scc04.stakecube.net"));
-		vSeeds.push_back(CDNSSeedData("9", "2001:19f0:6801:171a:5400:02ff:fe0a:f0a9"));
+		vSeeds.push_back(CDNSSeedData("dns05", "scc05.stakecube.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
