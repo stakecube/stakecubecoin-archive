@@ -52,6 +52,8 @@ class CValidationState;
 struct CBlockTemplate;
 struct CNodeStateStats;
 
+/** Revert to using static seeds after this time, in seconds **/
+static const int STATIC_SEED_TIMEOUT = 2;
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/
 static const unsigned int DEFAULT_BLOCK_MAX_SIZE = 750000;
 static const unsigned int DEFAULT_BLOCK_MIN_SIZE = 0;
