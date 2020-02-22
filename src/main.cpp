@@ -5509,32 +5509,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
     return true;
 }
 
-// Note: whenever a protocol update is needed toggle between both implementations (comment out the formerly active one)
-//       so we can leave the existing clients untouched (old SPORK will stay on so they don't see even older clients). 
-//       Those old clients won't react to the changes of the other (new) SPORK because at the time of their implementation
-//       it was the one which was commented out
 int ActiveProtocol()
 {
-
-    // SPORK_14 was used for 70710. Leave it 'ON' so they don't see < 70710 nodes. They won't react to SPORK_15
-    // messages because it's not in their code
-/*
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)) {
-        if (chainActive.Tip()->nHeight >= Params().ModifierUpgradeBlock())
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-    }
-
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-*/
-
-
-    // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their 
-    // own ModifierUpgradeBlock()
- 
-    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
+    return PROTOCOL_VERSION;
 }
 
 // requires LOCK(cs_vRecvMsg)
