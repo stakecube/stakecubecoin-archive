@@ -261,13 +261,24 @@ void Shutdown()
  */
 void HandleSIGTERM(int)
 {
-    fRequestShutdown = true;
+    StartShutdown();
 }
 
 void HandleSIGHUP(int)
 {
     fReopenDebugLog = true;
 }
+
+#ifndef WIN32
+static void registerSignalHandler(int signal, void(*handler)(int))
+{
+    struct sigaction sa;
+    sa.sa_handler = handler;
+    sigemptyset(&sa.sa_mask);
+    sa.sa_flags = 0;
+    sigaction(signal, &sa, nullptr);
+}
+#endif
 
 bool static InitError(const std::string& str)
 {
