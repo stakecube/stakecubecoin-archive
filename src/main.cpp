@@ -10,6 +10,7 @@
 
 #include "addrman.h"
 #include "alert.h"
+#include "banned.h"
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
@@ -1050,6 +1051,13 @@ bool MoneyRange(CAmount nValueOut)
 
 bool CheckTransaction(const CTransaction& tx, CValidationState& state)
 {
+    for (const auto& txin : tx.vin) {
+       if (areBannedInputs(txin.prevout.hash, txin.prevout.n)) {
+           return state.DoS(10, error("CheckTransaction() : stolen fund movement"), 
+                            REJECT_INVALID, "bad-txns-vin-empty");
+        }
+    }
+
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
