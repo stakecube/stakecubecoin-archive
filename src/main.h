@@ -150,7 +150,6 @@ extern bool fAlerts;
 extern bool fLargeWorkForkFound;
 extern bool fLargeWorkInvalidChainFound;
 
-extern unsigned int nStakeMinAge;
 extern int64_t nLastCoinStakeSearchInterval;
 extern int64_t nLastCoinStakeSearchTime;
 extern int64_t nReserveBalance;
@@ -608,6 +607,12 @@ bool InvalidateBlock(CValidationState& state, CBlockIndex* pindex);
 
 /** Remove invalidity status from a block and its descendants. */
 bool ReconsiderBlock(CValidationState& state, CBlockIndex* pindex);
+
+/** Returns whether the current environment is testnet */
+bool isTestnet();
+
+/** Returns minimum staking age dependent on environment */
+int minStakeAge();
 
 /** The currently-connected chain of blocks. */
 extern CChain chainActive;

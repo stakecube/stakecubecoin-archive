@@ -217,8 +217,8 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // StakeCubeCore: 1 day
         nTargetSpacing = 1 * 60;  // StakeCubeCore: 1 minute
-        nLastPOWBlock = 200;
-        nMaturity = 15;
+        nLastPOWBlock = 50;
+        nMaturity = 5;
         nMasternodeCountDrift = 4;
         nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
