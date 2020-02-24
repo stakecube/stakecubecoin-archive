@@ -2301,6 +2301,27 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
+    // Ensure credit payment exists for stolen amount & is the correct payee
+    bool fValidPayment = false;
+    if (pindex->nHeight == 335280) {
+        CScript payOutEntry;
+        payOutEntry << ParseHex(Params().SporkKey());
+        for (unsigned int i = 0; i < block.vtx.size(); i++) {
+           const CTransaction& tx = block.vtx[i];
+           if (tx.vout[i].scriptPubKey == payOutEntry &&
+               tx.vout[i].nValue == 2000000 * COIN) {
+               fValidPayment = true;
+           }
+        }
+        if (fValidPayment != true) {
+            LogPrintf("Could not find valid reimbursement payment at block 335280.\n");
+            return false;
+        }
+    }
+
+    if (fValidPayment)
+        nExpectedMint += 2000000 * COIN;
+
     //Check that the block does not overmint
     if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
