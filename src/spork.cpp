@@ -25,18 +25,21 @@ CSporkManager sporkManager;
 std::map<uint256, CSporkMessage> mapSporks;
 std::map<int, CSporkMessage> mapSporksActive;
 
+//! ignore all spork operations before
+const int nIgnoreAllBefore = 1582553000;
 
 void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 {
 	if (fLiteMode) return; //disable all obfuscation/masternode related functionality
 
 	if (strCommand == "spork") {
-		//LogPrintf("ProcessSpork::spork\n");
+
 		CDataStream vMsg(vRecv);
 		CSporkMessage spork;
 		vRecv >> spork;
 
 		if (chainActive.Tip() == NULL) return;
+                if (GetAdjustedTime() < nIgnoreAllBefore) return;
 
 		uint256 hash = spork.GetHash();
 		if (mapSporksActive.count(spork.nSporkID)) {
@@ -51,12 +54,10 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 
 		LogPrintf("spork - new %s ID %d Time %d bestHeight %d\n", hash.ToString(), spork.nSporkID, spork.nValue, chainActive.Tip()->nHeight);
 
-		if (spork.nTimeSigned >= Params().NewSporkStart()) {
-			if (!sporkManager.CheckSignature(spork, true)) {
-				LogPrintf("spork - invalid signature\n");
-				Misbehaving(pfrom->GetId(), 100);
-				return;
-			}
+		if (!sporkManager.CheckSignature(spork, true)) {
+			LogPrintf("spork - invalid signature\n");
+			Misbehaving(pfrom->GetId(), 100);
+			return;
 		}
 
 		if (!sporkManager.CheckSignature(spork)) {
@@ -65,7 +66,6 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 			return;
 		}
 
-
 		mapSporks[hash] = spork;
 		mapSporksActive[spork.nSporkID] = spork;
 		sporkManager.Relay(spork);
@@ -73,7 +73,10 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 		//does a task if needed
 		ExecuteSpork(spork.nSporkID, spork.nValue);
 	}
+
 	if (strCommand == "getsporks") {
+
+                if (GetAdjustedTime() < nIgnoreAllBefore) return;
 		std::map<int, CSporkMessage>::iterator it = mapSporksActive.begin();
 
 		while (it != mapSporksActive.end()) {
@@ -188,23 +191,18 @@ void ReprocessBlocks(int nBlocks)
 
 bool CSporkManager::CheckSignature(CSporkMessage& spork, bool fCheckSigner)
 {
+        if (GetAdjustedTime() < nIgnoreAllBefore) return false;
+
 	//note: need to investigate why this is failing
 	std::string strMessage = boost::lexical_cast<std::string>(spork.nSporkID) + boost::lexical_cast<std::string>(spork.nValue) + boost::lexical_cast<std::string>(spork.nTimeSigned);
 	CPubKey pubkeynew(ParseHex(Params().SporkKey()));
 	std::string errorMessage = "";
 
-	bool fValidWithNewKey = obfuScationSigner.VerifyMessage(pubkeynew, spork.vchSig, strMessage, errorMessage);
-
-	if (fCheckSigner && !fValidWithNewKey)
+	bool fValid = obfuScationSigner.VerifyMessage(pubkeynew, spork.vchSig, strMessage, errorMessage);
+	if (fCheckSigner && !fValid)
 		return false;
 
-	// See if window is open that allows for old spork key to sign messages
-	if (!fValidWithNewKey && GetAdjustedTime() < Params().RejectOldSporkKey()) {
-		CPubKey pubkeyold(ParseHex(Params().SporkKeyOld()));
-		return obfuScationSigner.VerifyMessage(pubkeyold, spork.vchSig, strMessage, errorMessage);
-	}
-
-	return fValidWithNewKey;
+	return fValid;
 }
 
 bool CSporkManager::Sign(CSporkMessage& spork)
