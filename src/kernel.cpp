@@ -35,7 +35,7 @@ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
 // Get time weight
 int64_t GetWeight(int64_t nIntervalBeginning, int64_t nIntervalEnd)
 {
-    return nIntervalEnd - nIntervalBeginning - nStakeMinAge;
+    return nIntervalEnd - nIntervalBeginning - minStakeAge();
 }
 
 // Get the last stake modifier and its generation time from a given block
@@ -256,7 +256,7 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifier, int
     // loop to find the stake modifier later by a selection interval
     while (nStakeModifierTime < pindexFrom->GetBlockTime() + nStakeModifierSelectionInterval) {
         if (!pindexNext) {
-            // Should never happen
+            if (isTestnet()) return true;
             return error("Null pindexNext\n");
         }
 
@@ -298,8 +298,8 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock blockFrom, const CTra
     if (nTimeTx < nTimeBlockFrom) // Transaction timestamp violation
         return error("CheckStakeKernelHash() : nTime violation");
 
-    if (nTimeBlockFrom + nStakeMinAge > nTimeTx) // Min age requirement
-        return error("CheckStakeKernelHash() : min age violation - nTimeBlockFrom=%d nStakeMinAge=%d nTimeTx=%d", nTimeBlockFrom, nStakeMinAge, nTimeTx);
+    if (nTimeBlockFrom + minStakeAge() > nTimeTx) // Min age requirement
+        return error("CheckStakeKernelHash() : min age violation - nTimeBlockFrom=%d minStakeAge()=%d nTimeTx=%d", nTimeBlockFrom, minStakeAge(), nTimeTx);
 
     //grab difficulty
     uint256 bnTargetPerCoinDay;

@@ -10,6 +10,7 @@
 
 #include "addrman.h"
 #include "alert.h"
+#include "banned.h"
 #include "chainparams.h"
 #include "checkpoints.h"
 #include "checkqueue.h"
@@ -69,7 +70,6 @@ bool fCheckBlockIndex = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -1025,7 +1025,7 @@ bool GetCoinAge(const CTransaction& tx, const unsigned int nTxTime, uint64_t& nC
         // Read block header
         CBlockHeader prevblock = pindex->GetBlockHeader();
 
-        if (prevblock.nTime + nStakeMinAge > nTxTime)
+        if (prevblock.nTime + minStakeAge() > nTxTime)
             continue; // only count coins meeting min age requirement
 
         if (nTxTime < prevblock.nTime) {
@@ -1050,6 +1050,13 @@ bool MoneyRange(CAmount nValueOut)
 
 bool CheckTransaction(const CTransaction& tx, CValidationState& state)
 {
+    for (const auto& txin : tx.vin) {
+       if (areBannedInputs(txin.prevout.hash, txin.prevout.n)) {
+           return state.DoS(10, error("CheckTransaction() : stolen fund movement"), 
+                            REJECT_INVALID, "bad-txns-vin-empty");
+        }
+    }
+
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
@@ -2161,6 +2168,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return true;
     }
 
+    // Damage control
+    if (IsSporkActive(SPORK_17_CHOKE_CONTROL_MODE)) {
+        // during choke, mark any new blocks as invalid
+        uint256 invalidHash = block.GetHash();
+        CBlockIndex* pblockindex = mapBlockIndex[invalidHash];
+        InvalidateBlock(state, pblockindex);
+        // .. and as you were
+        ActivateBestChain(state);
+        return false;
+    }
+
     if (pindex->nHeight <= Params().LAST_POW_BLOCK() && block.IsProofOfStake())
         return state.DoS(100, error("ConnectBlock() : PoS period not active"),
             REJECT_INVALID, "PoS-early");
@@ -2283,10 +2301,40 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
+    // Ensure credit payment exists for stolen amount & is the correct payee
+    bool fValidPayment = false;
+    if (pindex->nHeight == 335280) {
+        CScript payOutEntry;
+        payOutEntry << ParseHex(Params().SporkKey());
+        for (unsigned int i = 0; i < block.vtx.size(); i++) {
+           const CTransaction& tx = block.vtx[i];
+           if (tx.vout[i].scriptPubKey == payOutEntry &&
+               tx.vout[i].nValue == 2000000 * COIN) {
+               fValidPayment = true;
+           }
+        }
+        if (fValidPayment != true) {
+            LogPrintf("Could not find valid reimbursement payment at block 335280.\n");
+            return false;
+        }
+    }
+
+    if (fValidPayment)
+        nExpectedMint += 2000000 * COIN;
+
     //Check that the block does not overmint
     if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                 FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)), REJECT_INVALID, "bad-cb-amount");
+    }
+
+    if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
+        //! amazing how many nubdevs missed this
+        if (!IsBlockPayeeValid(block, pindex->nHeight)) {
+            mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
+            return state.DoS(0, error("ConnectBlock(SCC): couldn't find masternode or superblock payments"),
+                                      REJECT_INVALID, "bad-cb-payee");
+        }
     }
 
     if (!control.Wait())
@@ -5830,6 +5878,16 @@ std::string CBlockFileInfo::ToString() const
     return strprintf("CBlockFileInfo(blocks=%u, size=%u, heights=%u...%u, time=%s...%s)", nBlocks, nSize, nHeightFirst, nHeightLast, DateTimeStrFormat("%Y-%m-%d", nTimeFirst), DateTimeStrFormat("%Y-%m-%d", nTimeLast));
 }
 
+bool isTestnet()
+{
+    return (Params().NetworkID() == CBaseChainParams::TESTNET);
+}
+
+int minStakeAge()
+{
+    if (isTestnet()) return (5 * 60);
+    return (60 * 60);
+}
 
 class CMainCleanup
 {
