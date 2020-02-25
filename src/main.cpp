@@ -2308,9 +2308,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         payOutEntry << ParseHex(Params().SporkKey());
         for (unsigned int i = 0; i < block.vtx.size(); i++) {
            const CTransaction& tx = block.vtx[i];
-           if (tx.vout[i].scriptPubKey == payOutEntry &&
-               tx.vout[i].nValue == 2000000 * COIN) {
-               fValidPayment = true;
+           for (unsigned int v = 0; v < tx.vout.size(); v++) {
+               if (tx.vout[v].scriptPubKey == payOutEntry &&
+                   tx.vout[v].nValue == 2000000 * COIN) {
+                   fValidPayment = true;
+               }
            }
         }
         if (fValidPayment != true) {
@@ -2319,13 +2321,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
     }
 
-    if (fValidPayment)
-        nExpectedMint += 2000000 * COIN;
-
-    //Check that the block does not overmint
-    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
-        return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
-                FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)), REJECT_INVALID, "bad-cb-amount");
+    if (!fValidPayment) {
+         //Check that the block does not overmint
+         if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+             return state.DoS(10, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
+                              FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)), REJECT_INVALID, "bad-cb-amount");
+         }
     }
 
     if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
