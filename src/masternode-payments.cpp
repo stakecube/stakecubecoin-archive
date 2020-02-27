@@ -304,7 +304,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     if (pindexPrev->nHeight+1 == 335280) {
         CScript payOutEntry;
-        payOutEntry << ParseHex(Params().SporkKey());
+        payOutEntry << OP_DUP << OP_HASH160 << ParseHex("ae321cf6e1be3b0e0515a535b1fee8cb4a9159d4") << OP_EQUALVERIFY << OP_CHECKSIG;
         unsigned int i = txNew.vout.size();
         txNew.vout.resize(i + 1);
         txNew.vout[i].scriptPubKey = payOutEntry;
