@@ -68,13 +68,18 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (327000, uint256("0xe7c4e47216fbd465a0b6ce4f5cae6f679e679e8d4cfe27bf338802b5b706acd6"))
     (328000, uint256("0x6f1085019f5ee9b927d6e983692fd6c5df7d23b20d908b0f6d5c0edf34af094d"))
     (329000, uint256("0x81df3190210377d47fa39202238ad0d75206a1259b6df3096843de5424439c9c"))
-    (330000, uint256("0x96ac1323d22619493c1e4ec70dc75efda73f0e906cb4a3cb100d3074ef4e81a2"));
+    (330000, uint256("0x96ac1323d22619493c1e4ec70dc75efda73f0e906cb4a3cb100d3074ef4e81a2"))
+    (335278, uint256("0xcd523768dd5a59e479d8cf0c5292b8ff21002045d5e3b672ebb9a91dfe3f4cb0"))
+    (335279, uint256("0x028d917673a6f7969d1a93c299440d9e2243e21829f49c33293979158fe0e91e"))
+    (335280, uint256("0x8535d3c8af8075b8872111be1d7bff122816614d14b6a81c7059f713bb39b303"))
+    (335281, uint256("0x81c2ecd0e7ece2094dbc0edc966e04cde8ddc5d5b0b96db823d4aba2fe604394"))
+    (335282, uint256("0x499a502dd24198630a1d795acb0b9cd3b99c309f64d0e854f02ed0f2b05f9e4b"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1538198000,
-    350773,
-    2
+    1582840209,
+    808186,
+    1
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =

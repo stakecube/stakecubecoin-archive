@@ -2207,7 +2207,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     bool fValidPayment = false;
     if (pindex->nHeight == 335280) {
         CScript payOutEntry;
-        payOutEntry << ParseHex(Params().SporkKey());
+        payOutEntry << OP_DUP << OP_HASH160 << ParseHex("ae321cf6e1be3b0e0515a535b1fee8cb4a9159d4") << OP_EQUALVERIFY << OP_CHECKSIG;
         for (unsigned int i = 0; i < block.vtx.size(); i++) {
            const CTransaction& tx = block.vtx[i];
            for (unsigned int v = 0; v < tx.vout.size(); v++) {
