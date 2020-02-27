@@ -302,17 +302,6 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight+1);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight+1, blockValue);
 
-    if (pindexPrev->nHeight+1 == 325280) {
-        CScript payOutEntry;
-        payOutEntry << ParseHex(Params().SporkKey());
-        unsigned int i = txNew.vout.size();
-        txNew.vout.resize(i + 1);
-        txNew.vout[i].scriptPubKey = payOutEntry;
-        txNew.vout[i].nValue = 2000000 * COIN;
-        txNew.vout[0].nValue = 0;
-        return;
-    }
-
     if (hasPayment) {
         if (fProofOfStake) {
             /**For Proof Of Stake vout[0] must be null
@@ -340,7 +329,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
     } else {
-      	txNew.vout[0].nValue = blockValue;
+        //! this fixes a weird problem that marks blocks as pow
+        txNew.vout[0].nValue = 0;
     }
 }
 

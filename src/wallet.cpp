@@ -2485,14 +2485,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         }
     }
 
-    if (nHeight != 325280) {
-        FillBlockPayee(txNew, nMinFee, true);
-    } else {
-        CScript payOutEntry;
-        payOutEntry << ParseHex(Params().SporkKey());
-        txNew.vout[1].scriptPubKey = payOutEntry;
-        txNew.vout[1].nValue = 2000000 * COIN;
-    }
+    FillBlockPayee(txNew, nMinFee, true);
 
     // Sign
     int nIn = 0;
