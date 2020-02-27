@@ -28,6 +28,13 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     uint256 PastDifficultyAverage;
     uint256 PastDifficultyAveragePrev;
 
+    //! very very low target (7fffff0000000000000000000000000000000000000000000000000000000000)
+    if (pindexLast->nHeight+1 >= 335271 && pindexLast->nHeight+1 <= 335281) {
+        uint256 bnTargetLimit;
+        bnTargetLimit.SetCompact(0x207fffff);
+        return bnTargetLimit.GetCompact();
+    }
+
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
         return Params().ProofOfWorkLimit().GetCompact();
     }

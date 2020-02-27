@@ -2363,6 +2363,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     if (GetAdjustedTime() <= chainActive.Tip()->nTime)
         MilliSleep(10000);
 
+    int nHeight = 0;
     BOOST_FOREACH (PAIRTYPE(const CWalletTx*, unsigned int) pcoin, setStakeCoins) {
         //make sure that enough time has elapsed between
         CBlockIndex* pindex = NULL;
@@ -2374,6 +2375,9 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
                 LogPrintf("CreateCoinStake() failed to find block index \n");
             continue;
         }
+
+        //! grab height here
+        nHeight = pindex->nHeight+1;
 
         // Read block header
         CBlockHeader block = pindex->GetBlockHeader();
@@ -2481,7 +2485,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         }
     }
 
-    //Masternode payment
     FillBlockPayee(txNew, nMinFee, true);
 
     // Sign
