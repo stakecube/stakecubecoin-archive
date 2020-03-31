@@ -137,6 +137,10 @@ public:
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
 
+        nHardenedStakeHeight = 360000;
+        nMinStakeAmount = 250 * COIN;
+        nMinStakeHistory = 100;
+
         const char* pszTimestamp = "stakecubeMN 29092018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
@@ -156,18 +160,7 @@ public:
         assert(hashGenesisBlock == uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
         assert(genesis.hashMerkleRoot == uint256("81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2"));
 
-	vSeeds.push_back(CDNSSeedData("0", "95.179.165.19"));
-	vSeeds.push_back(CDNSSeedData("1", "2001:19f0:6c01:22ee:5400:02ff:fe0a:f0bb"));
-	vSeeds.push_back(CDNSSeedData("2", "209.250.224.166"));
-	vSeeds.push_back(CDNSSeedData("3", "2001:19f0:7400:8249:5400:02ff:fe0a:f089"));
-	vSeeds.push_back(CDNSSeedData("4", "108.61.212.198"));
-	vSeeds.push_back(CDNSSeedData("5", "2001:19f0:5801:10b6:5400:02ff:fe0a:f090"));
-	vSeeds.push_back(CDNSSeedData("6", "78.141.211.79"));
-	vSeeds.push_back(CDNSSeedData("7", "2001:19f0:5001:3ad0:5400:02ff:fe0a:f09b"));
-	vSeeds.push_back(CDNSSeedData("8", "95.179.209.111"));
-	vSeeds.push_back(CDNSSeedData("9", "2001:19f0:6801:171a:5400:02ff:fe0a:f0a9"));
-    vSeeds.push_back(CDNSSeedData("10", "144.202.60.226"));
-	vSeeds.push_back(CDNSSeedData("11", "2001:19f0:5c01:b60:5400:02ff:fe8e:495f"));
+	vSeeds.push_back(CDNSSeedData("seed", "seed.stakecube.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
@@ -230,6 +223,10 @@ public:
         nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
+
+        nHardenedStakeHeight = 0;
+        nMinStakeAmount = 0.5 * COIN;
+        nMinStakeHistory = 60;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1524873600;
