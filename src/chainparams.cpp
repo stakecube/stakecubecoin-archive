@@ -137,7 +137,7 @@ public:
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
 
-        nHardenedStakeHeight = 360000;
+        nHardenedStakeHeight = 390000;
         nMinStakeAmount = 250 * COIN;
         nMinStakeHistory = 100;
 
