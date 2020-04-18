@@ -1,10 +1,9 @@
-// clang-format off
-#include "net.h"
+
 #include "masternodeconfig.h"
-#include "util.h"
+#include "net.h"
 #include "ui_interface.h"
+#include "util.h"
 #include <base58.h>
-// clang-format on
 
 CMasternodeConfig masternodeConfig;
 
@@ -33,13 +32,15 @@ bool CMasternodeConfig::read(std::string& strErr)
     }
 
     for (std::string line; std::getline(streamConfig, line); linenumber++) {
-        if (line.empty()) continue;
+        if (line.empty())
+            continue;
 
         std::istringstream iss(line);
         std::string comment, alias, ip, privKey, txHash, outputIndex;
 
         if (iss >> comment) {
-            if (comment.at(0) == '#') continue;
+            if (comment.at(0) == '#')
+                continue;
             iss.str(line);
             iss.clear();
         }
@@ -48,8 +49,7 @@ bool CMasternodeConfig::read(std::string& strErr)
             iss.str(line);
             iss.clear();
             if (!(iss >> alias >> ip >> privKey >> txHash >> outputIndex)) {
-                strErr = _("Could not parse masternode.conf") + "\n" +
-                         strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"";
+                strErr = _("Could not parse masternode.conf") + "\n" + strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"";
                 streamConfig.close();
                 return false;
             }
@@ -57,20 +57,15 @@ bool CMasternodeConfig::read(std::string& strErr)
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
             if (CService(ip).GetPort() != 40000) {
-                strErr = _("Invalid port detected in masternode.conf") + "\n" +
-                         strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                         _("(must be 40000 for mainnet)");
+                strErr = _("Invalid port detected in masternode.conf") + "\n" + strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" + _("(must be 40000 for mainnet)");
                 streamConfig.close();
                 return false;
             }
         } else if (CService(ip).GetPort() == 40000) {
-            strErr = _("Invalid port detected in masternode.conf") + "\n" +
-                     strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                     _("(40000 could be used only on mainnet)");
+            strErr = _("Invalid port detected in masternode.conf") + "\n" + strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" + _("(40000 could be used only on mainnet)");
             streamConfig.close();
             return false;
         }
-
 
         add(alias, ip, privKey, txHash, outputIndex);
     }

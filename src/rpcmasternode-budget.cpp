@@ -56,8 +56,7 @@ Value mnbudget(const Array& params, bool fHelp)
     if (params.size() >= 1)
         strCommand = params[0].get_str();
 
-    if (fHelp ||
-        (strCommand != "vote-alias" && strCommand != "vote-many" && strCommand != "prepare" && strCommand != "submit" && strCommand != "vote" && strCommand != "getvotes" && strCommand != "getinfo" && strCommand != "show" && strCommand != "projection" && strCommand != "check" && strCommand != "nextblock"))
+    if (fHelp || (strCommand != "vote-alias" && strCommand != "vote-many" && strCommand != "prepare" && strCommand != "submit" && strCommand != "vote" && strCommand != "getvotes" && strCommand != "getinfo" && strCommand != "show" && strCommand != "projection" && strCommand != "check" && strCommand != "nextblock"))
         throw runtime_error(
             "mnbudget \"command\"... ( \"passphrase\" )\n"
             "\nVote or show current budgets\n"
@@ -98,8 +97,7 @@ Value mnbudget(const Array& params, bool fHelp)
         if (strCommand == "vote-alias")
             throw runtime_error(
                 "vote-alias is not supported with this command\n"
-                "Please use mnbudgetvote instead.\n"
-            );
+                "Please use mnbudgetvote instead.\n");
         return mnbudgetvote(params, fHelp);
     }
 
@@ -150,9 +148,8 @@ Value preparebudget(const Array& params, bool fHelp)
 
             "\nResult:\n"
             "\"xxxx\"       (string) proposal fee hash (if successful) or error message (if failed)\n"
-            "\nExamples:\n" +
-            HelpExampleCli("preparebudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500") +
-            HelpExampleRpc("preparebudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500"));
+            "\nExamples:\n"
+            + HelpExampleCli("preparebudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500") + HelpExampleRpc("preparebudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500"));
 
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
@@ -170,7 +167,8 @@ Value preparebudget(const Array& params, bool fHelp)
         throw runtime_error("Invalid payment count, must be more than zero.");
 
     //set block min
-    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - GetBudgetPaymentCycleBlocks() * (nPaymentCount + 1);
+    if (pindexPrev != NULL)
+        nBlockMin = pindexPrev->nHeight - GetBudgetPaymentCycleBlocks() * (nPaymentCount + 1);
 
     int nBlockStart = params[3].get_int();
     if (nBlockStart % GetBudgetPaymentCycleBlocks() != 0) {
@@ -244,9 +242,8 @@ Value submitbudget(const Array& params, bool fHelp)
 
             "\nResult:\n"
             "\"xxxx\"       (string) proposal hash (if successful) or error message (if failed)\n"
-            "\nExamples:\n" +
-            HelpExampleCli("submitbudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500") +
-            HelpExampleRpc("submitbudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500"));
+            "\nExamples:\n"
+            + HelpExampleCli("submitbudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500") + HelpExampleRpc("submitbudget", "\"test-proposal\" \"https://forum.stakecube.org/t/test-proposal\" 2 820800 \"D9oc6C3dttUbv8zd7zGNq1qKBGf4ZQ1XEE\" 500"));
 
     // Check these inputs the same way we check the vote commands:
     // **********************************************************
@@ -264,7 +261,8 @@ Value submitbudget(const Array& params, bool fHelp)
         throw runtime_error("Invalid payment count, must be more than zero.");
 
     //set block min
-    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - GetBudgetPaymentCycleBlocks() * (nPaymentCount + 1);
+    if (pindexPrev != NULL)
+        nBlockMin = pindexPrev->nHeight - GetBudgetPaymentCycleBlocks() * (nPaymentCount + 1);
 
     int nBlockStart = params[3].get_int();
     if (nBlockStart % GetBudgetPaymentCycleBlocks() != 0) {
@@ -308,7 +306,7 @@ Value submitbudget(const Array& params, bool fHelp)
 
     budget.mapSeenMasternodeBudgetProposals.insert(make_pair(budgetProposalBroadcast.GetHash(), budgetProposalBroadcast));
     budgetProposalBroadcast.Relay();
-    if(budget.AddProposal(budgetProposalBroadcast)) {
+    if (budget.AddProposal(budgetProposalBroadcast)) {
         return budgetProposalBroadcast.GetHash().ToString();
     }
     throw runtime_error("Invalid proposal, see debug.log for details.");
@@ -321,13 +319,15 @@ Value mnbudgetvote(const Array& params, bool fHelp)
         strCommand = params[0].get_str();
 
         // Backwards compatibility with legacy `mnbudget` command
-        if (strCommand == "vote") strCommand = "local";
-        if (strCommand == "vote-many") strCommand = "many";
-        if (strCommand == "vote-alias") strCommand = "alias";
+        if (strCommand == "vote")
+            strCommand = "local";
+        if (strCommand == "vote-many")
+            strCommand = "many";
+        if (strCommand == "vote-alias")
+            strCommand = "alias";
     }
 
-    if (fHelp || (params.size() == 3 && (strCommand != "local" && strCommand != "many")) || (params.size() == 4 && strCommand != "alias") ||
-        params.size() > 4 || params.size() < 3)
+    if (fHelp || (params.size() == 3 && (strCommand != "local" && strCommand != "many")) || (params.size() == 4 && strCommand != "alias") || params.size() > 4 || params.size() < 3)
         throw runtime_error(
             "mnbudgetvote \"local|many|alias\" \"votehash\" \"yes|no\" ( \"alias\" )\n"
             "\nVote on a budget proposal\n"
@@ -351,17 +351,19 @@ Value mnbudgetvote(const Array& params, bool fHelp)
             "  ]\n"
             "}\n"
 
-            "\nExamples:\n" +
-            HelpExampleCli("mnbudgetvote", "\"local\" \"ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041\" \"yes\"") +
-            HelpExampleRpc("mnbudgetvote", "\"local\" \"ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041\" \"yes\""));
+            "\nExamples:\n"
+            + HelpExampleCli("mnbudgetvote", "\"local\" \"ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041\" \"yes\"") + HelpExampleRpc("mnbudgetvote", "\"local\" \"ed2f83cedee59a91406f5f47ec4d60bf5a7f9ee6293913c82976bd2d3a658041\" \"yes\""));
 
     uint256 hash = ParseHashV(params[1], "parameter 1");
     std::string strVote = params[2].get_str();
 
-    if (strVote != "yes" && strVote != "no") return "You can only vote 'yes' or 'no'";
+    if (strVote != "yes" && strVote != "no")
+        return "You can only vote 'yes' or 'no'";
     int nVote = VOTE_ABSTAIN;
-    if (strVote == "yes") nVote = VOTE_YES;
-    if (strVote == "no") nVote = VOTE_NO;
+    if (strVote == "yes")
+        nVote = VOTE_YES;
+    if (strVote == "no")
+        nVote = VOTE_NO;
 
     int success = 0;
     int failed = 0;
@@ -502,9 +504,10 @@ Value mnbudgetvote(const Array& params, bool fHelp)
         std::vector<CMasternodeConfig::CMasternodeEntry> mnEntries;
         mnEntries = masternodeConfig.getEntries();
 
-        BOOST_FOREACH(CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
+        BOOST_FOREACH (CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
 
-            if( strAlias != mne.getAlias()) continue;
+            if (strAlias != mne.getAlias())
+                continue;
 
             std::string errorMessage;
             std::vector<unsigned char> vchMasterNodeSignature;
@@ -517,7 +520,7 @@ Value mnbudgetvote(const Array& params, bool fHelp)
 
             Object statusObj;
 
-            if(!obfuScationSigner.SetKey(mne.getPrivKey(), errorMessage, keyMasternode, pubKeyMasternode)){
+            if (!obfuScationSigner.SetKey(mne.getPrivKey(), errorMessage, keyMasternode, pubKeyMasternode)) {
                 failed++;
                 statusObj.push_back(Pair("node", mne.getAlias()));
                 statusObj.push_back(Pair("result", "failed"));
@@ -527,8 +530,7 @@ Value mnbudgetvote(const Array& params, bool fHelp)
             }
 
             CMasternode* pmn = mnodeman.Find(pubKeyMasternode);
-            if(pmn == NULL)
-            {
+            if (pmn == NULL) {
                 failed++;
                 statusObj.push_back(Pair("node", mne.getAlias()));
                 statusObj.push_back(Pair("result", "failed"));
@@ -538,7 +540,7 @@ Value mnbudgetvote(const Array& params, bool fHelp)
             }
 
             CBudgetVote vote(pmn->vin, hash, nVote);
-            if(!vote.Sign(keyMasternode, pubKeyMasternode)){
+            if (!vote.Sign(keyMasternode, pubKeyMasternode)) {
                 failed++;
                 statusObj.push_back(Pair("node", mne.getAlias()));
                 statusObj.push_back(Pair("result", "failed"));
@@ -548,7 +550,7 @@ Value mnbudgetvote(const Array& params, bool fHelp)
             }
 
             std::string strError = "";
-            if(budget.UpdateProposal(vote, NULL, strError)) {
+            if (budget.UpdateProposal(vote, NULL, strError)) {
                 budget.mapSeenMasternodeBudgetVotes.insert(make_pair(vote.GetHash(), vote));
                 vote.Relay();
                 success++;
@@ -596,8 +598,8 @@ Value getbudgetvotes(const Array& params, bool fHelp)
             "  }\n"
             "  ,...\n"
             "]\n"
-            "\nExamples:\n" +
-            HelpExampleCli("getbudgetvotes", "\"test-proposal\"") + HelpExampleRpc("getbudgetvotes", "\"test-proposal\""));
+            "\nExamples:\n"
+            + HelpExampleCli("getbudgetvotes", "\"test-proposal\"") + HelpExampleRpc("getbudgetvotes", "\"test-proposal\""));
 
     std::string strProposalName = SanitizeString(params[0].get_str());
 
@@ -605,7 +607,8 @@ Value getbudgetvotes(const Array& params, bool fHelp)
 
     CBudgetProposal* pbudgetProposal = budget.FindProposal(strProposalName);
 
-    if (pbudgetProposal == NULL) throw runtime_error("Unknown proposal name");
+    if (pbudgetProposal == NULL)
+        throw runtime_error("Unknown proposal name");
 
     std::map<uint256, CBudgetVote>::iterator it = pbudgetProposal->mapVotes.begin();
     while (it != pbudgetProposal->mapVotes.end()) {
@@ -633,11 +636,12 @@ Value getnextsuperblock(const Array& params, bool fHelp)
 
             "\nResult:\n"
             "n      (numeric) Block height of the next super block\n"
-            "\nExamples:\n" +
-            HelpExampleCli("getnextsuperblock", "") + HelpExampleRpc("getnextsuperblock", ""));
+            "\nExamples:\n"
+            + HelpExampleCli("getnextsuperblock", "") + HelpExampleRpc("getnextsuperblock", ""));
 
     CBlockIndex* pindexPrev = chainActive.Tip();
-    if (!pindexPrev) return "unknown";
+    if (!pindexPrev)
+        return "unknown";
 
     int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
     return nNext;
@@ -677,8 +681,8 @@ Value getbudgetprojection(const Array& params, bool fHelp)
             "  }\n"
             "  ,...\n"
             "]\n"
-            "\nExamples:\n" +
-            HelpExampleCli("getbudgetprojection", "") + HelpExampleRpc("getbudgetprojection", ""));
+            "\nExamples:\n"
+            + HelpExampleCli("getbudgetprojection", "") + HelpExampleRpc("getbudgetprojection", ""));
 
     Array ret;
     Object resultObj;
@@ -738,8 +742,8 @@ Value getbudgetinfo(const Array& params, bool fHelp)
             "  }\n"
             "  ,...\n"
             "]\n"
-            "\nExamples:\n" +
-            HelpExampleCli("getbudgetprojection", "") + HelpExampleRpc("getbudgetprojection", ""));
+            "\nExamples:\n"
+            + HelpExampleCli("getbudgetprojection", "") + HelpExampleRpc("getbudgetprojection", ""));
 
     Array ret;
 
@@ -747,7 +751,8 @@ Value getbudgetinfo(const Array& params, bool fHelp)
     if (params.size() == 1) {
         std::string strProposalName = SanitizeString(params[0].get_str());
         CBudgetProposal* pbudgetProposal = budget.FindProposal(strProposalName);
-        if (pbudgetProposal == NULL) throw runtime_error("Unknown proposal name");
+        if (pbudgetProposal == NULL)
+            throw runtime_error("Unknown proposal name");
         Object bObj;
         budgetToJSON(pbudgetProposal, bObj);
         ret.push_back(bObj);
@@ -756,7 +761,8 @@ Value getbudgetinfo(const Array& params, bool fHelp)
 
     std::vector<CBudgetProposal*> winningProps = budget.GetAllProposals();
     BOOST_FOREACH (CBudgetProposal* pbudgetProposal, winningProps) {
-        if (strShow == "valid" && !pbudgetProposal->fValid) continue;
+        if (strShow == "valid" && !pbudgetProposal->fValid)
+            continue;
 
         Object bObj;
         budgetToJSON(pbudgetProposal, bObj);
@@ -784,8 +790,8 @@ Value mnbudgetrawvote(const Array& params, bool fHelp)
 
             "\nResult:\n"
             "\"status\"     (string) Vote status or error message\n"
-            "\nExamples:\n" +
-            HelpExampleCli("mnbudgetrawvote", "") + HelpExampleRpc("mnbudgetrawvote", ""));
+            "\nExamples:\n"
+            + HelpExampleCli("mnbudgetrawvote", "") + HelpExampleRpc("mnbudgetrawvote", ""));
 
     uint256 hashMnTx = ParseHashV(params[0], "mn tx hash");
     int nMnTxIndex = params[1].get_int();
@@ -794,10 +800,13 @@ Value mnbudgetrawvote(const Array& params, bool fHelp)
     uint256 hashProposal = ParseHashV(params[2], "Proposal hash");
     std::string strVote = params[3].get_str();
 
-    if (strVote != "yes" && strVote != "no") return "You can only vote 'yes' or 'no'";
+    if (strVote != "yes" && strVote != "no")
+        return "You can only vote 'yes' or 'no'";
     int nVote = VOTE_ABSTAIN;
-    if (strVote == "yes") nVote = VOTE_YES;
-    if (strVote == "no") nVote = VOTE_NO;
+    if (strVote == "yes")
+        nVote = VOTE_YES;
+    if (strVote == "no")
+        nVote = VOTE_NO;
 
     int64_t nTime = params[4].get_int64();
     std::string strSig = params[5].get_str();
@@ -836,8 +845,7 @@ Value mnfinalbudget(const Array& params, bool fHelp)
     if (params.size() >= 1)
         strCommand = params[0].get_str();
 
-    if (fHelp ||
-        (strCommand != "suggest" && strCommand != "vote-many" && strCommand != "vote" && strCommand != "show" && strCommand != "getvotes"))
+    if (fHelp || (strCommand != "suggest" && strCommand != "vote-many" && strCommand != "vote" && strCommand != "show" && strCommand != "getvotes"))
         throw runtime_error(
             "mnfinalbudget \"command\"... ( \"passphrase\" )\n"
             "Vote or show current budgets\n"
@@ -887,7 +895,6 @@ Value mnfinalbudget(const Array& params, bool fHelp)
                 resultsObj.push_back(Pair(mne.getAlias(), statusObj));
                 continue;
             }
-
 
             CFinalizedBudgetVote vote(pmn->vin, hash);
             if (!vote.Sign(keyMasternode, pubKeyMasternode)) {
@@ -988,7 +995,8 @@ Value mnfinalbudget(const Array& params, bool fHelp)
 
         CFinalizedBudget* pfinalBudget = budget.FindFinalizedBudget(hash);
 
-        if (pfinalBudget == NULL) return "Unknown budget hash";
+        if (pfinalBudget == NULL)
+            return "Unknown budget hash";
 
         std::map<uint256, CFinalizedBudgetVote>::iterator it = pfinalBudget->mapVotes.begin();
         while (it != pfinalBudget->mapVotes.end()) {
@@ -1014,8 +1022,8 @@ Value checkbudgets(const Array& params, bool fHelp)
         throw runtime_error(
             "checkbudgets\n"
             "\nInitiates a buddget check cycle manually\n"
-            "\nExamples:\n" +
-            HelpExampleCli("checkbudgets", "") + HelpExampleRpc("checkbudgets", ""));
+            "\nExamples:\n"
+            + HelpExampleCli("checkbudgets", "") + HelpExampleRpc("checkbudgets", ""));
 
     budget.CheckAndRemove();
 

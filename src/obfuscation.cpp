@@ -2139,7 +2139,7 @@ bool CObfuScationSigner::GetKeysFromSecret(std::string strSecret, CKey& keyRet, 
 {
     CBitcoinSecret vchSecret;
 
-    if (!vchSecret.SetString(strSecret)) return false;
+    if(!vchSecret.SetString(strSecret)) return false;
 
     keyRet = vchSecret.GetKey();
     pubkeyRet = keyRet.GetPubKey();
@@ -2173,10 +2173,7 @@ bool CObfuScationSigner::VerifyMessage(CPubKey pubkey, vector<unsigned char>& vc
         return false;
     }
 
-    if (fDebug && pubkey2.GetID() != pubkey.GetID())
-        LogPrintf("CObfuScationSigner::VerifyMessage -- keys don't match: %s %s\n", pubkey2.GetID().ToString(), pubkey.GetID().ToString());
-
-    return (pubkey2.GetID() == pubkey.GetID());
+    return true;
 }
 
 bool CObfuscationQueue::Sign()
@@ -2226,7 +2223,7 @@ bool CObfuscationQueue::CheckSignature()
         std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
 
         std::string errorMessage = "";
-        if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
+        if (!obfuScationSigner.VerifyMessage(pmn->pubkey2, vchSig, strMessage, errorMessage)) {
             return error("CObfuscationQueue::CheckSignature() - Got bad Masternode address signature %s \n", vin.ToString().c_str());
         }
 

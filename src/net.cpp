@@ -1726,7 +1726,7 @@ void RelayTransactionLockReq(const CTransaction& tx, bool relayToAll)
     }
 }
 
-void RelayInv(CInv& inv)
+void RelayInv(CInv& inv, int protocolversion)
 {
     LOCK(cs_vNodes);
     BOOST_FOREACH (CNode* pnode, vNodes){

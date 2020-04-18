@@ -137,7 +137,7 @@ public:
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
 
-        nHardenedStakeHeight = 360000;
+        nHardenedStakeHeight = 380000;
         nMinStakeAmount = 250 * COIN;
         nMinStakeHistory = 100;
 
@@ -160,7 +160,11 @@ public:
         assert(hashGenesisBlock == uint256("000005bc17744254b063fe3ee2fd568f89bd9d88c2f16fcba1c74c05625ae442"));
         assert(genesis.hashMerkleRoot == uint256("81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2"));
 
-	vSeeds.push_back(CDNSSeedData("seed", "seed.stakecube.net"));
+        vSeeds.push_back(CDNSSeedData("0", "62.171.177.211"));
+        vSeeds.push_back(CDNSSeedData("1", "5.189.159.94"));
+        vSeeds.push_back(CDNSSeedData("2", "209.126.3.129"));
+        vSeeds.push_back(CDNSSeedData("3", "209.126.3.152"));
+        vSeeds.push_back(CDNSSeedData("4", "79.143.186.234"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
@@ -169,7 +173,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
-	convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+	    convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
