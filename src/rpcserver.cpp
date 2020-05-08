@@ -302,6 +302,7 @@ static const CRPCCommand vRPCCommands[] =
 
         /* Stakecube features */
         { "stakecube",               "masternode",             &masternode,             true,      true,       false },
+	{ "stakecube",               "masternodebroadcast",    &masternodebroadcast,    true,      true,       false },
         { "stakecube",               "mnbudget",               &mnbudget,               true,      true,       false },
         { "stakecube",               "mnfinalbudget",          &mnfinalbudget,          true,      true,       false },
         { "stakecube",               "mnsync",                 &mnsync,                 true,      true,       false },
