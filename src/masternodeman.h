@@ -119,6 +119,7 @@ public:
     /// Find an entry
     CMasternode* Find(const CScript& payee);
     CMasternode* Find(const CTxIn& vin);
+    CMasternode* Find(const CService& addr);
     CMasternode* Find(const CPubKey& pubKeyMasternode);
 
     /// Find an entry in the masternode list that is next to be paid

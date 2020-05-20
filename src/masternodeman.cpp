@@ -204,6 +204,20 @@ bool CMasternodeMan::Add(CMasternode& mn)
     if (!mn.IsEnabled())
         return false;
 
+    // Check IP is not already found in the list
+    CMasternode *pmn1 = Find(mn.addr);
+
+    if (pmn1 != NULL)
+    {
+        if (fDebug)
+        {
+            LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
+        }
+
+        return false;
+    }
+
+    // Check VIN is not already found in the list
     CMasternode* pmn = Find(mn.vin);
     if (pmn == NULL) {
         LogPrint("masternode", "CMasternodeMan: Adding new Masternode %s - %i now\n", mn.vin.prevout.hash.ToString(), size() + 1);
@@ -251,6 +265,7 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         if ((*it).activeState == CMasternode::MASTERNODE_REMOVE ||
             (*it).activeState == CMasternode::MASTERNODE_VIN_SPENT ||
             (forceExpiredRemoval && (*it).activeState == CMasternode::MASTERNODE_EXPIRED) ||
+            (*it).isPortOpen == false ||
             (*it).protocolVersion < masternodePayments.GetMinMasternodePaymentsProto()) {
             LogPrint("masternode", "CMasternodeMan: Removing inactive Masternode %s - %i now\n", (*it).vin.prevout.hash.ToString(), size() - 1);
 
@@ -281,6 +296,53 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         } else {
             ++it;
         }
+    }
+
+        // Remove duplicate nodes
+    while(it != vMasternodes.end())
+    {
+        CMasternode *pmn;
+
+        bool fMNRemoved;
+
+        //std::string strHost;
+        //int port;
+        //SplitHostPort((*it).addr.ToString(), port, strHost);
+
+        // Find Masternode based on IP address
+        pmn = Find((*it).addr);
+
+        if(pmn != NULL)
+        {
+            it = vMasternodes.erase(it);
+            fMNRemoved = true;
+        } 
+        
+        // Search for duplicate add from previous removal if not still found
+        CMasternode *pmn1;
+
+        // Find Masternode based on IP address
+        pmn1 = Find((*it).addr);
+
+        if(pmn1 == NULL)
+        {
+            if (fMNRemoved == true)
+            {
+                vMasternodes.push_back((*it));
+            }
+        }
+        else
+        {
+            if (fDebug)
+            {
+                LogPrint("masternode", "%s : WARNING - Removed duplicate masternode %s - %i now \n", __FUNCTION__, (*it).addr.ToStringIPPort().c_str(), size() - 1);
+            }
+        }
+
+        // Search for unreachable connections (give them 100 block intervals)
+        // TO-DO: Connect, and ask for hash of (dynamiccheckpoint & MN.pubkey)
+
+        ++it;
     }
 
     // check who's asked for the Masternode list
@@ -444,6 +506,22 @@ CMasternode* CMasternodeMan::Find(const CScript& payee)
         if (payee2 == payee)
             return &mn;
     }
+    return NULL;
+}
+
+CMasternode *CMasternodeMan::Find(const CService &addr)
+{
+    LOCK(cs);
+
+    for(CMasternode& mn: vMasternodes)
+    {
+        // Find IP Address but ignore Port
+        if(mn.addr.ToStringIP() == addr.ToStringIP())
+        {
+            return &mn;
+        }
+    }
+
     return NULL;
 }
 
@@ -940,7 +1018,27 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             if (count == -1 && pmn->pubKeyCollateralAddress == pubkey && (GetAdjustedTime() - pmn->nLastDsee > MASTERNODE_MIN_MNB_SECONDS)) {
                 if (pmn->protocolVersion > GETHEADERS_VERSION && sigTime - pmn->lastPing.sigTime < MASTERNODE_MIN_MNB_SECONDS) return;
                 if (pmn->nLastDsee < sigTime) { //take the newest entry
+                    
+                    // Test Node for incoming connectivity
+                    if (!CheckNode((CAddress)addr))
+                    {
+                        pmn->isPortOpen = false;
+                    }
+                    else
+                    {
+                        pmn->isPortOpen = true;
+
+                        // use this as a peer
+                        addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
+                    }
+
+                    if (fDebug)
+                    {
+                        LogPrint("masternode", "%s : OK - Got updated entry for %s \n", __FUNCTION__, addr.ToStringIPPort().c_str());
+                    }
+                    
                     LogPrint("masternode", "dsee - Got updated entry for %s\n", vin.prevout.hash.ToString());
+                    
                     if (pmn->protocolVersion < GETHEADERS_VERSION) {
                         pmn->pubKeyMasternode = pubkey2;
                         pmn->sigTime = sigTime;
@@ -1021,8 +1119,18 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 }
             }
 
-            // use this as a peer
-            addrman.Add(CAddress(addr), pfrom->addr, 2 * 60 * 60);
+            // Test Node for incoming connectivity
+            if (!CheckNode(CAddress(addr)))
+            {
+                pmn->isPortOpen = false;
+            }
+            else
+            {
+                pmn->isPortOpen = true;
+
+                // use this as a peer
+                addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
+            }
 
             // add Masternode
             CMasternode mn = CMasternode();

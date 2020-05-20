@@ -147,6 +147,8 @@ public:
     int64_t nLastDsee;  // temporary, do not save. Remove after migration to v12
     int64_t nLastDseep; // temporary, do not save. Remove after migration to v12
 
+    bool isPortOpen;
+
     CMasternode();
     CMasternode(const CMasternode& other);
     CMasternode(const CMasternodeBroadcast& mnb);
@@ -175,6 +177,7 @@ public:
         swap(first.nLastDsq, second.nLastDsq);
         swap(first.nScanningErrorCount, second.nScanningErrorCount);
         swap(first.nLastScanningErrorBlockHeight, second.nLastScanningErrorBlockHeight);
+        swap(first.isPortOpen, second.isPortOpen);
     }
 
     CMasternode& operator=(CMasternode from)
@@ -216,6 +219,7 @@ public:
         READWRITE(nLastDsq);
         READWRITE(nScanningErrorCount);
         READWRITE(nLastScanningErrorBlockHeight);
+        READWRITE(isPortOpen);
     }
 
     int64_t SecondsSincePayment();
@@ -236,6 +240,11 @@ public:
         return (GetAdjustedTime() - sigTime) < seconds;
     }
 
+    void ChangePortStatus(bool status)
+    {
+        isPortOpen = status;
+    }
+
     bool IsPingedWithin(int seconds, int64_t now = -1)
     {
         now == -1 ? now = GetAdjustedTime() : now;
@@ -251,7 +260,7 @@ public:
 
     bool IsEnabled()
     {
-        return activeState == MASTERNODE_ENABLED;
+        return isPortOpen && activeState == MASTERNODE_ENABLED;
     }
 
     int GetMasternodeInputAge()

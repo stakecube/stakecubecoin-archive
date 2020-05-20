@@ -81,6 +81,8 @@ CMasternode::CMasternode()
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = true;
 }
 
 CMasternode::CMasternode(const CMasternode& other)
@@ -106,6 +108,8 @@ CMasternode::CMasternode(const CMasternode& other)
     lastTimeChecked = 0;
     nLastDsee = other.nLastDsee;   // temporary, do not save. Remove after migration to v12
     nLastDseep = other.nLastDseep; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = other.isPortOpen;
 }
 
 CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
@@ -131,6 +135,8 @@ CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = true;
 }
 
 //

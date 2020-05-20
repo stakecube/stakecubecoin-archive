@@ -377,6 +377,22 @@ CNode* FindNode(const CService& addr)
     return NULL;
 }
 
+bool CheckNode(CAddress addrConnect)
+{
+    const char* strDest = "";
+
+    CNode* pnode = ConnectNode(addrConnect, strDest);
+    
+    boost::this_thread::interruption_point();
+
+    if (!pnode)
+    {
+        return false;
+    }
+
+    return true;
+}
+
 CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMaster)
 {
     if (pszDest == NULL) {
