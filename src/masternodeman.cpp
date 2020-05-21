@@ -265,7 +265,8 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         if ((*it).activeState == CMasternode::MASTERNODE_REMOVE ||
             (*it).activeState == CMasternode::MASTERNODE_VIN_SPENT ||
             (forceExpiredRemoval && (*it).activeState == CMasternode::MASTERNODE_EXPIRED) ||
-            (*it).isPortOpen == false ||
+            //(*it).activeState == CMasternode::MASTERNODE_UNREACHABLE ||
+            //(*it).activeState == CMasternode::MASTERNODE_PEER_ERROR ||
             (*it).protocolVersion < masternodePayments.GetMinMasternodePaymentsProto()) {
             LogPrint("masternode", "CMasternodeMan: Removing inactive Masternode %s - %i now\n", (*it).vin.prevout.hash.ToString(), size() - 1);
 
@@ -298,7 +299,7 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         }
     }
 
-        // Remove duplicate nodes
+    // Remove duplicate nodes
     while(it != vMasternodes.end())
     {
         CMasternode *pmn;
@@ -1019,18 +1020,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 if (pmn->protocolVersion > GETHEADERS_VERSION && sigTime - pmn->lastPing.sigTime < MASTERNODE_MIN_MNB_SECONDS) return;
                 if (pmn->nLastDsee < sigTime) { //take the newest entry
                     
-                    // Test Node for incoming connectivity
-                    if (!CheckNode((CAddress)addr))
-                    {
-                        pmn->isPortOpen = false;
-                    }
-                    else
-                    {
-                        pmn->isPortOpen = true;
-
-                        // use this as a peer
-                        addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
-                    }
+                    // use this as a peer
+                    addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
 
                     if (fDebug)
                     {
@@ -1119,18 +1110,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 }
             }
 
-            // Test Node for incoming connectivity
-            if (!CheckNode(CAddress(addr)))
-            {
-                pmn->isPortOpen = false;
-            }
-            else
-            {
-                pmn->isPortOpen = true;
-
-                // use this as a peer
-                addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
-            }
+            // use this as a peer
+            addrman.Add(CAddress(addr), pfrom->addr, 2*60*60);
 
             // add Masternode
             CMasternode mn = CMasternode();

@@ -119,9 +119,11 @@ public:
         MASTERNODE_OUTPOINT_SPENT,
         MASTERNODE_REMOVE,
         MASTERNODE_WATCHDOG_EXPIRED,
-        MASTERNODE_POSE_BAN,
+        MASTERNODE_POS_BAN,
         MASTERNODE_VIN_SPENT,
-        MASTERNODE_POS_ERROR
+        MASTERNODE_POS_ERROR,
+        MASTERNODE_UNREACHABLE,
+        MASTERNODE_PEER_ERROR
     };
 
     CTxIn vin;
@@ -260,7 +262,7 @@ public:
 
     bool IsEnabled()
     {
-        return isPortOpen && activeState == MASTERNODE_ENABLED;
+        return activeState == MASTERNODE_ENABLED;
     }
 
     int GetMasternodeInputAge()
@@ -281,13 +283,52 @@ public:
     {
         std::string strStatus = "ACTIVE";
 
-        if (activeState == CMasternode::MASTERNODE_ENABLED) strStatus = "ENABLED";
-        if (activeState == CMasternode::MASTERNODE_EXPIRED) strStatus = "EXPIRED";
-        if (activeState == CMasternode::MASTERNODE_VIN_SPENT) strStatus = "VIN_SPENT";
-        if (activeState == CMasternode::MASTERNODE_REMOVE) strStatus = "REMOVE";
-        if (activeState == CMasternode::MASTERNODE_POS_ERROR) strStatus = "POS_ERROR";
+            switch (activeState)
+            {
+                case CMasternode::MASTERNODE_ENABLED:
+                {
+                    strStatus   = "ENABLED";
+                }
+                break;
 
-        return strStatus;
+                case CMasternode::MASTERNODE_EXPIRED:
+                {
+                    strStatus   = "EXPIRED";
+                }
+                break;
+
+                case CMasternode::MASTERNODE_VIN_SPENT:
+                {
+                    strStatus   = "VIN_SPENT";
+                }
+                break;
+
+                case CMasternode::MASTERNODE_REMOVE:
+                {
+                    strStatus   = "REMOVE";
+                }
+                break;
+
+                case CMasternode::MASTERNODE_POS_ERROR:
+                {
+                    strStatus = "POS_ERROR";
+                }
+                break;
+
+                case CMasternode::MASTERNODE_UNREACHABLE:
+                {
+                    strStatus = "UNREACHABLE";
+                }
+                break;
+
+                case CMasternode::MASTERNODE_PEER_ERROR:
+                {
+                    strStatus = "PEER_ERROR";
+                }
+                break;
+            }
+
+            return strStatus;
     }
 
     int64_t GetLastPaid();

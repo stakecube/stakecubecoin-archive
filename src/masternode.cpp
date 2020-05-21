@@ -82,7 +82,7 @@ CMasternode::CMasternode()
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
 
-    isPortOpen = true;
+    isPortOpen = false;
 }
 
 CMasternode::CMasternode(const CMasternode& other)
@@ -136,7 +136,7 @@ CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
 
-    isPortOpen = true;
+    isPortOpen = false;
 }
 
 //
@@ -233,7 +233,49 @@ void CMasternode::Check(bool forceCheck)
         }
     }
 
-    activeState = MASTERNODE_ENABLED; // OK
+    addrman.Add(CAddress(addr), addr, 2*60*60);
+
+    LOCK(cs_vNodes);
+
+    bool node_found = false;
+
+    // Check for peer connection
+    for(CNode* pnode: vNodes)
+    {
+        if (pnode->addr.ToStringIP() == addr.ToStringIP())
+        {   
+            node_found = true;
+
+            // OK
+            isPortOpen = true;
+            activeState = MASTERNODE_ENABLED;
+
+            return;
+        }
+        
+        node_found = false;
+    }
+
+    // Test Node for incoming connectivity (minimum requirements for active masternode status)
+    if (!CheckNode((CAddress)addr))
+    {
+        isPortOpen = false;
+        activeState = MASTERNODE_UNREACHABLE;
+
+        //return;
+    }
+
+    if (node_found == false)
+    {
+        isPortOpen = false;
+        activeState = MASTERNODE_PEER_ERROR;
+
+        //return;
+    }
+
+    // OK
+    isPortOpen = true;
+    activeState = MASTERNODE_ENABLED;
 }
 
 int64_t CMasternode::SecondsSincePayment()
@@ -317,8 +359,10 @@ std::string CMasternode::GetStatus()
         return "REMOVE";
     case CMasternode::MASTERNODE_WATCHDOG_EXPIRED:
         return "WATCHDOG_EXPIRED";
-    case CMasternode::MASTERNODE_POSE_BAN:
-        return "POSE_BAN";
+    case CMasternode::MASTERNODE_POS_BAN:
+        return "POS_BAN";
+    case CMasternode::MASTERNODE_UNREACHABLE:
+        return "UNREACHABLE";
     default:
         return "UNKNOWN";
     }
