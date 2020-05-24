@@ -456,12 +456,14 @@ template <typename Protocol>
 class AcceptedConnectionImpl : public AcceptedConnection
 {
 public:
-    AcceptedConnectionImpl(
-        asio::io_service& io_service,
-        ssl::context& context,
-        bool fUseSSL) : sslStream(io_service, context),
-                        _d(sslStream, fUseSSL),
-                        _stream(_d)
+
+#if BOOST_VERSION >= 107000
+    AcceptedConnectionImpl(asio::executor io_service, ssl::context &context, bool fUseSSL)
+        : sslStream(io_service, context), _d(sslStream, fUseSSL), _stream(_d)
+#else
+    AcceptedConnectionImpl(asio::io_service& io_service, ssl::context &context, bool fUseSSL)
+        : sslStream(io_service, context), _d(sslStream, fUseSSL), _stream(_d)
+#endif  
     {
     }
 
@@ -507,7 +509,17 @@ static void RPCListen(boost::shared_ptr< basic_socket_acceptor<Protocol> > accep
     const bool fUseSSL)
 {
     // Accept connection
+#if BOOST_VERSION >= 107000
+// Boost 1.7+
+
+    boost::shared_ptr<AcceptedConnectionImpl<Protocol> > conn(new AcceptedConnectionImpl<Protocol>(acceptor->get_executor(), context, fUseSSL));
+
+#else
+// Boost 1.6-
+
     boost::shared_ptr<AcceptedConnectionImpl<Protocol> > conn(new AcceptedConnectionImpl<Protocol>(acceptor->get_io_service(), context, fUseSSL));
+
+#endif
 
     acceptor->async_accept(
         conn->sslStream.lowest_layer(),
