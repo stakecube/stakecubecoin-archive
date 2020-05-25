@@ -8,6 +8,7 @@
 
 #include "db.h"
 #include "kernel.h"
+#include "main.h"
 #include "script/interpreter.h"
 #include "timedata.h"
 #include "util.h"
@@ -273,9 +274,10 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifier, int
 
 uint256 stakeHash(unsigned int nTimeTx, CDataStream ss, unsigned int prevoutIndex, uint256 prevoutHash, unsigned int nTimeBlockFrom)
 {
-    //Stakecube will hash in the transaction hash and the index number in order to make sure each hash is unique
     ss << nTimeBlockFrom << prevoutIndex << prevoutHash << nTimeTx;
-    return Hash(ss.begin(), ss.end());
+    uint256 hashProof = Hash(ss.begin(), ss.end());
+    if (fDebug) LogPrintf("hashProof %s\n", hashProof.ToString().c_str());
+    return hashProof;
 }
 
 //test hash vs target
@@ -286,6 +288,31 @@ bool stakeTargetHit(uint256 hashProofOfStake, int64_t nValueIn, uint256 bnTarget
 
     // Now check if proof-of-stake hash meets target protocol
     return (uint256(hashProofOfStake) < bnCoinDayWeight * bnTargetPerCoinDay);
+}
+
+bool HasStakeMinDepth(int contextHeight, int utxoFromBlockHeight)
+{
+    const int minHistoryRequired = Params().MinStakeHistory();
+    return (contextHeight - utxoFromBlockHeight >= minHistoryRequired);
+}
+
+int GetLastHeight(uint256 txHash)
+{
+    uint256 hashBlock;
+    CTransaction stakeInput;
+    if (!GetTransaction(txHash, stakeInput, hashBlock, true))
+        return 0;
+
+    if (hashBlock == uint256())
+        return 0;
+
+    return mapBlockIndex[hashBlock]->nHeight;
+}
+
+bool AreHardenedChecksEnabled()
+{
+    const int nHeight = chainActive.Height();
+    return nHeight >= Params().HardenedStakeHeight();
 }
 
 //instead of looping outside and reinitializing variables many times, we will give a nTimeTx and also search interval so that we can do all the hashing here
@@ -300,6 +327,13 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock blockFrom, const CTra
 
     if (nTimeBlockFrom + minStakeAge() > nTimeTx) // Min age requirement
         return error("CheckStakeKernelHash() : min age violation - nTimeBlockFrom=%d minStakeAge()=%d nTimeTx=%d", nTimeBlockFrom, minStakeAge(), nTimeTx);
+
+    //! enforce minimum stake amount
+    if (AreHardenedChecksEnabled()) {
+       const CAmount minStakeAmount = Params().MinStakeAmount();
+       if (nValueIn < minStakeAmount)
+           return error("CheckStakeKernelHash() : min stake amount not met");
+    }
 
     //grab difficulty
     uint256 bnTargetPerCoinDay;
@@ -361,7 +395,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock blockFrom, const CTra
 }
 
 // Check kernel hash target and coinstake signature
-bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake)
+bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake, CBlockIndex* const pindexPrev)
 {
     const CTransaction tx = block.vtx[1];
     if (!tx.IsCoinStake())
@@ -369,6 +403,19 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake)
 
     // Kernel (input 0) must match the stake hash target per coin age (nBits)
     const CTxIn& txin = tx.vin[0];
+
+    //! enforce minimum stake depth
+    if (AreHardenedChecksEnabled())
+    {
+       const int nPreviousBlockHeight = pindexPrev->nHeight;
+       const int nBlockFromHeight = GetLastHeight(txin.prevout.hash);
+
+       if (nBlockFromHeight == 0)
+           return false;
+
+       if (!HasStakeMinDepth(nPreviousBlockHeight+1, nBlockFromHeight))
+           return error("CheckProofOfStake() : min stake depth not met");
+    }
 
     // First try finding the previous transaction in database
     uint256 hashBlock;
