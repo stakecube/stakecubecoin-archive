@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/monetaryunit_bg.qm</file>
+        <file alias="ca">locale/monetaryunit_ca.qm</file>
+        <file alias="cs">locale/monetaryunit_cs.qm</file>
+        <file alias="da">locale/monetaryunit_da.qm</file>
+        <file alias="de">locale/monetaryunit_de.qm</file>
+        <file alias="en">locale/monetaryunit_en.qm</file>
+        <file alias="en_US">locale/monetaryunit_en_US.qm</file>
+        <file alias="es">locale/monetaryunit_es.qm</file>
+        <file alias="fi">locale/monetaryunit_fi.qm</file>
+        <file alias="fr_FR">locale/monetaryunit_fr_FR.qm</file>
+        <file alias="hr">locale/monetaryunit_hr.qm</file>
+        <file alias="it">locale/monetaryunit_it.qm</file>
+        <file alias="ja">locale/monetaryunit_ja.qm</file>
+        <file alias="ko_KR">locale/monetaryunit_ko_KR.qm</file>
+        <file alias="nl">locale/monetaryunit_nl.qm</file>
+        <file alias="pl">locale/monetaryunit_pl.qm</file>
+        <file alias="pt">locale/monetaryunit_pt.qm</file>
+        <file alias="pt_BR">locale/monetaryunit_pt_BR.qm</file>
+        <file alias="ro_RO">locale/monetaryunit_ro_RO.qm</file>
+        <file alias="ru">locale/monetaryunit_ru.qm</file>
+        <file alias="sk">locale/monetaryunit_sk.qm</file>
+        <file alias="sv">locale/monetaryunit_sv.qm</file>
+        <file alias="tr">locale/monetaryunit_tr.qm</file>
+        <file alias="uk">locale/monetaryunit_uk.qm</file>
+        <file alias="zh_CN">locale/monetaryunit_zh_CN.qm</file>
+        <file alias="zh_TW">locale/monetaryunit_zh_TW.qm</file>
+    </qresource>
+</RCC>

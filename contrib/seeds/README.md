@@ -1,0 +1,21 @@
+# Seeds
+
+Utility to generate the seeds.txt list that is compiled into the client
+(see [src/chainparamsseeds.h](/src/chainparamsseeds.h) and other utilities in [contrib/seeds](/contrib/seeds)).
+
+Be sure to update `PATTERN_AGENT` in `makeseeds.py` to include the current version,
+and remove old versions as necessary.
+
+The seeds compiled into the release are able to be created from DNS seed data, like this (replacing URL with your own source of node IP/port information):
+
+    curl -s http://seeder.fuzzbawls.pw/monetaryunit-mainnet.txt > seeds_main.txt
+    python3 makeseeds.py < seeds_main.txt > nodes_main.txt
+    python3 generate-seeds.py . > ../../src/chainparamsseeds.h
+
+However, in most cases for fixed seeds, they are updated manually and maintained in nodes_main.txt and nodes_test.txt, and only the final generate-seeds.py script is run to generate the necessary code updates.
+
+## Dependencies
+
+Ubuntu:
+
+    sudo apt-get install python3-dnspython

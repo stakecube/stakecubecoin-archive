@@ -1,0 +1,26 @@
+[Unit]
+Description=MonetaryUnit's distributed currency daemon
+After=network.target
+
+[Service]
+User=monetaryunit
+Group=monetaryunit
+
+Type=forking
+PIDFile=/var/lib/monetaryunitd/monetaryunitd.pid
+
+ExecStart=/usr/bin/monetaryunitd -daemon -pid=/var/lib/monetaryunitd/monetaryunitd.pid \
+          -conf=/etc/monetaryunit/monetaryunit.conf -datadir=/var/lib/monetaryunitd
+
+ExecStop=-/usr/bin/monetaryunit-cli -conf=/etc/monetaryunit/monetaryunit.conf \
+         -datadir=/var/lib/monetaryunitd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

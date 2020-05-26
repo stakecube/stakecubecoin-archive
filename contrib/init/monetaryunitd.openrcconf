@@ -1,0 +1,26 @@
+# /etc/conf.d/monetaryunitd: config file for /etc/init.d/monetaryunitd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/monetaryunit/monetaryunit.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/monetaryunitd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/monetaryunitd.pid"
+
+# Where to write monetaryunitd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/monetaryunitd"
+
+# User and group to own monetaryunitd process
+#BITCOIND_USER="monetaryunit"
+#BITCOIND_GROUP="monetaryunit"
+
+# Path to monetaryunitd executable
+#BITCOIND_BIN="/usr/bin/monetaryunitd"
+
+# Nice value to run monetaryunitd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
