@@ -137,6 +137,10 @@ public:
         nModifierUpdateBlock = 500;
         nMaxMoneyOut = 20000000 * COIN;
 
+        nHardenedStakeHeight = 360000;
+        nMinStakeAmount = 250 * COIN;
+        nMinStakeHistory = 100;
+
         const char* pszTimestamp = "stakecubeMN 29092018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
@@ -2094,7 +2098,6 @@ public:
         vSeeds.push_back(CDNSSeedData("1934", "[2a02:c207:2025:6617:f907::1]"));
         vSeeds.push_back(CDNSSeedData("1935", "164.68.124.159"));
 
-
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 253);
@@ -2156,6 +2159,10 @@ public:
         nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
+
+        nHardenedStakeHeight = 0;
+        nMinStakeAmount = 0.5 * COIN;
+        nMinStakeHistory = 60;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1524873600;
