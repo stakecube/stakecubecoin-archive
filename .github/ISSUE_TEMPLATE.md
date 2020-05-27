@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
-This issue tracker is only for technical issues related to MonetaryUnit Core.
-General MonetaryUnit questions and/or support requests and are best directed to the [MonetaryUnit Discord](https://discord.gg/sbgdcdv).
+This issue tracker is only for technical issues related to StakeCubeCoin.
+General StakeCubeCoin questions and/or support requests and are best directed to the [StakeCubeCoin Discord](https://discord.gg/sbgdcdv).
 
 ### Describe the issue
 
@@ -20,7 +20,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of MonetaryUnit Core are you using?
+### What version of StakeCubeCoin are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package.
 
 ### Machine specs:

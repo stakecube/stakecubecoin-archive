@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between monetaryunit-cli and monetaryunitd)
- * of a given instance of the MonetaryUnit system.
+ * CBaseChainParams defines the base parameters (shared between stakecubecoin-cli and stakecubecoind)
+ * of a given instance of the StakeCubeCoin system.
  */
 class CBaseChainParams
 {

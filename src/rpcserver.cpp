@@ -269,10 +269,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop MonetaryUnit server.");
+            "\nStop StakeCubeCoin server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "MonetaryUnit server stopping";
+    return "StakeCubeCoin server stopping";
 }
 
 
@@ -355,38 +355,38 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* MonetaryUnit features */
-        {"monetaryunit", "masternode", &masternode, true, true, false},
-        {"monetaryunit", "listmasternodes", &listmasternodes, true, true, false},
-        {"monetaryunit", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"monetaryunit", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"monetaryunit", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"monetaryunit", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"monetaryunit", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"monetaryunit", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"monetaryunit", "masternodedebug", &masternodedebug, true, true, false},
-        {"monetaryunit", "startmasternode", &startmasternode, true, true, false},
-        {"monetaryunit", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"monetaryunit", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"monetaryunit", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"monetaryunit", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"monetaryunit", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"monetaryunit", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"monetaryunit", "mnbudget", &mnbudget, true, true, false},
-        {"monetaryunit", "preparebudget", &preparebudget, true, true, false},
-        {"monetaryunit", "submitbudget", &submitbudget, true, true, false},
-        {"monetaryunit", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"monetaryunit", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"monetaryunit", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"monetaryunit", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"monetaryunit", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"monetaryunit", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"monetaryunit", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"monetaryunit", "checkbudgets", &checkbudgets, true, true, false},
-        {"monetaryunit", "mnsync", &mnsync, true, true, false},
-        {"monetaryunit", "spork", &spork, true, true, false},
-        {"monetaryunit", "getpoolinfo", &getpoolinfo, true, true, false},
-        {"monetaryunit", "makekeypair", &makekeypair, true, true, false},
+        /* StakeCubeCoin features */
+        {"stakecubecoin", "masternode", &masternode, true, true, false},
+        {"stakecubecoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"stakecubecoin", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"stakecubecoin", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"stakecubecoin", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"stakecubecoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"stakecubecoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"stakecubecoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"stakecubecoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"stakecubecoin", "startmasternode", &startmasternode, true, true, false},
+        {"stakecubecoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"stakecubecoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"stakecubecoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"stakecubecoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"stakecubecoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"stakecubecoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"stakecubecoin", "mnbudget", &mnbudget, true, true, false},
+        {"stakecubecoin", "preparebudget", &preparebudget, true, true, false},
+        {"stakecubecoin", "submitbudget", &submitbudget, true, true, false},
+        {"stakecubecoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"stakecubecoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"stakecubecoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"stakecubecoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"stakecubecoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"stakecubecoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"stakecubecoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"stakecubecoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"stakecubecoin", "mnsync", &mnsync, true, true, false},
+        {"stakecubecoin", "spork", &spork, true, true, false},
+        {"stakecubecoin", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"stakecubecoin", "makekeypair", &makekeypair, true, true, false},
 #ifdef ENABLE_WALLET
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -603,7 +603,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> monetaryunit-cli " + methodname + " " + args + "\n";
+    return "> stakecubecoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

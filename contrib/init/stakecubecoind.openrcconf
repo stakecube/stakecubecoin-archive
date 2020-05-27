@@ -1,0 +1,26 @@
+# /etc/conf.d/stakecubecoind: config file for /etc/init.d/stakecubecoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/stakecubecoin/stakecubecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/stakecubecoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/stakecubecoind.pid"
+
+# Where to write stakecubecoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/stakecubecoind"
+
+# User and group to own stakecubecoind process
+#BITCOIND_USER="stakecubecoin"
+#BITCOIND_GROUP="stakecubecoin"
+
+# Path to stakecubecoind executable
+#BITCOIND_BIN="/usr/bin/stakecubecoind"
+
+# Nice value to run stakecubecoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

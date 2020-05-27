@@ -777,12 +777,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 border:0;
 }
 
-/* About MonetaryUnit Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About MonetaryUnit Contents */
+/* About StakeCubeCoin Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About StakeCubeCoin Contents */
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About MonetaryUnit text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About StakeCubeCoin text */
 margin-right:10px;
 }
 
@@ -806,7 +806,7 @@ font-weight:normal;
 min-height:30px;
 }
 
-QWidget .QFrame#frame .QLabel#label_5 { /* MUE Balances Label */
+QWidget .QFrame#frame .QLabel#label_5 { /* SCC Balances Label */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
@@ -943,7 +943,7 @@ margin-right:5px;
 padding-right:5px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available MUE Label */
+QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available SCC Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#FF9000;
@@ -955,7 +955,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available MUE Balance */
+QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available SCC Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -963,7 +963,7 @@ color:#FF9000;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zMUE Label */
+QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zSCC Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#FF9000;
@@ -975,7 +975,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zMUE Balance */
+QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zSCC Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -983,7 +983,7 @@ color:#FF9000;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zMUE Label */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zSCC Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#FF9000;
@@ -995,7 +995,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zMUE Balance */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zSCC Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
@@ -1003,7 +1003,7 @@ color:#FF9000;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zMUE Label */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zSCC Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#FF9000;
@@ -1015,7 +1015,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zMUE Balance */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zSCC Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
@@ -1051,7 +1051,7 @@ min-height:100px;
 margin-right:20px;
 margin-left:0;
 margin-top:0;
-background-image: url(':/images/monetaryunit_logo_horizontal');
+background-image: url(':/images/stakecubecoin_logo_horizontal');
 background-repeat:none;
 }
 

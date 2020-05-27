@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/monetaryunit-config.h>
+#include <config/stakecubecoin-config.h>
 #endif
 
 #include <fstream>
@@ -66,8 +66,8 @@ ProposalDialog::ProposalDialog(Mode mode, QWidget* parent) : QDialog(parent), ui
     ui->blockEdit->setValidator(new QIntValidator(1, INT_MAX));
 
     ui->addressEdit->setFont(GUIUtil::bitcoinAddressFont());
-    ui->addressEdit->setPlaceholderText(tr("The MonetaryUnit public address that will receive the funds"));
-    ui->addressEdit->setToolTip(tr("The MonetaryUnit public address that will receive the funds"));
+    ui->addressEdit->setPlaceholderText(tr("The StakeCubeCoin public address that will receive the funds"));
+    ui->addressEdit->setToolTip(tr("The StakeCubeCoin public address that will receive the funds"));
 
     ui->amountEdit->setFont(GUIUtil::bitcoinAddressFont());
     ui->amountEdit->setPlaceholderText(tr("The amount to be paid per month or cycle"));
@@ -242,7 +242,7 @@ bool ProposalDialog::validateProposal()
     if (nBlockEnd < pindexPrev->nHeight) strError = "Invalid ending block, starting block + (payment_cycle*payments) must be more than current height.";
 
     std::string address = ui->addressEdit->text().toStdString();
-    if (!IsValidDestinationString(address)) strError = "Invalid MonetaryUnit address";
+    if (!IsValidDestinationString(address)) strError = "Invalid StakeCubeCoin address";
 
     if (!strError.empty()) 
     {

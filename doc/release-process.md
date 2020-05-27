@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/monetaryunitproject/MonetaryUnit/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/stakecubecoinproject/StakeCubeCoin/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/monetaryunitproject/gitian.sigs.git
-    git clone https://github.com/monetaryunitproject/monetaryunit-detached-sigs.git
+    git clone https://github.com/stakecubecoinproject/gitian.sigs.git
+    git clone https://github.com/stakecubecoinproject/stakecubecoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/monetaryunitproject/monetaryunit.git
+    git clone https://github.com/stakecubecoinproject/stakecubecoin.git
 
-### MonetaryUnit maintainers/release engineers, suggestion for writing release notes
+### StakeCubeCoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./monetaryunit
+    pushd ./stakecubecoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../monetaryunit/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../stakecubecoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,55 +92,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url monetaryunit=/path/to/monetaryunit,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url stakecubecoin=/path/to/stakecubecoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign MonetaryUnit Core for Linux, Windows, and OS X:
+### Build and sign StakeCubeCoin for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit monetaryunit=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/monetaryunit-*.tar.gz build/out/src/monetaryunit-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit stakecubecoin=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/stakecubecoin-*.tar.gz build/out/src/stakecubecoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit monetaryunit=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/monetaryunit-*-win-unsigned.tar.gz inputs/monetaryunit-win-unsigned.tar.gz
-    mv build/out/monetaryunit-*.zip build/out/monetaryunit-*.exe ../
+    ./bin/gbuild --memory 3000 --commit stakecubecoin=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/stakecubecoin-*-win-unsigned.tar.gz inputs/stakecubecoin-win-unsigned.tar.gz
+    mv build/out/stakecubecoin-*.zip build/out/stakecubecoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit monetaryunit=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/monetaryunit-*-osx-unsigned.tar.gz inputs/monetaryunit-osx-unsigned.tar.gz
-    mv build/out/monetaryunit-*.tar.gz build/out/monetaryunit-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit stakecubecoin=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/stakecubecoin-*-osx-unsigned.tar.gz inputs/stakecubecoin-osx-unsigned.tar.gz
+    mv build/out/stakecubecoin-*.tar.gz build/out/stakecubecoin-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit monetaryunit=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/monetaryunit-*.tar.gz build/out/src/monetaryunit-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit stakecubecoin=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/stakecubecoin-*.tar.gz build/out/src/stakecubecoin-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`monetaryunit-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`monetaryunit-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`monetaryunit-${VERSION}-win[32|64]-setup-unsigned.exe`, `monetaryunit-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`monetaryunit-${VERSION}-osx-unsigned.dmg`, `monetaryunit-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`stakecubecoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`stakecubecoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`stakecubecoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `stakecubecoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`stakecubecoin-${VERSION}-osx-unsigned.dmg`, `stakecubecoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import monetaryunit/contrib/gitian-keys/*.pgp
+    gpg --import stakecubecoin/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../monetaryunit/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../monetaryunit/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../monetaryunit/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../monetaryunit/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../stakecubecoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../stakecubecoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../stakecubecoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../stakecubecoin/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer monetaryunit-osx-unsigned.tar.gz to osx for signing
-    tar xf monetaryunit-osx-unsigned.tar.gz
+    transfer stakecubecoin-osx-unsigned.tar.gz to osx for signing
+    tar xf stakecubecoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf monetaryunit-win-unsigned.tar.gz
+    tar xf stakecubecoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/monetaryunit-detached-sigs
+    cd ~/stakecubecoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,25 +190,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [monetaryunit-detached-sigs](https://github.com/monetaryunitproject/monetaryunit-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [stakecubecoin-detached-sigs](https://github.com/stakecubecoinproject/stakecubecoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../monetaryunit/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/monetaryunit-osx-signed.dmg ../monetaryunit-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../stakecubecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/stakecubecoin-osx-signed.dmg ../stakecubecoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../monetaryunit/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../monetaryunit/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../monetaryunit/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/monetaryunit-*win64-setup.exe ../monetaryunit-${VERSION}-win64-setup.exe
-    mv build/out/monetaryunit-*win32-setup.exe ../monetaryunit-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../stakecubecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../stakecubecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../stakecubecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/stakecubecoin-*win64-setup.exe ../stakecubecoin-${VERSION}-win64-setup.exe
+    mv build/out/stakecubecoin-*win32-setup.exe ../stakecubecoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,23 +230,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-monetaryunit-${VERSION}-aarch64-linux-gnu.tar.gz
-monetaryunit-${VERSION}-arm-linux-gnueabihf.tar.gz
-monetaryunit-${VERSION}-i686-pc-linux-gnu.tar.gz
-monetaryunit-${VERSION}-x86_64-linux-gnu.tar.gz
-monetaryunit-${VERSION}-osx64.tar.gz
-monetaryunit-${VERSION}-osx.dmg
-monetaryunit-${VERSION}.tar.gz
-monetaryunit-${VERSION}-win32-setup.exe
-monetaryunit-${VERSION}-win32.zip
-monetaryunit-${VERSION}-win64-setup.exe
-monetaryunit-${VERSION}-win64.zip
+stakecubecoin-${VERSION}-aarch64-linux-gnu.tar.gz
+stakecubecoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+stakecubecoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+stakecubecoin-${VERSION}-x86_64-linux-gnu.tar.gz
+stakecubecoin-${VERSION}-osx64.tar.gz
+stakecubecoin-${VERSION}-osx.dmg
+stakecubecoin-${VERSION}.tar.gz
+stakecubecoin-${VERSION}-win32-setup.exe
+stakecubecoin-${VERSION}-win32.zip
+stakecubecoin-${VERSION}-win64-setup.exe
+stakecubecoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the monetaryunit.org server*.
+space *do not upload these to the stakecubecoin.org server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -262,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/monetaryunit, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/stakecubecoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/monetaryunitproject/MonetaryUnit/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/stakecubecoinproject/StakeCubeCoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

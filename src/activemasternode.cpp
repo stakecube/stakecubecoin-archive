@@ -12,7 +12,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 500000 MUE input and register on the network
+// Bootup the Masternode, look for a 500000 SCC input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

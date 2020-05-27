@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/monetaryunit-config.h"
+#include "config/stakecubecoin-config.h"
 #endif
 
 #include "amount.h"
@@ -409,7 +409,7 @@ bool CheckTransaction(const CTransaction& tx, bool fRejectBadUTXO, CValidationSt
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx);
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
-bool RecalculateMUESupply(int nHeightStart);
+bool RecalculateSCCSupply(int nHeightStart);
 
 
 /**

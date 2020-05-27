@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: monetaryunitd.service
-Upstart: monetaryunitd.conf
-OpenRC:  monetaryunitd.openrc
-         monetaryunitd.openrcconf
-CentOS:  monetaryunitd.init
+SystemD: stakecubecoind.service
+Upstart: stakecubecoind.conf
+OpenRC:  stakecubecoind.openrc
+         stakecubecoind.openrcconf
+CentOS:  stakecubecoind.init
 
 have been made available to assist packagers in creating node packages here.
 

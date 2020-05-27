@@ -354,7 +354,7 @@
        <item row="16" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the MonetaryUnit debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the StakeCubeCoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -423,7 +423,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../monetaryunit.qrc">
+            <iconset resource="../stakecubecoin.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1328,7 +1328,7 @@
        <item row="4" column="0">
         <widget class="QLabel" name="wallet_customzphrbackuppath_label">
          <property name="text">
-          <string>Custom zMUE Backup Path:</string>
+          <string>Custom zSCC Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>
@@ -1637,7 +1637,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../monetaryunit.qrc"/>
+  <include location="../stakecubecoin.qrc"/>
  </resources>
  <connections/>
 </ui>

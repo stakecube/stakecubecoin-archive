@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/monetaryunit
-src/monetaryunitd
-src/monetaryunit-cli
-src/monetaryunit-tx
-src/test/test_monetaryunit
-src/qt/test/test_monetaryunit-qt
+src/stakecubecoin
+src/stakecubecoind
+src/stakecubecoin-cli
+src/stakecubecoin-tx
+src/test/test_stakecubecoin
+src/qt/test/test_stakecubecoin-qt
 
 # autoreconf
 Makefile.in
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/monetaryunit-config.h
-src/config/monetaryunit-config.h.in
+src/config/stakecubecoin-config.h
+src/config/stakecubecoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -64,7 +64,7 @@ src/leveldb/build_config.mk
 *.pyc
 *.o
 *.o-*
-.monetaryunit
+.stakecubecoin
 *.a
 *.pb.cc
 *.pb.h
@@ -84,12 +84,12 @@ src/leveldb/build_config.mk
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-monetaryunit-qt
-monetaryunit-Qt.app
+stakecubecoin-qt
+stakecubecoin-Qt.app
 
 # Unit-tests
 Makefile.test
-monetaryunit-qt_test
+stakecubecoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -105,7 +105,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_monetaryunit.coverage/
+test_stakecubecoin.coverage/
 total.coverage/
 coverage_percent.txt
 

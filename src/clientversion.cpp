@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both monetaryunitd and monetaryunit-qt, to make it harder for attackers to
+ * for both stakecubecoind and stakecubecoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("MonetaryUnit Core");
+const std::string CLIENT_NAME("StakeCubeCoin");
 
 /**
  * Client version number

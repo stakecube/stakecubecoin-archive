@@ -345,7 +345,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from MonetaryUnit core
+    // Update address book model from StakeCubeCoin core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

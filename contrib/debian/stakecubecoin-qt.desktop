@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=StakeCubeCoin
+Comment=StakeCubeCoin P2P Cryptocurrency
+Comment[fr]=StakeCubeCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=StakeCubeCoin, eşten eşe kriptografik sanal para birimi
+Exec=stakecubecoin-qt %u
+Terminal=false
+Type=Application
+Icon=stakecubecoin128
+MimeType=x-scheme-handler/stakecubecoin;
+Categories=Office;Finance;

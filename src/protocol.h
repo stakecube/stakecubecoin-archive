@@ -45,7 +45,7 @@ extern const char *VERACK;
  */
 extern const char *ADDR;
 /**
- * The alert message broadcasts various alerts to users of the MonetaryUnit, but has
+ * The alert message broadcasts various alerts to users of the StakeCubeCoin, but has
  * no real effect on the network.
  * This is deprecated in Bitcoin Core.
  */

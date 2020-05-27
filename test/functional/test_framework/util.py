@@ -150,14 +150,14 @@ def sync_mempools(rpc_connections, wait=1, timeout=60):
         timeout -= wait
     raise AssertionError("Mempool sync failed")
 
-monetaryunitd_processes = {}
+stakecubecoind_processes = {}
 
 def initialize_datadir(dirname, n):
     datadir = os.path.join(dirname, "node"+str(n))
     if not os.path.isdir(datadir):
         os.makedirs(datadir)
     rpc_u, rpc_p = rpc_auth_pair(n)
-    with open(os.path.join(datadir, "monetaryunit.conf"), 'w', encoding='utf8') as f:
+    with open(os.path.join(datadir, "stakecubecoin.conf"), 'w', encoding='utf8') as f:
         f.write("regtest=1\n")
         f.write("server=1\n")
         f.write("rpcuser=" + rpc_u + "\n")
@@ -182,14 +182,14 @@ def rpc_url(i, rpchost=None):
             host = rpchost
     return "http://%s:%s@%s:%d" % (rpc_u, rpc_p, host, int(port))
 
-def wait_for_monetaryunitd_start(process, url, i):
+def wait_for_stakecubecoind_start(process, url, i):
     '''
-    Wait for monetaryunitd to start. This means that RPC is accessible and fully initialized.
-    Raise an exception if monetaryunitd exits during initialization.
+    Wait for stakecubecoind to start. This means that RPC is accessible and fully initialized.
+    Raise an exception if stakecubecoind exits during initialization.
     '''
     while True:
         if process.poll() is not None:
-            raise Exception('monetaryunitd exited with status %i during initialization' % process.returncode)
+            raise Exception('stakecubecoind exited with status %i during initialization' % process.returncode)
         try:
             rpc = get_rpc_proxy(url, i)
             blocks = rpc.getblockcount()
@@ -223,16 +223,16 @@ def initialize_chain(test_dir, num_nodes):
             if os.path.isdir(os.path.join("cache","node"+str(i))):
                 shutil.rmtree(os.path.join("cache","node"+str(i)))
 
-        # Create cache directories, run monetaryunitds:
+        # Create cache directories, run stakecubecoinds:
         for i in range(MAX_NODES):
             datadir=initialize_datadir("cache", i)
-            args = [ os.getenv("MONETARYUNITD", "monetaryunitd"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
+            args = [ os.getenv("MONETARYUNITD", "stakecubecoind"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
             if i > 0:
                 args.append("-connect=127.0.0.1:"+str(p2p_port(0)))
-            monetaryunitd_processes[i] = subprocess.Popen(args)
+            stakecubecoind_processes[i] = subprocess.Popen(args)
             if os.getenv("PYTHON_DEBUG", ""):
-                print("initialize_chain: monetaryunitd started, waiting for RPC to come up")
-            wait_for_monetaryunitd_start(monetaryunitd_processes[i], rpc_url(i), i)
+                print("initialize_chain: stakecubecoind started, waiting for RPC to come up")
+            wait_for_stakecubecoind_start(stakecubecoind_processes[i], rpc_url(i), i)
             if os.getenv("PYTHON_DEBUG", ""):
                 print("initialize_chain: RPC succesfully started")
 
@@ -275,7 +275,7 @@ def initialize_chain(test_dir, num_nodes):
         from_dir = os.path.join("cache", "node"+str(i))
         to_dir = os.path.join(test_dir,  "node"+str(i))
         shutil.copytree(from_dir, to_dir)
-        initialize_datadir(test_dir, i) # Overwrite port/rpcport in monetaryunit.conf
+        initialize_datadir(test_dir, i) # Overwrite port/rpcport in stakecubecoin.conf
 
 def initialize_chain_clean(test_dir, num_nodes):
     """
@@ -308,18 +308,18 @@ def _rpchost_to_args(rpchost):
 
 def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=None):
     """
-    Start a monetaryunitd and return RPC connection to it
+    Start a stakecubecoind and return RPC connection to it
     """
     datadir = os.path.join(dirname, "node"+str(i))
     if binary is None:
-        binary = os.getenv("MONETARYUNITD", "monetaryunitd")
+        binary = os.getenv("MONETARYUNITD", "stakecubecoind")
     args = [ binary, "-datadir="+datadir, "-server", "-keypool=1", "-discover=0", "-rest", "-mocktime="+str(get_mocktime()), "-regtest", "-sporkkey=923EhWh2bJHynX6d4Tqt2Q75bhTDCT1b4kff3qzDKDZHZ6pkQs7"]
     if extra_args is not None: args.extend(extra_args)
-    monetaryunitd_processes[i] = subprocess.Popen(args)
+    stakecubecoind_processes[i] = subprocess.Popen(args)
     if os.getenv("PYTHON_DEBUG", ""):
         print("start_node: phroed started, waiting for RPC to come up")
     url = rpc_url(i, rpchost)
-    wait_for_monetaryunitd_start(monetaryunitd_processes[i], url, i)
+    wait_for_stakecubecoind_start(stakecubecoind_processes[i], url, i)
     if os.getenv("PYTHON_DEBUG", ""):
         print("start_node: RPC succesfully started")
     proxy = get_rpc_proxy(url, i, timeout=timewait)
@@ -331,7 +331,7 @@ def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=
 
 def start_nodes(num_nodes, dirname, extra_args=None, rpchost=None, timewait=None, binary=None):
     """
-    Start multiple monetaryunitds, return RPC connections to them
+    Start multiple stakecubecoinds, return RPC connections to them
     """
     if extra_args is None: extra_args = [ None for _ in range(num_nodes) ]
     if binary is None: binary = [ None for _ in range(num_nodes) ]
@@ -352,8 +352,8 @@ def stop_node(node, i):
         node.stop()
     except http.client.CannotSendRequest as e:
         print("WARN: Unable to stop node: " + repr(e))
-    monetaryunitd_processes[i].wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
-    del monetaryunitd_processes[i]
+    stakecubecoind_processes[i].wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
+    del stakecubecoind_processes[i]
 
 def stop_nodes(nodes):
     for node in nodes:
@@ -362,17 +362,17 @@ def stop_nodes(nodes):
         except http.client.CannotSendRequest as e:
             print("WARN: Unable to stop node: " + repr(e))
     del nodes[:] # Emptying array closes connections as a side effect
-    wait_monetaryunitds()
+    wait_stakecubecoinds()
 
 def set_node_times(nodes, t):
     for node in nodes:
         node.setmocktime(t)
 
-def wait_monetaryunitds():
-    # Wait for all monetaryunitds to cleanly exit
-    for monetaryunitd in monetaryunitd_processes.values():
-        monetaryunitd.wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
-    monetaryunitd_processes.clear()
+def wait_stakecubecoinds():
+    # Wait for all stakecubecoinds to cleanly exit
+    for stakecubecoind in stakecubecoind_processes.values():
+        stakecubecoind.wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
+    stakecubecoind_processes.clear()
 
 def connect_nodes(from_connection, node_num):
     ip_port = "127.0.0.1:"+str(p2p_port(node_num))

@@ -78,15 +78,15 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += monetaryunitd
+  bin_PROGRAMS += stakecubecoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += monetaryunit-cli monetaryunit-tx
+  bin_PROGRAMS += stakecubecoin-cli stakecubecoin-tx
 endif
 
 .PHONY: FORCE
-# monetaryunit core #
+# stakecubecoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -201,7 +201,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between monetaryunitd and monetaryunit-qt
+# server: shared between stakecubecoind and stakecubecoin-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -248,7 +248,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between monetaryunitd and monetaryunit-qt, but only linked
+# wallet: shared between stakecubecoind and stakecubecoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -312,7 +312,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
-# common: shared between monetaryunitd, and monetaryunit-qt and non-server tools
+# common: shared between stakecubecoind, and stakecubecoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -376,7 +376,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between monetaryunit-cli and monetaryunit-qt
+# cli: shared between stakecubecoin-cli and stakecubecoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -386,16 +386,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# monetaryunitd binary #
-monetaryunitd_SOURCES = monetaryunitd.cpp
-monetaryunitd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-monetaryunitd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monetaryunitd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# stakecubecoind binary #
+stakecubecoind_SOURCES = stakecubecoind.cpp
+stakecubecoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+stakecubecoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+stakecubecoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monetaryunitd_SOURCES += monetaryunitd-res.rc
+stakecubecoind_SOURCES += stakecubecoind-res.rc
 endif
-monetaryunitd_LDADD = \
+stakecubecoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -407,45 +407,45 @@ monetaryunitd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-monetaryunitd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+stakecubecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# monetaryunit-cli binary #
-monetaryunit_cli_SOURCES = monetaryunit-cli.cpp
-monetaryunit_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-monetaryunit_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monetaryunit_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# stakecubecoin-cli binary #
+stakecubecoin_cli_SOURCES = stakecubecoin-cli.cpp
+stakecubecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+stakecubecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+stakecubecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monetaryunit_cli_SOURCES += monetaryunit-cli-res.rc
+stakecubecoin_cli_SOURCES += stakecubecoin-cli-res.rc
 endif
 
-monetaryunit_cli_LDADD = \
+stakecubecoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-monetaryunit_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+stakecubecoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# monetaryunit-tx binary #
-monetaryunit_tx_SOURCES = monetaryunit-tx.cpp
-monetaryunit_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-monetaryunit_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monetaryunit_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# stakecubecoin-tx binary #
+stakecubecoin_tx_SOURCES = stakecubecoin-tx.cpp
+stakecubecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+stakecubecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+stakecubecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monetaryunit_tx_SOURCES += monetaryunit-tx-res.rc
+stakecubecoin_tx_SOURCES += stakecubecoin-tx-res.rc
 endif
 
-monetaryunit_tx_LDADD = \
+stakecubecoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-monetaryunit_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+stakecubecoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

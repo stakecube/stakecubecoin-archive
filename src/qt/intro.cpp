@@ -174,7 +174,7 @@ bool Intro::pickDataDirectory()
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch (fs::filesystem_error& e) {
-                QMessageBox::critical(0, tr("MonetaryUnit Core"),
+                QMessageBox::critical(0, tr("StakeCubeCoin"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
@@ -183,8 +183,8 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the monetaryunit.conf file in the default data directory
-     * (to be consistent with monetaryunitd behavior)
+     * override -datadir in the stakecubecoin.conf file in the default data directory
+     * (to be consistent with stakecubecoind behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

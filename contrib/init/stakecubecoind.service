@@ -1,0 +1,26 @@
+[Unit]
+Description=StakeCubeCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=stakecubecoin
+Group=stakecubecoin
+
+Type=forking
+PIDFile=/var/lib/stakecubecoind/stakecubecoind.pid
+
+ExecStart=/usr/bin/stakecubecoind -daemon -pid=/var/lib/stakecubecoind/stakecubecoind.pid \
+          -conf=/etc/stakecubecoin/stakecubecoin.conf -datadir=/var/lib/stakecubecoind
+
+ExecStop=-/usr/bin/stakecubecoin-cli -conf=/etc/stakecubecoin/stakecubecoin.conf \
+         -datadir=/var/lib/stakecubecoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

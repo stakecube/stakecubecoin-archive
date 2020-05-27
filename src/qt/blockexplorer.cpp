@@ -44,7 +44,7 @@ static std::string ValueToString(CAmount nValue, bool AllowNegative = false)
     if (nValue < 0 && !AllowNegative)
         return "<span>" + _("unknown") + "</span>";
 
-    QString Str = BitcoinUnits::formatWithUnit(BitcoinUnits::MUE, nValue);
+    QString Str = BitcoinUnits::formatWithUnit(BitcoinUnits::SCC, nValue);
     if (AllowNegative && nValue > 0)
         Str = '+' + Str;
     return std::string("<span>") + Str.toUtf8().data() + "</span>";
@@ -472,8 +472,8 @@ void BlockExplorer::showEvent(QShowEvent*)
         updateNavButtons();
 
         if (!GetBoolArg("-txindex", true)) {
-            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (monetaryunit.conf).");
-            QMessageBox::warning(this, "MonetaryUnit Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (stakecubecoin.conf).");
+            QMessageBox::warning(this, "StakeCubeCoin Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

@@ -417,7 +417,7 @@ bool MultisigDialog::createMultisigTransaction(vector<CTxIn> vUserIn, vector<CTx
         }
 
         if(totalIn < totalOut){
-            throw runtime_error("Not enough MUE provided as input to complete transaction (including fee).");
+            throw runtime_error("Not enough SCC provided as input to complete transaction (including fee).");
         }
 
         //calculate change amount
@@ -482,7 +482,7 @@ bool MultisigDialog::createMultisigTransaction(vector<CTxIn> vUserIn, vector<CTx
            tx.vout.at(changeIndex).nValue -= fee;
            feeStringRet = strprintf("%d",((double)fee)/COIN).c_str();
         }else{
-            throw runtime_error("Not enough MUE provided to cover fee");
+            throw runtime_error("Not enough SCC provided to cover fee");
         }
 
         //clear junk from script sigs
@@ -807,7 +807,7 @@ bool MultisigDialog::createRedeemScript(int m, vector<string> vKeys, CScript& re
         for(vector<string>::iterator it = vKeys.begin(); it != vKeys.end(); ++it) {
             string keyString = *it;
 #ifdef ENABLE_WALLET
-            // Case 1: MonetaryUnit address and we have full public key:
+            // Case 1: StakeCubeCoin address and we have full public key:
             if (pwalletMain && IsValidDestinationString(keyString)) {
                 CTxDestination address = DecodeDestination(keyString);
                 CKeyID keyID = GetKeyForDestination(*pwalletMain, address);

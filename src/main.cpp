@@ -51,7 +51,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "MonetaryUnit cannot be compiled without assertions."
+#error "StakeCubeCoin cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -2023,11 +2023,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("monetaryunit-scriptch");
+    RenameThread("stakecubecoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
-bool RecalculateMUESupply(int nHeightStart)
+bool RecalculateSCCSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -3259,7 +3259,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // MonetaryUnit
+        // StakeCubeCoin
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4922,9 +4922,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
         // broken releases with wrong blockchain data
-        if (pfrom->cleanSubVer == "/MonetaryUnit Core:1.1.0/" ||
-            pfrom->cleanSubVer == "/MonetaryUnit Core:1.3.0/" ||
-            pfrom->cleanSubVer == "/MonetaryUnit Core:1.3.1/") {
+        if (pfrom->cleanSubVer == "/StakeCubeCoin:1.1.0/" ||
+            pfrom->cleanSubVer == "/StakeCubeCoin:1.3.0/" ||
+            pfrom->cleanSubVer == "/StakeCubeCoin:1.3.1/") {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100); // instantly ban them because they have bad block data
             return false;
@@ -4967,7 +4967,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->PushMessage(NetMsgType::VERACK);
         pfrom->ssSend.SetVersion(min(pfrom->nVersion, PROTOCOL_VERSION));
 
-        // MonetaryUnit: We use certain sporks during IBD, so check to see if they are
+        // StakeCubeCoin: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_17_SEGWIT_ACTIVATION);
 

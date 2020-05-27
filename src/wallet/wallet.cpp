@@ -4,7 +4,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2017-2019 The Phore developers
-// Copyright (c) 2018-2019 The MonetaryUnit developers
+// Copyright (c) 2018-2019 The StakeCubeCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -2275,7 +2275,7 @@ bool less_then_denom(const COutput& out1, const COutput& out2)
 bool CWallet::SelectStakeCoins(std::set<std::pair<const CWalletTx*, unsigned int> >& setCoins, CAmount nTargetAmount) const
 {
     LOCK(cs_main);
-    //Add MUE
+    //Add SCC
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, NULL, false, STAKABLE_COINS);
     CAmount nAmountSelected = 0;
@@ -2468,13 +2468,13 @@ bool CWallet::SelectCoins(const CAmount& nTargetValue, set<pair<const CWalletTx*
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1 MUE
+    //if we're doing only denominated, we need to round up to the nearest .1 SCC
     if (coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH (CAmount v, obfuScationDenominations) {
             BOOST_FOREACH (const COutput& out, vCoins) {
                 if (out.tx->vout[out.i].nValue == v                                               //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 MUE over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 SCC over
                     ) {
                     CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
                     int rounds = GetInputObfuscationRounds(vin);
@@ -2536,12 +2536,12 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
             // Function returns as follows:
             //
-            // bit 0 - 10000 MUE+1 ( bit on if present )
-            // bit 1 - 1000 MUE+1
-            // bit 2 - 100 MUE+1
-            // bit 3 - 10 MUE+1
-            // bit 4 - 1 MUE+1
-            // bit 5 - .1 MUE+1
+            // bit 0 - 10000 SCC+1 ( bit on if present )
+            // bit 1 - 1000 SCC+1
+            // bit 2 - 100 SCC+1
+            // bit 3 - 10 SCC+1
+            // bit 4 - 1 SCC+1
+            // bit 5 - .1 SCC+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
 
@@ -2790,7 +2790,7 @@ bool CWallet::GetBudgetSystemCollateralTX(CWalletTx& tx, uint256 hash, bool useI
     CAmount nFeeRet = 0;
     std::string strFail = "";
     vector<pair<CScript, CAmount> > vecSend;
-    vecSend.push_back(make_pair(scriptChange, GetBudgetSystemCollateralAmount(chainActive.Height()))); // Old 50 MUE collateral
+    vecSend.push_back(make_pair(scriptChange, GetBudgetSystemCollateralAmount(chainActive.Height()))); // Old 50 SCC collateral
 
     CCoinControl* coinControl = NULL;
     bool success = CreateTransaction(vecSend, tx, reservekey, nFeeRet, strFail, coinControl, ALL_COINS, useIX, (CAmount)0);
@@ -2965,9 +2965,9 @@ bool CWallet::CreateTransactionHelper(const std::vector<std::pair<CScript, CAmou
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOT500000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 500000 MUE.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 500000 SCC.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT500000IFMN) {
-                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 500000 MUE.");
+                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 500000 SCC.");
                     } else {
                         strFailReason = _("Unable to locate enough Obfuscation denominated funds for this transaction.");
                         strFailReason += " " + _("Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -3005,7 +3005,7 @@ bool CWallet::CreateTransactionHelper(const std::vector<std::pair<CScript, CAmou
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-monetaryunit-address
+                    // change transaction isn't always pay-to-stakecubecoin-address
                     CScript scriptChange;
                     bool combineChange = false;
 

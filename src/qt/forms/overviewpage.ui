@@ -259,7 +259,7 @@
                           <cursorShape>WhatsThisCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the MonetaryUnit network after a connection is established, but this process has not completed yet.</string>
+                          <string>The displayed information may be out of date. Your wallet automatically synchronizes with the StakeCubeCoin network after a connection is established, but this process has not completed yet.</string>
                          </property>
                          <property name="styleSheet">
                           <string notr="true">QLabel { color: red; }</string>
@@ -333,7 +333,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -365,7 +365,7 @@
                           <string>Total Balance, including all unavailable coins.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -433,12 +433,12 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>MUE Balance</string>
+                          <string>SCC Balance</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLabel" name="labelMUEPercent">
+                        <widget class="QLabel" name="labelSCCPercent">
                          <property name="text">
                           <string notr="true">0 %</string>
                          </property>
@@ -525,7 +525,7 @@
                           <string>Your current spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -550,7 +550,7 @@
                           <string>Your current balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -582,7 +582,7 @@
                           <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -607,7 +607,7 @@
                           <string>Unconfirmed transactions to watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -639,7 +639,7 @@
                           <string>Staked or masternode rewards that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -664,7 +664,7 @@
                           <string>Staked or masternode rewards in watch-only addresses that has not yet matured</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -677,7 +677,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked MUE or Masternode collaterals. These are excluded from zMUE minting.</string>
+                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -696,10 +696,10 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked MUE or Masternode collaterals. These are excluded from zMUE minting.</string>
+                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -724,7 +724,7 @@
                           <string>Current locked balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -737,7 +737,7 @@
                        <item row="5" column="0">
                         <widget class="QLabel" name="labelTotalText">
                          <property name="toolTip">
-                          <string>Your current MonetaryUnit balance, unconfirmed and immature transactions included</string>
+                          <string>Your current StakeCubeCoin balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
                           <string>Total:</string>
@@ -756,10 +756,10 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Your current MonetaryUnit balance, unconfirmed and immature transactions included</string>
+                          <string>Your current StakeCubeCoin balance, unconfirmed and immature transactions included</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -784,7 +784,7 @@
                           <string>Current total balance in watch-only addresses</string>
                          </property>
                          <property name="text">
-                          <string notr="true">0.000 000 00 MUE</string>
+                          <string notr="true">0.000 000 00 SCC</string>
                          </property>
                          <property name="alignment">
                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -875,7 +875,7 @@
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the MonetaryUnit network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the StakeCubeCoin network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
                        <string notr="true">QLabel { color: red; }</string>

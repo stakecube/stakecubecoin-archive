@@ -84,14 +84,14 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw runtime_error(
             "getnewaddress ( \"account\" \"address_type\" )\n"
-            "\nReturns a new MonetaryUnit address for receiving payments.\n"
+            "\nReturns a new StakeCubeCoin address for receiving payments.\n"
             "If 'account' is specified (recommended), it is added to the address book \n"
             "so payments received with the address will be credited to 'account'.\n"
             "\nArguments:\n"
             "1. \"account\"        (string, optional) The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
             "2. \"address_type\"   (string, optional) The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\". Default is set by -addresstype.\n"
             "\nResult:\n"
-            "\"monetaryunitaddress\"    (string) The new monetaryunit address\n"
+            "\"stakecubecoinaddress\"    (string) The new stakecubecoin address\n"
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleCli("getnewaddress", "\"\"") + HelpExampleCli("getnewaddress", "\"myaccount\"") + HelpExampleRpc("getnewaddress", "\"myaccount\""));
 
@@ -166,11 +166,11 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "getaccountaddress \"account\"\n"
-            "\nReturns the current MonetaryUnit address for receiving payments to this account.\n"
+            "\nReturns the current StakeCubeCoin address for receiving payments to this account.\n"
             "\nArguments:\n"
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
             "\nResult:\n"
-            "\"monetaryunitaddress\"   (string) The account monetaryunit address\n"
+            "\"stakecubecoinaddress\"   (string) The account stakecubecoin address\n"
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") + HelpExampleCli("getaccountaddress", "\"myaccount\"") + HelpExampleRpc("getaccountaddress", "\"myaccount\""));
 
@@ -191,7 +191,7 @@ UniValue getrawchangeaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "getrawchangeaddress ( \"address_type\" )\n"
-            "\nReturns a new MonetaryUnit address, for receiving change.\n"
+            "\nReturns a new StakeCubeCoin address, for receiving change.\n"
             "This is for use with raw transactions, NOT normal use.\n"
             "\nArguments:\n"
             "1. \"address_type\"           (string, optional) The address type to use. Options are \"legacy\", \"p2sh\", and \"bech32\". Default is set by -changetype.\n"
@@ -231,10 +231,10 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount \"monetaryunitaddress\" \"account\"\n"
+            "setaccount \"stakecubecoinaddress\" \"account\"\n"
             "\nSets the account associated with the given address.\n"
             "\nArguments:\n"
-            "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address to be associated with an account.\n"
+            "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
             "\nExamples:\n" +
             HelpExampleCli("setaccount", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" \"tabby\"") + HelpExampleRpc("setaccount", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\", \"tabby\""));
@@ -242,7 +242,7 @@ UniValue setaccount(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -270,10 +270,10 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount \"monetaryunitaddress\"\n"
+            "getaccount \"stakecubecoinaddress\"\n"
             "\nReturns the account associated with the given address.\n"
             "\nArguments:\n"
-            "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address for account lookup.\n"
+            "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address for account lookup.\n"
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
             "\nExamples:\n" +
@@ -282,7 +282,7 @@ UniValue getaccount(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -304,7 +304,7 @@ UniValue getaddressesbyaccount(const UniValue& params, bool fHelp)
             "1. \"account\"  (string, required) The account name.\n"
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"monetaryunitaddress\"  (string) a monetaryunit address associated with the given account\n"
+            "  \"stakecubecoinaddress\"  (string) a stakecubecoin address associated with the given account\n"
             "  ,...\n"
             "]\n"
             "\nExamples:\n" +
@@ -341,7 +341,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse MonetaryUnit address
+    // Parse StakeCubeCoin address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -361,12 +361,12 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress \"monetaryunitaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"stakecubecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() +
             "\nArguments:\n"
-            "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in monetaryunit to send. e.g. 0.1\n"
+            "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in stakecubecoin to send. e.g. 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -380,7 +380,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
     
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -405,11 +405,11 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddressix \"monetaryunitaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"stakecubecoinaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() +
             "\nArguments:\n"
-            "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address to send to.\n"
+            "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address to send to.\n"
             "2. \"amount\"      (numeric, required) The  to send. e.g. 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
@@ -424,7 +424,7 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
 
@@ -457,8 +457,8 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"monetaryunitaddress\",     (string) The monetaryunit address\n"
-            "      amount,                 (numeric) The amount in monetaryunit\n"
+            "      \"stakecubecoinaddress\",     (string) The stakecubecoin address\n"
+            "      amount,                 (numeric) The amount in stakecubecoin\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
             "    ,...\n"
@@ -493,11 +493,11 @@ UniValue signmessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage \"monetaryunitaddress\" \"message\"\n"
+            "signmessage \"stakecubecoinaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
                                         "\nArguments:\n"
-                                        "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address to use for the private key.\n"
+                                        "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address to use for the private key.\n"
                                         "2. \"message\"         (string, required) The message to create a signature of.\n"
                                         "\nResult:\n"
                                         "\"signature\"          (string) The signature of the message encoded in base 64\n"
@@ -543,13 +543,13 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress \"monetaryunitaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given monetaryunitaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"stakecubecoinaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given stakecubecoinaddress in transactions with at least minconf confirmations.\n"
             "\nArguments:\n"
-            "1. \"monetaryunitaddress\"  (string, required) The monetaryunit address for transactions.\n"
+            "1. \"stakecubecoinaddress\"  (string, required) The stakecubecoin address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
             "\nResult:\n"
-            "amount   (numeric) The total amount in monetaryunit received at this address.\n"
+            "amount   (numeric) The total amount in stakecubecoin received at this address.\n"
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
             HelpExampleCli("getreceivedbyaddress", "\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\"") +
@@ -559,9 +559,9 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
     
-    // monetaryunit address
+    // stakecubecoin address
     if (!IsValidDestinationString(params[0].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
 
     CTxDestination address = DecodeDestination(params[0].get_str());
     CScript scriptPubKey = GetScriptForDestination(address);
@@ -600,7 +600,7 @@ UniValue getreceivedbyaccount(const UniValue& params, bool fHelp)
             "1. \"account\"      (string, required) The selected account, may be the default account using \"\".\n"
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
             "\nResult:\n"
-            "amount              (numeric) The total amount in monetaryunit received for this account.\n"
+            "amount              (numeric) The total amount in stakecubecoin received for this account.\n"
             "\nExamples:\n"
             "\nAmount received by the default account with at least 1 confirmation\n" +
             HelpExampleCli("getreceivedbyaccount", "\"\"") +
@@ -683,7 +683,7 @@ UniValue getbalance(const UniValue& params, bool fHelp)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
             "3. includeWatchonly (bool, optional, default=false) Also include balance in watchonly addresses (see 'importaddress')\n"
             "\nResult:\n"
-            "amount              (numeric) The total amount in monetaryunit received for this account.\n"
+            "amount              (numeric) The total amount in stakecubecoin received for this account.\n"
             "\nExamples:\n"
             "\nThe total amount in the server across all accounts\n" +
             HelpExampleCli("getbalance", "") +
@@ -765,9 +765,9 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "true|false           (boolean) true if successfull.\n"
             "\nExamples:\n"
-            "\nMove 0.01 monetaryunit from the default account to the account named tabby\n" +
+            "\nMove 0.01 stakecubecoin from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 monetaryunit timotei to akiko with a comment and funds have 6 confirmations\n" + HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 6 \"happy birthday!\"") +
+            "\nMove 0.01 stakecubecoin timotei to akiko with a comment and funds have 6 confirmations\n" + HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 6 \"happy birthday!\"") +
             "\nAs a json rpc call\n" + HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 6, \"happy birthday!\""));
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
@@ -819,14 +819,14 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom \"fromaccount\" \"tomonetaryunitaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
-            "\nSent an amount from an account to a monetaryunit address.\n"
+            "sendfrom \"fromaccount\" \"tostakecubecoinaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
+            "\nSent an amount from an account to a stakecubecoin address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
                                         "\nArguments:\n"
                                         "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-                                        "2. \"tomonetaryunitaddress\"  (string, required) The monetaryunit address to send funds to.\n"
-                                        "3. amount                (numeric, required) The amount in monetaryunit. (transaction fee is added on top).\n"
+                                        "2. \"tostakecubecoinaddress\"  (string, required) The stakecubecoin address to send funds to.\n"
+                                        "3. amount                (numeric, required) The amount in stakecubecoin. (transaction fee is added on top).\n"
                                         "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
                                         "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
                                         "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -836,7 +836,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
                                         "\nResult:\n"
                                         "\"transactionid\"        (string) The transaction id.\n"
                                         "\nExamples:\n"
-                                        "\nSend 0.01 monetaryunit from the default account to the address, must have at least 1 confirmation\n" +
+                                        "\nSend 0.01 stakecubecoin from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" + HelpExampleCli("sendfrom", "\"tabby\" \"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\" 0.01 6 \"donation\" \"seans outpost\"") +
             "\nAs a json rpc call\n" + HelpExampleRpc("sendfrom", "\"tabby\", \"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\", 0.01, 6, \"donation\", \"seans outpost\""));
@@ -845,7 +845,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 
     string strAccount = AccountFromValue(params[0]);
     if (!IsValidDestinationString(params[1].get_str()))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MonetaryUnit address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid StakeCubeCoin address");
 
     CTxDestination address = DecodeDestination(params[1].get_str());
     CAmount nAmount = AmountFromValue(params[2]);
@@ -884,7 +884,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
                                         "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
                                         "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
                                         "    {\n"
-                                        "      \"address\":amount   (numeric) The monetaryunit address is the key, the numeric amount in monetaryunit is the value\n"
+                                        "      \"address\":amount   (numeric) The stakecubecoin address is the key, the numeric amount in stakecubecoin is the value\n"
                                         "      ,...\n"
                                         "    }\n"
                                         "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -918,7 +918,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
     vector<string> keys = sendTo.getKeys();
     BOOST_FOREACH(const string& name_, keys) {
         if (!IsValidDestinationString(name_))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid MonetaryUnit address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid StakeCubeCoin address: ")+name_);
         
         CTxDestination address = DecodeDestination(name_);
 
@@ -961,20 +961,20 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 2 || params.size() > 3) {
         string msg = "addmultisigaddress nrequired [\"key\",...] ( \"account\" )\n"
                      "\nAdd a nrequired-to-sign multisignature address to the wallet.\n"
-                     "Each key is a MonetaryUnit address or hex-encoded public key.\n"
+                     "Each key is a StakeCubeCoin address or hex-encoded public key.\n"
                      "If 'account' is specified, assign address to that account.\n"
 
                      "\nArguments:\n"
                      "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-                     "2. \"keysobject\"   (string, required) A json array of monetaryunit addresses or hex-encoded public keys\n"
+                     "2. \"keysobject\"   (string, required) A json array of stakecubecoin addresses or hex-encoded public keys\n"
                      "     [\n"
-                     "       \"address\"  (string) monetaryunit address or hex-encoded public key\n"
+                     "       \"address\"  (string) stakecubecoin address or hex-encoded public key\n"
                      "       ...,\n"
                      "     ]\n"
                      "3. \"account\"      (string, optional) An account to assign the addresses to.\n"
 
                      "\nResult:\n"
-                     "\"monetaryunitaddress\"  (string) A monetaryunit address associated with the keys.\n"
+                     "\"stakecubecoinaddress\"  (string) A stakecubecoin address associated with the keys.\n"
 
                      "\nExamples:\n"
                      "\nAdd a multisig address from 2 addresses\n" +
@@ -1262,7 +1262,7 @@ UniValue listreceivedbyaddress(const UniValue& params, bool fHelp)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) The account of the receiving address. The default account is \"\".\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in monetaryunit received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in stakecubecoin received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "  }\n"
@@ -1410,17 +1410,17 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"monetaryunitaddress\",    (string) The monetaryunit address of the transaction. Not present for \n"
+            "    \"address\":\"stakecubecoinaddress\",    (string) The stakecubecoin address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in monetaryunit. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in stakecubecoin. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in monetaryunit. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in stakecubecoin. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -1594,12 +1594,12 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"monetaryunitaddress\",    (string) The monetaryunit address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"stakecubecoinaddress\",    (string) The stakecubecoin address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in monetaryunit. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in stakecubecoin. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in monetaryunit. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in stakecubecoin. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -1674,7 +1674,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "2. \"includeWatchonly\"    (bool, optional, default=false) Whether to include watchonly addresses in balance calculation and details[]\n"
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in monetaryunit\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in stakecubecoin\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -1686,9 +1686,9 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"monetaryunitaddress\",   (string) The monetaryunit address involved in the transaction\n"
+            "      \"address\" : \"stakecubecoinaddress\",   (string) The stakecubecoin address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in monetaryunit\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in stakecubecoin\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -1803,7 +1803,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending MUEs\n"
+            "This is needed prior to performing transactions related to private keys such as sending SCCs\n"
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
             "2. timeout            (numeric, required) The time to keep the decryption key in seconds.\n"
@@ -1946,8 +1946,8 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending MUEs\n" + HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
-            "\nNow we can so something like sign\n" + HelpExampleCli("signmessage", "\"monetaryunitaddress\" \"test message\"") +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending SCCs\n" + HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
+            "\nNow we can so something like sign\n" + HelpExampleCli("signmessage", "\"stakecubecoinaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" + HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" + HelpExampleRpc("encryptwallet", "\"my pass phrase\""));
 
@@ -1976,7 +1976,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "Wallet encrypted; monetaryunit server stopping, restart to run with encrypted wallet. The keypool has been flushed and a new HD seed was generated (if you are using HD). You need to make a new backup.";
+    return "Wallet encrypted; stakecubecoin server stopping, restart to run with encrypted wallet. The keypool has been flushed and a new HD seed was generated (if you are using HD). You need to make a new backup.";
 }
 
 UniValue lockunspent(const UniValue& params, bool fHelp)
@@ -1986,7 +1986,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending MUEs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending SCCs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2103,7 +2103,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "settxfee amount\n"
             "\nSet the transaction fee per kB.\n"
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in MUE/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in SCC/kB rounded to the nearest 0.00000001\n"
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
             "\nExamples:\n" +
@@ -2129,7 +2129,7 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total MUE balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total SCC balance of the wallet\n"
             "  \"txcount\": xxxxxxx,         (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated (only counts external keys)\n"
@@ -2295,7 +2295,7 @@ UniValue autocombinerewards(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || (fEnable && params.size() != 2) || params.size() > 2)
         throw runtime_error(
             "autocombinerewards true|false ( threshold )\n"
-            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same MonetaryUnit address\n"
+            "\nWallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same StakeCubeCoin address\n"
             "When autocombinerewards runs it will create a transaction, and therefore will be subject to transaction fees.\n"
 
             "\nArguments:\n"
@@ -2503,7 +2503,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
             "The MultiSend transaction is sent when the staked coins mature (100 confirmations)\n"
             "****************************************************************\n"
             "TO CREATE OR ADD TO THE MULTISEND VECTOR:\n"
-            "multisend <MonetaryUnit Address> <percent>\n"
+            "multisend <StakeCubeCoin Address> <percent>\n"
             "This will add a new address to the MultiSend vector\n"
             "Percent is a whole number 1 to 100.\n"
             "****************************************************************\n"
@@ -2521,7 +2521,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     //if the user is entering a new MultiSend item
     string strAddress = params[0].get_str();
     if (!IsValidDestinationString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MUE address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid SCC address");
     if (boost::lexical_cast<int>(params[1].get_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())

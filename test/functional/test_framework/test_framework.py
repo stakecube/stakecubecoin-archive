@@ -104,11 +104,11 @@ class BitcoinTestFramework(object):
 
         parser = optparse.OptionParser(usage="%prog [options]")
         parser.add_option("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                          help="Leave monetaryunitds and test.* datadir on exit or error")
+                          help="Leave stakecubecoinds and test.* datadir on exit or error")
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                          help="Don't stop monetaryunitds after the test execution")
+                          help="Don't stop stakecubecoinds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__))+"/../../../src"),
-                          help="Source directory containing monetaryunitd/bitcoin-cli (default: %default)")
+                          help="Source directory containing stakecubecoind/bitcoin-cli (default: %default)")
         parser.add_option("--tmpdir", dest="tmpdir", default=tempfile.mkdtemp(prefix="test"),
                           help="Root directory for datadirs")
         parser.add_option("--tracerpc", dest="trace_rpc", default=False, action="store_true",
@@ -161,7 +161,7 @@ class BitcoinTestFramework(object):
             print("Stopping nodes")
             stop_nodes(self.nodes)
         else:
-            print("Note: monetaryunitds were not stopped and may still be running")
+            print("Note: stakecubecoinds were not stopped and may still be running")
 
         if not self.options.nocleanup and not self.options.noshutdown and success:
             print("Cleaning up")
@@ -179,7 +179,7 @@ class BitcoinTestFramework(object):
             sys.exit(1)
 
 
-# Test framework for doing p2p comparison testing, which sets up some monetaryunitd
+# Test framework for doing p2p comparison testing, which sets up some stakecubecoind
 # binaries:
 # 1 binary: test binary
 # 2 binaries: 1 test binary, 1 ref binary
@@ -194,11 +194,11 @@ class ComparisonTestFramework(BitcoinTestFramework):
 
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("MONETARYUNITD", "monetaryunitd"),
-                          help="monetaryunitd binary to test")
+                          default=os.getenv("MONETARYUNITD", "stakecubecoind"),
+                          help="stakecubecoind binary to test")
         parser.add_option("--refbinary", dest="refbinary",
-                          default=os.getenv("MONETARYUNITD", "monetaryunitd"),
-                          help="monetaryunitd binary to use for reference nodes (if any)")
+                          default=os.getenv("MONETARYUNITD", "stakecubecoind"),
+                          help="stakecubecoind binary to use for reference nodes (if any)")
 
     def setup_network(self):
         self.nodes = start_nodes(

@@ -231,7 +231,7 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"vout\" : [              (array of json objects)\n"
             "     {\n"
-            "       \"value\" : x.xxx,            (numeric) The value in monetaryunit\n"
+            "       \"value\" : x.xxx,            (numeric) The value in stakecubecoin\n"
             "       \"n\" : n,                    (numeric) index\n"
             "       \"scriptPubKey\" : {          (json object)\n"
             "         \"asm\" : \"asm\",          (string) the asm\n"
@@ -239,7 +239,7 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"monetaryunitaddress\"        (string) monetaryunit address\n"
+            "           \"stakecubecoinaddress\"        (string) stakecubecoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -292,9 +292,9 @@ UniValue listunspent(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. minconf          (numeric, optional, default=1) The minimum confirmations to filter\n"
             "2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter\n"
-            "3. \"addresses\"    (string) A json array of monetaryunit addresses to filter\n"
+            "3. \"addresses\"    (string) A json array of stakecubecoin addresses to filter\n"
             "    [\n"
-            "      \"address\"   (string) monetaryunit address\n"
+            "      \"address\"   (string) stakecubecoin address\n"
             "      ,...\n"
             "    ]\n"
             "4. watchonlyconfig  (numberic, optional, default=1) 1 = list regular unspent transactions, 2 = list only watchonly transactions,  3 = list all unspent transactions (including watchonly)\n"
@@ -303,10 +303,10 @@ UniValue listunspent(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"txid\" : \"txid\",        (string) the transaction id \n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"address\" : \"address\",  (string) the monetaryunit address\n"
+            "    \"address\" : \"address\",  (string) the stakecubecoin address\n"
             "    \"account\" : \"account\",  (string) The associated account, or \"\" for the default account\n"
             "    \"scriptPubKey\" : \"key\", (string) the script key\n"
-            "    \"amount\" : x.xxx,         (numeric) the transaction amount in monetaryunit\n"
+            "    \"amount\" : x.xxx,         (numeric) the transaction amount in stakecubecoin\n"
             "    \"confirmations\" : n       (numeric) The number of confirmations\n"
             "  }\n"
             "  ,...\n"
@@ -331,7 +331,7 @@ UniValue listunspent(const UniValue& params, bool fHelp)
         for (unsigned int inx = 0; inx < inputs.size(); inx++) {
             const UniValue& input = inputs[inx];
             if (!IsValidDestinationString(input.get_str()))
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid MonetaryUnit address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid StakeCubeCoin address: ") + input.get_str());
             
             CTxDestination address = DecodeDestination(input.get_str());
             if (setAddress.count(address))
@@ -417,7 +417,7 @@ UniValue createrawtransaction(const UniValue& params, bool fHelp)
             "     ]\n"
             "2. \"addresses\"           (string, required) a json object with addresses as keys and amounts as values\n"
             "    {\n"
-            "      \"address\": x.xxx   (numeric, required) The key is the monetaryunit address, the value is the btc amount\n"
+            "      \"address\": x.xxx   (numeric, required) The key is the stakecubecoin address, the value is the btc amount\n"
             "      ,...\n"
             "    }\n"
 
@@ -456,7 +456,7 @@ UniValue createrawtransaction(const UniValue& params, bool fHelp)
     vector<string> addrList = sendTo.getKeys();
     BOOST_FOREACH(const string& name_, addrList) {
         if (!IsValidDestinationString(name_))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid MonetaryUnit address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid StakeCubeCoin address: ")+name_);
         
         CTxDestination address = DecodeDestination(name_);
 
@@ -507,7 +507,7 @@ UniValue decoderawtransaction(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"vout\" : [             (array of json objects)\n"
             "     {\n"
-            "       \"value\" : x.xxx,            (numeric) The value in monetaryunit\n"
+            "       \"value\" : x.xxx,            (numeric) The value in stakecubecoin\n"
             "       \"n\" : n,                    (numeric) index\n"
             "       \"scriptPubKey\" : {          (json object)\n"
             "         \"asm\" : \"asm\",          (string) the asm\n"
@@ -515,7 +515,7 @@ UniValue decoderawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) monetaryunit address\n"
+            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) stakecubecoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -556,7 +556,7 @@ UniValue decodescript(const UniValue& params, bool fHelp)
             "  \"type\":\"type\", (string) The output type\n"
             "  \"reqSigs\": n,    (numeric) The required signatures\n"
             "  \"addresses\": [   (json array of string)\n"
-            "     \"address\"     (string) monetaryunit address\n"
+            "     \"address\"     (string) stakecubecoin address\n"
             "     ,...\n"
             "  ],\n"
             "  \"p2sh\",\"address\" (string) script address\n"

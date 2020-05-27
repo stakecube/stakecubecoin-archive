@@ -83,19 +83,19 @@ class Node :
 		self._nodeIndex = nodeIndex
 		self._nodePath = os.path.join(self._app.getRootPath(), 'node%d' % (nodeIndex))
 		self._rpcUser = 'rpcuser%d' % (nodeIndex)
-		self._monetaryunitd = self._app.getMonetaryunitd()
-		self._monetaryunitCli = self._app.getMonetaryunitCli()
+		self._stakecubecoind = self._app.getMonetaryunitd()
+		self._stakecubecoinCli = self._app.getMonetaryunitCli()
 		self._daemonProcess = None
 
 	def createDataDir(self, nodeCount, masterNodePrivateKey = None) :
 		makeDirs(self._nodePath)
 		writeFile(
-			os.path.join(self._nodePath, 'monetaryunit.conf'),
+			os.path.join(self._nodePath, 'stakecubecoin.conf'),
 			self._generateMonetaryunitConf(nodeCount, masterNodePrivateKey)
 		)
 		
 	def startNode(self) :
-		self._daemonProcess = subprocess.Popen([ self._monetaryunitd, '-datadir=' + self._nodePath, '-daemon' ])
+		self._daemonProcess = subprocess.Popen([ self._stakecubecoind, '-datadir=' + self._nodePath, '-daemon' ])
 		
 	def stopNode(self) :
 		self.executeCli('stop')
@@ -108,7 +108,7 @@ class Node :
 		normalizedArgs = []
 		for arg in args :
 			normalizedArgs.append(str(arg))
-		output = executeCommand(self._monetaryunitCli, '-datadir=' + self._nodePath, *normalizedArgs)
+		output = executeCommand(self._stakecubecoinCli, '-datadir=' + self._nodePath, *normalizedArgs)
 		command = ' '.join(normalizedArgs)
 		if output.find('error') >= 0 :
 			return {
@@ -143,7 +143,7 @@ class Node :
 		result += "server=1\n"
 		result += "debug=1\n"
 		result += "debug=net\n"
-		result += "debug=monetaryunit\n"
+		result += "debug=stakecubecoin\n"
 		result += "rpcuser=%s\n" % (self._rpcUser)
 		result += "rpcpassword=%s\n" % (self._rpcPassword)
 		result += "port=%d\n" % (getNodePort(self._nodeIndex))
@@ -199,13 +199,13 @@ class Application :
 		makeDirs(self._rootPath)
 		print('Root path: %s' % (self._rootPath))
 		
-		self._monetaryunitd = os.getenv('MONETARYUNITD', None)
-		if not self._monetaryunitd :
+		self._stakecubecoind = os.getenv('MONETARYUNITD', None)
+		if not self._stakecubecoind :
 			die('Undefined MONETARYUNITD')
-		self._monetaryunitCli = os.getenv('MONETARYUNITCLI', None)
-		if not self._monetaryunitCli :
+		self._stakecubecoinCli = os.getenv('MONETARYUNITCLI', None)
+		if not self._stakecubecoinCli :
 			die('Undefined MONETARYUNIT')
-		print('monetaryunitd: %s' % (self._monetaryunitd))
+		print('stakecubecoind: %s' % (self._stakecubecoind))
 	
 	def _cleanup(self) :
 		self._stopAllNodes()
@@ -412,10 +412,10 @@ class Application :
 		return self._rootPath
 		
 	def getMonetaryunitd(self) :
-		return self._monetaryunitd
+		return self._stakecubecoind
 
 	def getMonetaryunitCli(self) :
-		return self._monetaryunitCli
+		return self._stakecubecoinCli
 
 if __name__ == '__main__':
     Application().run()

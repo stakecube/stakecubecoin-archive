@@ -85,7 +85,7 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT500000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT500000IFMN = 4, // ONLY_NONDENOMINATED and not 500000 MUE at the same time
+    ONLY_NONDENOMINATED_NOT500000IFMN = 4, // ONLY_NONDENOMINATED and not 500000 SCC at the same time
     ONLY_500000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
