@@ -200,7 +200,6 @@ void CMasternode::Check(bool forceCheck)
     if (!forceCheck && (GetTime() - lastTimeChecked < MASTERNODE_CHECK_SECONDS)) return;
     lastTimeChecked = GetTime();
 
-
     //once spent, stop doing the checks
     if (activeState == MASTERNODE_VIN_SPENT) return;
 
@@ -262,7 +261,7 @@ void CMasternode::Check(bool forceCheck)
         isPortOpen = false;
         activeState = MASTERNODE_UNREACHABLE;
 
-        //return;
+        return;
     }
 
     if (node_found == false)
