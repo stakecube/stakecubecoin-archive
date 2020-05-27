@@ -27,7 +27,7 @@ print("Total amount to send: " + str(total_amount))
 exit()
 
 # replace rpcuser and rpcpassword values for your local node to match helium.conf
-rpc_connection = AuthServiceProxy("http://%s:%s@%s:%s" % ('user', 'password', '127.0.0.1', '19688'))
+rpc_connection = AuthServiceProxy("http://%s:%s@%s:%s" % ('user', 'password', '127.0.0.1', '39999'))
 print(rpc_connection.getbalance())
 
 # Chunking was not necessary since there were less than 800 transactions,

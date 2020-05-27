@@ -43,7 +43,7 @@ dns2.stakecubecoin.org<br>
 dns3.stakecubecoin.org<br>
 192.99.217.102<br>
 164.132.151.109<br>
-p2p port :19687
+p2p port :40000
 
 ## Importing wallet balances from SCC 1.0.3 wallets into SCC 2.0 wallets ##
 

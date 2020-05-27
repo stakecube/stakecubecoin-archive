@@ -59,7 +59,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:19687
+HiddenServicePort 989 127.0.0.1:40000
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -69,7 +69,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your stakecubecoind's P2P listen port (19687 by default).
+your stakecubecoind's P2P listen port (40000 by default).
 ```
 -externalip=X   You can tell stakecubecoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -102,7 +102,7 @@ specify:
 ./stakecubecoind ... -discover
 ```
 
-and open port 19687 on your firewall (or use -upnp).
+and open port 40000 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

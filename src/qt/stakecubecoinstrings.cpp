@@ -188,9 +188,9 @@ QT_TRANSLATE_NOOP("stakecubecoin-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("stakecubecoin-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 500000 SCC."),
+"transaction that are not equal 1000 SCC."),
 QT_TRANSLATE_NOOP("stakecubecoin-core", ""
-"Unable to locate enough funds for this transaction that are not equal 500000 "
+"Unable to locate enough funds for this transaction that are not equal 1000 "
 "SCC."),
 QT_TRANSLATE_NOOP("stakecubecoin-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("stakecubecoin-core", ""
 QT_TRANSLATE_NOOP("stakecubecoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("stakecubecoin-core", "(19687 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("stakecubecoin-core", "(40000 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("stakecubecoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("stakecubecoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("stakecubecoin-core", "(must be 19687 for mainnet)"),
+QT_TRANSLATE_NOOP("stakecubecoin-core", "(must be 40000 for mainnet)"),
 QT_TRANSLATE_NOOP("stakecubecoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("stakecubecoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("stakecubecoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
