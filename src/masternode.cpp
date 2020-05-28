@@ -264,6 +264,7 @@ void CMasternode::Check(bool forceCheck)
         return;
     }
 
+    // Test node for active peer connection (not used)
     if (node_found == false)
     {
         isPortOpen = false;
