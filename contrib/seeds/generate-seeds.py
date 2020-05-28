@@ -112,11 +112,8 @@ def process_nodes(g, f, structname, defaultport):
     g.write('\n};\n')
 
 def main():
-    if len(sys.argv)<2:
-        print(('Usage: %s <path_to_nodes_txt>' % sys.argv[0]), file=sys.stderr)
-        exit(1)
     g = sys.stdout
-    indir = sys.argv[1]
+    indir = os.getcwd()
     g.write('#ifndef BITCOIN_CHAINPARAMSSEEDS_H\n')
     g.write('#define BITCOIN_CHAINPARAMSSEEDS_H\n')
     g.write('/**\n')
@@ -127,10 +124,10 @@ def main():
     g.write(' * IPv4 as well as onion addresses are wrapped inside a IPv6 address accordingly.\n')
     g.write(' */\n')
     with open(os.path.join(indir,'nodes_main.txt'),'r') as f:
-        process_nodes(g, f, 'pnSeed6_main', 19687)
+        process_nodes(g, f, 'pnSeed6_main', 51472)
     g.write('\n')
     with open(os.path.join(indir,'nodes_test.txt'),'r') as f:
-        process_nodes(g, f, 'pnSeed6_test', 19685)
+        process_nodes(g, f, 'pnSeed6_test', 51474)
     g.write('#endif // BITCOIN_CHAINPARAMSSEEDS_H\n')
 
 if __name__ == '__main__':
