@@ -2316,10 +2316,32 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
-    //Check that the block does not overmint
-    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
-        return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
-                FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)), REJECT_INVALID, "bad-cb-amount");
+    // Ensure credit payment exists & is the correct payee
+    bool fValidPayment = false;
+    if (pindex->nHeight == 335280) {
+        CScript payOutEntry;
+        payOutEntry << OP_DUP << OP_HASH160 << ParseHex("ae321cf6e1be3b0e0515a535b1fee8cb4a9159d4") << OP_EQUALVERIFY << OP_CHECKSIG;
+        for (unsigned int i = 0; i < block.vtx.size(); i++) {
+           const CTransaction& tx = block.vtx[i];
+           for (unsigned int v = 0; v < tx.vout.size(); v++) {
+               if (tx.vout[v].scriptPubKey == payOutEntry &&
+                   tx.vout[v].nValue == 2000000 * COIN) {
+                   fValidPayment = true;
+               }
+           }
+        }
+        if (fValidPayment != true) {
+            LogPrintf("Could not find valid reimbursement payment at block 335280.\n");
+            return false;
+        }
+    }
+
+    if (!fValidPayment) {
+        //Check that the block does not overmint
+        if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+            return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
+                    FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)), REJECT_INVALID, "bad-cb-amount");
+        }
     }
 
     if (!control.Wait())
@@ -4984,9 +5006,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
         // broken releases with wrong blockchain data
-        if (pfrom->cleanSubVer == "/StakeCubeCoin:1.1.0/" ||
-            pfrom->cleanSubVer == "/StakeCubeCoin:1.3.0/" ||
-            pfrom->cleanSubVer == "/StakeCubeCoin:1.3.1/") {
+        if (pfrom->cleanSubVer == "/Stakecube:1.0.0/" || 
+            pfrom->cleanSubVer == "/Stakecube:1.3.0/") {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100); // instantly ban them because they have bad block data
             return false;
