@@ -196,7 +196,7 @@ class SegWitTest(BitcoinTestFramework):
 
         # enable segwit through spork system
         for node in self.nodes:
-            node.spork("SPORK_17_SEGWIT_ACTIVATION", int(time.time() - 100))
+            node.spork("SPORK_13_SEGWIT_ACTIVATION", int(time.time() - 100))
 
         print("Verify previous witness txs skipped for mining can now be mined")
         assert_equal(len(self.nodes[2].getrawmempool()), 4)

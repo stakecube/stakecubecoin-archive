@@ -440,7 +440,7 @@ bool ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue, CW
             CWalletTx wtx;
             ssValue >> wtx;
             CValidationState state;
-            if (!(CheckTransaction(wtx, false, state, IsSporkActive(SPORK_17_SEGWIT_ACTIVATION)) && (wtx.GetHash() == hash) && state.IsValid()))
+            if (!(CheckTransaction(wtx, false, state, IsSporkActive(SPORK_13_SEGWIT_ACTIVATION)) && (wtx.GetHash() == hash) && state.IsValid()))
                 return false;
 
             // Undo serialize changes in 31600
