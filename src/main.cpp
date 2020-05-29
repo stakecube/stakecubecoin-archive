@@ -11,6 +11,7 @@
 
 #include "addrman.h"
 #include "alert.h"
+#include "banned.h"
 #include "base58.h"
 #include "chainparams.h"
 #include "checkpoints.h"
@@ -941,6 +942,14 @@ bool MoneyRange(CAmount nValueOut)
 
 bool CheckTransaction(const CTransaction& tx, bool fRejectBadUTXO, CValidationState& state, bool fWitnessEnabled)
 {
+    // Check for banned inputs
+    for (const auto& txin : tx.vin) {
+       if (areBannedInputs(txin.prevout.hash, txin.prevout.n)) {
+           return state.DoS(10, error("CheckTransaction() : banned fund movement"), 
+                            REJECT_INVALID, "bad-txns-vin-empty");
+        }
+    }
+
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
