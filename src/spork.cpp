@@ -129,6 +129,7 @@ int64_t GetSporkValue(int nSporkID)
         if (nSporkID == SPORK_12_NEW_PROTOCOL_ENFORCEMENT) r = SPORK_12_NEW_PROTOCOL_ENFORCEMENT_DEFAULT;
         if (nSporkID == SPORK_13_SEGWIT_ACTIVATION) r = SPORK_13_SEGWIT_ACTIVATION_DEFAULT;
         if (nSporkID == SPORK_14_SEGWIT_ON_COINBASE) r = SPORK_14_SEGWIT_ON_COINBASE_DEFAULT;
+        if (nSporkID == SPORK_15_CHOKE_CONTROL_MODE) r = SPORK_15_CHOKE_CONTROL_MODE_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -278,6 +279,7 @@ int CSporkManager::GetSporkIDByName(std::string strName)
     if (strName == "SPORK_12_NEW_PROTOCOL_ENFORCEMENT") return SPORK_12_NEW_PROTOCOL_ENFORCEMENT;
     if (strName == "SPORK_13_SEGWIT_ACTIVATION") return SPORK_13_SEGWIT_ACTIVATION;
     if (strName == "SPORK_14_SEGWIT_ON_COINBASE") return SPORK_14_SEGWIT_ON_COINBASE;
+    if (strName == "SPORK_15_CHOKE_CONTROL_MODE") return SPORK_15_CHOKE_CONTROL_MODE;
 
     return -1;
 }
@@ -295,6 +297,7 @@ std::string CSporkManager::GetSporkNameByID(int id)
     if (id == SPORK_12_NEW_PROTOCOL_ENFORCEMENT) return "SPORK_12_NEW_PROTOCOL_ENFORCEMENT";
     if (id == SPORK_13_SEGWIT_ACTIVATION) return "SPORK_13_SEGWIT_ACTIVATION";
     if (id == SPORK_14_SEGWIT_ON_COINBASE) return "SPORK_14_SEGWIT_ON_COINBASE";
+    if (id == SPORK_15_CHOKE_CONTROL_MODE) return "SPORK_15_CHOKE_CONTROL_MODE";
 
     return "Unknown";
 }

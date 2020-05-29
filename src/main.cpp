@@ -2182,6 +2182,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return true;
     }
 
+    // Damage control
+    if (IsSporkActive(SPORK_15_CHOKE_CONTROL_MODE)) {
+        // during choke, mark any new blocks as invalid
+        uint256 invalidHash = block.GetHash();
+        CBlockIndex* pblockindex = mapBlockIndex[invalidHash];
+        InvalidateBlock(state, pblockindex);
+        // .. and as you were
+        ActivateBestChain(state);
+        return false;
+    }
+
     if (pindex->nHeight <= Params().LAST_POW_BLOCK() && block.IsProofOfStake())
         return state.DoS(100, error("ConnectBlock() : PoS period not active"),
             REJECT_INVALID, "PoS-early");
