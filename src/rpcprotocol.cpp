@@ -3,6 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017 The Phore developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -34,9 +35,9 @@ using namespace std;
 string JSONRPCRequest(const string& strMethod, const UniValue& params, const UniValue& id)
 {
     UniValue request(UniValue::VOBJ);
-    request.push_back(Pair("method", strMethod));
-    request.push_back(Pair("params", params));
-    request.push_back(Pair("id", id));
+    request.push_back(make_pair("method", strMethod));
+    request.push_back(make_pair("params", params));
+    request.push_back(make_pair("id", id));
     return request.write() + "\n";
 }
 
@@ -44,11 +45,11 @@ UniValue JSONRPCReplyObj(const UniValue& result, const UniValue& error, const Un
 {
     UniValue reply(UniValue::VOBJ);
     if (!error.isNull())
-        reply.push_back(Pair("result", NullUniValue));
+        reply.push_back(make_pair("result", NullUniValue));
     else
-        reply.push_back(Pair("result", result));
-    reply.push_back(Pair("error", error));
-    reply.push_back(Pair("id", id));
+        reply.push_back(make_pair("result", result));
+    reply.push_back(make_pair("error", error));
+    reply.push_back(make_pair("id", id));
     return reply;
 }
 
@@ -61,8 +62,8 @@ string JSONRPCReply(const UniValue& result, const UniValue& error, const UniValu
 UniValue JSONRPCError(int code, const string& message)
 {
     UniValue error(UniValue::VOBJ);
-    error.push_back(Pair("code", code));
-    error.push_back(Pair("message", message));
+    error.push_back(make_pair("code", code));
+    error.push_back(make_pair("message", message));
     return error;
 }
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2014 BitPay Inc.
 // Copyright (c) 2014-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+// file COPYING or https://opensource.org/licenses/mit-license.php.
 
 #include <stdint.h>
 #include <vector>
@@ -19,17 +19,18 @@
 #define BOOST_CHECK_THROW(stmt, excMatch) { \
         try { \
             (stmt); \
+            assert(0 && "No exception caught"); \
         } catch (excMatch & e) { \
 	} catch (...) { \
-	    assert(0); \
+	    assert(0 && "Wrong exception caught"); \
 	} \
     }
 #define BOOST_CHECK_NO_THROW(stmt) { \
         try { \
             (stmt); \
-	} catch (...) { \
-	    assert(0); \
-	} \
+        } catch (...) { \
+            assert(0); \
+        } \
     }
 
 BOOST_FIXTURE_TEST_SUITE(univalue_tests, BasicTestingSetup)
@@ -141,6 +142,8 @@ BOOST_AUTO_TEST_CASE(univalue_set)
     BOOST_CHECK(v.isArray());
     BOOST_CHECK_EQUAL(v.size(), 0);
 
+    BOOST_CHECK(v.setStr(""));
+    v.reserve(3);
     BOOST_CHECK(v.setStr("zum"));
     BOOST_CHECK(v.isStr());
     BOOST_CHECK_EQUAL(v.getValStr(), "zum");
@@ -186,6 +189,7 @@ BOOST_AUTO_TEST_CASE(univalue_set)
 BOOST_AUTO_TEST_CASE(univalue_array)
 {
     UniValue arr(UniValue::VARR);
+    arr.reserve(9);
 
     UniValue v((int64_t)1023LL);
     BOOST_CHECK(arr.push_back(v));
@@ -205,14 +209,23 @@ BOOST_AUTO_TEST_CASE(univalue_array)
 
     BOOST_CHECK(arr.push_backV(vec));
 
+    BOOST_CHECK(arr.push_back((uint64_t) 400ULL));
+    BOOST_CHECK(arr.push_back((int64_t) -400LL));
+    BOOST_CHECK(arr.push_back((int) -401));
+    BOOST_CHECK(arr.push_back(-40.1));
+
     BOOST_CHECK_EQUAL(arr.empty(), false);
-    BOOST_CHECK_EQUAL(arr.size(), 5);
+    BOOST_CHECK_EQUAL(arr.size(), 9);
 
     BOOST_CHECK_EQUAL(arr[0].getValStr(), "1023");
     BOOST_CHECK_EQUAL(arr[1].getValStr(), "zippy");
     BOOST_CHECK_EQUAL(arr[2].getValStr(), "pippy");
     BOOST_CHECK_EQUAL(arr[3].getValStr(), "boing");
     BOOST_CHECK_EQUAL(arr[4].getValStr(), "going");
+    BOOST_CHECK_EQUAL(arr[5].getValStr(), "400");
+    BOOST_CHECK_EQUAL(arr[6].getValStr(), "-400");
+    BOOST_CHECK_EQUAL(arr[7].getValStr(), "-401");
+    BOOST_CHECK_EQUAL(arr[8].getValStr(), "-40.1");
 
     BOOST_CHECK_EQUAL(arr[999].getValStr(), "");
 
@@ -226,6 +239,8 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     UniValue obj(UniValue::VOBJ);
     std::string strKey, strVal;
     UniValue v;
+
+    obj.reserve(11);
 
     strKey = "age";
     v.setInt(100);
@@ -251,6 +266,12 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     strKey = "temperature";
     BOOST_CHECK(obj.pushKV(strKey, (double) 90.012));
 
+    strKey = "booleanF";
+    BOOST_CHECK(obj.pushKV(strKey, (bool) false));
+
+    strKey = "booleanT";
+    BOOST_CHECK(obj.pushKV(strKey, (bool) true));
+
     UniValue obj2(UniValue::VOBJ);
     BOOST_CHECK(obj2.pushKV("cat1", 9000));
     BOOST_CHECK(obj2.pushKV("cat2", 12345));
@@ -258,7 +279,7 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     BOOST_CHECK(obj.pushKVs(obj2));
 
     BOOST_CHECK_EQUAL(obj.empty(), false);
-    BOOST_CHECK_EQUAL(obj.size(), 9);
+    BOOST_CHECK_EQUAL(obj.size(), 11);
 
     BOOST_CHECK_EQUAL(obj["age"].getValStr(), "100");
     BOOST_CHECK_EQUAL(obj["first"].getValStr(), "John");
@@ -269,6 +290,8 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     BOOST_CHECK_EQUAL(obj["temperature"].getValStr(), "90.012");
     BOOST_CHECK_EQUAL(obj["cat1"].getValStr(), "9000");
     BOOST_CHECK_EQUAL(obj["cat2"].getValStr(), "12345");
+    BOOST_CHECK_EQUAL(obj["booleanF"].getValStr(), "");
+    BOOST_CHECK_EQUAL(obj["booleanT"].getValStr(), "1");
 
     BOOST_CHECK_EQUAL(obj["nyuknyuknyuk"].getValStr(), "");
 
@@ -281,6 +304,8 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     BOOST_CHECK(obj.exists("temperature"));
     BOOST_CHECK(obj.exists("cat1"));
     BOOST_CHECK(obj.exists("cat2"));
+    BOOST_CHECK(obj.exists("booleanF"));
+    BOOST_CHECK(obj.exists("booleanT"));
 
     BOOST_CHECK(!obj.exists("nyuknyuknyuk"));
 
@@ -294,6 +319,8 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     objTypes["temperature"] = UniValue::VNUM;
     objTypes["cat1"] = UniValue::VNUM;
     objTypes["cat2"] = UniValue::VNUM;
+    objTypes["booleanF"] = UniValue::VBOOL;
+    objTypes["booleanT"] = UniValue::VBOOL;
     BOOST_CHECK(obj.checkObject(objTypes));
 
     objTypes["cat2"] = UniValue::VSTR;
@@ -302,6 +329,27 @@ BOOST_AUTO_TEST_CASE(univalue_object)
     obj.clear();
     BOOST_CHECK(obj.empty());
     BOOST_CHECK_EQUAL(obj.size(), 0);
+    BOOST_CHECK_EQUAL(obj.getType(), UniValue::VNULL);
+
+    BOOST_CHECK_EQUAL(obj.setObject(), true);
+    UniValue uv;
+    uv.setInt(42);
+    obj.__pushKV("age", uv);
+    BOOST_CHECK_EQUAL(obj.size(), 1);
+    BOOST_CHECK_EQUAL(obj["age"].getValStr(), "42");
+
+    uv.setInt(43);
+    obj.pushKV("age", uv);
+    BOOST_CHECK_EQUAL(obj.size(), 1);
+    BOOST_CHECK_EQUAL(obj["age"].getValStr(), "43");
+
+    obj.pushKV("name", "foo bar");
+
+    std::map<std::string,UniValue> kv;
+    obj.getObjMap(kv);
+    BOOST_CHECK_EQUAL(kv["age"].getValStr(), "43");
+    BOOST_CHECK_EQUAL(kv["name"].getValStr(), "foo bar");
+
 }
 
 static const char *json1 =

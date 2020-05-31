@@ -1,6 +1,7 @@
 // Copyright (c) 2018 The Phore developers
 // Copyright (c) 2018 The Curium developers
 // Copyright (c) 2017-2018 The Bulwark Developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -86,9 +87,9 @@ void budgetToST(CBudgetProposal* pbudgetProposal, UniValue& bObj)
     bObj.push_back(pbudgetProposal->IsEstablished());
 
     std::string strError = "";
-    bObj.push_back(Pair("IsValid", pbudgetProposal->IsValid(strError)));
-    bObj.push_back(Pair("IsValidReason", strError.c_str()));
-    bObj.push_back(Pair("fValid", pbudgetProposal->fValid));
+    bObj.push_back(make_pair("IsValid", pbudgetProposal->IsValid(strError)));
+    bObj.push_back(make_pair("IsValidReason", strError.c_str()));
+    bObj.push_back(make_pair("fValid", pbudgetProposal->fValid));
 }
 
 void ProposalTableModel::setProposalType(const int &type)
