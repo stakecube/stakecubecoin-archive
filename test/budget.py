@@ -83,15 +83,15 @@ class Node :
 		self._nodeIndex = nodeIndex
 		self._nodePath = os.path.join(self._app.getRootPath(), 'node%d' % (nodeIndex))
 		self._rpcUser = 'rpcuser%d' % (nodeIndex)
-		self._stakecubecoind = self._app.getMonetaryunitd()
-		self._stakecubecoinCli = self._app.getMonetaryunitCli()
+		self._stakecubecoind = self._app.getStakecubed()
+		self._stakecubecoinCli = self._app.getStakecubeCli()
 		self._daemonProcess = None
 
 	def createDataDir(self, nodeCount, masterNodePrivateKey = None) :
 		makeDirs(self._nodePath)
 		writeFile(
 			os.path.join(self._nodePath, 'stakecubecoin.conf'),
-			self._generateMonetaryunitConf(nodeCount, masterNodePrivateKey)
+			self._generateStakecubeConf(nodeCount, masterNodePrivateKey)
 		)
 		
 	def startNode(self) :
@@ -137,7 +137,7 @@ class Node :
 		print('waitNodeStarting failed')
 		return False
 
-	def _generateMonetaryunitConf(self, nodeCount, masterNodePrivateKey) :
+	def _generateStakecubeConf(self, nodeCount, masterNodePrivateKey) :
 		result = ""
 		result += "regtest=1\n"
 		result += "server=1\n"
@@ -199,12 +199,12 @@ class Application :
 		makeDirs(self._rootPath)
 		print('Root path: %s' % (self._rootPath))
 		
-		self._stakecubecoind = os.getenv('MONETARYUNITD', None)
+		self._stakecubecoind = os.getenv('STAKECUBECOIND', None)
 		if not self._stakecubecoind :
-			die('Undefined MONETARYUNITD')
-		self._stakecubecoinCli = os.getenv('MONETARYUNITCLI', None)
+			die('Undefined STAKECUBECOIND')
+		self._stakecubecoinCli = os.getenv('STAKECUBECOINCLI', None)
 		if not self._stakecubecoinCli :
-			die('Undefined MONETARYUNIT')
+			die('Undefined STAKECUBECOIN')
 		print('stakecubecoind: %s' % (self._stakecubecoind))
 	
 	def _cleanup(self) :
@@ -411,10 +411,10 @@ class Application :
 	def getRootPath(self) :
 		return self._rootPath
 		
-	def getMonetaryunitd(self) :
+	def getStakecubed(self) :
 		return self._stakecubecoind
 
-	def getMonetaryunitCli(self) :
+	def getStakecubeCli(self) :
 		return self._stakecubecoinCli
 
 if __name__ == '__main__':

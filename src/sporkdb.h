@@ -1,9 +1,10 @@
 // Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MONETARYUNIT_CSPORKDB_H
-#define MONETARYUNIT_CSPORKDB_H
+#ifndef STAKECUBECOIN_CSPORKDB_H
+#define STAKECUBECOIN_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +26,4 @@ public:
 };
 
 
-#endif //MONETARYUNIT_CSPORKDB_H
+#endif //STAKECUBECOIN_CSPORKDB_H
