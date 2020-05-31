@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -122,38 +123,38 @@ UniValue getpeerinfo(const UniValue& params, bool fHelp)
         UniValue obj(UniValue::VOBJ);
         CNodeStateStats statestats;
         bool fStateStats = GetNodeStateStats(stats.nodeid, statestats);
-        obj.push_back(Pair("id", stats.nodeid));
-        obj.push_back(Pair("addr", stats.addrName));
+        obj.push_back(make_pair("id", stats.nodeid));
+        obj.push_back(make_pair("addr", stats.addrName));
         if (!(stats.addrLocal.empty()))
-            obj.push_back(Pair("addrlocal", stats.addrLocal));
-        obj.push_back(Pair("services", strprintf("%016x", stats.nServices)));
-        obj.push_back(Pair("lastsend", stats.nLastSend));
-        obj.push_back(Pair("lastrecv", stats.nLastRecv));
-        obj.push_back(Pair("bytessent", stats.nSendBytes));
-        obj.push_back(Pair("bytesrecv", stats.nRecvBytes));
-        obj.push_back(Pair("conntime", stats.nTimeConnected));
-        obj.push_back(Pair("timeoffset", stats.nTimeOffset));
-        obj.push_back(Pair("pingtime", stats.dPingTime));
+            obj.push_back(make_pair("addrlocal", stats.addrLocal));
+        obj.push_back(make_pair("services", strprintf("%016x", stats.nServices)));
+        obj.push_back(make_pair("lastsend", stats.nLastSend));
+        obj.push_back(make_pair("lastrecv", stats.nLastRecv));
+        obj.push_back(make_pair("bytessent", stats.nSendBytes));
+        obj.push_back(make_pair("bytesrecv", stats.nRecvBytes));
+        obj.push_back(make_pair("conntime", stats.nTimeConnected));
+        obj.push_back(make_pair("timeoffset", stats.nTimeOffset));
+        obj.push_back(make_pair("pingtime", stats.dPingTime));
         if (stats.dPingWait > 0.0)
-            obj.push_back(Pair("pingwait", stats.dPingWait));
-        obj.push_back(Pair("version", stats.nVersion));
+            obj.push_back(make_pair("pingwait", stats.dPingWait));
+        obj.push_back(make_pair("version", stats.nVersion));
         // Use the sanitized form of subver here, to avoid tricksy remote peers from
         // corrupting or modifiying the JSON output by putting special characters in
         // their ver message.
-        obj.push_back(Pair("subver", stats.cleanSubVer));
-        obj.push_back(Pair("inbound", stats.fInbound));
-        obj.push_back(Pair("startingheight", stats.nStartingHeight));
+        obj.push_back(make_pair("subver", stats.cleanSubVer));
+        obj.push_back(make_pair("inbound", stats.fInbound));
+        obj.push_back(make_pair("startingheight", stats.nStartingHeight));
         if (fStateStats) {
-            obj.push_back(Pair("banscore", statestats.nMisbehavior));
-            obj.push_back(Pair("synced_headers", statestats.nSyncHeight));
-            obj.push_back(Pair("synced_blocks", statestats.nCommonHeight));
+            obj.push_back(make_pair("banscore", statestats.nMisbehavior));
+            obj.push_back(make_pair("synced_headers", statestats.nSyncHeight));
+            obj.push_back(make_pair("synced_blocks", statestats.nCommonHeight));
             UniValue heights(UniValue::VARR);
             BOOST_FOREACH (int height, statestats.vHeightInFlight) {
                 heights.push_back(height);
             }
-            obj.push_back(Pair("inflight", heights));
+            obj.push_back(make_pair("inflight", heights));
         }
-        obj.push_back(Pair("whitelisted", stats.fWhitelisted));
+        obj.push_back(make_pair("whitelisted", stats.fWhitelisted));
 
         ret.push_back(obj);
     }
@@ -280,7 +281,7 @@ UniValue getaddednodeinfo(const UniValue& params, bool fHelp)
     if (!fDns) {
         BOOST_FOREACH (string& strAddNode, laddedNodes) {
             UniValue obj(UniValue::VOBJ);
-            obj.push_back(Pair("addednode", strAddNode));
+            obj.push_back(make_pair("addednode", strAddNode));
             ret.push_back(obj);
         }
         return ret;
@@ -293,37 +294,37 @@ UniValue getaddednodeinfo(const UniValue& params, bool fHelp)
             laddedAddreses.push_back(make_pair(strAddNode, vservNode));
         else {
             UniValue obj(UniValue::VOBJ);
-            obj.push_back(Pair("addednode", strAddNode));
-            obj.push_back(Pair("connected", false));
+            obj.push_back(make_pair("addednode", strAddNode));
+            obj.push_back(make_pair("connected", false));
             UniValue addresses(UniValue::VARR);
-            obj.push_back(Pair("addresses", addresses));
+            obj.push_back(make_pair("addresses", addresses));
         }
     }
 
     LOCK(cs_vNodes);
     for (list<pair<string, vector<CService> > >::iterator it = laddedAddreses.begin(); it != laddedAddreses.end(); it++) {
         UniValue obj(UniValue::VOBJ);
-        obj.push_back(Pair("addednode", it->first));
+        obj.push_back(make_pair("addednode", it->first));
 
         UniValue addresses(UniValue::VARR);
         bool fConnected = false;
         BOOST_FOREACH (CService& addrNode, it->second) {
             bool fFound = false;
             UniValue node(UniValue::VOBJ);
-            node.push_back(Pair("address", addrNode.ToString()));
+            node.push_back(make_pair("address", addrNode.ToString()));
             BOOST_FOREACH (CNode* pnode, vNodes)
                 if (pnode->addr == addrNode) {
                     fFound = true;
                     fConnected = true;
-                    node.push_back(Pair("connected", pnode->fInbound ? "inbound" : "outbound"));
+                    node.push_back(make_pair("connected", pnode->fInbound ? "inbound" : "outbound"));
                     break;
                 }
             if (!fFound)
-                node.push_back(Pair("connected", "false"));
+                node.push_back(make_pair("connected", "false"));
             addresses.push_back(node);
         }
-        obj.push_back(Pair("connected", fConnected));
-        obj.push_back(Pair("addresses", addresses));
+        obj.push_back(make_pair("connected", fConnected));
+        obj.push_back(make_pair("addresses", addresses));
         ret.push_back(obj);
     }
 
@@ -347,9 +348,9 @@ UniValue getnettotals(const UniValue& params, bool fHelp)
             HelpExampleCli("getnettotals", "") + HelpExampleRpc("getnettotals", ""));
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("totalbytesrecv", CNode::GetTotalBytesRecv()));
-    obj.push_back(Pair("totalbytessent", CNode::GetTotalBytesSent()));
-    obj.push_back(Pair("timemillis", GetTimeMillis()));
+    obj.push_back(make_pair("totalbytesrecv", CNode::GetTotalBytesRecv()));
+    obj.push_back(make_pair("totalbytessent", CNode::GetTotalBytesSent()));
+    obj.push_back(make_pair("timemillis", GetTimeMillis()));
     return obj;
 }
 
@@ -363,11 +364,11 @@ static UniValue GetNetworksInfo()
         proxyType proxy;
         UniValue obj(UniValue::VOBJ);
         GetProxy(network, proxy);
-        obj.push_back(Pair("name", GetNetworkName(network)));
-        obj.push_back(Pair("limited", IsLimited(network)));
-        obj.push_back(Pair("reachable", IsReachable(network)));
-        obj.push_back(Pair("proxy", proxy.IsValid() ? proxy.proxy.ToStringIPPort() : string()));
-        obj.push_back(Pair("proxy_randomize_credentials", proxy.randomize_credentials));
+        obj.push_back(make_pair("name", GetNetworkName(network)));
+        obj.push_back(make_pair("limited", IsLimited(network)));
+        obj.push_back(make_pair("reachable", IsReachable(network)));
+        obj.push_back(make_pair("proxy", proxy.IsValid() ? proxy.proxy.ToStringIPPort() : string()));
+        obj.push_back(make_pair("proxy_randomize_credentials", proxy.randomize_credentials));
         networks.push_back(obj);
     }
     return networks;
@@ -412,27 +413,27 @@ UniValue getnetworkinfo(const UniValue& params, bool fHelp)
     LOCK(cs_main);
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("version", CLIENT_VERSION));
-    obj.push_back(Pair("subversion",
+    obj.push_back(make_pair("version", CLIENT_VERSION));
+    obj.push_back(make_pair("subversion",
         FormatSubVersion(CLIENT_NAME, CLIENT_VERSION, std::vector<string>())));
-    obj.push_back(Pair("protocolversion", PROTOCOL_VERSION));
-    obj.push_back(Pair("localservices", strprintf("%016x", nLocalServices)));
-    obj.push_back(Pair("timeoffset", GetTimeOffset()));
-    obj.push_back(Pair("connections", (int)vNodes.size()));
-    obj.push_back(Pair("networks", GetNetworksInfo()));
-    obj.push_back(Pair("relayfee", ValueFromAmount(::minRelayTxFee.GetFeePerK())));
+    obj.push_back(make_pair("protocolversion", PROTOCOL_VERSION));
+    obj.push_back(make_pair("localservices", strprintf("%016x", nLocalServices)));
+    obj.push_back(make_pair("timeoffset", GetTimeOffset()));
+    obj.push_back(make_pair("connections", (int)vNodes.size()));
+    obj.push_back(make_pair("networks", GetNetworksInfo()));
+    obj.push_back(make_pair("relayfee", ValueFromAmount(::minRelayTxFee.GetFeePerK())));
     UniValue localAddresses(UniValue::VARR);
     {
         LOCK(cs_mapLocalHost);
         BOOST_FOREACH (const PAIRTYPE(CNetAddr, LocalServiceInfo) & item, mapLocalHost) {
             UniValue rec(UniValue::VOBJ);
-            rec.push_back(Pair("address", item.first.ToString()));
-            rec.push_back(Pair("port", item.second.nPort));
-            rec.push_back(Pair("score", item.second.nScore));
+            rec.push_back(make_pair("address", item.first.ToString()));
+            rec.push_back(make_pair("port", item.second.nPort));
+            rec.push_back(make_pair("score", item.second.nScore));
             localAddresses.push_back(rec);
         }
     }
-    obj.push_back(Pair("localaddresses", localAddresses));
+    obj.push_back(make_pair("localaddresses", localAddresses));
     return obj;
 }
 
@@ -522,10 +523,10 @@ UniValue listbanned(const UniValue& params, bool fHelp)
     {
         CBanEntry banEntry = (*it).second;
         UniValue rec(UniValue::VOBJ);
-        rec.push_back(Pair("address", (*it).first.ToString()));
-        rec.push_back(Pair("banned_until", banEntry.nBanUntil));
-        rec.push_back(Pair("ban_created", banEntry.nCreateTime));
-        rec.push_back(Pair("ban_reason", banEntry.banReasonToString()));
+        rec.push_back(make_pair("address", (*it).first.ToString()));
+        rec.push_back(make_pair("banned_until", banEntry.nBanUntil));
+        rec.push_back(make_pair("ban_created", banEntry.nCreateTime));
+        rec.push_back(make_pair("ban_reason", banEntry.banReasonToString()));
 
         bannedAddresses.push_back(rec);
     }

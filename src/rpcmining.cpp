@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -248,19 +249,19 @@ UniValue getmininginfo(const UniValue& params, bool fHelp)
     LOCK(cs_main);
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("blocks",           (int)chainActive.Height()));
-    obj.push_back(Pair("currentblocksize", (uint64_t)nLastBlockCost));
-    obj.push_back(Pair("currentblocktx",   (uint64_t)nLastBlockTx));
-    obj.push_back(Pair("difficulty",       (double)GetDifficulty()));
-    obj.push_back(Pair("errors",           GetWarnings("statusbar")));
-    obj.push_back(Pair("genproclimit",     (int)GetArg("-genproclimit", -1)));
-    obj.push_back(Pair("networkhashps",    getnetworkhashps(params, false)));
-    obj.push_back(Pair("pooledtx",         (uint64_t)mempool.size()));
-    obj.push_back(Pair("testnet",          Params().TestnetToBeDeprecatedFieldRPC()));
-    obj.push_back(Pair("chain",            Params().NetworkIDString()));
+    obj.push_back(make_pair("blocks",           (int)chainActive.Height()));
+    obj.push_back(make_pair("currentblocksize", (uint64_t)nLastBlockCost));
+    obj.push_back(make_pair("currentblocktx",   (uint64_t)nLastBlockTx));
+    obj.push_back(make_pair("difficulty",       (double)GetDifficulty()));
+    obj.push_back(make_pair("errors",           GetWarnings("statusbar")));
+    obj.push_back(make_pair("genproclimit",     (int)GetArg("-genproclimit", -1)));
+    obj.push_back(make_pair("networkhashps",    getnetworkhashps(params, false)));
+    obj.push_back(make_pair("pooledtx",         (uint64_t)mempool.size()));
+    obj.push_back(make_pair("testnet",          Params().TestnetToBeDeprecatedFieldRPC()));
+    obj.push_back(make_pair("chain",            Params().NetworkIDString()));
 #ifdef ENABLE_WALLET
-    obj.push_back(Pair("generate",         getgenerate(params, false)));
-    obj.push_back(Pair("hashespersec",     gethashespersec(params, false)));
+    obj.push_back(make_pair("generate",         getgenerate(params, false)));
+    obj.push_back(make_pair("hashespersec",     gethashespersec(params, false)));
 #endif
     return obj;
 }
@@ -530,27 +531,27 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
 
         UniValue entry(UniValue::VOBJ);
 
-        entry.push_back(Pair("data", EncodeHexTx(tx, PROTOCOL_VERSION | RPCSerializationFlags())));
-        entry.push_back(Pair("txid", txHash.GetHex()));
-        entry.push_back(Pair("hash", tx.GetWitnessHash().GetHex()));
+        entry.push_back(make_pair("data", EncodeHexTx(tx, PROTOCOL_VERSION | RPCSerializationFlags())));
+        entry.push_back(make_pair("txid", txHash.GetHex()));
+        entry.push_back(make_pair("hash", tx.GetWitnessHash().GetHex()));
 
         UniValue deps(UniValue::VARR);
         BOOST_FOREACH (const CTxIn& in, tx.vin) {
             if (setTxIndex.count(in.prevout.hash))
                 deps.push_back(setTxIndex[in.prevout.hash]);
         }
-        entry.push_back(Pair("depends", deps));
+        entry.push_back(make_pair("depends", deps));
 
         int index_in_template = i - 1;
-        entry.push_back(Pair("fee", pblocktemplate->vTxFees[index_in_template]));
-        entry.push_back(Pair("sigops", pblocktemplate->vTxSigOpsCost[index_in_template]));
-        entry.push_back(Pair("cost", GetTransactionCost(tx)));
+        entry.push_back(make_pair("fee", pblocktemplate->vTxFees[index_in_template]));
+        entry.push_back(make_pair("sigops", pblocktemplate->vTxSigOpsCost[index_in_template]));
+        entry.push_back(make_pair("cost", GetTransactionCost(tx)));
 
         transactions.push_back(entry);
     }
 
     UniValue aux(UniValue::VOBJ);
-    aux.push_back(Pair("flags", HexStr(COINBASE_FLAGS.begin(), COINBASE_FLAGS.end())));
+    aux.push_back(make_pair("flags", HexStr(COINBASE_FLAGS.begin(), COINBASE_FLAGS.end())));
 
     uint256 hashTarget = uint256().SetCompact(pblock->nBits);
 
@@ -564,41 +565,41 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
     UniValue aVotes(UniValue::VARR);
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("capabilities", aCaps));
-    result.push_back(Pair("version", pblock->nVersion));
-    result.push_back(Pair("previousblockhash", pblock->hashPrevBlock.GetHex()));
-    result.push_back(Pair("transactions", transactions));
-    result.push_back(Pair("coinbaseaux", aux));
-    result.push_back(Pair("coinbasevalue", (int64_t)pblock->vtx[0].GetValueOut()));
-    result.push_back(Pair("longpollid", chainActive.Tip()->GetBlockHash().GetHex() + i64tostr(nTransactionsUpdatedLast)));
-    result.push_back(Pair("target", hashTarget.GetHex()));
-    result.push_back(Pair("mintime", (int64_t)pindexPrev->GetMedianTimePast() + 1));
-    result.push_back(Pair("mutable", aMutable));
-    result.push_back(Pair("noncerange", "00000000ffffffff"));
-    result.push_back(Pair("sigoplimit", (int64_t)MAX_BLOCK_SIGOPS_COST));
-    result.push_back(Pair("sizelimit", (int64_t)MAX_BLOCK_SERIALIZED_SIZE));
-    result.push_back(Pair("costlimit", (int64_t)MAX_BLOCK_COST));
-    result.push_back(Pair("curtime", pblock->GetBlockTime()));
-    result.push_back(Pair("bits", strprintf("%08x", pblock->nBits)));
-    result.push_back(Pair("height", (int64_t)(pindexPrev->nHeight + 1)));
-    result.push_back(Pair("votes", aVotes));
+    result.push_back(make_pair("capabilities", aCaps));
+    result.push_back(make_pair("version", pblock->nVersion));
+    result.push_back(make_pair("previousblockhash", pblock->hashPrevBlock.GetHex()));
+    result.push_back(make_pair("transactions", transactions));
+    result.push_back(make_pair("coinbaseaux", aux));
+    result.push_back(make_pair("coinbasevalue", (int64_t)pblock->vtx[0].GetValueOut()));
+    result.push_back(make_pair("longpollid", chainActive.Tip()->GetBlockHash().GetHex() + i64tostr(nTransactionsUpdatedLast)));
+    result.push_back(make_pair("target", hashTarget.GetHex()));
+    result.push_back(make_pair("mintime", (int64_t)pindexPrev->GetMedianTimePast() + 1));
+    result.push_back(make_pair("mutable", aMutable));
+    result.push_back(make_pair("noncerange", "00000000ffffffff"));
+    result.push_back(make_pair("sigoplimit", (int64_t)MAX_BLOCK_SIGOPS_COST));
+    result.push_back(make_pair("sizelimit", (int64_t)MAX_BLOCK_SERIALIZED_SIZE));
+    result.push_back(make_pair("costlimit", (int64_t)MAX_BLOCK_COST));
+    result.push_back(make_pair("curtime", pblock->GetBlockTime()));
+    result.push_back(make_pair("bits", strprintf("%08x", pblock->nBits)));
+    result.push_back(make_pair("height", (int64_t)(pindexPrev->nHeight + 1)));
+    result.push_back(make_pair("votes", aVotes));
 
 
     if (pblock->payee != CScript()) {
         CTxDestination address1;
         ExtractDestination(pblock->payee, address1);
-        result.push_back(Pair("payee", EncodeDestination(address1).c_str()));
-        result.push_back(Pair("payee_amount", (int64_t)pblock->vtx[0].vout[1].nValue));
+        result.push_back(make_pair("payee", EncodeDestination(address1).c_str()));
+        result.push_back(make_pair("payee_amount", (int64_t)pblock->vtx[0].vout[1].nValue));
     } else {
-        result.push_back(Pair("payee", ""));
-        result.push_back(Pair("payee_amount", ""));
+        result.push_back(make_pair("payee", ""));
+        result.push_back(make_pair("payee_amount", ""));
     }
 
-    result.push_back(Pair("masternode_payments", true));
-    result.push_back(Pair("enforce_masternode_payments", true));
+    result.push_back(make_pair("masternode_payments", true));
+    result.push_back(make_pair("enforce_masternode_payments", true));
 
     if (!pblocktemplate->vchCoinbaseCommitment.empty()) {
-        result.push_back(Pair("default_witness_commitment", HexStr(pblocktemplate->vchCoinbaseCommitment.begin(), pblocktemplate->vchCoinbaseCommitment.end())));
+        result.push_back(make_pair("default_witness_commitment", HexStr(pblocktemplate->vchCoinbaseCommitment.begin(), pblocktemplate->vchCoinbaseCommitment.end())));
     }
 
     return result;

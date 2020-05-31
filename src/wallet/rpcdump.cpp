@@ -462,9 +462,9 @@ UniValue dumphdinfo(const UniValue& params, bool fHelp)
     hdChainCurrent.GetMnemonic(ssMnemonic, ssMnemonicPassphrase);
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("hdseed", HexStr(hdChainCurrent.GetSeed())));
-    obj.push_back(Pair("mnemonic", ssMnemonic.c_str()));
-    obj.push_back(Pair("mnemonicpassphrase", ssMnemonicPassphrase.c_str()));
+    obj.push_back(make_pair("hdseed", HexStr(hdChainCurrent.GetSeed())));
+    obj.push_back(make_pair("mnemonic", ssMnemonic.c_str()));
+    obj.push_back(make_pair("mnemonicpassphrase", ssMnemonicPassphrase.c_str()));
 
     return obj;
 }
@@ -630,7 +630,7 @@ UniValue dumpallprivatekeys(const UniValue& params, bool fHelp)
     file << "# End of dump\n";
     file.close();
     UniValue reply(UniValue::VOBJ);
-    reply.push_back(Pair("filename", filepath.string()));
+    reply.push_back(make_pair("filename", filepath.string()));
     return reply;
 }
 
@@ -668,8 +668,8 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
     string encryptedOut = BIP38_Encrypt(strAddress, strPassphrase, privKey, vchSecret.IsCompressed());
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("Addess", strAddress));
-    result.push_back(Pair("Encrypted Key", encryptedOut));
+    result.push_back(make_pair("Addess", strAddress));
+    result.push_back(make_pair("Encrypted Key", encryptedOut));
 
     return result;
 }
@@ -702,7 +702,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_ERROR, "Failed To Decrypt");
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("privatekey", HexStr(privKey)));
+    result.push_back(make_pair("privatekey", HexStr(privKey)));
 
     CKey key;
     key.Set(privKey.begin(), privKey.end(), fCompressed);
@@ -713,7 +713,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
     CPubKey pubkey = key.GetPubKey();
     pubkey.IsCompressed();
     assert(key.VerifyPubKey(pubkey));
-    result.push_back(Pair("Address", EncodeDestination(CTxDestination(pubkey.GetID()))));
+    result.push_back(make_pair("Address", EncodeDestination(CTxDestination(pubkey.GetID()))));
     CKeyID vchAddress = pubkey.GetID();
     {
         pwalletMain->MarkDirty();

@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -85,46 +86,46 @@ UniValue getinfo(const UniValue& params, bool fHelp)
     GetProxy(NET_IPV4, proxy);
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("version", CLIENT_VERSION));
-    obj.push_back(Pair("protocolversion", PROTOCOL_VERSION));
+    obj.push_back(make_pair("version", CLIENT_VERSION));
+    obj.push_back(make_pair("protocolversion", PROTOCOL_VERSION));
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
-        obj.push_back(Pair("walletversion", pwalletMain->GetVersion()));
-        obj.push_back(Pair("balance", ValueFromAmount(pwalletMain->GetBalance())));
+        obj.push_back(make_pair("walletversion", pwalletMain->GetVersion()));
+        obj.push_back(make_pair("balance", ValueFromAmount(pwalletMain->GetBalance())));
     }
 #endif
-    obj.push_back(Pair("blocks", (int)chainActive.Height()));
-    obj.push_back(Pair("timeoffset", GetTimeOffset()));
-    obj.push_back(Pair("connections", (int)vNodes.size()));
-    obj.push_back(Pair("proxy", (proxy.IsValid() ? proxy.proxy.ToStringIPPort() : string())));
-    obj.push_back(Pair("difficulty", (double)GetDifficulty()));
-    obj.push_back(Pair("testnet", Params().TestnetToBeDeprecatedFieldRPC()));
+    obj.push_back(make_pair("blocks", (int)chainActive.Height()));
+    obj.push_back(make_pair("timeoffset", GetTimeOffset()));
+    obj.push_back(make_pair("connections", (int)vNodes.size()));
+    obj.push_back(make_pair("proxy", (proxy.IsValid() ? proxy.proxy.ToStringIPPort() : string())));
+    obj.push_back(make_pair("difficulty", (double)GetDifficulty()));
+    obj.push_back(make_pair("testnet", Params().TestnetToBeDeprecatedFieldRPC()));
 
     // During inital block verification chainActive.Tip() might be not yet initialized
     if (chainActive.Tip() == NULL) {
-        obj.push_back(Pair("status", "Blockchain information not yet available"));
+        obj.push_back(make_pair("status", "Blockchain information not yet available"));
         return obj;
     }
 
-    obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
+    obj.push_back(make_pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
     
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
-        obj.push_back(Pair("keypoololdest", pwalletMain->GetOldestKeyPoolTime()));
-        obj.push_back(Pair("keypoolsize", (int)pwalletMain->GetKeyPoolSize()));
+        obj.push_back(make_pair("keypoololdest", pwalletMain->GetOldestKeyPoolTime()));
+        obj.push_back(make_pair("keypoolsize", (int)pwalletMain->GetKeyPoolSize()));
     }
     if (pwalletMain && pwalletMain->IsCrypted())
-        obj.push_back(Pair("unlocked_until", nWalletUnlockTime));
-    obj.push_back(Pair("paytxfee", ValueFromAmount(payTxFee.GetFeePerK())));
+        obj.push_back(make_pair("unlocked_until", nWalletUnlockTime));
+    obj.push_back(make_pair("paytxfee", ValueFromAmount(payTxFee.GetFeePerK())));
 #endif
-    obj.push_back(Pair("relayfee", ValueFromAmount(::minRelayTxFee.GetFeePerK())));
+    obj.push_back(make_pair("relayfee", ValueFromAmount(::minRelayTxFee.GetFeePerK())));
     bool nStaking = false;
     if (mapHashedBlocks.count(chainActive.Tip()->nHeight))
         nStaking = true;
     else if (mapHashedBlocks.count(chainActive.Tip()->nHeight - 1) && nLastCoinStakeSearchInterval)
         nStaking = true;
-    obj.push_back(Pair("staking status", (nStaking ? "Staking Active" : "Staking Not Active")));
-    obj.push_back(Pair("errors", GetWarnings("statusbar")));
+    obj.push_back(make_pair("staking status", (nStaking ? "Staking Active" : "Staking Not Active")));
+    obj.push_back(make_pair("errors", GetWarnings("statusbar")));
     return obj;
 }
 
@@ -171,22 +172,22 @@ UniValue mnsync(const UniValue& params, bool fHelp)
     if (strMode == "status") {
         UniValue obj(UniValue::VOBJ);
 
-        obj.push_back(Pair("IsBlockchainSynced", masternodeSync.IsBlockchainSynced()));
-        obj.push_back(Pair("lastMasternodeList", masternodeSync.lastMasternodeList));
-        obj.push_back(Pair("lastMasternodeWinner", masternodeSync.lastMasternodeWinner));
-        obj.push_back(Pair("lastBudgetItem", masternodeSync.lastBudgetItem));
-        obj.push_back(Pair("lastFailure", masternodeSync.lastFailure));
-        obj.push_back(Pair("nCountFailures", masternodeSync.nCountFailures));
-        obj.push_back(Pair("sumMasternodeList", masternodeSync.sumMasternodeList));
-        obj.push_back(Pair("sumMasternodeWinner", masternodeSync.sumMasternodeWinner));
-        obj.push_back(Pair("sumBudgetItemProp", masternodeSync.sumBudgetItemProp));
-        obj.push_back(Pair("sumBudgetItemFin", masternodeSync.sumBudgetItemFin));
-        obj.push_back(Pair("countMasternodeList", masternodeSync.countMasternodeList));
-        obj.push_back(Pair("countMasternodeWinner", masternodeSync.countMasternodeWinner));
-        obj.push_back(Pair("countBudgetItemProp", masternodeSync.countBudgetItemProp));
-        obj.push_back(Pair("countBudgetItemFin", masternodeSync.countBudgetItemFin));
-        obj.push_back(Pair("RequestedMasternodeAssets", masternodeSync.RequestedMasternodeAssets));
-        obj.push_back(Pair("RequestedMasternodeAttempt", masternodeSync.RequestedMasternodeAttempt));
+        obj.push_back(make_pair("IsBlockchainSynced", masternodeSync.IsBlockchainSynced()));
+        obj.push_back(make_pair("lastMasternodeList", masternodeSync.lastMasternodeList));
+        obj.push_back(make_pair("lastMasternodeWinner", masternodeSync.lastMasternodeWinner));
+        obj.push_back(make_pair("lastBudgetItem", masternodeSync.lastBudgetItem));
+        obj.push_back(make_pair("lastFailure", masternodeSync.lastFailure));
+        obj.push_back(make_pair("nCountFailures", masternodeSync.nCountFailures));
+        obj.push_back(make_pair("sumMasternodeList", masternodeSync.sumMasternodeList));
+        obj.push_back(make_pair("sumMasternodeWinner", masternodeSync.sumMasternodeWinner));
+        obj.push_back(make_pair("sumBudgetItemProp", masternodeSync.sumBudgetItemProp));
+        obj.push_back(make_pair("sumBudgetItemFin", masternodeSync.sumBudgetItemFin));
+        obj.push_back(make_pair("countMasternodeList", masternodeSync.countMasternodeList));
+        obj.push_back(make_pair("countMasternodeWinner", masternodeSync.countMasternodeWinner));
+        obj.push_back(make_pair("countBudgetItemProp", masternodeSync.countBudgetItemProp));
+        obj.push_back(make_pair("countBudgetItemFin", masternodeSync.countBudgetItemFin));
+        obj.push_back(make_pair("RequestedMasternodeAssets", masternodeSync.RequestedMasternodeAssets));
+        obj.push_back(make_pair("RequestedMasternodeAttempt", masternodeSync.RequestedMasternodeAttempt));
 
         return obj;
     }
@@ -212,11 +213,11 @@ public:
     UniValue operator()(const CKeyID &keyID) const {
         UniValue obj(UniValue::VOBJ);
         CPubKey vchPubKey;
-        obj.push_back(Pair("isscript", false));
-        obj.push_back(Pair("iswitness", false));
+        obj.push_back(make_pair("isscript", false));
+        obj.push_back(make_pair("iswitness", false));
         if (pwallet && pwallet->GetPubKey(keyID, vchPubKey)) {
-            obj.push_back(Pair("pubkey", HexStr(vchPubKey)));
-            obj.push_back(Pair("iscompressed", vchPubKey.IsCompressed()));
+            obj.push_back(make_pair("pubkey", HexStr(vchPubKey)));
+            obj.push_back(make_pair("iscompressed", vchPubKey.IsCompressed()));
         }
         return obj;
     }
@@ -224,22 +225,22 @@ public:
     UniValue operator()(const CScriptID &scriptID) const {
         UniValue obj(UniValue::VOBJ);
         CScript subscript;
-        obj.push_back(Pair("isscript", true));
-        obj.push_back(Pair("iswitness", false));
+        obj.push_back(make_pair("isscript", true));
+        obj.push_back(make_pair("iswitness", false));
         if (pwallet && pwallet->GetCScript(scriptID, subscript)) {
             std::vector<CTxDestination> addresses;
             txnouttype whichType;
             int nRequired;
             ExtractDestinations(subscript, whichType, addresses, nRequired);
-            obj.push_back(Pair("script", GetTxnOutputType(whichType)));
-            obj.push_back(Pair("hex", HexStr(subscript.begin(), subscript.end())));
+            obj.push_back(make_pair("script", GetTxnOutputType(whichType)));
+            obj.push_back(make_pair("hex", HexStr(subscript.begin(), subscript.end())));
             UniValue a(UniValue::VARR);
             for (const CTxDestination& addr : addresses) {
                 a.push_back(EncodeDestination(addr));
             }
-            obj.push_back(Pair("addresses", a));
+            obj.push_back(make_pair("addresses", a));
             if (whichType == TX_MULTISIG)
-                obj.push_back(Pair("sigsrequired", nRequired));
+                obj.push_back(make_pair("sigsrequired", nRequired));
         }
         return obj;
     }
@@ -248,12 +249,12 @@ public:
     {
         UniValue obj(UniValue::VOBJ);
         CPubKey pubkey;
-        obj.push_back(Pair("isscript", false));
-        obj.push_back(Pair("iswitness", true));
-        obj.push_back(Pair("witness_version", 0));
-        obj.push_back(Pair("witness_program", HexStr(id.begin(), id.end())));
+        obj.push_back(make_pair("isscript", false));
+        obj.push_back(make_pair("iswitness", true));
+        obj.push_back(make_pair("witness_version", 0));
+        obj.push_back(make_pair("witness_program", HexStr(id.begin(), id.end())));
         if (pwallet && pwallet->GetPubKey(CKeyID(id), pubkey)) {
-            obj.push_back(Pair("pubkey", HexStr(pubkey)));
+            obj.push_back(make_pair("pubkey", HexStr(pubkey)));
         }
         return obj;
     }
@@ -262,15 +263,15 @@ public:
     {
         UniValue obj(UniValue::VOBJ);
         CScript subscript;
-        obj.push_back(Pair("isscript", true));
-        obj.push_back(Pair("iswitness", true));
-        obj.push_back(Pair("witness_version", 0));
-        obj.push_back(Pair("witness_program", HexStr(id.begin(), id.end())));
+        obj.push_back(make_pair("isscript", true));
+        obj.push_back(make_pair("iswitness", true));
+        obj.push_back(make_pair("witness_version", 0));
+        obj.push_back(make_pair("witness_program", HexStr(id.begin(), id.end())));
         CRIPEMD160 hasher;
         uint160 hash;
         hasher.Write(id.begin(), 32).Finalize(hash.begin());
         if (pwallet && pwallet->GetCScript(CScriptID(hash), subscript)) {
-            obj.push_back(Pair("hex", HexStr(subscript.begin(), subscript.end())));
+            obj.push_back(make_pair("hex", HexStr(subscript.begin(), subscript.end())));
         }
         return obj;
     }
@@ -279,9 +280,9 @@ public:
     {
         UniValue obj(UniValue::VOBJ);
         CScript subscript;
-        obj.push_back(Pair("iswitness", true));
-        obj.push_back(Pair("witness_version", (int)id.version));
-        obj.push_back(Pair("witness_program", HexStr(id.program, id.program + id.length)));
+        obj.push_back(make_pair("iswitness", true));
+        obj.push_back(make_pair("witness_version", (int)id.version));
+        obj.push_back(make_pair("witness_program", HexStr(id.program, id.program + id.length)));
         return obj;
     }
 };
@@ -296,14 +297,14 @@ UniValue spork(const UniValue& params, bool fHelp)
         UniValue ret(UniValue::VOBJ);
         for (int nSporkID = SPORK_START; nSporkID <= SPORK_END; nSporkID++) {
             if (sporkManager.GetSporkNameByID(nSporkID) != "Unknown")
-                ret.push_back(Pair(sporkManager.GetSporkNameByID(nSporkID), GetSporkValue(nSporkID)));
+                ret.push_back(make_pair(sporkManager.GetSporkNameByID(nSporkID), GetSporkValue(nSporkID)));
         }
         return ret;
     } else if (params.size() == 1 && params[0].get_str() == "active") {
         UniValue ret(UniValue::VOBJ);
         for (int nSporkID = SPORK_START; nSporkID <= SPORK_END; nSporkID++) {
             if (sporkManager.GetSporkNameByID(nSporkID) != "Unknown")
-                ret.push_back(Pair(sporkManager.GetSporkNameByID(nSporkID), IsSporkActive(nSporkID)));
+                ret.push_back(make_pair(sporkManager.GetSporkNameByID(nSporkID), IsSporkActive(nSporkID)));
         }
         return ret;
     } else if (params.size() == 2) {
@@ -366,30 +367,30 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
     bool isValid = IsValidDestinationString(params[0].get_str());
 
     UniValue ret(UniValue::VOBJ);
-    ret.push_back(Pair("isvalid", isValid));
+    ret.push_back(make_pair("isvalid", isValid));
     if (isValid)
     {
         CTxDestination dest = DecodeDestination(params[0].get_str());
         string currentAddress = EncodeDestination(dest);
-        ret.push_back(Pair("address", currentAddress));
+        ret.push_back(make_pair("address", currentAddress));
 
         CScript scriptPubKey = GetScriptForDestination(dest);
-        ret.push_back(Pair("scriptPubKey", HexStr(scriptPubKey.begin(), scriptPubKey.end())));
+        ret.push_back(make_pair("scriptPubKey", HexStr(scriptPubKey.begin(), scriptPubKey.end())));
 
 #ifdef ENABLE_WALLET
         isminetype mine = pwalletMain ? IsMine(*pwalletMain, dest) : ISMINE_NO;
-        ret.push_back(Pair("ismine", (mine & ISMINE_SPENDABLE) ? true : false));
-        ret.push_back(Pair("iswatchonly", (mine & ISMINE_WATCH_ONLY) ? true: false));
+        ret.push_back(make_pair("ismine", (mine & ISMINE_SPENDABLE) ? true : false));
+        ret.push_back(make_pair("iswatchonly", (mine & ISMINE_WATCH_ONLY) ? true: false));
         UniValue detail = boost::apply_visitor(DescribeAddressVisitor(pwalletMain), dest);
         ret.pushKVs(detail);
         if (pwalletMain && pwalletMain->mapAddressBook.count(dest))
-            ret.push_back(Pair("account", pwalletMain->mapAddressBook[dest].name));
+            ret.push_back(make_pair("account", pwalletMain->mapAddressBook[dest].name));
                 CKeyID keyID;
         CHDChain hdChainCurrent;
         if (pwalletMain && pwalletMain->mapHdPubKeys.count(keyID))
         {
-            ret.push_back(Pair("hdkeypath", pwalletMain->mapHdPubKeys[keyID].GetKeyPath()));
-            ret.push_back(Pair("hdmasterkeyid", hdChainCurrent.GetID().GetHex()));
+            ret.push_back(make_pair("hdkeypath", pwalletMain->mapHdPubKeys[keyID].GetKeyPath()));
+            ret.push_back(make_pair("hdmasterkeyid", hdChainCurrent.GetID().GetHex()));
         }
 #endif
     }
@@ -492,8 +493,8 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
     CScriptID innerID(inner);
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("address", EncodeDestination(CTxDestination(inner))));
-    result.push_back(Pair("redeemScript", HexStr(inner.begin(), inner.end())));
+    result.push_back(make_pair("address", EncodeDestination(CTxDestination(inner))));
+    result.push_back(make_pair("redeemScript", HexStr(inner.begin(), inner.end())));
 
     return result;
 }
@@ -528,8 +529,8 @@ UniValue createwitnessaddress(const UniValue& params, bool fHelp)
     CScriptID witscriptid(witscript);
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("address", EncodeDestination(CTxDestination(witscriptid))));
-    result.push_back(Pair("witnessScript", HexStr(witscript.begin(), witscript.end())));
+    result.push_back(make_pair("address", EncodeDestination(CTxDestination(witscriptid))));
+    result.push_back(make_pair("witnessScript", HexStr(witscript.begin(), witscript.end())));
 
     return result;
 }
@@ -633,21 +634,21 @@ UniValue getstakingstatus(const UniValue& params, bool fHelp)
 #endif
 
     UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("validtime", chainActive.Tip()->nTime > 1471482000));
-    obj.push_back(Pair("haveconnections", !vNodes.empty()));
+    obj.push_back(make_pair("validtime", chainActive.Tip()->nTime > 1471482000));
+    obj.push_back(make_pair("haveconnections", !vNodes.empty()));
     if (pwalletMain) {
-        obj.push_back(Pair("walletunlocked", !pwalletMain->IsLocked()));
-        obj.push_back(Pair("mintablecoins", pwalletMain->MintableCoins()));
-        obj.push_back(Pair("enoughcoins", nReserveBalance <= pwalletMain->GetBalance()));
+        obj.push_back(make_pair("walletunlocked", !pwalletMain->IsLocked()));
+        obj.push_back(make_pair("mintablecoins", pwalletMain->MintableCoins()));
+        obj.push_back(make_pair("enoughcoins", nReserveBalance <= pwalletMain->GetBalance()));
     }
-    obj.push_back(Pair("mnsync", masternodeSync.IsSynced()));
+    obj.push_back(make_pair("mnsync", masternodeSync.IsSynced()));
 
     bool nStaking = false;
     if (mapHashedBlocks.count(chainActive.Tip()->nHeight))
         nStaking = true;
     else if (mapHashedBlocks.count(chainActive.Tip()->nHeight - 1) && nLastCoinStakeSearchInterval)
         nStaking = true;
-    obj.push_back(Pair("staking status", nStaking));
+    obj.push_back(make_pair("staking status", nStaking));
 
     return obj;
 }
