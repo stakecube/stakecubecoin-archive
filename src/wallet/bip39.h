@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef MONETARYUNIT_BIP39_H
-#define MONETARYUNIT_BIP39_H
+#ifndef STAKECUBECOIN_BIP39_H
+#define STAKECUBECOIN_BIP39_H
 
 #include "allocators.h"
 

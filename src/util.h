@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -33,8 +34,8 @@
 // Debugging macros
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_MONETARYUNIT_DEBUG
-#ifdef ENABLE_MONETARYUNIT_DEBUG
+//#define ENABLE_STAKECUBECOIN_DEBUG
+#ifdef ENABLE_STAKECUBECOIN_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x )

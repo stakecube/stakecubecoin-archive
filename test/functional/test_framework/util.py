@@ -35,7 +35,7 @@ PORT_MIN = 11000
 # The number of ports to "reserve" for p2p and rpc, each
 PORT_RANGE = 5000
 
-MONETARYUNITD_PROC_WAIT_TIMEOUT = 60
+STAKECUBECOIND_PROC_WAIT_TIMEOUT = 60
 
 
 class PortSeed:
@@ -226,7 +226,7 @@ def initialize_chain(test_dir, num_nodes):
         # Create cache directories, run stakecubecoinds:
         for i in range(MAX_NODES):
             datadir=initialize_datadir("cache", i)
-            args = [ os.getenv("MONETARYUNITD", "stakecubecoind"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
+            args = [ os.getenv("STAKECUBECOIND", "stakecubecoind"), "-server", "-keypool=1", "-datadir="+datadir, "-discover=0" ]
             if i > 0:
                 args.append("-connect=127.0.0.1:"+str(p2p_port(0)))
             stakecubecoind_processes[i] = subprocess.Popen(args)
@@ -312,7 +312,7 @@ def start_node(i, dirname, extra_args=None, rpchost=None, timewait=None, binary=
     """
     datadir = os.path.join(dirname, "node"+str(i))
     if binary is None:
-        binary = os.getenv("MONETARYUNITD", "stakecubecoind")
+        binary = os.getenv("STAKECUBECOIND", "stakecubecoind")
     args = [ binary, "-datadir="+datadir, "-server", "-keypool=1", "-discover=0", "-rest", "-mocktime="+str(get_mocktime()), "-regtest", "-sporkkey=923EhWh2bJHynX6d4Tqt2Q75bhTDCT1b4kff3qzDKDZHZ6pkQs7"]
     if extra_args is not None: args.extend(extra_args)
     stakecubecoind_processes[i] = subprocess.Popen(args)
@@ -352,7 +352,7 @@ def stop_node(node, i):
         node.stop()
     except http.client.CannotSendRequest as e:
         print("WARN: Unable to stop node: " + repr(e))
-    stakecubecoind_processes[i].wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
+    stakecubecoind_processes[i].wait(timeout=STAKECUBECOIND_PROC_WAIT_TIMEOUT)
     del stakecubecoind_processes[i]
 
 def stop_nodes(nodes):
@@ -371,7 +371,7 @@ def set_node_times(nodes, t):
 def wait_stakecubecoinds():
     # Wait for all stakecubecoinds to cleanly exit
     for stakecubecoind in stakecubecoind_processes.values():
-        stakecubecoind.wait(timeout=MONETARYUNITD_PROC_WAIT_TIMEOUT)
+        stakecubecoind.wait(timeout=STAKECUBECOIND_PROC_WAIT_TIMEOUT)
     stakecubecoind_processes.clear()
 
 def connect_nodes(from_connection, node_num):
