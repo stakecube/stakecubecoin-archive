@@ -259,6 +259,7 @@ UniValue listmasternodes(const UniValue& params, bool fHelp)
             obj.push_back(make_pair("outidx", (uint64_t)oIdx));
             obj.push_back(make_pair("status", strStatus));
             obj.push_back(make_pair("addr", EncodeDestination(mn->pubKeyCollateralAddress.GetID())));
+            obj.push_back(make_pair("addr_ip", mn->addr.ToString()));
             obj.push_back(make_pair("version", mn->protocolVersion));
             obj.push_back(make_pair("lastseen", (int64_t)mn->lastPing.sigTime));
             obj.push_back(make_pair("activetime", (int64_t)(mn->lastPing.sigTime - mn->sigTime)));
