@@ -4,6 +4,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017-2019 The Phore developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1448,8 +1449,12 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
 
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
-        if (!CheckInputs(tx, state, view, false, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
-            return error("AcceptableInputs: : ConnectInputs failed %s", hash.ToString());
+        // Ignore for block 300 (bug)
+        if (hash.ToString() != "508256818225bcaa45c39027e9b563c270182e0fb877308dd8883106931ebeb0")
+        {
+            if (!CheckInputs(tx, state, view, false, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
+                return error("AcceptableInputs: : ConnectInputs failed %s", hash.ToString());
+            }
         }
 
         // Check again against just the consensus-critical mandatory script
