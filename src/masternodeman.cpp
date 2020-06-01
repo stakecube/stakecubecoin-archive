@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -205,6 +206,19 @@ bool CMasternodeMan::Add(CMasternode& mn)
     if (!mn.IsEnabled())
         return false;
 
+    // Check IP is not already found in the list
+    CMasternode *pmn1 = Find(mn.addr);
+
+    if (pmn1 != NULL)
+    {
+        if (fDebug)
+        {
+            LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
+        }
+
+        return false;
+    }
+
     CMasternode* pmn = Find(mn.vin);
     if (pmn == NULL) {
         LogPrint("masternode", "CMasternodeMan: Adding new Masternode %s - %i now\n", mn.vin.prevout.hash.ToString(), size() + 1);
@@ -334,6 +348,51 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
             ++it4;
         }
     }
+
+    // Remove duplicate nodes
+    while(it != vMasternodes.end())
+    {
+        CMasternode *pmn;
+
+        bool fMNRemoved;
+
+        //std::string strHost;
+        //int port;
+        //SplitHostPort((*it).addr.ToString(), port, strHost);
+
+        // Find Masternode based on IP address
+        pmn = Find((*it).addr);
+
+        if(pmn != NULL)
+        {
+            it = vMasternodes.erase(it);
+            fMNRemoved = true;
+        } 
+        
+        // Search for duplicate add from previous removal if not still found
+        CMasternode *pmn1;
+
+        // Find Masternode based on IP address
+        pmn1 = Find((*it).addr);
+
+        if(pmn1 == NULL)
+        {
+            if (fMNRemoved == true)
+            {
+                vMasternodes.push_back((*it));
+            }
+        }
+        else
+        {
+            if (fDebug)
+            {
+                LogPrint("masternode", "%s : WARNING - Removed duplicate masternode %s - %i now \n", __FUNCTION__, (*it).addr.ToStringIPPort().c_str(), size() - 1);
+            }
+        }
+
+        ++it;
+    }
+
 }
 
 void CMasternodeMan::Clear()
@@ -445,6 +504,22 @@ CMasternode* CMasternodeMan::Find(const CScript& payee)
         if (payee2 == payee)
             return &mn;
     }
+    return NULL;
+}
+
+CMasternode *CMasternodeMan::Find(const CService &addr)
+{
+    LOCK(cs);
+
+    for(CMasternode& mn: vMasternodes)
+    {
+        // Find IP Address but ignore Port
+        if(mn.addr.ToStringIP() == addr.ToStringIP())
+        {
+            return &mn;
+        }
+    }
+
     return NULL;
 }
 

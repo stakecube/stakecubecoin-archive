@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -121,7 +122,9 @@ public:
         MASTERNODE_WATCHDOG_EXPIRED,
         MASTERNODE_POSE_BAN,
         MASTERNODE_VIN_SPENT,
-        MASTERNODE_POS_ERROR
+        MASTERNODE_POS_ERROR,
+        MASTERNODE_UNREACHABLE,
+        MASTERNODE_PEER_ERROR
     };
 
     CTxIn vin;
@@ -146,6 +149,8 @@ public:
 
     int64_t nLastDsee;  // temporary, do not save. Remove after migration to v12
     int64_t nLastDseep; // temporary, do not save. Remove after migration to v12
+
+    bool isPortOpen; // Accepting incoming connections
 
     CMasternode();
     CMasternode(const CMasternode& other);
@@ -175,6 +180,7 @@ public:
         swap(first.nLastDsq, second.nLastDsq);
         swap(first.nScanningErrorCount, second.nScanningErrorCount);
         swap(first.nLastScanningErrorBlockHeight, second.nLastScanningErrorBlockHeight);
+        swap(first.isPortOpen, second.isPortOpen);
     }
 
     CMasternode& operator=(CMasternode from)
@@ -216,6 +222,7 @@ public:
         READWRITE(nLastDsq);
         READWRITE(nScanningErrorCount);
         READWRITE(nLastScanningErrorBlockHeight);
+        READWRITE(isPortOpen);
     }
 
     int64_t SecondsSincePayment();
@@ -234,6 +241,11 @@ public:
     bool IsBroadcastedWithin(int seconds)
     {
         return (GetAdjustedTime() - sigTime) < seconds;
+    }
+
+    void ChangePortStatus(bool status)
+    {
+        isPortOpen = status;
     }
 
     bool IsPingedWithin(int seconds, int64_t now = -1)
