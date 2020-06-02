@@ -127,6 +127,7 @@ public:
         nTargetSpacing = 2 * 60;  // StakeCubeCoin: 120 seconds
         nMaturity = 25;
         nMasternodeCountDrift = 20;
+        nMasternodeCollateralLimit = 1000;
         nMaxMoneyOut = 20000000 * COIN;
 
         /** Height or Time Based Activations **/
@@ -253,6 +254,7 @@ public:
         nTargetSpacing = 1 * 60;  // StakeCubeCoin: 1 minute
         nMaturity = 5;
         nMasternodeCountDrift = 4;
+        nMasternodeCollateralLimit = 1000;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 1000000000 * COIN;
         nLastPOWBlock = 400;

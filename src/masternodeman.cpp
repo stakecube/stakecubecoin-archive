@@ -206,17 +206,20 @@ bool CMasternodeMan::Add(CMasternode& mn)
     if (!mn.IsEnabled())
         return false;
 
-    // Check IP is not already found in the list
+    // Check IP is not already found in the list (Allow full nodes using same ip/different port)
     CMasternode *pmn1 = Find(mn.addr);
 
     if (pmn1 != NULL)
     {
-        if (fDebug)
+        if (pmn1->isPortOpen == false)
         {
-            LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
-        }
+            if (fDebug)
+            {
+                LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
+            }
 
-        return false;
+            return false;
+        }
     }
 
     CMasternode* pmn = Find(mn.vin);
@@ -366,8 +369,12 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
 
         if(pmn != NULL)
         {
-            it = vMasternodes.erase(it);
-            fMNRemoved = true;
+            // (Allow full nodes using same ip/different port)
+            if (pmn->isPortOpen == false)
+            {
+                it = vMasternodes.erase(it);
+                fMNRemoved = true;
+            }
         } 
         
         // Search for duplicate add from previous removal if not still found
@@ -380,6 +387,7 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         {
             if (fMNRemoved == true)
             {
+                // Add to Masternode List
                 vMasternodes.push_back((*it));
             }
         }
@@ -818,8 +826,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         int nDoS = 0;
         if (!mnb.CheckAndUpdate(nDoS)) {
 
-            //if (nDoS > 0)
-            //    Misbehaving(pfrom->GetId(), nDoS);
+            if (nDoS > 0)
+                Misbehaving(pfrom->GetId(), nDoS);
 
             //failed
             return;
@@ -842,8 +850,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         } else {
             LogPrint("masternode","mnb - Rejected Masternode entry %s\n", mnb.vin.prevout.hash.ToString());
 
-            //if (nDoS > 0)
-            //    Misbehaving(pfrom->GetId(), nDoS);
+            if (nDoS > 0)
+                Misbehaving(pfrom->GetId(), nDoS);
         }
     }
 
@@ -861,7 +869,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         if (nDoS > 0) {
             // if anything significant failed, mark that node
-            //Misbehaving(pfrom->GetId(), nDoS);
+            Misbehaving(pfrom->GetId(), nDoS);
         } else {
             // if nothing significant failed, search existing Masternode list
             CMasternode* pmn = Find(mnp.vin);
@@ -1001,10 +1009,12 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             return;
         }
 
+        /* Disabled to allow multi-masternodes using different ports (full nodes only)
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
             if (addr.GetPort() != 40000) return;
         } else if (addr.GetPort() == 40000)
             return;
+        */
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts
         CMasternode* pmn = this->Find(vin);
@@ -1180,7 +1190,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 std::string errorMessage = "";
                 if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
                     LogPrint("masternode","dseep - Got bad Masternode address signature %s \n", vin.prevout.hash.ToString());
-                    //Misbehaving(pfrom->GetId(), 100);
+                    Misbehaving(pfrom->GetId(), 100);
                     return;
                 }
 
