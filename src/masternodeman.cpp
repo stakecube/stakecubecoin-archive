@@ -817,8 +817,9 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         int nDoS = 0;
         if (!mnb.CheckAndUpdate(nDoS)) {
-            if (nDoS > 0)
-                Misbehaving(pfrom->GetId(), nDoS);
+
+            //if (nDoS > 0)
+            //    Misbehaving(pfrom->GetId(), nDoS);
 
             //failed
             return;
@@ -841,8 +842,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         } else {
             LogPrint("masternode","mnb - Rejected Masternode entry %s\n", mnb.vin.prevout.hash.ToString());
 
-            if (nDoS > 0)
-                Misbehaving(pfrom->GetId(), nDoS);
+            //if (nDoS > 0)
+            //    Misbehaving(pfrom->GetId(), nDoS);
         }
     }
 
@@ -860,7 +861,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         if (nDoS > 0) {
             // if anything significant failed, mark that node
-            Misbehaving(pfrom->GetId(), nDoS);
+            //Misbehaving(pfrom->GetId(), nDoS);
         } else {
             // if nothing significant failed, search existing Masternode list
             CMasternode* pmn = Find(mnp.vin);

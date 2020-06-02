@@ -195,6 +195,9 @@ uint256 CMasternode::CalculateScore(int mod, int64_t nBlockHeight)
 
 void CMasternode::Check(bool forceCheck)
 {
+    bool ENFORCE_OPENCONNECTION = false;
+    bool ENFORCE_ACTIVECONNECTION = false;
+
     if (ShutdownRequested()) return;
 
     if (!forceCheck && (GetTime() - lastTimeChecked < MASTERNODE_CHECK_SECONDS)) return;
@@ -238,46 +241,53 @@ void CMasternode::Check(bool forceCheck)
         }
     }
 
-    addrman.Add(CAddress(addr), addr, 2*60*60);
-
-    LOCK(cs_vNodes);
-
-    bool node_found = false;
-
-    // Check for peer connection
-    for(CNode* pnode: vNodes)
+    if (ENFORCE_OPENCONNECTION == true)
     {
-        if (pnode->addr.ToStringIP() == addr.ToStringIP())
-        {   
-            node_found = true;
-
-            // OK
-            isPortOpen = true;
-            activeState = MASTERNODE_ENABLED;
+        // Enforce incoming connectivity
+        if (!CheckNode((CAddress)addr))
+        {
+            isPortOpen = false;
+            activeState = MASTERNODE_UNREACHABLE;
 
             return;
         }
-        
-        node_found = false;
     }
 
-    // Test Node for incoming connectivity (minimum requirements for active masternode status)
-    if (!CheckNode((CAddress)addr))
+    // Enforce node for active peer connection (not used)
+    if (ENFORCE_ACTIVECONNECTION == true)
     {
-        isPortOpen = false;
-        activeState = MASTERNODE_UNREACHABLE;
+        LOCK(cs_vNodes);
 
-        return;
+        bool node_found = false;
+
+        // Check for peer connection
+        for(CNode* pnode: vNodes)
+        {
+            if (pnode->addr.ToStringIP() == addr.ToStringIP())
+            {   
+                node_found = true;
+
+                // OK
+                isPortOpen = true;
+                activeState = MASTERNODE_ENABLED;
+
+                return;
+            }
+            
+            node_found = false;
+        }
+
+        if (node_found == false)
+        {
+            isPortOpen = false;
+            activeState = MASTERNODE_PEER_ERROR;
+
+            return;
+        }
+
     }
 
-    // Test node for active peer connection (not used)
-    if (node_found == false)
-    {
-        isPortOpen = false;
-        activeState = MASTERNODE_PEER_ERROR;
-
-        //return;
-    }
+    addrman.Add(CAddress(addr), addr, 2*60*60);
 
     // OK
     isPortOpen = true;
