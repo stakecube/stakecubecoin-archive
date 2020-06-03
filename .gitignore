@@ -83,6 +83,7 @@ src/leveldb/build_config.mk
 
 # Compilation and Qt preprocessor part
 *.qm
+Makefile
 stakecubecoin-qt
 stakecubecoin-Qt.app
 
