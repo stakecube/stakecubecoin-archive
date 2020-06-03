@@ -1469,7 +1469,7 @@ CAmount CWalletTx::GetUnlockedCredit() const
         const CTxOut& txout = vout[i];
 
         if (pwallet->IsSpent(hashTx, i) || pwallet->IsLockedCoin(hashTx, i)) continue;
-        if (fMasterNode && vout[i].nValue == 1000 * COIN) continue; // do not count MN-like outputs
+        if (fMasterNode && vout[i].nValue == Params().RequiredMasternodeCollateral() * COIN) continue; // do not count MN-like outputs
 
         nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         if (!MoneyRange(nCredit))
@@ -1503,7 +1503,7 @@ CAmount CWalletTx::GetLockedCredit() const
         }
 
         // Add masternode collaterals which are handled likc locked coins
-        if (fMasterNode && vout[i].nValue == 1000 * COIN) {
+        if (fMasterNode && vout[i].nValue == Params().RequiredMasternodeCollateral() * COIN) {
             nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         }
 
@@ -1621,8 +1621,8 @@ CAmount CWalletTx::GetLockedWatchOnlyCredit() const
             nCredit += pwallet->GetCredit(txout, ISMINE_WATCH_ONLY);
         }
 
-        // Add masternode collaterals which are handled likc locked coins
-        if (fMasterNode && vout[i].nValue == 1000 * COIN) {
+        // Add masternode collaterals which are handled like locked coins
+        if (fMasterNode && vout[i].nValue == Params().RequiredMasternodeCollateral() * COIN) {
             nCredit += pwallet->GetCredit(txout, ISMINE_WATCH_ONLY);
         }
 
@@ -2155,13 +2155,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 if (nCoinType == ONLY_DENOMINATED) {
                     found = IsDenominatedAmount(pcoin->vout[i].nValue);
                 } else if (nCoinType == ONLY_NOT1000IFMN) {
-                    found = !(fMasterNode && pcoin->vout[i].nValue == 1000 * COIN);
+                    found = !(fMasterNode && pcoin->vout[i].nValue == Params().RequiredMasternodeCollateral() * COIN);
                 } else if (nCoinType == ONLY_NONDENOMINATED_NOT1000IFMN) {
                     if (IsCollateralAmount(pcoin->vout[i].nValue)) continue; // do not use collateral amounts
                     found = !IsDenominatedAmount(pcoin->vout[i].nValue);
-                    if (found && fMasterNode) found = pcoin->vout[i].nValue != 1000 * COIN; // do not use Hot MN funds
+                    if (found && fMasterNode) found = pcoin->vout[i].nValue != Params().RequiredMasternodeCollateral() * COIN; // do not use Hot MN funds
                 } else if (nCoinType == ONLY_1000) {
-                    found = pcoin->vout[i].nValue == 1000 * COIN;
+                    found = pcoin->vout[i].nValue == Params().RequiredMasternodeCollateral() * COIN;
                 } else {
                     found = true;
                 }
