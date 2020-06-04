@@ -5,6 +5,7 @@
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2018 The ALQO developers
 // Copyright (c) 2018 The Phore developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -389,6 +390,22 @@ CNode* FindNode(const CService& addr)
         }
     }
     return NULL;
+}
+
+bool CheckNode(CAddress addrConnect)
+{
+    const char* strDest = "";
+
+    CNode* pnode = ConnectNode(addrConnect, strDest);
+    
+    boost::this_thread::interruption_point();
+
+    if (!pnode)
+    {
+        return false;
+    }
+
+    return true;
 }
 
 CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMaster)

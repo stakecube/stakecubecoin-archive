@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2020 StakeCubeCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,6 +11,9 @@
 #include "obfuscation.h"
 #include "sync.h"
 #include "util.h"
+
+bool ENFORCE_OPENCONNECTION = false;
+bool ENFORCE_ACTIVECONNECTION = false;
 
 // keep track of the scanning errors I've seen
 map<uint256, int> mapSeenMasternodeScanningErrors;
@@ -80,6 +84,8 @@ CMasternode::CMasternode()
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = false;
 }
 
 CMasternode::CMasternode(const CMasternode& other)
@@ -105,6 +111,8 @@ CMasternode::CMasternode(const CMasternode& other)
     lastTimeChecked = 0;
     nLastDsee = other.nLastDsee;   // temporary, do not save. Remove after migration to v12
     nLastDseep = other.nLastDseep; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = other.isPortOpen;
 }
 
 CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
@@ -130,6 +138,8 @@ CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
+
+    isPortOpen = false;
 }
 
 //
@@ -193,7 +203,6 @@ void CMasternode::Check(bool forceCheck)
     if (!forceCheck && (GetTime() - lastTimeChecked < MASTERNODE_CHECK_SECONDS)) return;
     lastTimeChecked = GetTime();
 
-
     //once spent, stop doing the checks
     if (activeState == MASTERNODE_VIN_SPENT) return;
 
@@ -231,7 +240,57 @@ void CMasternode::Check(bool forceCheck)
         }
     }
 
-    activeState = MASTERNODE_ENABLED; // OK
+    if (ENFORCE_OPENCONNECTION == true)
+    {
+        // Enforce incoming connectivity
+        if (!CheckNode((CAddress)addr))
+        {
+            isPortOpen = false;
+            activeState = MASTERNODE_UNREACHABLE;
+
+            return;
+        }
+    }
+
+    // Enforce node for active peer connection (not used)
+    if (ENFORCE_ACTIVECONNECTION == true)
+    {
+        LOCK(cs_vNodes);
+
+        bool node_found = false;
+
+        // Check for peer connection
+        for(CNode* pnode: vNodes)
+        {
+            if (pnode->addr.ToStringIP() == addr.ToStringIP())
+            {   
+                node_found = true;
+
+                // OK
+                isPortOpen = true;
+                activeState = MASTERNODE_ENABLED;
+
+                return;
+            }
+            
+            node_found = false;
+        }
+
+        if (node_found == false)
+        {
+            isPortOpen = false;
+            activeState = MASTERNODE_PEER_ERROR;
+
+            return;
+        }
+
+    }
+
+    addrman.Add(CAddress(addr), addr, 2*60*60);
+
+    // OK
+    isPortOpen = true;
+    activeState = MASTERNODE_ENABLED;
 }
 
 int64_t CMasternode::SecondsSincePayment()
@@ -759,16 +818,25 @@ bool CMasternodePing::VerifySignature(CPubKey& pubKeyMasternode, int &nDos) {
 bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fCheckSigTimeOnly)
 {
     // make sure signature isn't in the future (past is OK)
-    if (sigTime > GetAdjustedTime() + 60 * 60) {
+    if (sigTime > GetAdjustedTime() + 60 * 60)
+    {
         LogPrint("masternode","mnb - Signature rejected, too far into the future %s\n", vin.prevout.hash.ToString());
+
         nDos = 1;
+
         return false;
     }
 
 
-    if(fCheckSigTimeOnly) {
+    if(fCheckSigTimeOnly)
+    {
     	CMasternode* pmn = mnodeman.Find(vin);
-    	if(pmn) return VerifySignature(pmn->pubKeyMasternode, nDos);
+
+    	if(pmn)
+        {
+            return VerifySignature(pmn->pubKeyMasternode, nDos);
+        }
+
     	return true;
     }
 
@@ -776,27 +844,48 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
 
     // see if we have this Masternode
     CMasternode* pmn = mnodeman.Find(vin);
-    if (pmn != NULL && pmn->protocolVersion >= masternodePayments.GetMinMasternodePaymentsProto()) {
-        if (fRequireEnabled && !pmn->IsEnabled()) return false;
+
+    if (pmn != NULL && pmn->protocolVersion >= masternodePayments.GetMinMasternodePaymentsProto())
+    {
+        if (fRequireEnabled && !pmn->IsEnabled())
+        {
+            LogPrint("masternode", "CMasternodePing::CheckAndUpdate - Masternode Disabled %s\n", pmn->addr.ToString());
+
+            return false;
+        }
 
         // LogPrint("masternode","mnping - Found corresponding mn for vin: %s\n", vin.ToString());
         // update only if there is no known ping for this masternode or
         // last ping was more then MASTERNODE_MIN_MNP_SECONDS-60 ago comparing to this one
-        if (!pmn->IsPingedWithin(MASTERNODE_MIN_MNP_SECONDS - 60, sigTime)) {
+        if (!pmn->IsPingedWithin(MASTERNODE_MIN_MNP_SECONDS - 60, sigTime))
+        {
         	if (!VerifySignature(pmn->pubKeyMasternode, nDos))
+            {
+                LogPrint("masternode","CMasternodePing::CheckAndUpdate - Masternode Signature invalid: %s\n", pmn->addr.ToString());
+
                 return false;
+            }
 
             BlockMap::iterator mi = mapBlockIndex.find(blockHash);
-            if (mi != mapBlockIndex.end() && (*mi).second) {
-                if ((*mi).second->nHeight < chainActive.Height() - 24) {
+
+            if (mi != mapBlockIndex.end() && (*mi).second)
+            {
+                if ((*mi).second->nHeight < chainActive.Height() - 24)
+                {
                     LogPrint("masternode","CMasternodePing::CheckAndUpdate - Masternode %s block hash %s is too old\n", vin.prevout.hash.ToString(), blockHash.ToString());
                     // Do nothing here (no Masternode update, no mnping relay)
                     // Let this node to be visible but fail to accept mnping
 
                     return false;
                 }
-            } else {
-                if (fDebug) LogPrint("masternode","CMasternodePing::CheckAndUpdate - Masternode %s block hash %s is unknown\n", vin.prevout.hash.ToString(), blockHash.ToString());
+            }
+            else
+            {
+                if (fDebug)
+                {
+                    LogPrint("masternode","CMasternodePing::CheckAndUpdate - Masternode %s block hash %s is unknown\n", vin.prevout.hash.ToString(), blockHash.ToString());
+                }
+
                 // maybe we stuck so we shouldn't ban this node, just fail to accept it
                 // TODO: or should we also request this block?
 
@@ -807,23 +896,36 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
 
             //mnodeman.mapSeenMasternodeBroadcast.lastPing is probably outdated, so we'll update it
             CMasternodeBroadcast mnb(*pmn);
+
             uint256 hash = mnb.GetHash();
-            if (mnodeman.mapSeenMasternodeBroadcast.count(hash)) {
+
+            if (mnodeman.mapSeenMasternodeBroadcast.count(hash))
+            {
                 mnodeman.mapSeenMasternodeBroadcast[hash].lastPing = *this;
             }
 
             pmn->Check(true);
-            if (!pmn->IsEnabled()) return false;
+
+            if (!pmn->IsEnabled()) 
+            {
+                LogPrint("masternode", "CMasternodePing::CheckAndUpdate - Masternode Disabled %s\n", pmn->addr.ToString());
+
+                return false;
+            }
 
             LogPrint("masternode", "CMasternodePing::CheckAndUpdate - Masternode ping accepted, vin: %s\n", vin.prevout.hash.ToString());
 
             Relay();
+
             return true;
         }
+
         LogPrint("masternode", "CMasternodePing::CheckAndUpdate - Masternode ping arrived too early, vin: %s\n", vin.prevout.hash.ToString());
+        
         //nDos = 1; //disable, this is happening frequently and causing banned peers
         return false;
     }
+
     LogPrint("masternode", "CMasternodePing::CheckAndUpdate - Couldn't find compatible Masternode entry, vin: %s\n", vin.prevout.hash.ToString());
 
     return false;
