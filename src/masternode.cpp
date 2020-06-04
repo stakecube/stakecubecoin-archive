@@ -12,6 +12,9 @@
 #include "sync.h"
 #include "util.h"
 
+bool ENFORCE_OPENCONNECTION = false;
+bool ENFORCE_ACTIVECONNECTION = false;
+
 // keep track of the scanning errors I've seen
 map<uint256, int> mapSeenMasternodeScanningErrors;
 // cache block hashes as we calculate them
@@ -195,9 +198,6 @@ uint256 CMasternode::CalculateScore(int mod, int64_t nBlockHeight)
 
 void CMasternode::Check(bool forceCheck)
 {
-    bool ENFORCE_OPENCONNECTION = false;
-    bool ENFORCE_ACTIVECONNECTION = false;
-
     if (ShutdownRequested()) return;
 
     if (!forceCheck && (GetTime() - lastTimeChecked < MASTERNODE_CHECK_SECONDS)) return;

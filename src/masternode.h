@@ -23,6 +23,9 @@
 #define MASTERNODE_REMOVAL_SECONDS (130 * 60)
 #define MASTERNODE_CHECK_SECONDS 5
 
+extern bool ENFORCE_OPENCONNECTION;
+extern bool ENFORCE_ACTIVECONNECTION;
+
 using namespace std;
 
 class CMasternode;

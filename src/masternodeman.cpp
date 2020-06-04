@@ -206,19 +206,23 @@ bool CMasternodeMan::Add(CMasternode& mn)
     if (!mn.IsEnabled())
         return false;
 
-    // Check IP is not already found in the list (Allow full nodes using same ip/different port)
-    CMasternode *pmn1 = Find(mn.addr);
-
-    if (pmn1 != NULL)
+    if (ENFORCE_OPENCONNECTION == true)
     {
-        if (pmn1->isPortOpen == false)
-        {
-            if (fDebug)
-            {
-                LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
-            }
+        // Enforce incoming connectivity
+        // Check IP is not already found in the list (Allow full nodes using same ip/different port)
+        CMasternode *pmn1 = Find(mn.addr);
 
-            return false;
+        if (pmn1 != NULL)
+        {
+            if (pmn1->isPortOpen == false)
+            {
+                if (fDebug)
+                {
+                    LogPrint("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
+                }
+
+                return false;
+            }
         }
     }
 
@@ -353,53 +357,56 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         }
     }
 
-    // Remove duplicate nodes
-    while(it != vMasternodes.end())
+    if (ENFORCE_OPENCONNECTION == true)
     {
-        CMasternode *pmn;
-
-        bool fMNRemoved;
-
-        //std::string strHost;
-        //int port;
-        //SplitHostPort((*it).addr.ToString(), port, strHost);
-
-        // Find Masternode based on IP address
-        pmn = Find((*it).addr);
-
-        if(pmn != NULL)
+        // Remove duplicate nodes
+        while(it != vMasternodes.end())
         {
-            // (Allow full nodes using same ip/different port)
-            if (pmn->isPortOpen == false)
-            {
-                it = vMasternodes.erase(it);
-                fMNRemoved = true;
-            }
-        } 
-        
-        // Search for duplicate add from previous removal if not still found
-        CMasternode *pmn1;
+            CMasternode *pmn;
 
-        // Find Masternode based on IP address
-        pmn1 = Find((*it).addr);
+            bool fMNRemoved;
 
-        if(pmn1 == NULL)
-        {
-            if (fMNRemoved == true)
+            //std::string strHost;
+            //int port;
+            //SplitHostPort((*it).addr.ToString(), port, strHost);
+
+            // Find Masternode based on IP address
+            pmn = Find((*it).addr);
+
+            if(pmn != NULL)
             {
-                // Add to Masternode List
-                vMasternodes.push_back((*it));
+                // (Allow full nodes using same ip/different port)
+                if (pmn->isPortOpen == false)
+                {
+                    it = vMasternodes.erase(it);
+                    fMNRemoved = true;
+                }
+            } 
+            
+            // Search for duplicate add from previous removal if not still found
+            CMasternode *pmn1;
+
+            // Find Masternode based on IP address
+            pmn1 = Find((*it).addr);
+
+            if(pmn1 == NULL)
+            {
+                if (fMNRemoved == true)
+                {
+                    // Add to Masternode List
+                    vMasternodes.push_back((*it));
+                }
             }
+            else
+            {
+                if (fDebug)
+                {
+                    LogPrint("masternode", "%s : WARNING - Removed duplicate masternode %s - %i now \n", __FUNCTION__, (*it).addr.ToStringIPPort().c_str(), size() - 1);
+                }
+            }
+
+            ++it;
         }
-        else
-        {
-            if (fDebug)
-            {
-                LogPrint("masternode", "%s : WARNING - Removed duplicate masternode %s - %i now \n", __FUNCTION__, (*it).addr.ToStringIPPort().c_str(), size() - 1);
-            }
-        }
-
-        ++it;
     }
 
 }
