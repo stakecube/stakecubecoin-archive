@@ -263,7 +263,7 @@ UniValue masternodeconnect(const UniValue& params, bool fHelp)
 
     CService addr = CService(strAddress);
 
-    CNode* pnode = ConnectNode((CAddress)addr, NULL, false);
+    CNode* pnode = ConnectNode((CAddress)addr, NULL);
     if (pnode) {
         pnode->Release();
         return NullUniValue;

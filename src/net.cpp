@@ -408,19 +408,15 @@ bool CheckNode(CAddress addrConnect)
     return true;
 }
 
-CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMaster)
+CNode* ConnectNode(CAddress addrConnect, const char* pszDest)
 {
     if (pszDest == NULL) {
-        // we clean masternode connections in CMasternodeMan::ProcessMasternodeConnections()
-        // so should be safe to skip this and connect to local Hot MN on CActiveMasternode::ManageStatus()
-        if (IsLocal(addrConnect) && !obfuScationMaster)
+        if (IsLocal(addrConnect))
             return NULL;
 
         // Look for an existing connection
         CNode* pnode = FindNode((CService)addrConnect);
         if (pnode) {
-            pnode->fObfuScationMaster = obfuScationMaster;
-
             pnode->AddRef();
             return pnode;
         }
@@ -455,7 +451,6 @@ CNode* ConnectNode(CAddress addrConnect, const char* pszDest, bool obfuScationMa
 
         pnode->nServicesExpected = addrConnect.nServices & nRelevantServices;
         pnode->nTimeConnected = GetTime();
-        if (obfuScationMaster) pnode->fObfuScationMaster = true;
 
         return pnode;
     } else if (!proxyConnectionFailed) {
@@ -2093,7 +2088,6 @@ CNode::CNode(SOCKET hSocketIn, CAddress addrIn, std::string addrNameIn, bool fIn
     nPingUsecStart = 0;
     nPingUsecTime = 0;
     fPingQueued = false;
-    fObfuScationMaster = false;
 
     {
         LOCK(cs_nLastNodeId);

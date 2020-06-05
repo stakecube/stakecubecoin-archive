@@ -798,22 +798,6 @@ CMasternode* CMasternodeMan::GetMasternodeByRank(int nRank, int64_t nBlockHeight
     return NULL;
 }
 
-void CMasternodeMan::ProcessMasternodeConnections()
-{
-    //we don't care about this for regtest
-    if (Params().NetworkID() == CBaseChainParams::REGTEST) return;
-
-    LOCK(cs_vNodes);
-    BOOST_FOREACH (CNode* pnode, vNodes) {
-        if (pnode->fObfuScationMaster) {
-            if (obfuScationPool.pSubmittedToMasternode != NULL && pnode->addr == obfuScationPool.pSubmittedToMasternode->addr) continue;
-            LogPrint("masternode","Closing Masternode connection peer=%i \n", pnode->GetId());
-            pnode->fObfuScationMaster = false;
-            pnode->Release();
-        }
-    }
-}
-
 void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 {
     if (fLiteMode) return; //disable all Obfuscation/Masternode related functionality
@@ -1293,7 +1277,6 @@ void ThreadCheckMasternodes()
 
             if (c % 60 == 0) {
                 mnodeman.CheckAndRemove();
-                mnodeman.ProcessMasternodeConnections();
                 masternodePayments.CleanPaymentList();
                 CleanTransactionLocksList();
             }

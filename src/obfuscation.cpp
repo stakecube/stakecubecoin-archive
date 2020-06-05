@@ -1539,7 +1539,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
                 lastTimeChanged = GetTimeMillis();
 
                 // connect to Masternode and submit the queue request
-                CNode* pnode = ConnectNode((CAddress)addr, NULL, true);
+                CNode* pnode = ConnectNode((CAddress)addr, NULL);
                 if (pnode != NULL) {
                     pSubmittedToMasternode = pmn;
                     vecMasternodesUsed.push_back(dsq.vin);
@@ -1581,7 +1581,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
 
             lastTimeChanged = GetTimeMillis();
             LogPrintf("DoAutomaticDenominating --- attempt %d connection to Masternode %s\n", i, pmn->addr.ToString());
-            CNode* pnode = ConnectNode((CAddress)pmn->addr, NULL, true);
+            CNode* pnode = ConnectNode((CAddress)pmn->addr, NULL);
             if (pnode != NULL) {
                 pSubmittedToMasternode = pmn;
                 vecMasternodesUsed.push_back(pmn->vin);
