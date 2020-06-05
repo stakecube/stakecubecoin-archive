@@ -850,7 +850,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         }
 
         // make sure it's still unspent
-        //  - this is checked later by .check() in many places and by ThreadCheckObfuScationPool()
+        //  - this is checked later by .check() in many places and by ThreadCheckMasternodes()
         if (mnb.CheckInputsAndAdd(nDoS)) {
             // use this as a peer
             addrman.Add(CAddress(mnb.addr), pfrom->addr, 2 * 60 * 60);
@@ -1079,7 +1079,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         LogPrint("masternode", "dsee - Got NEW OLD Masternode entry %s\n", vin.prevout.hash.ToString());
 
         // make sure it's still unspent
-        //  - this is checked later by .check() in many places and by ThreadCheckObfuScationPool()
+        //  - this is checked later by .check() in many places and by ThreadCheckMasternodes()
 
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
@@ -1269,7 +1269,7 @@ std::string CMasternodeMan::ToString() const
     return info.str();
 }
 
-void ThreadCheckObfuScationPool()
+void ThreadCheckMasternodes()
 {
     if (fLiteMode) return; //disable all Obfuscation/Masternode related functionality
 
@@ -1280,7 +1280,6 @@ void ThreadCheckObfuScationPool()
 
     while (true) {
         MilliSleep(1000);
-        //LogPrintf("ThreadCheckObfuScationPool::check timeout\n");
 
         // try to sync from all available nodes, one step at a time
         masternodeSync.Process();
@@ -1298,8 +1297,6 @@ void ThreadCheckObfuScationPool()
                 masternodePayments.CleanPaymentList();
                 CleanTransactionLocksList();
             }
-
-            //if(c % MASTERNODES_DUMP_SECONDS == 0) DumpMasternodes();
 
             obfuScationPool.CheckTimeout();
             obfuScationPool.CheckForCompleteQueue();
