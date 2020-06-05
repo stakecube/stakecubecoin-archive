@@ -163,4 +163,6 @@ public:
     void UpdateMasternodeList(CMasternodeBroadcast mnb);
 };
 
+void ThreadCheckObfuScationPool();
+
 #endif
