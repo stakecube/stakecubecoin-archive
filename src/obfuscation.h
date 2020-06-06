@@ -48,7 +48,6 @@ class CActiveMasternode;
 static const CAmount OBFUSCATION_COLLATERAL = (10 * COIN);
 static const CAmount OBFUSCATION_POOL_MAX = (99999.99 * COIN);
 
-extern CObfuscationPool obfuScationPool;
 extern CObfuScationSigner obfuScationSigner;
 extern std::vector<CObfuscationQueue> vecObfuscationQueue;
 extern std::string strMasterNodePrivKey;
@@ -360,11 +359,6 @@ public:
      */
     void ProcessMessageObfuscation(CNode* pfrom, std::string& strCommand, CDataStream& vRecv);
 
-    void InitCollateralAddress()
-    {
-        SetCollateralAddress(Params().ObfuscationPoolDummyAddress());
-    }
-
     void SetMinBlockSpacing(int minBlockSpacingIn)
     {
         minBlockSpacing = minBlockSpacingIn;
@@ -417,7 +411,7 @@ public:
         if (state != newState) {
             lastTimeChanged = GetTimeMillis();
             if (fMasterNode) {
-                RelayStatus(obfuScationPool.sessionID, obfuScationPool.GetState(), obfuScationPool.GetEntriesCount(), MASTERNODE_RESET);
+                //RelayStatus(obfuScationPool.sessionID, obfuScationPool.GetState(), obfuScationPool.GetEntriesCount(), MASTERNODE_RESET);
             }
         }
         state = newState;

@@ -93,7 +93,6 @@ public:
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     std::string SporkKey() const { return strSporkKey; }
     std::string SporkKeyTemp() const { return strSporkKeyTemp; }
-    std::string ObfuscationPoolDummyAddress() const { return strObfuscationPoolDummyAddress; }
     int64_t BudgetFeeConfirmations() const { return nBudgetFeeConfirmations; }
     CBaseChainParams::Network NetworkID() const { return networkID; }
 
@@ -143,7 +142,6 @@ protected:
     int nPoolMaxTransactions;
     std::string strSporkKey;
     std::string strSporkKeyTemp;
-    std::string strObfuscationPoolDummyAddress;
     int64_t nBudgetFeeConfirmations;
 };
 

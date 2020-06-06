@@ -24,8 +24,6 @@
 using namespace std;
 using namespace boost;
 
-// The main object for accessing Obfuscation
-CObfuscationPool obfuScationPool;
 // A helper object for signing messages from Masternodes
 CObfuScationSigner obfuScationSigner;
 // The current Obfuscations in progress on the network
@@ -321,10 +319,6 @@ void CObfuscationPool::ProcessMessageObfuscation(CNode* pfrom, std::string& strC
             count++;
         }
 
-        if (success) {
-            obfuScationPool.Check();
-            RelayStatus(obfuScationPool.sessionID, obfuScationPool.GetState(), obfuScationPool.GetEntriesCount(), MASTERNODE_RESET);
-        }
     } else if (strCommand == NetMsgType::DSF) { //Obfuscation Final tx
         if (pfrom->nVersion < ActiveProtocol()) {
             return;
@@ -364,13 +358,6 @@ void CObfuscationPool::ProcessMessageObfuscation(CNode* pfrom, std::string& strC
         bool error;
         int errorID;
         vRecv >> sessionIDMessage >> error >> errorID;
-
-        if (sessionID != sessionIDMessage) {
-            LogPrint("obfuscation", "dsc - message doesn't match current Obfuscation session %d %d\n", obfuScationPool.sessionID, sessionIDMessage);
-            return;
-        }
-
-        obfuScationPool.CompletedTransaction(error, errorID);
     }
 }
 
@@ -1329,8 +1316,6 @@ void CObfuscationPool::NewBlock()
     //we we're processing lots of blocks, we'll just leave
     if (GetTime() - lastNewBlock < 10) return;
     lastNewBlock = GetTime();
-
-    obfuScationPool.CheckTimeout();
 }
 
 // Obfuscation transaction was completed (failed or successful)

@@ -219,7 +219,6 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02e52ae838842b7a34468639ca17a2e3883f10f30095ee31e19984e5590149fbcc";
         strSporkKeyTemp = "";
-        strObfuscationPoolDummyAddress = "sJb1yfkgDkHUbxCuX3zY7MdphK1WTek5X1";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -322,7 +321,6 @@ public:
         nPoolMaxTransactions = 2;        
         strSporkKey = "";
         strSporkKeyTemp = "";
-        strObfuscationPoolDummyAddress = "";
         nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
     }

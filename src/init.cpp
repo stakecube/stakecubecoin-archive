@@ -1833,8 +1833,6 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler, const std
     obfuScationDenominations.push_back( (.001     * COIN)+1 );
     */
 
-    obfuScationPool.InitCollateralAddress();
-
     threadGroup.create_thread(boost::bind(&ThreadCheckMasternodes));
 
     // ********************************************************* Step 11: start node
