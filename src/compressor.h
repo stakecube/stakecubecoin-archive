@@ -7,6 +7,7 @@
 #define BITCOIN_COMPRESSOR_H
 
 #include "primitives/transaction.h"
+#include "prevector.h"
 #include "script/script.h"
 #include "serialize.h"
 
@@ -76,7 +77,7 @@ public:
         }
         unsigned int nSize = script.size() + nSpecialScripts;
         s << VARINT(nSize);
-        s << CFlatData(script);
+        s << CFlatData(&script[0], &script[script.size()]);
     }
 
     template <typename Stream>
@@ -91,8 +92,14 @@ public:
             return;
         }
         nSize -= nSpecialScripts;
-        script.resize(nSize);
-        s >> REF(CFlatData(script));
+        if (nSize > MAX_SCRIPT_SIZE) {
+            // Overly long script, replace with a short invalid one
+            script << OP_RETURN;
+            s.ignore(nSize);
+        } else {
+            script.resize(nSize);
+            s >> REF(CFlatData(script));
+        }
     }
 };
 
