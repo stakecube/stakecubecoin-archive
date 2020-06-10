@@ -112,6 +112,7 @@ BITCOIN_CORE_H = \
   consensus/merkle.h \
   consensus/validation.h \
   compressor.h \
+  fs.h \
   primitives/block.h \
   primitives/transaction.h \
   core_io.h \
@@ -214,6 +215,7 @@ libbitcoin_server_a_SOURCES = \
   checkpoints.cpp \
   httprpc.cpp \
   httpserver.cpp \
+  fs.cpp \
   init.cpp \
   leveldbwrapper.cpp \
   main.cpp \
