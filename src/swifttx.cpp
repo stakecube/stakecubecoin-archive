@@ -5,11 +5,11 @@
 
 #include "swifttx.h"
 
-#include "activemasternode.h"
+#include "masternode/activemasternode.h"
 #include "base58.h"
 #include "consensus/validation.h"
 #include "key.h"
-#include "masternodeman.h"
+#include "masternode/masternodeman.h"
 #include "net.h"
 #include "obfuscation.h"
 #include "protocol.h"

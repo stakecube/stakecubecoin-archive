@@ -9,7 +9,7 @@
 #include "consensus/validation.h"
 #include "key.h"
 #include "main.h"
-#include "masternode-budget.h"
+#include "masternode/masternode-budget.h"
 #include "net.h"
 #include "protocol.h"
 #include "sync.h"

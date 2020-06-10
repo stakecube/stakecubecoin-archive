@@ -8,13 +8,13 @@
 
 #include "configuremasternodepage.h"
 
-#include "activemasternode.h"
+#include "masternode/activemasternode.h"
 #include "clientmodel.h"
 #include "guiutil.h"
 #include "init.h"
-#include "masternode-sync.h"
-#include "masternodeconfig.h"
-#include "masternodeman.h"
+#include "masternode/masternode-sync.h"
+#include "masternode/masternodeconfig.h"
+#include "masternode/masternodeman.h"
 #include "sync.h"
 #include "wallet/wallet.h"
 #include "walletmodel.h"

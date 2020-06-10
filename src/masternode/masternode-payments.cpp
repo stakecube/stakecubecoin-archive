@@ -3,11 +3,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "masternode-payments.h"
+#include "masternode/masternode-payments.h"
 #include "addrman.h"
-#include "masternode-budget.h"
-#include "masternode-sync.h"
-#include "masternodeman.h"
+#include "masternode/masternode-budget.h"
+#include "masternode/masternode-sync.h"
+#include "masternode/masternodeman.h"
 #include "obfuscation.h"
 #include "protocol.h"
 #include "spork.h"

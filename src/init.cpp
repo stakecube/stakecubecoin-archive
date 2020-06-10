@@ -12,7 +12,7 @@
 
 #include "init.h"
 
-#include "activemasternode.h"
+#include "masternode/activemasternode.h"
 #include "addrman.h"
 #include "amount.h"
 #include "checkpoints.h"
@@ -22,10 +22,10 @@
 #include "httprpc.h"
 #include "key.h"
 #include "main.h"
-#include "masternode-budget.h"
-#include "masternode-payments.h"
-#include "masternodeconfig.h"
-#include "masternodeman.h"
+#include "masternode/masternode-budget.h"
+#include "masternode/masternode-payments.h"
+#include "masternode/masternodeconfig.h"
+#include "masternode/masternodeman.h"
 #include "miner.h"
 #include "net.h"
 #include "rpc/server.h"

@@ -16,8 +16,8 @@
 #include <boost/tokenizer.hpp>
 #include <guiutil.h>
 #include <main.h>
-#include <masternode-budget.h>
-#include <masternode-sync.h>
+#include <masternode/masternode-budget.h>
+#include <masternode/masternode-sync.h>
 #include <proposaldialog.h>
 #include <ui_proposaldialog.h>
 #include <univalue.h>

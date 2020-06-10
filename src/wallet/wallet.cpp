@@ -14,7 +14,7 @@
 #include "checkpoints.h"
 #include "wallet/coincontrol.h"
 #include "kernel.h"
-#include "masternode-budget.h"
+#include "masternode/masternode-budget.h"
 #include "net.h"
 #include "primitives/transaction.h"
 #include "script/script.h"

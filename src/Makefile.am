@@ -88,7 +88,7 @@ endif
 .PHONY: FORCE
 # stakecubecoin core #
 BITCOIN_CORE_H = \
-  activemasternode.h \
+  masternode/activemasternode.h \
   addrman.h \
   alert.h \
   allocators.h \
@@ -128,12 +128,12 @@ BITCOIN_CORE_H = \
   leveldbwrapper.h \
   limitedmap.h \
   main.h \
-  masternode.h \
-  masternode-payments.h \
-  masternode-budget.h \
-  masternode-sync.h \
-  masternodeman.h \
-  masternodeconfig.h \
+  masternode/masternode.h \
+  masternode/masternode-payments.h \
+  masternode/masternode-budget.h \
+  masternode/masternode-sync.h \
+  masternode/masternodeman.h \
+  masternode/masternodeconfig.h \
   merkleblock.h \
   miner.h \
   mruset.h \
@@ -255,17 +255,17 @@ endif
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_wallet_a_SOURCES = \
-  activemasternode.cpp \
+  masternode/activemasternode.cpp \
   bip38.cpp \
   obfuscation.cpp \
   obfuscation-relay.cpp \
   swifttx.cpp \
-  masternode.cpp \
-  masternode-budget.cpp \
-  masternode-payments.cpp \
-  masternode-sync.cpp \
-  masternodeconfig.cpp \
-  masternodeman.cpp \
+  masternode/masternode.cpp \
+  masternode/masternode-budget.cpp \
+  masternode/masternode-payments.cpp \
+  masternode/masternode-sync.cpp \
+  masternode/masternodeconfig.cpp \
+  masternode/masternodeman.cpp \
   wallet/rpcdump.cpp \
   kernel.cpp \
   wallet/crypter.cpp \

@@ -5,12 +5,12 @@
 
 // clang-format off
 #include "main.h"
-#include "activemasternode.h"
-#include "masternode-sync.h"
-#include "masternode-payments.h"
-#include "masternode-budget.h"
-#include "masternode.h"
-#include "masternodeman.h"
+#include "masternode/activemasternode.h"
+#include "masternode/masternode-sync.h"
+#include "masternode/masternode-payments.h"
+#include "masternode/masternode-budget.h"
+#include "masternode/masternode.h"
+#include "masternode/masternodeman.h"
 #include "spork.h"
 #include "util.h"
 #include "addrman.h"

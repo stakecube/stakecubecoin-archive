@@ -13,7 +13,7 @@
 #include "consensus/validation.h"
 #include "hash.h"
 #include "main.h"
-#include "masternode-sync.h"
+#include "masternode/masternode-sync.h"
 #include "net.h"
 #include "pow.h"
 #include "script/script.h"
@@ -26,7 +26,7 @@
 #include "wallet/wallet.h"
 #endif
 #include "validationinterface.h"
-#include "masternode-payments.h"
+#include "masternode/masternode-payments.h"
 #include "spork.h"
 
 #include <boost/thread.hpp>

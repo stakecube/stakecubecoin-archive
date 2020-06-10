@@ -8,7 +8,7 @@
 
 #include "key.h"
 #include "main.h"
-#include "masternode.h"
+#include "masternode/masternode.h"
 
 using namespace std;
 

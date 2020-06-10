@@ -3,11 +3,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "activemasternode.h"
+#include "masternode/activemasternode.h"
 #include "addrman.h"
-#include "masternode.h"
-#include "masternodeconfig.h"
-#include "masternodeman.h"
+#include "masternode/masternode.h"
+#include "masternode/masternodeconfig.h"
+#include "masternode/masternodeman.h"
 #include "protocol.h"
 #include "spork.h"
 

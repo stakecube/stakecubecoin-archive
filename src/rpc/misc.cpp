@@ -11,7 +11,7 @@
 #include "crypto/ripemd160.h"
 #include "init.h"
 #include "main.h"
-#include "masternode-sync.h"
+#include "masternode/masternode-sync.h"
 #include "net.h"
 #include "netbase.h"
 #include "rpc/server.h"

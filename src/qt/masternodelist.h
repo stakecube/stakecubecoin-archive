@@ -6,7 +6,7 @@
 #ifndef MASTERNODELIST_H
 #define MASTERNODELIST_H
 
-#include "masternode.h"
+#include "masternode/masternode.h"
 #include "platformstyle.h"
 #include "sync.h"
 #include "util.h"

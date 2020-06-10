@@ -62,7 +62,7 @@ INCLUDEPATH += . \
                src/secp256k1/src/java
 
 # Input
-HEADERS += src/activemasternode.h \
+HEADERS += src/masternode/activemasternode.h \
            src/addrman.h \
            src/alert.h \
            src/allocators.h \
@@ -98,12 +98,12 @@ HEADERS += src/activemasternode.h \
            src/leveldbwrapper.h \
            src/limitedmap.h \
            src/main.h \
-           src/masternode-budget.h \
-           src/masternode-payments.h \
-           src/masternode-sync.h \
-           src/masternode.h \
-           src/masternodeconfig.h \
-           src/masternodeman.h \
+           src/masternode/masternode-budget.h \
+           src/masternode/masternode-payments.h \
+           src/masternode/masternode-sync.h \
+           src/masternode/masternode.h \
+           src/masternode/masternodeconfig.h \
+           src/masternode/masternodeman.h \
            src/merkleblock.h \
            src/miner.h \
            src/mruset.h \
@@ -367,7 +367,7 @@ FORMS += src/qt/forms/addressbookpage.ui \
          src/qt/forms/sendcoinsentry.ui \
          src/qt/forms/signverifymessagedialog.ui \
          src/qt/forms/transactiondescdialog.ui
-SOURCES += src/activemasternode.cpp \
+SOURCES += src/masternode/activemasternode.cpp \
            src/addrman.cpp \
            src/alert.cpp \
            src/allocators.cpp \
@@ -402,12 +402,12 @@ SOURCES += src/activemasternode.cpp \
            src/keystore.cpp \
            src/leveldbwrapper.cpp \
            src/main.cpp \
-           src/masternode-budget.cpp \
-           src/masternode-payments.cpp \
-           src/masternode-sync.cpp \
-           src/masternode.cpp \
-           src/masternodeconfig.cpp \
-           src/masternodeman.cpp \
+           src/masternode/masternode-budget.cpp \
+           src/masternode/masternode-payments.cpp \
+           src/masternode/masternode-sync.cpp \
+           src/masternode/masternode.cpp \
+           src/masternode/masternodeconfig.cpp \
+           src/masternode/masternodeman.cpp \
            src/merkleblock.cpp \
            src/miner.cpp \
            src/net.cpp \

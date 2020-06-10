@@ -8,7 +8,7 @@
 #include "consensus/validation.h"
 #include "init.h"
 #include "main.h"
-#include "masternodeman.h"
+#include "masternode/masternodeman.h"
 #include "script/sign.h"
 #include "swifttx.h"
 #include "ui_interface.h"

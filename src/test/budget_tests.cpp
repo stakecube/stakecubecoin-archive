@@ -5,7 +5,7 @@
 #include <boost/test/unit_test.hpp>
 #include <tinyformat.h>
 #include <utilmoneystr.h>
-#include "masternode-budget.h"
+#include "masternode/masternode-budget.h"
 
 BOOST_AUTO_TEST_SUITE(budget_tests)
 
