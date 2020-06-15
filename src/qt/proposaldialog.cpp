@@ -84,7 +84,7 @@ ProposalDialog::ProposalDialog(Mode mode, QWidget* parent) : QDialog(parent), ui
     // Load next superblock number.
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
-    int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    int nNext = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
     ui->blockEdit->setText(QString::number(nNext));
 
     // Start periodic updates to handle submit block depth validation.
@@ -228,17 +228,17 @@ bool ProposalDialog::validateProposal()
     // Start must be in the next budget cycle
     int nBlockMin = 0;
     CBlockIndex* pindexPrev = chainActive.Tip();
-    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
 
     int nBlockStart = ui->blockEdit->text().toInt();
     if (nBlockStart < nBlockMin) strError = "Invalid block start, must be more than current height.";
-    if (nBlockStart % GetBudgetPaymentCycleBlocks() != 0)
+    if (nBlockStart % Params().BudgetCycleBlocks() != 0)
     {
-        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
         strError = strprintf("Invalid block start - must be a budget cycle block. Next valid block: %d", nNext);
     }
 
-    int nBlockEnd = nBlockStart + (GetBudgetPaymentCycleBlocks() * nPaymentCount); // End must be AFTER current cycle
+    int nBlockEnd = nBlockStart + (Params().BudgetCycleBlocks() * nPaymentCount); // End must be AFTER current cycle
     if (nBlockEnd < pindexPrev->nHeight) strError = "Invalid ending block, starting block + (payment_cycle*payments) must be more than current height.";
 
     std::string address = ui->addressEdit->text().toStdString();

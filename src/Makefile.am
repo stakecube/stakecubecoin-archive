@@ -135,6 +135,7 @@ BITCOIN_CORE_H = \
   masternode/masternode-sync.h \
   masternode/masternodeman.h \
   masternode/masternodeconfig.h \
+  masternode/messagesigner.h \
   merkleblock.h \
   miner.h \
   mruset.h \
@@ -268,6 +269,7 @@ libbitcoin_wallet_a_SOURCES = \
   masternode/masternode-sync.cpp \
   masternode/masternodeconfig.cpp \
   masternode/masternodeman.cpp \
+  masternode/messagesigner.cpp \
   wallet/rpcdump.cpp \
   kernel.cpp \
   wallet/crypter.cpp \

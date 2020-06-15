@@ -78,39 +78,25 @@ bool CHashSigner::VerifyHash(const uint256& hash, const CKeyID& keyID, const std
  *  Functions inherited by network signed-messages
  */
 
-bool CSignedMessage::Sign(const CKey& key, const CPubKey& pubKey, const bool fNewSigs)
+bool CSignedMessage::Sign(const CKey& key, const CPubKey& pubKey)
 {
     std::string strError = "";
 
-    if (fNewSigs) {
-        nMessVersion = MessageVersion::MESS_VER_HASH;
-        uint256 hash = GetSignatureHash();
+    nMessVersion = MessageVersion::MESS_VER_STRMESS;
+    std::string strMessage = GetStrMessage();
 
-        if(!CHashSigner::SignHash(hash, key, vchSig)) {
-            return error("%s : SignHash() failed", __func__);
-        }
+    if (!CMessageSigner::SignMessage(strMessage, vchSig, key)) {
+        return error("%s : SignMessage() failed", __func__);
+    }
 
-        if (!CHashSigner::VerifyHash(hash, pubKey, vchSig, strError)) {
-            return error("%s : VerifyHash() failed, error: %s", __func__, strError);
-        }
-
-    } else {
-        nMessVersion = MessageVersion::MESS_VER_STRMESS;
-        std::string strMessage = GetStrMessage();
-
-        if (!CMessageSigner::SignMessage(strMessage, vchSig, key)) {
-            return error("%s : SignMessage() failed", __func__);
-        }
-
-        if (!CMessageSigner::VerifyMessage(pubKey, vchSig, strMessage, strError)) {
-            return error("%s : VerifyMessage() failed, error: %s\n", __func__, strError);
-        }
+    if (!CMessageSigner::VerifyMessage(pubKey, vchSig, strMessage, strError)) {
+        return error("%s : VerifyMessage() failed, error: %s\n", __func__, strError);
     }
 
     return true;
 }
 
-bool CSignedMessage::Sign(const std::string strSignKey, const bool fNewSigs)
+bool CSignedMessage::Sign(const std::string strSignKey)
 {
     CKey key;
     CPubKey pubkey;
@@ -119,7 +105,7 @@ bool CSignedMessage::Sign(const std::string strSignKey, const bool fNewSigs)
         return error("%s : Invalid strSignKey", __func__);
     }
 
-    return Sign(key, pubkey, fNewSigs);
+    return Sign(key, pubkey);
 }
 
 bool CSignedMessage::CheckSignature(const CPubKey& pubKey) const
@@ -172,4 +158,3 @@ void CSignedMessage::swap(CSignedMessage& first, CSignedMessage& second) // noth
     swap(first.vchSig, second.vchSig);
     swap(first.nMessVersion, second.nMessVersion);
 }
-

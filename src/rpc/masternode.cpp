@@ -10,6 +10,7 @@
 #include "main.h"
 #include "masternode/masternode-budget.h"
 #include "masternode/masternode-payments.h"
+#include "masternode/masternode-sync.h"
 #include "masternode/masternodeconfig.h"
 #include "masternode/masternodeman.h"
 #include "rpc/server.h"
@@ -1022,7 +1023,7 @@ UniValue decodemasternodebroadcast(const UniValue& params, bool fHelp)
     if (!DecodeHexMnb(mnb, params[0].get_str()))
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Masternode broadcast message decode failed");
 
-    if(!mnb.VerifySignature())
+    if(!mnb.CheckSignature())
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Masternode broadcast signature verification failed");
 
     UniValue resultObj(UniValue::VOBJ);
@@ -1031,7 +1032,7 @@ UniValue decodemasternodebroadcast(const UniValue& params, bool fHelp)
     resultObj.push_back(make_pair("addr", mnb.addr.ToString()));
     resultObj.push_back(make_pair("pubkeycollateral", EncodeDestination(mnb.pubKeyCollateralAddress.GetID())));
     resultObj.push_back(make_pair("pubkeymasternode", EncodeDestination(mnb.pubKeyMasternode.GetID())));
-    resultObj.push_back(make_pair("vchsig", EncodeBase64(&mnb.sig[0], mnb.sig.size())));
+    resultObj.push_back(make_pair("vchsig", mnb.GetSignatureBase64()));
     resultObj.push_back(make_pair("sigtime", mnb.sigTime));
     resultObj.push_back(make_pair("protocolversion", mnb.protocolVersion));
     resultObj.push_back(make_pair("nlastdsq", mnb.nLastDsq));
@@ -1040,7 +1041,7 @@ UniValue decodemasternodebroadcast(const UniValue& params, bool fHelp)
     lastPingObj.push_back(make_pair("vin", mnb.lastPing.vin.prevout.ToString()));
     lastPingObj.push_back(make_pair("blockhash", mnb.lastPing.blockHash.ToString()));
     lastPingObj.push_back(make_pair("sigtime", mnb.lastPing.sigTime));
-    lastPingObj.push_back(make_pair("vchsig", EncodeBase64(&mnb.lastPing.vchSig[0], mnb.lastPing.vchSig.size())));
+    lastPingObj.push_back(make_pair("vchsig", mnb.GetSignatureBase64()));
 
     resultObj.push_back(make_pair("lastping", lastPingObj));
 
@@ -1066,7 +1067,7 @@ UniValue relaymasternodebroadcast(const UniValue& params, bool fHelp)
     if (!DecodeHexMnb(mnb, params[0].get_str()))
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "Masternode broadcast message decode failed");
 
-    if(!mnb.VerifySignature())
+    if(!mnb.CheckSignature())
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Masternode broadcast signature verification failed");
 
     mnodeman.UpdateMasternodeList(mnb);

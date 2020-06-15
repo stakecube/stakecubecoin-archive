@@ -220,6 +220,7 @@ public:
         strSporkKey = "02e52ae838842b7a34468639ca17a2e3883f10f30095ee31e19984e5590149fbcc";
         strSporkKeyTemp = "";
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
+        nBudgetCycleBlocks = 43200; // Number of confirmations for the finalization fee
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const

@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The StakeCubeCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +11,6 @@
 #include "key.h"
 #include "masternode/masternode.h"
 #include "net.h"
-#include "obfuscation.h"
 #include "sync.h"
 #include "wallet/wallet.h"
 
@@ -63,7 +63,7 @@ public:
 
     /// Get 1000 SCC input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, CPubKey& pubkey, CKey& secretKey);
-    vector<COutput> SelectCoinsMasternode();
+    std::vector<COutput> SelectCoinsMasternode();
 
     /// Enable cold wallet mode (run a Masternode with no funds)
     bool EnableHotColdMasterNode(CTxIn& vin, CService& addr);

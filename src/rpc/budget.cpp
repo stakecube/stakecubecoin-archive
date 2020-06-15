@@ -10,6 +10,7 @@
 #include "main.h"
 #include "masternode/masternode-budget.h"
 #include "masternode/masternode-payments.h"
+#include "masternode/masternode-sync.h"
 #include "masternode/masternodeconfig.h"
 #include "masternode/masternodeman.h"
 #include "rpc/server.h"
@@ -196,15 +197,15 @@ UniValue preparebudget(const UniValue& params, bool fHelp)
         throw runtime_error("Invalid payment count, must be more than zero.");
 
     // Start must be in the next budget cycle
-    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
 
     int nBlockStart = params[3].get_int();
-    if (nBlockStart % GetBudgetPaymentCycleBlocks() != 0) {
-        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    if (nBlockStart % Params().BudgetCycleBlocks() != 0) {
+        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
         throw runtime_error(strprintf("Invalid block start - must be a budget cycle block. Next valid block: %d", nNext));
     }
 
-    int nBlockEnd = nBlockStart + GetBudgetPaymentCycleBlocks() * nPaymentCount; // End must be AFTER current cycle
+    int nBlockEnd = nBlockStart + Params().BudgetCycleBlocks() * nPaymentCount; // End must be AFTER current cycle
 
     if (nBlockStart < nBlockMin)
         throw runtime_error("Invalid block start, must be more than current height.");
@@ -291,15 +292,15 @@ UniValue submitbudget(const UniValue& params, bool fHelp)
         throw runtime_error("Invalid payment count, must be more than zero.");
 
     // Start must be in the next budget cycle
-    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    if (pindexPrev != NULL) nBlockMin = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
 
     int nBlockStart = params[3].get_int();
-    if (nBlockStart % GetBudgetPaymentCycleBlocks() != 0) {
-        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    if (nBlockStart % Params().BudgetCycleBlocks() != 0) {
+        int nNext = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
         throw runtime_error(strprintf("Invalid block start - must be a budget cycle block. Next valid block: %d", nNext));
     }
 
-    int nBlockEnd = nBlockStart + (GetBudgetPaymentCycleBlocks() * nPaymentCount); // End must be AFTER current cycle
+    int nBlockEnd = nBlockStart + (Params().BudgetCycleBlocks() * nPaymentCount); // End must be AFTER current cycle
 
     if (nBlockStart < nBlockMin)
         throw runtime_error("Invalid block start, must be more than current height.");
@@ -404,7 +405,7 @@ UniValue mnbudgetvote(const UniValue& params, bool fHelp)
         UniValue statusObj(UniValue::VOBJ);
 
         while (true) {
-            if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode)) {
+            if (!CMessageSigner::GetKeysFromSecret(strMasterNodePrivKey, keyMasternode, pubKeyMasternode)) {
                 failed++;
                 statusObj.push_back(make_pair("node", "local"));
                 statusObj.push_back(make_pair("result", "failed"));
@@ -471,7 +472,7 @@ UniValue mnbudgetvote(const UniValue& params, bool fHelp)
 
             UniValue statusObj(UniValue::VOBJ);
 
-            if (!obfuScationSigner.SetKey(mne.getPrivKey(), errorMessage, keyMasternode, pubKeyMasternode)) {
+            if (!CMessageSigner::GetKeysFromSecret(strMasterNodePrivKey, keyMasternode, pubKeyMasternode)) {
                 failed++;
                 statusObj.push_back(make_pair("node", mne.getAlias()));
                 statusObj.push_back(make_pair("result", "failed"));
@@ -545,7 +546,7 @@ UniValue mnbudgetvote(const UniValue& params, bool fHelp)
 
             UniValue statusObj(UniValue::VOBJ);
 
-            if(!obfuScationSigner.SetKey(mne.getPrivKey(), errorMessage, keyMasternode, pubKeyMasternode)){
+            if(!CMessageSigner::GetKeysFromSecret(strMasterNodePrivKey, keyMasternode, pubKeyMasternode)){
                 failed++;
                 statusObj.push_back(make_pair("node", mne.getAlias()));
                 statusObj.push_back(make_pair("result", "failed"));
@@ -667,7 +668,7 @@ UniValue getnextsuperblock(const UniValue& params, bool fHelp)
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return "unknown";
 
-    int nNext = pindexPrev->nHeight - pindexPrev->nHeight % GetBudgetPaymentCycleBlocks() + GetBudgetPaymentCycleBlocks();
+    int nNext = pindexPrev->nHeight - pindexPrev->nHeight % Params().BudgetCycleBlocks() + Params().BudgetCycleBlocks();
     return nNext;
 }
 
@@ -838,10 +839,12 @@ UniValue mnbudgetrawvote(const UniValue& params, bool fHelp)
 
     CBudgetVote vote(vin, hashProposal, nVote);
     vote.nTime = nTime;
-    vote.vchSig = vchSig;
+    vote.SetVchSig(vchSig);
 
-    if (!vote.SignatureValid(true)) {
-        return "Failure to verify signature.";
+    if (!vote.CheckSignature()) {
+        // try old message version
+        vote.nMessVersion = MessageVersion::MESS_VER_STRMESS;
+        if (!vote.CheckSignature()) return "Failure to verify signature.";
     }
 
     std::string strError = "";
@@ -895,7 +898,7 @@ UniValue mnfinalbudget(const UniValue& params, bool fHelp)
 
             UniValue statusObj(UniValue::VOBJ);
 
-            if (!obfuScationSigner.SetKey(mne.getPrivKey(), errorMessage, keyMasternode, pubKeyMasternode)) {
+            if (!CMessageSigner::GetKeysFromSecret(strMasterNodePrivKey, keyMasternode, pubKeyMasternode)) {
                 failed++;
                 statusObj.push_back(make_pair("result", "failed"));
                 statusObj.push_back(make_pair("errorMessage", "Masternode signing error, could not set key correctly: " + errorMessage));
@@ -954,7 +957,7 @@ UniValue mnfinalbudget(const UniValue& params, bool fHelp)
         CKey keyMasternode;
         std::string errorMessage;
 
-        if (!obfuScationSigner.SetKey(strMasterNodePrivKey, errorMessage, keyMasternode, pubKeyMasternode))
+        if (!CMessageSigner::GetKeysFromSecret(strMasterNodePrivKey, keyMasternode, pubKeyMasternode))
             return "Error upon calling SetKey";
 
         CMasternode* pmn = mnodeman.Find(activeMasternode.vin);
@@ -985,7 +988,7 @@ UniValue mnfinalbudget(const UniValue& params, bool fHelp)
         {
             // Ignore old finalized budgets to avoid displaying misleading error
             // messages about missing proposals.  Include the previous final budget cycle.
-            if (finalizedBudget->GetBlockStart() < (chainActive.Tip()->nHeight - GetBudgetPaymentCycleBlocks())) continue;
+            if (finalizedBudget->GetBlockStart() < (chainActive.Tip()->nHeight - Params().BudgetCycleBlocks())) continue;
 
             UniValue bObj(UniValue::VOBJ);
             bObj.push_back(make_pair("FeeTX", finalizedBudget->nFeeTXHash.ToString()));

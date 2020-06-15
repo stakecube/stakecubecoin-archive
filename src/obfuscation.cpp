@@ -30,8 +30,6 @@ CObfuScationSigner obfuScationSigner;
 std::vector<CObfuscationQueue> vecObfuscationQueue;
 // Keep track of the used Masternodes
 std::vector<CTxIn> vecMasternodesUsed;
-// Keep track of the active Masternode
-CActiveMasternode activeMasternode;
 
 /* *** BEGIN OBFUSCATION MAGIC - SCC **********
     Copyright (c) 2014-2015, Dash Developers

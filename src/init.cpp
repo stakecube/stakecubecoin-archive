@@ -26,6 +26,7 @@
 #include "masternode/masternode-payments.h"
 #include "masternode/masternodeconfig.h"
 #include "masternode/masternodeman.h"
+#include "masternode/messagesigner.h"
 #include "miner.h"
 #include "net.h"
 #include "rpc/server.h"

@@ -1,13 +1,15 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2020 StakeCubeCoin Developers
+// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The StakeCubeCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef MASTERNODEMAN_H
 #define MASTERNODEMAN_H
 
+#include "masternode/activemasternode.h"
 #include "base58.h"
+#include "fs.h"
 #include "key.h"
 #include "main.h"
 #include "masternode/masternode.h"
@@ -18,13 +20,14 @@
 #define MASTERNODES_DUMP_SECONDS (15 * 60)
 #define MASTERNODES_DSEG_SECONDS (3 * 60 * 60)
 
-#define MINIMUM_PROTOCOL_VERSION_OLD_PING 70003
-
-using namespace std;
 
 class CMasternodeMan;
+class CActiveMasternode;
 
 extern CMasternodeMan mnodeman;
+extern CActiveMasternode activeMasternode;
+extern std::string strMasterNodePrivKey;
+
 void DumpMasternodes();
 
 /** Access to the MN database (mncache.dat)
@@ -32,7 +35,7 @@ void DumpMasternodes();
 class CMasternodeDB
 {
 private:
-    boost::filesystem::path pathMN;
+    fs::path pathMN;
     std::string strMagicMessage;
 
 public:
@@ -71,11 +74,12 @@ private:
 
 public:
     // Keep track of all broadcasts I've seen
-    map<uint256, CMasternodeBroadcast> mapSeenMasternodeBroadcast;
+    std::map<uint256, CMasternodeBroadcast> mapSeenMasternodeBroadcast;
     // Keep track of all pings I've seen
-    map<uint256, CMasternodePing> mapSeenMasternodePing;
+    std::map<uint256, CMasternodePing> mapSeenMasternodePing;
 
     // keep track of dsq count to prevent masternodes from gaming obfuscation queue
+    // TODO: Remove this from serialization
     int64_t nDsqCount;
 
     ADD_SERIALIZE_METHODS;
@@ -121,7 +125,6 @@ public:
     /// Find an entry
     CMasternode* Find(const CScript& payee);
     CMasternode* Find(const CTxIn& vin);
-    CMasternode* Find(const CService& addr);
     CMasternode* Find(const CPubKey& pubKeyMasternode);
 
     /// Find an entry in the masternode list that is next to be paid
@@ -139,7 +142,7 @@ public:
         return vMasternodes;
     }
 
-    std::vector<pair<int, CMasternode> > GetMasternodeRanks(int64_t nBlockHeight, int minProtocol = 0);
+    std::vector<std::pair<int, CMasternode> > GetMasternodeRanks(int64_t nBlockHeight, int minProtocol = 0);
     int GetMasternodeRank(const CTxIn& vin, int64_t nBlockHeight, int minProtocol = 0, bool fOnlyActive = true);
     CMasternode* GetMasternodeByRank(int nRank, int64_t nBlockHeight, int minProtocol = 0, bool fOnlyActive = true);
 

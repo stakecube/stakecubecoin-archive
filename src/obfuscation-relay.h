@@ -9,6 +9,7 @@
 #include "masternode/activemasternode.h"
 #include "main.h"
 #include "masternode/masternodeman.h"
+#include "obfuscation.h"
 
 
 class CObfuScationRelay

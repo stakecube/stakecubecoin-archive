@@ -94,7 +94,9 @@ public:
     std::string SporkKey() const { return strSporkKey; }
     std::string SporkKeyTemp() const { return strSporkKeyTemp; }
     int64_t BudgetFeeConfirmations() const { return nBudgetFeeConfirmations; }
+    int BudgetCycleBlocks() const { return nBudgetCycleBlocks; }
     CBaseChainParams::Network NetworkID() const { return networkID; }
+    bool IsRegTestNet() const { return NetworkID() == CBaseChainParams::REGTEST; }
 
     /** Height or Time Based Activations **/
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
@@ -143,6 +145,7 @@ protected:
     std::string strSporkKey;
     std::string strSporkKeyTemp;
     int64_t nBudgetFeeConfirmations;
+    int nBudgetCycleBlocks;
 };
 
 /**

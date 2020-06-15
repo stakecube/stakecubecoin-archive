@@ -4,7 +4,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2017-2019 The Phore developers
-// Copyright (c) 2018-2019 The StakeCubeCoin developers
+// Copyright (c) 2018-2020 The StakeCubeCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -2790,15 +2790,15 @@ bool CWallet::CreateCollateralTransaction(CMutableTransaction& txCollateral, std
 bool CWallet::GetBudgetSystemCollateralTX(CWalletTx& tx, uint256 hash, bool useIX)
 {
     // make our change address
-    CReserveKey reservekey(pwalletMain);
+    CReserveKey reservekey(this);
 
     CScript scriptChange;
     scriptChange << OP_RETURN << ToByteVector(hash);
 
     CAmount nFeeRet = 0;
     std::string strFail = "";
-    vector<pair<CScript, CAmount> > vecSend;
-    vecSend.push_back(make_pair(scriptChange, GetBudgetSystemCollateralAmount(chainActive.Height()))); // Old 50 SCC collateral
+    std::vector<std::pair<CScript, CAmount> > vecSend;
+    vecSend.push_back(std::make_pair(scriptChange, BUDGET_FEE_TX_OLD)); // Old 50 PIV collateral
 
     CCoinControl* coinControl = NULL;
     bool success = CreateTransaction(vecSend, tx, reservekey, nFeeRet, strFail, coinControl, ALL_COINS, useIX, (CAmount)0);
