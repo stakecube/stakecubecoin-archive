@@ -1,72 +1,60 @@
-*** BETA SOFTWARE - USE AT YOUR OWN RISK ***
+Stakecube [SCC] integration/staging tree
+========================================
 
-SCC 2.0
-StakeCubeCoin integration/staging repository
-=====================================
 
-StakeCubeCoin is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
-- 100% Proof of Stake 3.0 Consensus protocol, allowing very low transaction fees and energy expenditure, and staking rewards to all participants in the network
-- Masternode technology used to secure the network and provide the above features, each Masternode is secured
-  with collateral of 500K SCC
-- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
+Brief Specifications
+--------------------
 
-139439504 StakeCubeCoin was produced for swapping.
+* Coin Name:       StakeCubeCoin
+* Coin Ticker:     SCC
+* Consensus:       MN/PoS
+* MN Collateral:   1000 SCC
+* Block reward:    4-24 SCC
+* MN reward:       70-90%
+* PoS reward:      10-30%
+* Block spacing:   120 Seconds
+* Premine:         250000 SCC (1.4%)
+* Total supply:    18 Million
+* RPC port:        39999
+* P2P/MN port:     40000
 
-## Coin Specs ##
-<table>
-<tr><td>Hash Type</td><td>SHA256</td></tr>
-<tr><td>Block Time</td><td>40 Seconds</td></tr>
-<tr><td>Difficulty Retargeting</td><td>Every 10 blocks</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>4 billion</td></tr>
-</table>
 
-## PoS Rewards Breakdown ##
+What is Stakecube (SCC) ?
+-------------------------
 
-<table>
-<th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th><th>Budget</th>
-<tr><td>1-96514012</td><td>36 SCC</td><td>18 SCC</td><td>18 SCC</td><td>4 SCC</td></tr>
-<tr><td>96514013+</td><td>0 SCC</td><td>0 SCC</td><td>0 SCC</td><td>0 SCC</td></tr>
-</table>
+StakeCubeCoin is a fork of the MUE codebase; which uses a combination of Masternodes with PoS (Proof of stake) to secure the cryptocurrency network.
 
-## SCC resources ##
-* Client & Source:
-[Client Binaries](https://github.com/muecoin/SCC/releases)
-[Source Code](https://github.com/muecoin/SCC)
-* Links:
-[Homepage](https://www.stakecubecoin.org)
-[CoinBuy](https://www.coinbuy.com)
-[CryptoFeed](https://cryptofeed.io)
+The first consequtive blocks contain the coins allocated for the user coin swap, destined for holders of the previous PoW/PoS version of Stakecube.
 
-## Nodes & ports ##
-dns1.stakecubecoin.org<br>
-dns2.stakecubecoin.org<br>
-dns3.stakecubecoin.org<br>
-192.99.217.102<br>
-164.132.151.109<br>
-p2p port :40000
+A total of 1000 SC is required to run a masternode;
 
-## Importing wallet balances from SCC 1.0.3 wallets into SCC 2.0 wallets ##
 
-SCC has migrated to a completely new codebase, and as such, is no longer compatible with the previous network and blockchain used by the old 1.0.3 wallets.
-As part of the migration to the SCC 2.0 wallets and network, users can redeem their old wallet balances* into their new wallets.
-This process is simple, but if not done correctly could risk you losing all your coins.
+Issue Tracker
+------------
 
-## NEVER UNDER ANY CIRCUMSTANCES GIVE AWAY YOUR PRIVATE KEYS TO ANYONE, THE ONE WHO HAS YOUR KEYS CONTROLS YOUR SCC ##
+The integrated GitHub issue tracker is used for this project. Upon running into an issue, please submit it [here](https://github.com/stakecube/stakecube/issues).
 
-Please follow these simple steps
-1) BACKUP your old SCC wallet, make multiple copies (most critical is your wallet.dat file!)
-2) Copy that back up somewhere safe e.g USB drive, seperate computer.
-3) Make a list of your wallet addresses (you may need to look in "coin control" for a full list). If coin control is not available in the send tab of your wallet, then activate this under `śettings / Options / Wallet / Enable Coin Control Features`
-4) For each wallet address (that you know has a balance of SCC) in debug console run `dumpprivkey 7enteryourmuewalletaddresshere`
-5) Record the private key (securely & safely) that is printed there
-6) As per item 2) Backup your old SCC wallet (just to be sure).  Again, critical is your wallet.dat file
-7) Uninstall your old SCC wallet IF you are installing the 2.0 wallet on the same machine (to avoid any conflicts). For the sake of safety, you may also rename your SCC folder to say SCC-1.0.3-backup so it is preserved on your machine if things go wrong.
-8) Install the new SCC 2.0 wallet
-9) In debug console run `importprivkey KenterYourPrivateKeyHere "comment"`
 
-You should now see your old SCC balance re-instated into the new SCC 2.0 wallet.
-For security, we *strongly recommend* you now send those coins to yourself to a newly generated receive address created in your own 2.0 wallet.
+Documentation
+-------------
 
-For support, please don't hesitate to join us in our chat platform at http://discord.gg/5PD3X7G
+The documentation is a work-in-progress. It is located in the doc folder and [the wiki pages](https://github.com/stakecube/stakecube/wiki).
 
-*Only transactions up to and including block 833658 will be processed
+
+Wiki
+----
+
+The answers to most technical questions can be found in the official SCC wiki:
+https://github.com/stakecube/stakecube/wiki
+
+This wiki will be updated with SCC specifications, docs, manuals and FAQs.
+
+
+License
+-------
+
+Stakecube is released under the terms of the MIT license.
+See COPYING for more information or see https://opensource.org/licenses/MIT.
+
+Stakecube is derived from code developed by both the Dashpay team (https://github.com/dashpay/dash) and the PIVX team (https://github.com/PIVX-Project/PIVX); and where possible, have left all copyright notices and trademarks untouched.
+
