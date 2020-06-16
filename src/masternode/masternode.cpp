@@ -127,6 +127,17 @@ std::string CMasternode::GetStrMessage() const
     );
 }
 
+std::string CMasternode::GetOldStrMessage() const
+{
+    std::string strMessage;
+
+    std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
+    std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
+    strMessage = addr.ToString() + std::to_string(sigTime) + vchPubKey + vchPubKey2 + std::to_string(protocolVersion);
+
+    return strMessage;
+}
+
 //
 // When a new masternode broadcast is sent, update our information
 //
@@ -413,9 +424,15 @@ bool CMasternodeBroadcast::Sign(const CKey& key, const CPubKey& pubKey)
 {
     std::string strError = "";
     std::string strMessage;
+    bool fNewSigs = false;
 
-    nMessVersion = MessageVersion::MESS_VER_STRMESS;
-    strMessage = GetStrMessage();
+    if (fNewSigs) { // New message type not used yet
+        nMessVersion = MessageVersion::MESS_VER_HASH;
+        strMessage = GetSignatureHash().GetHex();
+    } else {
+        nMessVersion = MessageVersion::MESS_VER_STRMESS;
+        strMessage = GetOldStrMessage();
+    }
 
     if (!CMessageSigner::SignMessage(strMessage, vchSig, key)) {
         return error("%s : SignMessage() (nMessVersion=%d) failed", __func__, nMessVersion);
@@ -450,7 +467,13 @@ bool CMasternodeBroadcast::CheckSignature() const
                             GetStrMessage()
                             );
 
-    if(!CMessageSigner::VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError))
+    std::string oldStrMessage = (
+            nMessVersion == MessageVersion::MESS_VER_HASH ?
+            GetSignatureHash().GetHex() :
+            GetOldStrMessage()
+    );
+
+    if(!CMessageSigner::VerifyMessage(pubKeyCollateralAddress, vchSig, oldStrMessage, strError) && !CMessageSigner::VerifyMessage(pubKeyCollateralAddress, vchSig, strMessage, strError))
         return error("%s : VerifyMessage (nMessVersion=%d) failed: %s", __func__, nMessVersion, strError);
 
     return true;
