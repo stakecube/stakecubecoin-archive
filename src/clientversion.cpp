@@ -39,14 +39,14 @@ const std::string CLIENT_NAME("StakeCubeCoin");
 
 //! First, include build.h if requested
 #ifdef HAVE_BUILD_INFO
-#include "build.h"
+#include "obj/build.h"
 #endif
 
-//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
+//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "cbcb549"
-#define GIT_COMMIT_DATE "Tue, 9 Feb 2016 16:54:57 -0500"
+#define GIT_COMMIT_ID "f689670fc87c0811f67b245d01cda014dadacf84"
+#define GIT_COMMIT_DATE "Tue Jun 16 22:00:47 2020 +0200"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
@@ -89,7 +89,7 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    return CLIENT_BUILD;
+    return FormatVersion(CLIENT_VERSION);
 }
 
 /** 
