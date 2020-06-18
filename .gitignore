@@ -37,6 +37,7 @@ configure
 confdefs.h
 conftest.cpp
 conftest.err
+doc/Doxyfile
 libtool
 src/config/stakecubecoin-config.h
 src/config/stakecubecoin-config.h.in
@@ -120,10 +121,12 @@ qa/pull-tester/test.*/*
 
 .cproject
 .project
-/doc/doxygen/
 /nbproject/
 
 .idea
 cmake-build-debug
 
 cache
+
+#exceptions
+!doc/
