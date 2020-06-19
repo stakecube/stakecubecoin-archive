@@ -460,7 +460,7 @@ UniValue mnbudgetvote(const UniValue& params, bool fHelp)
     }
 
     if (strCommand == "many") {
-        BOOST_FOREACH (CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
+        for (CMasternodeConfig::CMasternodeEntry mne : masternodeConfig.getEntries()) {
             std::string errorMessage;
             std::vector<unsigned char> vchMasterNodeSignature;
             std::string strMasterNodeSignMessage;
@@ -531,7 +531,7 @@ UniValue mnbudgetvote(const UniValue& params, bool fHelp)
         std::vector<CMasternodeConfig::CMasternodeEntry> mnEntries;
         mnEntries = masternodeConfig.getEntries();
 
-        BOOST_FOREACH(CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
+        for (CMasternodeConfig::CMasternodeEntry mne : masternodeConfig.getEntries()) {
 
             if( strAlias != mne.getAlias()) continue;
 
@@ -714,7 +714,7 @@ UniValue getbudgetprojection(const UniValue& params, bool fHelp)
     CAmount nTotalAllotted = 0;
 
     std::vector<CBudgetProposal*> winningProps = budget.GetBudget();
-    BOOST_FOREACH (CBudgetProposal* pbudgetProposal, winningProps) {
+    for (CBudgetProposal* pbudgetProposal : winningProps) {
         nTotalAllotted += pbudgetProposal->GetAllotted();
 
         UniValue bObj(UniValue::VOBJ);
@@ -780,7 +780,7 @@ UniValue getbudgetinfo(const UniValue& params, bool fHelp)
     }
 
     std::vector<CBudgetProposal*> winningProps = budget.GetAllProposals();
-    BOOST_FOREACH (CBudgetProposal* pbudgetProposal, winningProps) {
+    for (CBudgetProposal* pbudgetProposal : winningProps) {
         if (strShow == "valid" && !pbudgetProposal->fValid) continue;
 
         UniValue bObj(UniValue::VOBJ);
@@ -886,7 +886,7 @@ UniValue mnfinalbudget(const UniValue& params, bool fHelp)
 
         UniValue resultsObj(UniValue::VOBJ);
 
-        BOOST_FOREACH (CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
+        for (CMasternodeConfig::CMasternodeEntry mne : masternodeConfig.getEntries()) {
             std::string errorMessage;
             std::vector<unsigned char> vchMasterNodeSignature;
             std::string strMasterNodeSignMessage;
@@ -984,7 +984,7 @@ UniValue mnfinalbudget(const UniValue& params, bool fHelp)
         UniValue resultObj(UniValue::VOBJ);
 
         std::vector<CFinalizedBudget*> winningFbs = budget.GetFinalizedBudgets();
-        BOOST_FOREACH(CFinalizedBudget* finalizedBudget, winningFbs)
+        for (CFinalizedBudget* finalizedBudget : winningFbs)
         {
             // Ignore old finalized budgets to avoid displaying misleading error
             // messages about missing proposals.  Include the previous final budget cycle.
