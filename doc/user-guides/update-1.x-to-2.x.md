@@ -15,4 +15,5 @@
 7. Start the executable again 
 8. Wait for full sync
 *Optinal:* use the bootstrap to speed up the process
-9. Go to menu item "Tools" -> "Wallet repair" -> choose button 'Upgrade non-hd wallet to hd'. This will restart the wallet and upgrade the wallet.dat format 
+9. Go to menu item "Tools" -> "Wallet repair" -> choose button 'Upgrade non-hd wallet to hd'. This will restart the wallet and upgrade the wallet.dat format
+10. After restart, use 'Create New Wallet' in the seed word wizard and follow the instructions. Make sure to write down the seed words!
