@@ -4,6 +4,7 @@
 
 ### Wallet
 
+**Upgrading the wallet format is optional but recommended**  
 1. Download the latest wallet release for your operating system
 2. Start the executable
 3. Choose the data directory (make sure it is different from the 1.x version)  
@@ -15,5 +16,5 @@
 7. Start the executable again 
 8. Wait for full sync (IMPORTANT!!)  
 *Optinal:* use the bootstrap to speed up the process
-9. Go to menu item "Tools" -> "Wallet repair" -> choose button 'Upgrade non-hd wallet to hd'. This will restart the wallet and upgrade the wallet.dat format
-10. After restart, use 'Create New Wallet' in the seed word wizard and follow the instructions. Make sure to write down the seed words!
+9. Go to menu item "Tools" -> "Wallet repair" -> choose button 'Upgrade non-hd wallet to hd'. Next, use 'Create New Wallet' in the seed word wizard and follow the instructions. Make sure to write down the seed words! 
+10. After finishing the process, it will restart the wallet and upgrade the wallet.dat format
