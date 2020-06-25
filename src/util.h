@@ -78,6 +78,7 @@ bool LogAcceptCategory(const char* category);
 int LogPrintStr(const std::string& str);
 
 #define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
+#define DebugPrintf(...) if (fDebug) LogPrint(NULL, __VA_ARGS__)
 
 /**
  * When we switch to C++11, this can be switched to variadic templates instead
