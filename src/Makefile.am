@@ -202,6 +202,7 @@ BITCOIN_CORE_H = \
   wallet/bip39.h \
   wallet/arrayslice.h \
   wallet/hdchain.h \
+  ziputil.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -386,6 +387,7 @@ libbitcoin_util_a_SOURCES = \
   utilstrencodings.cpp \
   utilmoneystr.cpp \
   utiltime.cpp \
+  ziputil.cpp \
   $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
