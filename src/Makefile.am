@@ -122,6 +122,7 @@ BITCOIN_CORE_H = \
   compressor.h \
   curl.h \
   fs.h \
+  finally.h \
   primitives/block.h \
   primitives/transaction.h \
   core_io.h \
