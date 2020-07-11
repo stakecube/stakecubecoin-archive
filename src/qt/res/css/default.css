@@ -955,34 +955,6 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available SCC Balance */
-qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:12px;
-font-weight:bold;
-color:#32D736;
-margin-left:0px;
-}
-
-QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zSCC Label */
-qproperty-alignment: 'AlignVCenter | AlignRight';
-min-width:160px;
-background-color:#32D736;
-color:#fff;
-margin-right:5px;
-padding-right:5px;
-font-weight:bold;
-font-size:14px;
-/* min-height:35px; */
-}
-
-QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zSCC Balance */
-qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:12px;
-font-weight:bold;
-color:#32D736;
-margin-left:0px;
-}
-
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zSCC Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
