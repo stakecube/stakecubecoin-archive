@@ -3332,6 +3332,15 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         LogPrintf("CheckBlock() : skipping transaction locking checks\n");
     }
 
+    // check transactions
+    int blockHeight = chainActive.Height();
+    if (blockHeight >= 425000) {
+        for (const CTransaction& tx : block.vtx) {
+            if (!CheckTransaction(tx, true, state, false))
+                return error("%s : CheckTransaction failed", __func__);
+        }
+    }
+
     // masternode payments / budgets
     CBlockIndex* pindexPrev = chainActive.Tip();
     int nHeight = 0;
@@ -3537,8 +3546,20 @@ bool IsTransactionInChain(const uint256& txId, int& nHeightTx) {
     return IsTransactionInChain(txId, nHeightTx, tx);
 }
 
+bool fGenesisSeen = false;
+
 bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIndex* const pindexPrev)
 {
+    if (!fGenesisSeen) {
+        uint256 hash = block.GetHash();
+        if (hash == Params().HashGenesisBlock()) {
+            fGenesisSeen = true;
+            return true;
+        }
+    }
+
+    assert(pindexPrev);
+
     const int nHeight = pindexPrev == NULL ? 0 : pindexPrev->nHeight + 1;
 
     // Check that all transactions are finalized
