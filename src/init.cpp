@@ -1426,11 +1426,6 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler, const std
                     break;
                 }
 
-                if (fAddrIndex != GetBoolArg("-addrindex", true)) {
-                    strLoadError = _("You need to rebuild the database using -reindex to change -addrindex");
-                    break;
-                }
-
                 // Recalculate money supply
                 if (GetBoolArg("-reindexmoneysupply", false)) {
                     RecalculateSCCSupply(1);
