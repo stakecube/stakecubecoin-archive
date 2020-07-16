@@ -2360,7 +2360,7 @@ bool CWallet::SelectStakeCoins(std::set<std::pair<const CWalletTx*, unsigned int
             continue;
 
         //check that it is matured
-        if (out.nDepth < (out.tx->IsCoinStake() ? Params().COINBASE_MATURITY() : 10))
+        if (out.nDepth < (out.tx->IsCoinStake() ? Params().COINBASE_MATURITY(out.tx->GetValueOut(), out.nDepth) : 10))
             continue;
 
         //add to our stake set
@@ -4385,7 +4385,7 @@ void CWallet::AutoCombineDust()
             if (!out.fSpendable)
                 continue;
             //no coins should get this far if they dont have proper maturity, this is double checking
-            if (out.tx->IsCoinStake() && out.tx->GetDepthInMainChain() < Params().COINBASE_MATURITY() + 1)
+            if (out.tx->IsCoinStake() && out.tx->GetDepthInMainChain() < Params().COINBASE_MATURITY(out.tx->GetValueOut(), out.nDepth) + 1)
                 continue;
 
             COutPoint outpt(out.tx->GetHash(), out.i);
@@ -4472,7 +4472,7 @@ bool CWallet::MultiSend()
     for (const COutput& out : vCoins) {
 
         //need output with precise confirm count - this is how we identify which is the output to send
-        if (out.tx->GetDepthInMainChain() != Params().COINBASE_MATURITY() + 1)
+        if (out.tx->GetDepthInMainChain() != Params().COINBASE_MATURITY(out.tx->GetValueOut(), out.nDepth) + 1)
             continue;
 
         COutPoint outpoint(out.tx->GetHash(), out.i);
@@ -4668,7 +4668,16 @@ int CMerkleTx::GetBlocksToMaturity() const
     LOCK(cs_main);
     if (!(IsCoinBase() || IsCoinStake()))
         return 0;
-    return max(0, (Params().COINBASE_MATURITY() + 1) - GetDepthInMainChain());
+    
+    // Find the block height containing the transaction (Could this be more efficient? Probably)
+    BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
+    if (mi == mapBlockIndex.end())
+        return 0;
+    CBlockIndex* pindex = (*mi).second;
+    if (!pindex || !chainActive.Contains(pindex))
+        return 0;
+
+    return max(0, (Params().COINBASE_MATURITY(GetValueOut(), pindex->nHeight) - GetDepthInMainChain()));
 }
 
 
