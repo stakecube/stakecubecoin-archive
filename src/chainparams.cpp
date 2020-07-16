@@ -135,6 +135,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 500;
+        nTieredCoinbaseMaturationBlock = 430000;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot

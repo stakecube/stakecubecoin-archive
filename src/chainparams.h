@@ -72,7 +72,23 @@ public:
     int64_t TargetTimespan() const { return nTargetTimespan; }
     int64_t TargetSpacing() const { return nTargetSpacing; }
     int64_t Interval() const { return nTargetTimespan / nTargetSpacing; }
-    int COINBASE_MATURITY() const { return nMaturity; }
+
+    /** Calculated dynamically based on coin value (The nTieredCoinbaseMaturationBlock upgrade) */
+    int COINBASE_MATURITY(int64_t nValue, int nBlock) const {
+        if (nBlock < nTieredCoinbaseMaturationBlock)
+            return nMaturity;
+
+        if (nValue > 0 && nValue <= 100) {
+            return 1440;
+        } else if (nValue > 100 && nValue <= 500) {
+            return 720;
+        } else if (nValue > 500 && nValue < 1000) {
+            return 360;
+        } else /* Larger than (Or Equal to) 1000 SCC */ {
+            return 180;
+        }
+    }
+
     unsigned int StakeMaturity() const { return nStakeMaturity; }
     CAmount RequiredMasternodeCollateral() const { return nRequiredMasternodeCollateral; }
     CAmount MaxMoneyOut() const { return nMaxMoneyOut; }
@@ -101,6 +117,7 @@ public:
     /** Height or Time Based Activations **/
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
+    int TieredCoinbaseMaturityBlock() const { return nTieredCoinbaseMaturationBlock; }
 
 protected:
     CChainParams() {}
@@ -122,6 +139,7 @@ protected:
     int nMaturity;
     unsigned int nStakeMaturity;
     int nModifierUpdateBlock;
+    int nTieredCoinbaseMaturationBlock;
     CAmount nRequiredMasternodeCollateral;
     CAmount nMaxMoneyOut;
     int nMinerThreads;
