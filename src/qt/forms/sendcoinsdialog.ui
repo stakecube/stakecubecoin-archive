@@ -1681,16 +1681,6 @@
               <number>3</number>
              </property>
              <item>
-              <widget class="QCheckBox" name="checkzSCC">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string>Anonymized StakeCubeCoin</string>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="QCheckBox" name="checkSwiftTX">
                <property name="enabled">
                 <bool>true</bool>
