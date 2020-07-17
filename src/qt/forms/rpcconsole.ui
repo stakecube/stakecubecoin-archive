@@ -1359,7 +1359,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>Custom zSCC Backup Path:</string>
+          <string>Custom Wallet Backup Path:</string>
          </property>
         </widget>
        </item>

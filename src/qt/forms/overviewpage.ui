@@ -677,7 +677,7 @@
                        <item row="4" column="0">
                         <widget class="QLabel" name="labelLockedBalanceText">
                          <property name="toolTip">
-                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
+                          <string>Locked SCC or Masternode collaterals.</string>
                          </property>
                          <property name="text">
                           <string>Locked:</string>
@@ -696,7 +696,7 @@
                           <cursorShape>IBeamCursor</cursorShape>
                          </property>
                          <property name="toolTip">
-                          <string>Locked SCC or Masternode collaterals. These are excluded from zSCC minting.</string>
+                          <string>Locked SCC or Masternode collaterals.</string>
                          </property>
                          <property name="text">
                           <string notr="true">0.000 000 00 SCC</string>

@@ -360,7 +360,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "stakecubecoind.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
-    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the SCC and zSCC money supply statistics") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the SCC money supply statistics") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-resync", _("Delete blockchain folders and resync from scratch") + " " + _("on startup"));
 #if !defined(WIN32)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
@@ -1636,8 +1636,6 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler, const std
             }
         }
         fVerifyingBlocks = false;
-
-        uiInterface.InitMessage(_("Syncing zSCC wallet..."));
 
         g_address_type = ParseOutputType(GetArg("-addresstype", ""));
         if (g_address_type == OUTPUT_TYPE_NONE) {
