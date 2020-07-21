@@ -224,7 +224,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         vecPriority.reserve(mempool.mapTx.size());
 
         // Keep a list of any transactions with completely missing inputs
-        vector<CTransaction> vecMissingInputTXs;
+        vector<CTransaction> vecInvalidTXs;
 
         // Loop the mempool...
         for (map<uint256, CTxMemPoolEntry>::iterator mi = mempool.mapTx.begin();
@@ -255,9 +255,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                     // or other transactions in the memory pool.
                     if (!mempool.mapTx.count(txin.prevout.hash)) {
                         LogPrintf("ERROR: mempool transaction missing input, evicting transaction from mempool (%s)\n", tx.GetHash().ToString().c_str());
-                        if (fDebug) assert("mempool transaction missing input" == 0);
                         fMissingInputs = true;
-                        vecMissingInputTXs.push_back(tx);
+                        vecInvalidTXs.push_back(tx);
                         if (porphan)
                             vOrphan.pop_back();
                         break;
@@ -289,6 +288,15 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
             if (fMissingInputs) continue;
 
+            // Sanity check for double-spends and other irregularities (If, somehow, they get past mempool checks)
+            CValidationState txCheckState;
+            if (!CheckTransaction(tx, true, txCheckState, false)) {
+                LogPrintf("ERROR: mempool transaction invalid (%s), evicting transaction from mempool (%s)\n", txCheckState.GetRejectReason(),
+                                                                                                               tx.GetHash().ToString().c_str());
+                vecInvalidTXs.push_back(tx);
+                continue;
+            }
+
             // Priority is sum(valuein * age) / modified_txsize
             unsigned int nTxSize = fNeedSizeAccounting ? ::GetSerializeSize(tx, SER_NETWORK, PROTOCOL_VERSION) : 0;
             int64_t nTxCost = mi->second.GetTxCost();
@@ -306,13 +314,13 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 vecPriority.push_back(TxPriority(dPriority, feeRate, &mi->second.GetTx()));
         }
 
-        // Remove any bad transaction(s) (And any of it's depended-on inputs) from the mempool entirely
+        // Remove any invalid transaction(s) (And any of it's depended-on inputs) from the mempool entirely
         list<CTransaction> removed;
-        for (const CTransaction& badTx : vecMissingInputTXs) {
+        for (const CTransaction& badTx : vecInvalidTXs) {
             mempool.remove(badTx, removed, true);
         }
         if (!removed.empty())
-            LogPrintf("CreateNewBlock() : Evicted %u transaction(s) from the mempool for missing inputs", removed.size());
+            LogPrintf("CreateNewBlock() : Evicted %u invalid transaction(s) from the mempool", removed.size());
 
         // Collect transactions into block
         uint64_t nBlockSize = 1000;
