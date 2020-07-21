@@ -2908,7 +2908,10 @@ bool ActivateBestChain(CValidationState& state, CBlock* pblock, bool fAlreadyChe
             }
         }
     } while (pindexMostWork != chainActive.Tip());
-    CheckBlockIndex();
+
+    // Check the Block Index on a non-intensive interval to prevent massive sync slowdowns
+    if (!IsInitialBlockDownload() && pindexNewTip->nHeight % 100 == 0 && Checkpoints::GuessVerificationProgress(pindexNewTip) > 0.997 || Params().NetworkID() != CBaseChainParams::MAIN)
+        CheckBlockIndex();
 
     // Write changes periodically to disk, after relay.
     if (!FlushStateToDisk(state, FLUSH_STATE_PERIODIC)) {
@@ -3879,7 +3882,6 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         if (pindex && pfrom) {
             mapBlockSource[pindex->GetBlockHash ()] = pfrom->GetId ();
         }
-        CheckBlockIndex ();
         if (!ret)
             return error ("%s : AcceptBlock FAILED", __func__);
     }
@@ -5526,7 +5528,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->PushMessage(NetMsgType::GETHEADERS, chainActive.GetLocator(pindexLast), uint256(0));
         }
 
-        CheckBlockIndex();
+        if (!IsInitialBlockDownload() && pindexLast && pindexLast->nHeight % 100 == 0 && Checkpoints::GuessVerificationProgress(pindexLast) > 0.997 || Params().NetworkID() != CBaseChainParams::MAIN)
+            CheckBlockIndex();
     }
 
     else if (strCommand == NetMsgType::BLOCK && !fImporting && !fReindex) // Ignore blocks received while importing
