@@ -1006,6 +1006,7 @@ bool CheckTransaction(const CTransaction& tx, bool fRejectBadUTXO, CValidationSt
         if (vInOutPoints.count(txin.prevout))
             return state.DoS(100, error("CheckTransaction() : duplicate inputs"),
                 REJECT_INVALID, "bad-txns-inputs-duplicate");
+        vInOutPoints.insert(txin.prevout);
     }
 
     if (tx.IsCoinBase()) {
