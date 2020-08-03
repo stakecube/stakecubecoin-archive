@@ -64,7 +64,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (200000, uint256("0x63e4ced0469981f3537184abe52c9ebafcab9e70e1d6f586fe4ee814010a753c"))
     (250000, uint256("0xe4bdb74e76eb0da2870cc5420a9bc9605e54244727528a7afbfb30ff087edd5e"))
     (300000, uint256("0xcce450e481798ffaa2505c2ae03a87cf4b720a7f9cab5d549d974e443bfb3c22"))
-    (335278, uint256("0xcd523768dd5a59e479d8cf0c5292b8ff21002045d5e3b672ebb9a91dfe3f4cb0"))
+    (335278, uint256("0xcd523768dd5a59e479d8cf0c5292b8ff21002045d5e3b672ebb9a91dfe3f4cb0")) // 335278 - 335500 navigate properly through hardfork 
     (335279, uint256("0x028d917673a6f7969d1a93c299440d9e2243e21829f49c33293979158fe0e91e"))
     (335280, uint256("0x8535d3c8af8075b8872111be1d7bff122816614d14b6a81c7059f713bb39b303"))
     (335281, uint256("0x81c2ecd0e7ece2094dbc0edc966e04cde8ddc5d5b0b96db823d4aba2fe604394"))
@@ -72,13 +72,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (335500, uint256("0xe3effa279b5c8d90cd4e4bb9dfc6daebfd9fa3d754a3e88e0adcd677683b2d8e"))
     (350000, uint256("0xe2324edfd5979e4a60bd56ae3efd42e80d9086c0853f1815dd3b2b12b6d734fd"))
     (375000, uint256("0x4b2c0b5f01684f321fd4383dbc6b7a357fd24de6ec354a8d010fd7f957d5b4c4"))
-    (400000, uint256("0x322ad59816336238d6deb20332d8537c98cbcef13a9c3644f75663cae4b3d3b3"));
+    (400000, uint256("0x322ad59816336238d6deb20332d8537c98cbcef13a9c3644f75663cae4b3d3b3"))
+    (425000, uint256("0x707d01a185a33c60a27676f3f69ac5548cae4c9314ad5222df9d1a135911ccb5"));
     
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1588073647, // * UNIX timestamp of last checkpoint block
-    924230,     // * total number of transactions between genesis and last checkpoint
+    1594679224, // * UNIX timestamp of last checkpoint block
+    1084025,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1440        // * estimated number of transactions per day after checkpoint
 };
@@ -189,12 +190,8 @@ public:
             assert(genesis.hashMerkleRoot == uint256("0x81791231fefc74d7924ae1c1ff9e384f77285885f4a7a7c32570942834efd5d2"));
         }
         
-        vSeeds.push_back(CDNSSeedData("0", "62.171.177.211"));
-        vSeeds.push_back(CDNSSeedData("1", "5.189.159.94"));
-        vSeeds.push_back(CDNSSeedData("2", "209.126.3.129"));
-        vSeeds.push_back(CDNSSeedData("3", "209.126.3.152"));
-        vSeeds.push_back(CDNSSeedData("4", "79.143.186.234"));
-        vSeeds.push_back(CDNSSeedData("5", "95.179.165.19"));
+        vSeeds.push_back(CDNSSeedData("stakecube.net", "seed1.stakecube.net"));
+        vSeeds.push_back(CDNSSeedData("stakecube.net", "seed2.stakecube.net"));
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 117);
@@ -210,7 +207,7 @@ public:
 
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
-        fDefaultConsistencyChecks = false;
+        fDefaultConsistencyChecks = true;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
         fSkipProofOfWorkCheck = false;
