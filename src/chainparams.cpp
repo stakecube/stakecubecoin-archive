@@ -250,13 +250,16 @@ public:
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // StakeCubeCoin: 1 day
-        nTargetSpacing = 1 * 60;  // StakeCubeCoin: 1 minute
+        nTargetSpacing = 1 * 30;  // StakeCubeCoin: 30 seconds
         nMaturity = 5;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nRequiredMasternodeCollateral = 1000;
         nMaxMoneyOut = 1000000000 * COIN;
-        nLastPOWBlock = 400;
+
+        // Height-based activations
+        nLastPOWBlock = 200;
+        nTieredCoinbaseMaturationBlock = 1450; // ~12h after genesis
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1524873600;
