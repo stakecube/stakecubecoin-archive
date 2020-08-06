@@ -409,7 +409,7 @@ bool CheckProofOfStake(const CBlock block, uint256& hashProofOfStake)
     unsigned int nInterval = 0;
     unsigned int nTime = block.nTime;
 
-    if (pindex->nHeight != 300)
+    if (pindex->nHeight >= Params().TieredCoinbaseMaturityBlock())
     {
         if (!CheckStakeKernelHash(block.nBits, blockprev, txPrev, txin.prevout, nTime, nInterval, true, hashProofOfStake, fDebug) && nTime > 1538198000)
         {
