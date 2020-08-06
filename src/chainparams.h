@@ -89,6 +89,9 @@ public:
         }
     }
 
+    /** Minimum amount of SCC (full coins) required for an input to stake, lower amounts cannot stake */
+    CAmount MinStakeValue() const { return nMinStakeValue; }
+
     unsigned int StakeMaturity() const { return nStakeMaturity; }
     CAmount RequiredMasternodeCollateral() const { return nRequiredMasternodeCollateral; }
     CAmount MaxMoneyOut() const { return nMaxMoneyOut; }
@@ -137,6 +140,7 @@ protected:
     int nLastPOWBlock;
     int nMasternodeCountDrift;
     int nMaturity;
+    CAmount nMinStakeValue;
     unsigned int nStakeMaturity;
     int nModifierUpdateBlock;
     int nTieredCoinbaseMaturationBlock;
