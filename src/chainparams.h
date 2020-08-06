@@ -78,6 +78,7 @@ public:
         if (nBlock < nTieredCoinbaseMaturationBlock)
             return nMaturity;
 
+        nValue /= COIN;
         if (nValue > 0 && nValue <= 100) {
             return 1440;
         } else if (nValue > 100 && nValue <= 500) {
