@@ -261,7 +261,7 @@ public:
 
         // Height-based activations
         nLastPOWBlock = 200;
-        nTieredCoinbaseMaturationBlock = 1450; // ~12h after genesis
+        nTieredCoinbaseMaturationBlock = 950; // ~12h after genesis
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1524873600;
