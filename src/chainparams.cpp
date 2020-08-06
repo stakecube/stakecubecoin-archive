@@ -128,6 +128,7 @@ public:
         nTargetTimespan = 20 * 60;
         nTargetSpacing = 2 * 60;  // StakeCubeCoin: 120 seconds
         nMaturity = 25;
+        nMinStakeValue = 50; // SCC
         nMasternodeCountDrift = 20;
         nRequiredMasternodeCollateral = 1000;
         nMaxMoneyOut = 20000000 * COIN;
@@ -252,6 +253,7 @@ public:
         nTargetTimespan = 1 * 60; // StakeCubeCoin: 1 day
         nTargetSpacing = 1 * 30;  // StakeCubeCoin: 30 seconds
         nMaturity = 5;
+        nMinStakeValue = 50; // SCC
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nRequiredMasternodeCollateral = 1000;

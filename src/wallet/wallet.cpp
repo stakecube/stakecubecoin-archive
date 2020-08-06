@@ -2363,6 +2363,10 @@ bool CWallet::SelectStakeCoins(std::set<std::pair<const CWalletTx*, unsigned int
         if (out.nDepth < (out.tx->IsCoinStake() ? Params().COINBASE_MATURITY(out.tx->GetValueOut(), out.nDepth) : 10))
             continue;
 
+        //check that it is above the minimum stake value threshold
+        if (out.Value() < Params().MinStakeValue() * COIN)
+            continue;
+
         //add to our stake set
         setCoins.insert(make_pair(out.tx, out.i));
         nAmountSelected += out.tx->vout[out.i].nValue;
@@ -3279,7 +3283,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         nTxNewTime = GetAdjustedTime();
 
         //iterates each utxo inside of CheckStakeKernelHash()
-        if (CheckStakeKernelHash(nBits, block, *pcoin.first, prevoutStake, nTxNewTime, nHashDrift, false, hashProofOfStake, true)) {
+        if (CheckStakeKernelHash(nBits, block, pindex, *pcoin.first, prevoutStake, nTxNewTime, nHashDrift, false, hashProofOfStake, true)) {
             //Double check that this will pass time requirements
             if (nTxNewTime <= chainActive.Tip()->GetMedianTimePast()) {
                 LogPrintf("CreateCoinStake() : kernel found, but it is too far in the past \n");
