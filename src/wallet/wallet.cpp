@@ -1415,6 +1415,19 @@ CAmount CWalletTx::GetCredit(const isminefilter& filter) const
 CAmount CWalletTx::GetImmatureCredit(bool fUseCache) const
 {
     LOCK(cs_main);
+
+    // If MN Reward, mark as Immature until at least 1440 confirmations (temp)
+    if (IsCoinStake()) {
+        isminetype mineMN = pwallet->IsMine(vout[vout.size() - 1]);
+        if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && GetDepthInMainChain() < 1440) {
+            if (fUseCache && fImmatureCreditCached)
+                return nImmatureCreditCached;
+            nImmatureCreditCached = pwallet->GetCredit(*this, ISMINE_SPENDABLE);
+            fImmatureCreditCached = true;
+            return nImmatureCreditCached;
+        }
+    }
+
     if ((IsCoinBase() || IsCoinStake()) && GetBlocksToMaturity() > 0 && IsInMainChain()) {
         if (fUseCache && fImmatureCreditCached)
             return nImmatureCreditCached;
@@ -1434,6 +1447,13 @@ CAmount CWalletTx::GetAvailableCredit(bool fUseCache) const
     // Must wait until coinbase is safely deep enough in the chain before valuing it
     if (IsCoinBase() && GetBlocksToMaturity() > 0)
         return 0;
+
+    // If MN Reward, do not value until at least 1440 confirmations (temp)
+    if (IsCoinStake()) {
+        isminetype mineMN = pwallet->IsMine(vout[vout.size() - 1]);
+        if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && GetDepthInMainChain() < 1440)
+            return 0;
+    }
 
     if (fUseCache && fAvailableCreditCached)
         return nAvailableCreditCached;
@@ -1531,6 +1551,13 @@ CAmount CWalletTx::GetUnlockedCredit() const
     if (IsCoinBase() && GetBlocksToMaturity() > 0)
         return 0;
 
+    // If MN Reward, do not value until at least 1440 confirmations (temp)
+    if (IsCoinStake()) {
+        isminetype mineMN = pwallet->IsMine(vout[vout.size() - 1]);
+        if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && GetDepthInMainChain() < 1440)
+            return 0;
+    }
+
     CAmount nCredit = 0;
     uint256 hashTx = GetHash();
     for (unsigned int i = 0; i < vout.size(); i++) {
@@ -1547,7 +1574,7 @@ CAmount CWalletTx::GetUnlockedCredit() const
     return nCredit;
 }
 
-    // Return sum of unlocked coins
+// Return sum of locked coins
 CAmount CWalletTx::GetLockedCredit() const
 {
     if (pwallet == 0)
@@ -1556,6 +1583,13 @@ CAmount CWalletTx::GetLockedCredit() const
     // Must wait until coinbase is safely deep enough in the chain before valuing it
     if (IsCoinBase() && GetBlocksToMaturity() > 0)
         return 0;
+
+    // If MN Reward, do not value until at least 1440 confirmations (temp)
+    if (IsCoinStake()) {
+        isminetype mineMN = pwallet->IsMine(vout[vout.size() - 1]);
+        if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && GetDepthInMainChain() < 1440)
+            return 0;
+    }
 
     CAmount nCredit = 0;
     uint256 hashTx = GetHash();
@@ -2217,6 +2251,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
             // It's possible for these to be conflicted via ancestors which we may never be able to detect
             if (nDepth == 0 && !pcoin->InMempool())
                 continue;
+
+            // For MN rewards: Do not allow spending them until they reach 1440 confirmations (temp)
+            if (pcoin->IsCoinStake()) {
+                isminetype mineMN = IsMine(pcoin->vout[pcoin->vout.size() - 1]);
+                if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && nDepth < 1440)
+                    continue;
+            }
 
             for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
                 bool found = false;
