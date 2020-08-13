@@ -275,10 +275,17 @@ QString TransactionDesc::toHTML(CWallet* wallet, CWalletTx& wtx, TransactionReco
     }
 
     if (wtx.IsCoinBase() || wtx.IsCoinStake()) {
-        // Todo: Maybe we should stop assuming that 'TieredCoinbaseMaturity' is ALWAYS active,
-        // it might require some additional cs_main locks though...
-        quint32 numBlocksToMaturity = Params().COINBASE_MATURITY(wtx.GetValueOut(),
-                                                                 Params().TieredCoinbaseMaturityBlock()) + 1;
+        quint32 numBlocksToMaturity;
+        // Compute if this is an MN Reward that belongs to us
+        isminetype mineMN = wallet->IsMine(wtx.vout[wtx.vout.size() - 1]);
+        if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE)) {
+            // MN Reward, enforce 1440 confirmation period (temp)
+            numBlocksToMaturity = 1441;
+        } else {
+            // Stake Reward, use dynamic coinbase maturity
+            numBlocksToMaturity = Params().COINBASE_MATURITY(wtx.GetValueOut(),
+                                                             Params().TieredCoinbaseMaturityBlock()) + 1;
+        }
         strHTML += "<br>" + tr("Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to \"not accepted\" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.").arg(QString::number(numBlocksToMaturity)) + "<br>";
     }
 

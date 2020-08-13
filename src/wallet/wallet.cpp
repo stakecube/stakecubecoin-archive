@@ -1547,7 +1547,7 @@ CAmount CWalletTx::GetUnlockedCredit() const
     return nCredit;
 }
 
-    // Return sum of unlocked coins
+// Return sum of locked coins
 CAmount CWalletTx::GetLockedCredit() const
 {
     if (pwallet == 0)
@@ -2217,6 +2217,13 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
             // It's possible for these to be conflicted via ancestors which we may never be able to detect
             if (nDepth == 0 && !pcoin->InMempool())
                 continue;
+
+            // For MN rewards: Do not allow spending them until they reach 1440 confirmations (temp)
+            if (pcoin->IsCoinStake()) {
+                isminetype mineMN = IsMine(pcoin->vout[pcoin->vout.size() - 1]);
+                if ((mineMN == ISMINE_ALL || mineMN == ISMINE_SPENDABLE) && nDepth < 1440)
+                    continue;
+            }
 
             for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
                 bool found = false;

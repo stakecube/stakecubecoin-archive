@@ -196,12 +196,6 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount phrAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
-    // Percentages
-    QString sPercentage = "";
-    getPercentage(nUnlockedBalance, sPercentage);
-    // Combined balances
-    CAmount availableTotalBalance = phrAvailableBalance;
-    CAmount sumTotalBalance = nTotalBalance;
 
     // SCC labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, phrAvailableBalance, false, BitcoinUnits::separatorAlways));
@@ -217,19 +211,9 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // Combined labels
-    ui->labelBalancez->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, availableTotalBalance, false, BitcoinUnits::separatorAlways));
-    ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
-
-    // Percentage labels
-    ui->labelSCCPercent->setText(sPercentage);
-
     // Only show most balances if they are non-zero for the sake of simplicity
     QSettings settings;
     bool settingShowAllBalances = !settings.value("fHideZeroBalances").toBool();
-    bool showSumAvailable = settingShowAllBalances || sumTotalBalance != availableTotalBalance;
-    ui->labelBalanceTextz->setVisible(showSumAvailable);
-    ui->labelBalancez->setVisible(showSumAvailable);
     bool showSCCAvailable = settingShowAllBalances || phrAvailableBalance != nTotalBalance;
     bool showWatchOnlySCCAvailable = watchOnlyBalance != nTotalWatchBalance;
     bool showSCCPending = settingShowAllBalances || unconfirmedBalance != 0;
