@@ -3521,7 +3521,9 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         }
 
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
-    if (block.nVersion >= 2) {
+    // Note: Since we removed IsSuperMajority for perf. reasons, the check was replied with a height check
+    // for the first nHeight-serialized coinbase.
+    if (block.nVersion >= 2 && nHeight >= 200) {
         CScript expect = CScript() << nHeight;
         if (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0].vin[0].scriptSig.begin())) {
